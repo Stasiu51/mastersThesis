@@ -16,4 +16,4 @@
 \contentsline {chapter}{\numberline {4}Discussion}{5}{}%
 \contentsline {section}{\numberline {4.1}Conclusions}{5}{}%
 \contentsline {chapter}{Appendices}{7}{}%
-\contentsline {section}{\numberline {.1}Locked states}{8}{}%
+\contentsline {chapter}{\numberline {A}Locked states}{8}{}%
