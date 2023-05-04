@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{PLL\PYGZus{}Lib} \PYG{k+kn}{import} \PYG{n}{Arduino}\PYG{p}{,} \PYG{n}{Picoscope}
+
+\PYG{n}{half\PYGZus{}period} \PYG{o}{=} \PYG{l+m+mi}{500}
+\PYG{k}{with} \PYG{n}{Arduino}\PYG{p}{()} \PYG{k}{as} \PYG{n}{arduino}\PYG{p}{:}
+    \PYG{k}{with} \PYG{n}{Picoscope}\PYG{p}{(}\PYG{n}{time\PYGZus{}per\PYGZus{}sample}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}1micro\PYGZus{}s\PYGZsq{}}\PYG{p}{,} \PYG{n}{trigger\PYGZus{}channel}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}a\PYGZsq{}}\PYG{p}{)} \PYG{k}{as} \PYG{n}{scope}\PYG{p}{:}
+        \PYG{n}{scope}\PYG{o}{.}\PYG{n}{wait\PYGZus{}for\PYGZus{}key}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}s\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Press to start experiment.\PYGZsq{}}\PYG{p}{)}
+        \PYG{k}{while} \PYG{k+kc}{True}\PYG{p}{:}
+            \PYG{n}{arduino}\PYG{o}{.}\PYG{n}{send\PYGZus{}code}\PYG{p}{(}\PYG{n}{half\PYGZus{}period}\PYG{p}{)}
+            \PYG{n}{scope}\PYG{o}{.}\PYG{n}{wait\PYGZus{}for\PYGZus{}key}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}n\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Next frequency?\PYGZsq{}}\PYG{p}{)}
+            \PYG{n}{half\PYGZus{}period} \PYG{o}{+=} \PYG{l+m+mi}{5}
+\end{Verbatim}

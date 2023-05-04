@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{PLL\PYGZus{}Lib} \PYG{k+kn}{import} \PYG{n}{Picoscope}
+
+\PYG{c+c1}{\PYGZsh{} Connect to the Picoscope}
+\PYG{k}{with} \PYG{n}{Picoscope}\PYG{p}{()} \PYG{k}{as} \PYG{n}{scope}\PYG{p}{:}
+    \PYG{c+c1}{\PYGZsh{} Keep capturing traces until the a key is pressed}
+    \PYG{n}{scope}\PYG{o}{.}\PYG{n}{wait\PYGZus{}for\PYGZus{}key}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}a\PYGZsq{}}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} The Picoscope will automatically be disconnected at the end of the indented block.}
+\end{Verbatim}

@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k}{as} \PYG{n+nn}{np}
+\PYG{k+kn}{from} \PYG{n+nn}{matplotlib} \PYG{k+kn}{import} \PYG{n}{pyplot} \PYG{k}{as} \PYG{n}{plt}
+
+\PYG{c+c1}{\PYGZsh{} Retrieve the data from the hard drive}
+\PYG{n}{times} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{load}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Times.npy\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{voltages\PYGZus{}array} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{load}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Voltages\PYGZus{}A.npy\PYGZsq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Plot just the first trace}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{times}\PYG{p}{,} \PYG{n}{voltages\PYGZus{}array}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{])}
+\PYG{c+c1}{\PYGZsh{} Take the point\PYGZhy{}wise mean of the traces}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{times}\PYG{p}{,} \PYG{n}{voltages\PYGZus{}array}\PYG{o}{.}\PYG{n}{mean}\PYG{p}{(}\PYG{n}{axis} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{))}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Times/s\PYGZsq{}}\PYG{p}{),} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}A Voltage/V\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+\end{Verbatim}

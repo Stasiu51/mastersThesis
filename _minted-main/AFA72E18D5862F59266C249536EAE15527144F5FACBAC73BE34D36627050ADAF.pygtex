@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{half\PYGZus{}period}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{100}\PYG{p}{;}
+
+\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{setup}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{  }\PYG{n}{Serial}\PYG{p}{.}\PYG{n}{begin}\PYG{p}{(}\PYG{l+m+mi}{9600}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{pinMode}\PYG{p}{(}\PYG{l+m+mi}{9}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{OUTPUT}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{loop}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{  }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{Serial}\PYG{p}{.}\PYG{n}{available}\PYG{p}{()}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{c+c1}{// This is the line of code required to receive an integer from the python script.}
+\PYG{+w}{    }\PYG{k+kt}{long}\PYG{+w}{ }\PYG{n}{incomingCode}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{Serial}\PYG{p}{.}\PYG{n}{parseInt}\PYG{p}{();}\PYG{+w}{ }\PYG{n}{Serial}\PYG{p}{.}\PYG{n}{read}\PYG{p}{();}
+\PYG{+w}{    }\PYG{n}{half\PYGZus{}period}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{incomingCode}\PYG{p}{;}
+\PYG{+w}{  }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{  }\PYG{c+c1}{// Basic implementation of a square wave oscillator.}
+\PYG{+w}{  }\PYG{n}{digitalWrite}\PYG{p}{(}\PYG{l+m+mi}{9}\PYG{p}{,}\PYG{n}{HIGH}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{delayMicroseconds}\PYG{p}{(}\PYG{n}{half\PYGZus{}period}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{digitalWrite}\PYG{p}{(}\PYG{l+m+mi}{9}\PYG{p}{,}\PYG{n}{LOW}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{delayMicroseconds}\PYG{p}{(}\PYG{n}{half\PYGZus{}period}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

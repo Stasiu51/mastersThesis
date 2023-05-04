@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{PLL\PYGZus{}Lib} \PYG{k+kn}{import} \PYG{n}{Arduino}
+\PYG{k+kn}{import} \PYG{n+nn}{time}
+
+\PYG{c+c1}{\PYGZsh{} Connect to the Arduino}
+\PYG{k}{with} \PYG{n}{Arduino}\PYG{p}{()} \PYG{k}{as} \PYG{n}{arduino}\PYG{p}{:}
+    \PYG{c+c1}{\PYGZsh{} You can refer to \PYGZsq{}arduino\PYGZsq{} anywhere inside this indented block.}
+    \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{l+m+mi}{60}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{):}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}Sending code }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{i}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{...\PYGZsq{}}\PYG{p}{)}
+        \PYG{n}{arduino}\PYG{o}{.}\PYG{n}{send\PYGZus{}code}\PYG{p}{(}\PYG{n}{i}\PYG{p}{)}
+        \PYG{n}{time}\PYG{o}{.}\PYG{n}{sleep}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} The arduino automatically disconnects at the end of this indented block.}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Done!\PYGZsq{}}\PYG{p}{)}
+\end{Verbatim}

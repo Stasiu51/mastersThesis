@@ -1,0 +1,19 @@
+\contentsline {section}{\numberline {0.1}Introduction}{1}{}%
+\contentsline {chapter}{\numberline {1}Background}{2}{}%
+\contentsline {section}{\numberline {1.1}Quantum error correction}{2}{}%
+\contentsline {subsection}{\numberline {1.1.1}Quantum computing}{2}{}%
+\contentsline {subsection}{\numberline {1.1.2}Error correction}{2}{}%
+\contentsline {subsection}{\numberline {1.1.3}Continuous error correction}{2}{}%
+\contentsline {section}{\numberline {1.2}Quantum Dot Qubits}{2}{}%
+\contentsline {subsection}{\numberline {1.2.1}Semiconductor Heterostructures}{2}{}%
+\contentsline {subsubsection}{The Hubbard Model}{2}{}%
+\contentsline {chapter}{\numberline {2}Theory}{3}{}%
+\contentsline {section}{\numberline {2.1}Rapidly repeated error correction schemes}{3}{}%
+\contentsline {section}{\numberline {2.2}Truly continuous error correction in quantum dot systems}{3}{}%
+\contentsline {chapter}{\numberline {3}Methods}{4}{}%
+\contentsline {section}{\numberline {3.1}Simulating the hubbard model}{4}{}%
+\contentsline {section}{\numberline {3.2}Truly continuous error correction prototype}{4}{}%
+\contentsline {chapter}{\numberline {4}Discussion}{5}{}%
+\contentsline {section}{\numberline {4.1}Conclusions}{5}{}%
+\contentsline {chapter}{Appendices}{7}{}%
+\contentsline {section}{\numberline {.1}Locked states}{8}{}%

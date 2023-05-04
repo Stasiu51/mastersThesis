@@ -1,0 +1,31 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{PLL\PYGZus{}Lib} \PYG{k+kn}{import} \PYG{n}{Picoscope}
+\PYG{c+c1}{\PYGZsh{} It is conventional to import numpy with the abbreviated alias np}
+\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k}{as} \PYG{n+nn}{np}
+
+\PYG{c+c1}{\PYGZsh{} The number of traces to save}
+\PYG{n}{N} \PYG{o}{=} \PYG{l+m+mi}{100}
+
+\PYG{k}{with} \PYG{n}{Picoscope}\PYG{p}{(}\PYG{n}{time\PYGZus{}per\PYGZus{}sample}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}1micro\PYGZus{}s\PYGZsq{}}\PYG{p}{,} \PYG{n}{probe\PYGZus{}10x}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{,} \PYG{n}{trigger\PYGZus{}channel}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}a\PYGZsq{}}\PYG{p}{)} \PYG{k}{as} \PYG{n}{scope}\PYG{p}{:}
+    \PYG{c+c1}{\PYGZsh{} We can use the initial trace to judge the proper shape of the arrays}
+    \PYG{n}{times}\PYG{p}{,} \PYG{n}{voltages\PYGZus{}template}\PYG{p}{,} \PYG{n}{\PYGZus{}} \PYG{o}{=} \PYG{n}{scope}\PYG{o}{.}\PYG{n}{wait\PYGZus{}for\PYGZus{}key}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}s\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Press to start experiment\PYGZsq{}}\PYG{p}{)}
+    \PYG{c+c1}{\PYGZsh{} Create an empty 2D Array for the traces}
+    \PYG{n}{voltages\PYGZus{}array\PYGZus{}a} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{zeros}\PYG{p}{((}\PYG{n}{N}\PYG{p}{,}\PYG{n}{voltages\PYGZus{}template}\PYG{o}{.}\PYG{n}{size}\PYG{p}{))}
+    \PYG{c+c1}{\PYGZsh{} Create another}
+    \PYG{n}{voltages\PYGZus{}array\PYGZus{}b} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{zeros\PYGZus{}like}\PYG{p}{(}\PYG{n}{voltages\PYGZus{}array\PYGZus{}a}\PYG{p}{)}
+    \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{N}\PYG{p}{):}
+        \PYG{c+c1}{\PYGZsh{} All captures will have the same set of sample times, so can ignore this}
+        \PYG{c+c1}{\PYGZsh{} get\PYGZus{}trace takes as an optional argument a message that is displayed in the bottom\PYGZhy{}left}
+        \PYG{n}{\PYGZus{}}\PYG{p}{,} \PYG{n}{voltages\PYGZus{}a}\PYG{p}{,} \PYG{n}{voltages\PYGZus{}b} \PYG{o}{=} \PYG{n}{scope}\PYG{o}{.}\PYG{n}{get\PYGZus{}trace}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}Capturing trace }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{i}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{...\PYGZsq{}}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} Store them into the 2D array}
+        \PYG{n}{voltages\PYGZus{}array\PYGZus{}a}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{n}{voltages\PYGZus{}a}
+        \PYG{n}{voltages\PYGZus{}array\PYGZus{}b}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{n}{voltages\PYGZus{}b}
+
+\PYG{c+c1}{\PYGZsh{} Save to memory \PYGZhy{} be sure to change these names if you run an experiment twice}
+\PYG{c+c1}{\PYGZsh{} or it will overwrite the existing files with no warning!}
+\PYG{n}{np}\PYG{o}{.}\PYG{n}{save}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Times.npy\PYGZsq{}}\PYG{p}{,}\PYG{n}{times}\PYG{p}{)}
+\PYG{n}{np}\PYG{o}{.}\PYG{n}{save}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Voltages\PYGZus{}A.npy\PYGZsq{}}\PYG{p}{,}\PYG{n}{voltages\PYGZus{}array\PYGZus{}a}\PYG{p}{)}
+\PYG{n}{np}\PYG{o}{.}\PYG{n}{save}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Voltages\PYGZus{}B.npy\PYGZsq{}}\PYG{p}{,}\PYG{n}{voltages\PYGZus{}array\PYGZus{}b}\PYG{p}{)}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Done!\PYGZsq{}}\PYG{p}{)}
+\end{Verbatim}

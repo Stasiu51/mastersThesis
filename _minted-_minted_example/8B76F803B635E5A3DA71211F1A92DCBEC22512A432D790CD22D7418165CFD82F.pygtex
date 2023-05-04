@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{PLL\PYGZus{}Lib} \PYG{k+kn}{import} \PYG{n}{Picoscope}
+
+\PYG{c+c1}{\PYGZsh{} Python allows a certain freedom of formatting}
+\PYG{c+c1}{\PYGZsh{} when it comes to listing arguments, which can be nicer to read}
+\PYG{k}{with} \PYG{n}{Picoscope}\PYG{p}{(}
+        \PYG{n}{time\PYGZus{}per\PYGZus{}sample}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}10micro\PYGZus{}s\PYGZsq{}}\PYG{p}{,}
+        \PYG{n}{probe\PYGZus{}10x}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{,}
+        \PYG{n}{trigger\PYGZus{}channel}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}a\PYGZsq{}}
+        \PYG{p}{)} \PYG{k}{as} \PYG{n}{scope}\PYG{p}{:}
+    \PYG{n}{times}\PYG{p}{,} \PYG{n}{voltages\PYGZus{}a}\PYG{p}{,} \PYG{n}{voltages\PYGZus{}b} \PYG{o}{=} \PYG{n}{scope}\PYG{o}{.}\PYG{n}{wait\PYGZus{}for\PYGZus{}key}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}a\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}The maximum voltage on channel A was }\PYG{l+s+si}{\PYGZob{}}\PYG{n+nb}{max}\PYG{p}{(}\PYG{n}{voltages\PYGZus{}a}\PYG{p}{)}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{V.\PYGZsq{}}\PYG{p}{)}
+\end{Verbatim}
