@@ -10,10 +10,16 @@
 \contentsline {chapter}{\numberline {2}Theory}{3}{}%
 \contentsline {section}{\numberline {2.1}Rapidly repeated error correction schemes}{3}{}%
 \contentsline {section}{\numberline {2.2}Truly continuous error correction in quantum dot systems}{3}{}%
-\contentsline {chapter}{\numberline {3}Methods}{4}{}%
-\contentsline {section}{\numberline {3.1}Simulating the hubbard model}{4}{}%
-\contentsline {section}{\numberline {3.2}Truly continuous error correction prototype}{4}{}%
-\contentsline {chapter}{\numberline {4}Discussion}{5}{}%
-\contentsline {section}{\numberline {4.1}Conclusions}{5}{}%
-\contentsline {chapter}{Appendices}{7}{}%
-\contentsline {chapter}{\numberline {A}Locked states}{8}{}%
+\contentsline {subsection}{\numberline {2.2.1}Scheme summary}{3}{}%
+\contentsline {subsection}{\numberline {2.2.2}Theoretical treatment of scheme with second order perturbation theory}{4}{}%
+\contentsline {subsection}{\numberline {2.2.3}Further questions related to tunnelling physics}{5}{}%
+\contentsline {chapter}{\numberline {3}Methods}{7}{}%
+\contentsline {section}{\numberline {3.1}Simulating the hubbard model}{7}{}%
+\contentsline {subsection}{\numberline {3.1.1}Python extension: \texttt {FastHamiltoniser}}{7}{}%
+\contentsline {subsubsection}{Structure of extension}{7}{}%
+\contentsline {subsubsection}{Interaction picture calculation}{8}{}%
+\contentsline {section}{\numberline {3.2}Truly continuous error correction prototype}{8}{}%
+\contentsline {chapter}{\numberline {4}Discussion}{9}{}%
+\contentsline {section}{\numberline {4.1}Conclusions}{9}{}%
+\contentsline {chapter}{Appendices}{11}{}%
+\contentsline {chapter}{\numberline {A}Locked states}{12}{}%

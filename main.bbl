@@ -19,35 +19,315 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{einstein}{article}{}
-      \name{author}{1}{}{%
-        {{hash=3ebf53e52a3ce84f0ffb8553200a6a63}{%
-           family={Einstein},
-           familyi={E\bibinitperiod},
-           given={Albert},
+    \entry{Nakajima2019}{article}{}
+      \name{author}{14}{}{%
+        {{hash=b9b20d8108b2b716c1d1acdeb9363da3}{%
+           family={Nakajima},
+           familyi={N\bibinitperiod},
+           given={Takashi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e5affeb60c5b106079be1f8c43e00312}{%
+           family={Noiri},
+           familyi={N\bibinitperiod},
+           given={Akito},
            giveni={A\bibinitperiod}}}%
+        {{hash=104c16f21dac8ed90e3c74d6681cb784}{%
+           family={Yoneda},
+           familyi={Y\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2428bd93db6aa485aa6b3ec9202acea3}{%
+           family={Delbecq},
+           familyi={D\bibinitperiod},
+           given={Matthieu\bibnamedelima R},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=c8ad6ebdc162d025f440bf08b2c0368f}{%
+           family={Stano},
+           familyi={S\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=75cfc771ebc8912da45886938c99dd19}{%
+           family={Otsuka},
+           familyi={O\bibinitperiod},
+           given={Tomohiro},
+           giveni={T\bibinitperiod}}}%
+        {{hash=5e6f8eaf923121a756bc2ee303eb2984}{%
+           family={Takeda},
+           familyi={T\bibinitperiod},
+           given={Kenta},
+           giveni={K\bibinitperiod}}}%
+        {{hash=fb80f7a655ec34fe8222caddb739e809}{%
+           family={Amaha},
+           familyi={A\bibinitperiod},
+           given={Shinichi},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4ab78e53233a213e69e69346e6677727}{%
+           family={Allison},
+           familyi={A\bibinitperiod},
+           given={Giles},
+           giveni={G\bibinitperiod}}}%
+        {{hash=27b87b80430177dda9a9a261f222b9e5}{%
+           family={Kawasaki},
+           familyi={K\bibinitperiod},
+           given={Kento},
+           giveni={K\bibinitperiod}}}%
+        {{hash=7d8880f72ef6331c364a28784fb9dcd8}{%
+           family={Ludwig},
+           familyi={L\bibinitperiod},
+           given={Arne},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fd280b055f71ee021d106f6b7431c050}{%
+           family={Wieck},
+           familyi={W\bibinitperiod},
+           given={Andreas\bibnamedelima D},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=484a7301172505faf210926187741479}{%
+           family={Loss},
+           familyi={L\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4456d8a640205d83cdbc3d7e14c81516}{%
+           family={Tarucha},
+           familyi={T\bibinitperiod},
+           given={Seigo},
+           giveni={S\bibinitperiod}}}%
       }
-      \strng{namehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \strng{fullhash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \strng{bibnamehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \strng{authorbibnamehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \strng{authornamehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \strng{authorfullhash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \strng{namehash}{31627424433234c82bfd0066e3b6e70f}
+      \strng{fullhash}{4346e00fa199590112d8c99ff64d342c}
+      \strng{bibnamehash}{31627424433234c82bfd0066e3b6e70f}
+      \strng{authorbibnamehash}{31627424433234c82bfd0066e3b6e70f}
+      \strng{authornamehash}{31627424433234c82bfd0066e3b6e70f}
+      \strng{authorfullhash}{4346e00fa199590112d8c99ff64d342c}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Annalen der Physik}
-      \field{number}{10}
-      \field{title}{{Zur Elektrodynamik bewegter Körper}. ({German}) [{On} the electrodynamics of moving bodies]}
-      \field{volume}{322}
-      \field{year}{1905}
-      \field{pages}{891\bibrangedash 921}
-      \range{pages}{31}
+      \field{abstract}{Measurements of quantum systems inevitably involve disturbance in various forms. Within the limits imposed by quantum mechanics, there exists an ideal projective measurement that does not introduce a back action on the measured observable, known as a quantum non-demolition (QND) measurement 1,2. Here we demonstrate an all-electrical QND measurement of a single electron spin in a gate-defined quantum dot. We entangle the single spin with a two-electron, singlet-triplet ancilla qubit via the exchange interaction 3,4 and then read out the ancilla in a single shot. This procedure realizes a disturbance free projective measurement of the single spin at a rate two orders of magnitude faster than its relaxation. The QND nature of the measurement protocol 5,6 enables enhancement of the overall measurement fidelity by repeating the protocol. We demonstrate a monotonic increase of the fidelity over 100 repetitions against arbitrary input states. Our analysis based on statistical inference is tolerant to the presence of the relaxation and dephasing. We further exemplify the QND character of the measurement by observing spontaneous flips (quantum jumps) 7 of a single electron spin. Combined with the high-fidelity control of spin qubits 8-13 , these results will allow for various measurement-based quantum state manipulations including quantum error correction protocols 14. Spin-based qubits in semiconductor quantum dots 15 are a promising platform for universal quantum computing due to their high-fidelity coherent control, scalability and industry-compatible architecture. One of the current bottlenecks for the single-electron spin qubit is the fidelity and speed of its initialization and measurement. This limitation is due to the inherently destructive nature of the single-shot measurement method currently used 16. Quantum non-demolition (QND) measurements offer unique possibilities to overcome this issue using techniques such as repetitive readout 6 and feedback-controlled initialization 17. However, a QND measurement has remained elusive for electron spins, in contrast to other solid-state systems such as superconducting qubits 5 , or nuclear spins in diamond colour centres 18,19 and silicon donors 20. While particular types of photonic readout of electron spins 7,21,22 can, in principle, be QND, their QND nature has not been demonstrated so far. Moreover, QND measurement via an ancillary qubit is crucial 14 for measurement-based quantum algorithms including quantum error correction codes. We use a readout ancilla based on a singlet-triplet qubit 23 to demonstrate the QND measurement of a single electron spin in a GaAs/AlGaAs triple quantum dot (TQD) device (Fig. 1a,b). The single-spin eigenstates |↑〉 and |↓〉 of the electron in the left dot serve as a natural basis for the spin qubit. The Hamiltonian is written as = − E 2 z S Z using the Zeeman energy E Z and the Pauli operator z , with σ z = ±1 denoting its eigenvalue. The ancilla qubit is encoded in a two-dimensional space spanned by |↑↓〉 and |↓↑〉, where the first and second arrow denote the electron spin in the centre and right dots (both singly occupied), respectively. Using the pseudo-spin operators i A with i ∈ \{x, y, z\} for these two basis states, the corresponding Hamiltonian is = − + E J 2 2 z x A Z A A A , where ΔE Z and J A are the Zeeman field gradient and the exchange coupling , respectively, between the centre and right dots. The ancilla measurement is done by projecting it onto = = −− S () 1 2 or = = + + T () 1 2 (eigenstates of x A). In this hybrid system 3,4 , the energy splittings are gate-tunable due to the presence of the interaction term = − (1) J z z int 4 A (Fig. 1c). Namely, the inter-qubit exchange J is controlled through the wavefunction overlap between the left and centre dots. Viewed from the ancilla qubit, int changes the energy splitting of |↑↓〉 and |↓↑〉 by −Jσ z /2, making it dependent on the single-spin state. The dependence allows us to entangle the two qubits and extract information on the single spin via the readout of the ancilla in the following steps (Fig. 1d). Suppose that the single spin starts in an initial state |ψ〉 = α|↑〉 + β|↓〉, and is decoupled from the ancilla (J = 0). We first initialize the ancilla to its ground state |S〉 (an eigenstate of x A) by temporarily increasing J A. After that, we change the energy detunings between neighbouring dots to turn J A off and J on 4. Now that the ancilla eigenstates are |↑↓〉 and |↓↑〉 split by ΔE Z − Jσ z /2, the ancilla precesses in a plane of the Bloch sphere containing |S〉 and |T〉. After time τ, which we call the interaction time, the precession angle (or the relative phase of |↑↓〉 and |↓↑〉) becomes ϕ A − ϕ C σ z /2, where we define phases independent of and dependent on σ z , ϕ A = ΔE Z τ/ħ + ϕ 0 and ϕ C = Jτ/ħ, respectively (ϕ 0 is an offset due to the control pulse, as described in the Methods). The precession is terminated by a projective measurement of the ancilla onto the |S〉-|T〉 basis (spin blockade), giving an outcome M ∈ \{S, T\}. Figure 1e shows an example of the τ-dependence of the probability of finding a singlet P(M = S). It reflects the growth of phases ϕ A + ϕ C /2 for |ψ〉 = |↓〉 and ϕ A − ϕ C /2 for |↑〉, respectively. The ancilla measurement is most informative about the single-spin state if the two}
+      \field{journaltitle}{Nature Nanotechnology}
+      \field{title}{Quantum non-demolition measurement of an electron spin qubit}
+      \field{volume}{14}
+      \field{year}{2019}
       \verb{doi}
-      \verb http://dx.doi.org/10.1002/andp.19053221004
+      \verb 10.1038/s41565-019-0426-x
       \endverb
-      \keyw{physics}
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/s41565-019-0426-x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/s41565-019-0426-x
+      \endverb
+    \endentry
+    \entry{Oakes2022}{article}{}
+      \name{author}{21}{}{%
+        {{hash=002f4591fdfd23012b299cecbc1624d7}{%
+           family={Oakes},
+           familyi={O\bibinitperiod},
+           given={G\bibnamedelima A},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=1aab47db5e62a32aedffdfc9d6c78e69}{%
+           family={Ciriano-Tejel},
+           familyi={C\bibinithyphendelim T\bibinitperiod},
+           given={V\bibnamedelima N},
+           giveni={V\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=ec2654323650a5c0d74e029a58bb6b85}{%
+           family={Wise},
+           familyi={W\bibinitperiod},
+           given={D\bibnamedelima F},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=d8ea578017f170b9b174c2adbbf58302}{%
+           family={Fogarty},
+           familyi={F\bibinitperiod},
+           given={M\bibnamedelima A},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=bfd0966883dd7abed6f12c6afaa6fe45}{%
+           family={Lundberg},
+           familyi={L\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=82a7be6836881fbce393b4cec86f2652}{%
+           family={Lainé},
+           familyi={L\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1bda1ed0d304cb4dd8dce235c1fd94d7}{%
+           family={Schaal},
+           familyi={S\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d4ec2b78ab591849bd82dd9319fdbb6f}{%
+           family={Martins},
+           familyi={M\bibinitperiod},
+           given={F},
+           giveni={F\bibinitperiod}}}%
+        {{hash=40b71913579ea1919b76bf7e3da75b3b}{%
+           family={Ibberson},
+           familyi={I\bibinitperiod},
+           given={D\bibnamedelima J},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=41702816f0c6924fb52a0e3ee395519e}{%
+           family={Hutin},
+           familyi={H\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+        {{hash=7fd715377052e10b67b7d795cecab173}{%
+           family={Bertrand},
+           familyi={B\bibinitperiod},
+           given={B},
+           giveni={B\bibinitperiod}}}%
+        {{hash=30d9a83066b32b8d1e4136ce2dac2832}{%
+           family={Stelmashenko},
+           familyi={S\bibinitperiod},
+           given={N},
+           giveni={N\bibinitperiod}}}%
+        {{hash=e061b25f5a6394c528ae5f478542414c}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={J\bibnamedelima W\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=ae65780e7eeb2d6296ce47f36efda4ff}{%
+           family={Ibberson},
+           familyi={I\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+        {{hash=218355ec9014c3bc96a2e67615984bea}{%
+           family={Hashim},
+           familyi={H\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4d5e83278371be79436430e7e7733c3b}{%
+           family={Siddiqi},
+           familyi={S\bibinitperiod},
+           given={I},
+           giveni={I\bibinitperiod}}}%
+        {{hash=b8e85c5e661557b8a07fe719c2c30bf1}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1a9045084eee7cffe3d1903f4b945ea1}{%
+           family={Vinet},
+           familyi={V\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f2813741f7e5f3b5202af6bbd1109977}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={C\bibnamedelima G},
+           giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=63bca9e7506702cd262ffcc2fe509bf5}{%
+           family={Morton},
+           familyi={M\bibinitperiod},
+           given={J\bibnamedelima J\bibnamedelima L},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=0b1abb1228c485fa691781eedefff062}{%
+           family={Gonzalez-Zalba},
+           familyi={G\bibinithyphendelim Z\bibinitperiod},
+           given={M\bibnamedelima F},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{a4efdac2d49338f840a50c84d22dcc89}
+      \strng{fullhash}{ac307c78fcfd24343d6ae3017267cdb9}
+      \strng{bibnamehash}{a4efdac2d49338f840a50c84d22dcc89}
+      \strng{authorbibnamehash}{a4efdac2d49338f840a50c84d22dcc89}
+      \strng{authornamehash}{a4efdac2d49338f840a50c84d22dcc89}
+      \strng{authorfullhash}{ac307c78fcfd24343d6ae3017267cdb9}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Three key metrics for readout systems in quantum processors are measurement speed, fidelity, and footprint. Fast high-fidelity readout enables midcircuit measurements, a necessary feature for many dynamic algorithms and quantum error correction, while a small footprint facilitates the design of scalable, highly connected architectures with the associated increase in computing performance. Here, we present two complementary demonstrations of fast high-fidelity single-shot readout of spins in silicon quantum dots using a compact, dispersive charge sensor: a radio-frequency single-electron box. The sensor, despite requiring fewer electrodes than conventional detectors, performs at the state of the art achieving spin readout fidelity of 99.2 in less than 6 μs fitted from a physical model. We demonstrate that low-loss high-impedance resonators, highly coupled to the sensing dot, in conjunction with Josephson parametric amplification are instrumental in achieving optimal performance. We quantify the benefit of Pauli spin blockade over spin-dependent tunneling to a reservoir, as the spin-to-charge conversion mechanism in these readout schemes. Our results place dispersive charge sensing at the forefront of readout methodologies for scalable semiconductor spin-based quantum processors.}
+      \field{title}{Fast High-Fidelity Single-Shot Readout of Spins in Silicon Using a Single-Electron Box}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1103/PhysRevX.13.011023
+      \endverb
+      \keyw{doi:10.1103/PhysRevX.13.011023 url:https://doi.org/10.1103/PhysRevX.13.011023}
+    \endentry
+    \entry{Vigneau2023}{article}{}
+      \name{author}{8}{}{%
+        {{hash=a19b5ca17663f02b1ead21b7d540ab3b}{%
+           family={Vigneau},
+           familyi={V\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=d8b7ba69a869fcd8d3fc86c69d63416e}{%
+           family={Fedele},
+           familyi={F\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod}}}%
+        {{hash=c4fe61cb8ed39fcbcf87b2d0ab69a540}{%
+           family={Chatterjee},
+           familyi={C\bibinitperiod},
+           given={Anasua},
+           giveni={A\bibinitperiod}}}%
+        {{hash=da29117b6a330917dbf6860120e2bf16}{%
+           family={Reilly},
+           familyi={R\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4b4ad9d02ce09f8ec3a95780812e6d64}{%
+           family={Kuemmeth},
+           familyi={K\bibinitperiod},
+           given={Ferdinand},
+           giveni={F\bibinitperiod}}}%
+        {{hash=9c604095b4f509bcbb1f5f00e644c43c}{%
+           family={Gonzalez-Zalba},
+           familyi={G\bibinithyphendelim Z\bibinitperiod},
+           given={M\bibnamedelima Fernando},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=df5fa02bbe7f8b40e4ef0e8fa3e72d9a}{%
+           family={Laird},
+           familyi={L\bibinitperiod},
+           given={)\bibnamedelima Edward},
+           giveni={)\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=23f12ab6177ead0df92ff1864849c083}{%
+           family={Ares},
+           familyi={A\bibinitperiod},
+           given={Natalia},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{c8d6bcba7804f9081a2790bf7215cef1}
+      \strng{fullhash}{14ec4361be861ed0b4fc6e8a1bd9f86c}
+      \strng{bibnamehash}{c8d6bcba7804f9081a2790bf7215cef1}
+      \strng{authorbibnamehash}{c8d6bcba7804f9081a2790bf7215cef1}
+      \strng{authornamehash}{c8d6bcba7804f9081a2790bf7215cef1}
+      \strng{authorfullhash}{14ec4361be861ed0b4fc6e8a1bd9f86c}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Many important phenomena in quantum devices are dynamic, meaning that they cannot be studied using time-averaged measurements alone. Experiments that measure such transient effects are collectively known as fast readout. One of the most useful techniques in fast electrical readout is radio-frequency reflectometry, which can measure changes in impedance (both resistive and reactive) even when their duration is extremely short, down to a microsecond or less. Examples of reflectometry experiments, some of which have been realised and others so far only proposed, include pro-jective measurements of qubits and Majorana devices for quantum computing, real-time measurements of mechanical motion and detection of non-equilibrium temperature fluctuations. However, all of these experiments must overcome the central challenge of fast readout: the large mismatch between the typical impedance of quantum devices (set by the resistance quantum) and of transmission lines (set by the impedance of free space). Here, we review the physical principles of radio-frequency reflectometry and its close cousins, measurements of radio-frequency transmission and emission. We explain how to optimise the speed and sensitivity of a radio-frequency measurement, and how to incorporate new tools such as superconducting circuit elements and quantum-limited amplifiers into advanced radio-frequency experiments. Our aim is threefold: to introduce the readers to the technique, to review the advances to date and to motivate new experiments in fast quantum device dynamics. Our intended audience includes experimentalists in the field of quantum electronics who want to implement radio-frequency experiments or improve them, together with physicists in related fields who want to understand how the most important radio-frequency measurements work. CONTENTS}
+      \field{title}{Probing quantum devices with radio-frequency reflectometry}
+      \field{year}{2023}
+    \endentry
+    \entry{Wiseman1996}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d7fa9c56b64ff01adb56e14f56d12acc}{%
+           family={Wiseman},
+           familyi={W\bibinitperiod},
+           given={Howard\bibnamedelima M},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{d7fa9c56b64ff01adb56e14f56d12acc}
+      \strng{fullhash}{d7fa9c56b64ff01adb56e14f56d12acc}
+      \strng{bibnamehash}{d7fa9c56b64ff01adb56e14f56d12acc}
+      \strng{authorbibnamehash}{d7fa9c56b64ff01adb56e14f56d12acc}
+      \strng{authornamehash}{d7fa9c56b64ff01adb56e14f56d12acc}
+      \strng{authorfullhash}{d7fa9c56b64ff01adb56e14f56d12acc}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Quantum and Semiclassical Optics: Journal of the European Optical Society Part B}
+      \field{number}{1}
+      \field{title}{Quantum trajectories and quantum measurement theory}
+      \field{volume}{8}
+      \field{year}{1996}
+      \field{pages}{205}
+      \range{pages}{1}
     \endentry
   \enddatalist
 \endrefsection
