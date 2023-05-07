@@ -1,0 +1,25 @@
+\begin{bmatrix}
+5.5 & 0 & 0 & \dots & 0 \\
+0 & 4.3 & -i & \dots & 1 \\
+0 & -i & -6.0 & \dots & 0 \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+0 & 1 & 0 & \dots & 3.2
+\end{bmatrix}
+
+\begin{bmatrix}
+0 \\
+\vdots \\
+2\\
+\vdots \\
+227
+
+\end{bmatrix}
+
+\begin{bmatrix}
+17 \\
+\vdots \\
+1\\
+\vdots \\
+1
+
+\end{bmatrix}

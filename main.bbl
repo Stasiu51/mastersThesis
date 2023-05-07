@@ -19,6 +19,43 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Butcher1996}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8243f76db475c19fb4e78a700c85a343}{%
+           family={Butcher},
+           familyi={B\bibinitperiod},
+           given={J.C.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{8243f76db475c19fb4e78a700c85a343}
+      \strng{fullhash}{8243f76db475c19fb4e78a700c85a343}
+      \strng{bibnamehash}{8243f76db475c19fb4e78a700c85a343}
+      \strng{authorbibnamehash}{8243f76db475c19fb4e78a700c85a343}
+      \strng{authornamehash}{8243f76db475c19fb4e78a700c85a343}
+      \strng{authorfullhash}{8243f76db475c19fb4e78a700c85a343}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper constitutes a centenary survey of Runge-Kutta methods. It reviews some of the early contributions due to Runge, Heun, Kutta and Nyström and leads on to the theory of order of accuracy of Runge-Kutta methods, and includes a discussion of implicit methods, stability analysis and methods of error estimation and dense output.}
+      \field{issn}{0168-9274}
+      \field{journaltitle}{Applied Numerical Mathematics}
+      \field{number}{3}
+      \field{title}{A history of Runge-Kutta methods}
+      \field{volume}{20}
+      \field{year}{1996}
+      \field{pages}{247\bibrangedash 260}
+      \range{pages}{14}
+      \verb{doi}
+      \verb https://doi.org/10.1016/0168-9274(95)00108-5
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/0168927495001085
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/0168927495001085
+      \endverb
+    \endentry
     \entry{Nakajima2019}{article}{}
       \name{author}{14}{}{%
         {{hash=b9b20d8108b2b716c1d1acdeb9363da3}{%
@@ -115,6 +152,41 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1038/s41565-019-0426-x
+      \endverb
+    \endentry
+    \entry{cuda}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=a2fe9051fe051f819bd739ef3e340377}{%
+           family={NVIDIA},
+           familyi={N\bibinitperiod}}}%
+        {{hash=3ba5290ff73f02cbb72b7dafd1088aae}{%
+           family={Vingelmann},
+           familyi={V\bibinitperiod},
+           given={Péter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d3e7f971501ea31ce2bc16e2c490eb05}{%
+           family={Fitzek},
+           familyi={F\bibinitperiod},
+           given={Frank\bibnamedelima H.P.},
+           giveni={F\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{fa836513bc270a16195fdbae96d2fb6d}
+      \strng{fullhash}{fa836513bc270a16195fdbae96d2fb6d}
+      \strng{bibnamehash}{fa836513bc270a16195fdbae96d2fb6d}
+      \strng{authorbibnamehash}{fa836513bc270a16195fdbae96d2fb6d}
+      \strng{authornamehash}{fa836513bc270a16195fdbae96d2fb6d}
+      \strng{authorfullhash}{fa836513bc270a16195fdbae96d2fb6d}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{CUDA, release: 10.2.89}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://developer.nvidia.com/cuda-toolkit
+      \endverb
+      \verb{url}
+      \verb https://developer.nvidia.com/cuda-toolkit
       \endverb
     \endentry
     \entry{Oakes2022}{article}{}
@@ -330,6 +402,7 @@
       \range{pages}{1}
     \endentry
   \enddatalist
+  \missing{Tadokoro2021_2}
 \endrefsection
 \endinput
 

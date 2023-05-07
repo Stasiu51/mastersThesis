@@ -2,10 +2,13 @@
 \usepackage[utf8]{inputenc}
 \usepackage{minted}
 \usepackage[margin=0.7in]{geometry}
+
 \usepackage{biblatex} %Imports biblatex package
 \usepackage[toc,page]{appendix}
 \usepackage{siunitx}
 \usepackage{mathrsfs,mismath,amsfonts,amssymb,amsmath,mathabx, braket,diagbox,hhline}
+\usepackage{graphicx}
+\usepackage{epstopdf}
 
 \addbibresource{library.bib} %Import the bibliography file
 \title{Continuous Error Correction in Quantum Dot Qubits}
@@ -56,7 +59,7 @@ TODO flesh this out.
 
 
 
-The proposed qubit layout is given in figure \ref{fig:7qubitlayout}. In the scheme, the logical qubit is encoded in the \textit{odd parity subspace} of three qubits Q1, Q2, and Q3. There are two pairs of ancilla qubits: A1, A3, and A2, A4. Each of these is initially prepared in the $T_0$ triplet state. As shown in the figure, each pair of qubits Q1 and Q2, Q2 and Q3, is weakly coupled to one ancilla qubit through a voltage-controlled tunnel barrier. If the couplings are sufficiently well-tuned, the ancilla qubits will remain as triplets and no tunneling will occurr. When a bit-flip error occurrs on one of Q1, Q2 or Q3, this will cause one or both (depending on the error syndrome) of the ancilla pairs to rotate into a singlet state. This allows (subject to complexities discussed in section \ref{sec:tunneling_question}) tunneling between the electrons in the affected pair, which is registered as a change in dispersive response of the nearby resonator. Thus the error syndrome is immediately detected as a signal in the continuously monitored reflectometry circuit.
+The proposed qubit layout is given in figure \ref{fig:7qubitlayout}. The nature of the circuit requires a 2D array of quantum dot structures, of which there is not yet any published experimental demonstration, but a proposed architecture was proposed in \cite{Tadokoro2021_2}. In the scheme, the logical qubit is encoded in the \textit{odd parity subspace} of three qubits Q1, Q2, and Q3. There are two pairs of ancilla qubits: A1, A3, and A2, A4. Each of these is initially prepared in the $T_0$ triplet state. As shown in the figure, each pair of qubits Q1 and Q2, Q2 and Q3, is weakly coupled to one ancilla qubit through a voltage-controlled tunnel barrier. If the couplings are sufficiently well-tuned, the ancilla qubits will remain as triplets and no tunneling will occurr. When a bit-flip error occurrs on one of Q1, Q2 or Q3, this will cause one or both (depending on the error syndrome) of the ancilla pairs to rotate into a singlet state. This allows (subject to complexities discussed in section \ref{sec:tunneling_question}) tunneling between the electrons in the affected pair, which is registered as a change in dispersive response of the nearby resonator. Thus the error syndrome is immediately detected as a signal in the continuously monitored reflectometry circuit.
 
 \subsection{Theoretical treatment of scheme with second order perturbation theory}
 
@@ -147,16 +150,16 @@ When a bit-flip error occurs, the state will aquire a component in one of the er
 \end{align*}, where the $\delta_{Q1, Q3}$ phase term accounts for the difference in energy between the two branches, which is small compared to $\Lambda_t$, and irrelevant to our conclusion, so we ignore it. By comparison with equation \ref{eq:triplet_to_singlet}, we see that the A1,A3 ancilla pair in both branches will rotate into a triplet state with a characteristic timescale $1/\Lambda_t$. The same analysis yields for E2 error subspace:
 \begin{align*}
     \ket{\psi(t)} \approx &\alpha\ket{\downarrow\downarrow\uparrow}
-    (\ket{\uparrow\downarrow} + e^{ -i \Lambda_t t }\ket{\downarrow\uparrow})
-    (\ket{\uparrow\downarrow} + e^{ -i \Lambda_t t }\ket{\downarrow\uparrow})/2 \\
+    (\ket{\uparrow\downarrow} + e^{ -2 i \Lambda_t t }\ket{\downarrow\uparrow})
+    (\ket{\uparrow\downarrow} + e^{ -2 i \Lambda_t t }\ket{\downarrow\uparrow})/2 \\
     + e^{-4 i \Lambda_t t} &\beta\ket{\downarrow\downarrow\uparrow}
-    (\ket{\uparrow\downarrow} + e^{ i \Lambda_t t }\ket{\downarrow\uparrow})
-    (\ket{\uparrow\downarrow} + e^{ i \Lambda_t t }\ket{\downarrow\uparrow})/2
-\end{align*}, so that both pairs of ancillas rotate into singlets (at half the rate vs. the E1 case, but this detail is irrelevant at the timescales discussed). The E3 case is identical to the E1 case with the appropriate qubits exchanged, and leads to only the A2, A4 qubit pair rotating into a singlet.
+    (\ket{\uparrow\downarrow} + e^{ 2 i \Lambda_t t }\ket{\downarrow\uparrow})
+    (\ket{\uparrow\downarrow} + e^{ 2 i \Lambda_t t }\ket{\downarrow\uparrow})/2
+\end{align*}, so that both pairs of ancillas rotate into singlets. The E3 case is identical to the E1 case with the appropriate qubits exchanged, and leads to only the A2, A4 qubit pair rotating into a singlet.
 
 \subsection{Further questions related to tunnelling physics} \label{sec:tunneling_question}
 
-Much work has been done optimising the implementation and and examining the classical physics of reflectometry as a tool for quantum measurement. For a review see, e.g. \cite{Vigneau2023}, especially section VIII. During the project the author has not had time to study the physics behind this technique in detail. It appears, however, that present analyses treat the system semi-classically in assuming that an electron tunnels, or does not, within the measurement period (i.e. the period of time that the tunneling barrier between the pair of qubits is lowered), and seek to maximise the fidelity with which this charge-shifting event, or lack thereof, is detected. This tunneling event is interpreted as a projective measurement of the singlet/triplet system at the point of measurement, with probabilities of either state given by Born's rule. In the present case this is an insufficient analysis: at any given time, there is necessarily some finite component of the electron pair state that is a singlet, and we need to establish a rate at which tunnelling occurs as a function of the amplitude of this component. A full treatment of this problem probably needs to be formulated in terms of quantum master equations and the theory of quantum decoherence \cite{Wiseman1996}.
+Much work has been done optimising the implementation and and examining the classical physics of reflectometry as a tool for quantum measurement. For a review see, e.g. \cite{Vigneau2023}, especially section VIII. During the project the author has not had time to study the physics behind this technique in detail. It appears, however, that present analyses treat the system semi-classically in assuming that an electron tunnels, or does not, within the measurement period (i.e. the period of time that the tunneling barrier between the pair of qubits is lowered). They then seek to maximise the fidelity with which this charge-shifting event, or lack thereof, is detected. This tunneling event is interpreted as a projective measurement of the singlet/triplet system at the point of measurement, with probabilities of either state given by Born's rule. In the present case this is an insufficient analysis: at any given time, there is necessarily some finite component of the electron pair state that is a singlet, and we need to establish a rate at which tunnelling occurs as a function of the amplitude of this component. A full treatment of this problem probably needs to be formulated in terms of quantum master equations and the theory of quantum decoherence \cite{Wiseman1996}.
 
 Time has not permitted me to look into this issue, so at the suggestion of my supervisor I will make the simplifying assumption that any ancilla pair that aquires more than a 10\% square-amplitude of singlet immediately tunnels and is hence registered by the dispersive readout device with empirically determined fidelity.
 
@@ -174,26 +177,71 @@ I therefore designed a Hamiltonian simulation code, inspired by the work of Dr A
     \item \texttt{Evolution}, a python class which takes as input a Hamiltonian and a set of continuous time instructions to produce a time evolution of a given starting statevector.
 \end{enumerate}
 \subsection{Python extension: \texttt{FastHamiltoniser}}
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale = 0.8]{Figures/fasthamiltoniser/diagram.pdf}
+    \caption{How sparse Hamiltonian matrices are represented in the custom python extension \texttt{FastHamiltoniser}. The non-zero matrix elements are grouped into objects of type \texttt{Permuter}, whose structure is calculated in advance but whose activation and multiplicative coefficients are modified efficiently as runtime.}
+    \label{fig:fasthamiltoniser}
+\end{figure}
 \subsubsection{Structure of extension}
 The purpose of the simulator is to solve the Schrödinger equation
-\begin{equation*}
-    i\dot{\psi} = H \psi 
-\end{equation*} (here expressed in natural units) where $\psi$ is a vector in the occupation basis of a Hubbard Hamiltonian. In order to use Runge-Kutta \cite{Butcher1996} methods of integration, we need to be able to calculate this derivative efficiently at an arbitrary time and with arbitrary input. $H$ is typically very sparse, with the only off-diagonal terms given by magnetic drives and hopping couplngs, of which typically only a subset of size linear in the number of qubits are non-zero at a given time. 
+\begin{equation} \label{eq:schrodinger}
+    \dot{\psi} = -i H \psi 
+\end{equation} (here expressed in natural units $\hbar = 1$) where $\psi$ is a vector in the occupation basis of a Hubbard Hamiltonian. In order to use Runge-Kutta \cite{Butcher1996} methods of integration, we need to be able to calculate this derivative efficiently at an arbitrary time and with arbitrary input. $H$ is typically very sparse, with the only off-diagonal terms given by magnetic drives and hopping couplngs, of which typically only a subset of size linear in the number of qubits are non-zero at a given time. 
 
-To perform this calculation efficiently, I implemented the following data structure in C. A \texttt{HamiltonianMatrix} object contains basic data about the dimension of the array, as well as an array of pointers to objects of type \texttt{Permuter}. Each of these \texttt{Permuter} objects stores three arrays of equal length, two of integers representing source and target vector indices, and one of floats representing matrix coefficients, where each entry represents a matrix element. \texttt{Permuter}s store a coefficient, which can be changed over time by writing to a single variable, and can be turned on and off. The internal arrays are determined in advance of the simulation by python code, and thereafter only the strength and activations of the \texttt{Permuter} objects need be modified during the simulation. For example, one such object provides all the on-diagonal elements of the matrix, and another might provide all the off-diagonal elements associated with a particular J-coupling between two qubits.
+To perform this calculation efficiently, I implemented the following data structure in C. A \texttt{HamiltonianMatrix} object, illustrated in figure \ref{fig:fasthamiltoniser}, contains basic data about the dimension of the array, as well as an array of pointers to objects of type \texttt{Permuter}. Each of these \texttt{Permuter} objects stores three arrays of equal length, two of integers representing source and target vector indices, and one of floats representing matrix coefficients, where each entry represents a matrix element. \texttt{Permuter}s also store a complex coefficient, which can be changed over time by writing to a single variable, and a boolean representing whether it is `on' or `off'. The internal arrays are determined in advance of the simulation by python code, and thereafter only the strength and activations of the \texttt{Permuter} objects need be modified during the simulation. For example, one such object provides all the on-diagonal elements of the matrix, and another might provide all the off-diagonal elements associated with a particular J-coupling between two qubits.
+
+The calculation \ref{eq:schrodinger} can then be performed by iterating over the active permuters and building up the derivative vector according to the permutation and coefficient arrays. 
 \subsubsection{Interaction picture calculation}
-A further requirement that favoured the development of a custom C backend was the ability to perform simulations in the interaction picture. Performing simulations in the interaction picture is necessary due to the large differences in energy between eigenstates, for example due to the $U_i$ on-site repulsion in some states. With any choice of reference energy in a static basis, there are always states whose phase rotates much faster than the timescale of the evolutions that I wish to simulate, meaning there is no suitable step-size that captures the desired phenomena within reasonable computational time with the simulation remaining stable. Instead, we perform the following transformation to the interaction picture:
+A further requirement that favoured the development of a custom C backend was the ability to perform simulations in the interaction picture. Performing simulations in the interaction picture is necessary due to the large differences in energy between eigenstates, for example due to the $U_i$ on-site repulsion in some states. With any choice of reference energy in a static basis, there are always states whose phase rotate much faster than the timescale of the evolutions that I wish to simulate, meaning there is no suitable step-size that captures the desired phenomena within reasonable computational time with the simulation remaining stable. Instead, we perform the following transformation to the interaction picture:
 \begin{align*}
-    \dot{\psi_i} &= \sum_j{H_{ij}\psi_j}\\
+    \dot{\psi_i} &= -i\sum_j{H_{ij}\psi_j}\\
      \psi_i \rightarrow \phi_i &= e^{-i H_{ii} t} \psi_i \\
-    \Rightarrow \dot{\phi} &= \sum_{j\ne i}{e^{- i (H_{jj} - H_{ii})t} H_{ij}\phi_j}
+    \Rightarrow \dot{\phi} &= -i\sum_{j\ne i}{e^{- i (H_{jj} - H_{ii})t} H_{ij}\phi_j}
 \end{align*}.
 
 Since most off-diagonal terms $H_{ij}$ are zero at most points in time, this results in most states being stationary and lowering the rate of rotation of affected states to a longer timescale that can be simulated. It comes at the cost, however, of introducing a time-dependence into the hamiltonian. I wrote a C function to perform the matrix multiplication, only calculating the phase factors as required.
 
+\subsubsection{GPU acceleration}
+The calcluation to be performed is parallel in nature, and thus a candidate for GPU acceleration. I wrote the requisite kernels\footnote{This presented a lot of technical challenges as the process for incorporating CUDA C++ into python C extensions and compiling them is not documented and very technical. I made a template project with the setup to use in the future: https://github.com/Stasiu51/TemplateCudaEx} to perform the matrix multiplication in CUDA, a variant of C++ developed by Nvidia to control their graphics processing units (`GPU's) \cite{cuda}, one of which (a P620 Quadro) is installed in my laptop. On testing, the CUDA variant outperformed the CPU calculation only for systems with more than around 15 qubits, more than required and where the speed of computation is too slow for practical use anyway ($<10$ iterations per second, several orders of magnitude too slow for the simulations of the present project).
 
+\subsection{Python class for Hubbard model construction: \texttt{Hamiltonian}}
+This is a python class (and supporting code) that implements a Hubbard Hamiltonian, using \texttt{FastHamiltoniser} as a backend to store the underlying matrix. In particular it
+\begin{enumerate}
+    \item creates a list of basis vectors, represented as bit strings (with convenience functions for printing them in canonical notation), that span the fock basis of a system with a specified number of sites and number of electrons;
+    \item defines creation and annhilation operators on these states, which it uses to
+    \item construct the diagonal \texttt{Permuter} object that represents the self-energy terms due to chemical potential, coulomb repulsion, and static magnetic z-fields; and to
+    \item construct the off diagonal \texttt{Permuter} objects generated by hopping terms and x and y magnetic fields. It also
+    \item provides transformations to and from the interaction picture; and
+    \item provides functions for creating projector and X matrices in the fock basis, which are more involved to calculate than in the computational (single electron per site) basis. 
+\end{enumerate}
 
+\subsection{Python class for time evolution of statevector: \texttt{Evolution}}
+
+This class takes a reference to a \texttt{Hamiltonian} object, and a set\footnote{There is in fact only one such object, as they are defined in a recursive tree structure.} of objects that subclass the abstract base class \texttt{TimeStep} whose role is to provide instructions as to how to modify the parameters of the Hubbard model at given time. For example, one such object instructs the simulation to ramp a set of hopping couplings to a specified value over a given period of time, and another might oscillate the strength of the x component of the applied magnetic field at a given frequency and phase.
+
+The \texttt{scipy} routine \texttt{solve\_ivp} is used along with the calculations of the derivative described above in a Runge-Kutta 5th order \cite{Butcher1996} integration routine to calculate the evolution of a given initial statevector. The routine is designed to estimate the errors and dynamically choose a step size for the integration. This works poorly in the present use case, as the calculated (vector-norm) error scales with the number of non-zero elements of the vector. Instead, the code allows the user to manually specify a step size, typically around $1/10$ of the smallest relevant timescale of the system, and checks the continued normalisation of the statevector as an imperfect check on the stability of the simulation.
+
+Some demonstrations of the simulator and the results of a benchmarking exercise are shown in figure \ref{fig:benchmark}. 
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale = 0.85]{Figures/benchmark/benchmarks.pdf}
+    \caption{Testing the capabilities of the simulation software. \textbf{a.} A plot of 5-qubit system showing the amplitudes (solid lines) and phases (dashed lines) of significant basis states. The plot demonstrates of a CPHASE gate acting on the last two qubits, so that the $\ket{\downarrow\downarrow\downarrow\uparrow\uparrow}$ state acquires a phase shift of $\pi$. First an X gate is applied to each of the two qubits, then a coupling between them is applied, and finally a z-rotation is applied by increasing the static field (in practice the last step is unecessary). \textbf{b.} A sequence of X flips on a 3-qubit system. This circuit is generalised to N qubits to benchmark the simulator, with results given in \textbf{c.}. The results indicate a consistent speed of around 7.5 million statevector derivative elements calculated per second.
+    \label{fig:benchmark}}
+\end{figure}
 \section{Truly continuous error correction prototype}
+This section explains how the software described above was used to simulate the `truly continuous' error correction scheme developed in section \ref{sec:truly_continuous_theory}. In particular, we want to explore suitable physical parameters, such that when we initialise the system in an initial codespace state, and adiabatically turn on a weak coupling between the relevant qubits
+\begin{itemize}
+    \item the ancilla pairs remain in triplet states as long as the system remains in the codespace, for at least a time scale longer longer than ; and
+    \item when a bit-flip error is artificially introduced, one or both of the ancilla pairs rotates into a singlet, as appropriate to the error syndrome.
+\end{itemize}
+
+\subsubsection{Physical parameters}
+It is useful to survey the feasible ranges of the various physical paramters of the experiment based on experimental work to date. These can be found in table \ref{table:parameters}
+
+
+
+
 
 \chapter {Discussion}
 
@@ -202,6 +250,7 @@ Since most off-diagonal terms $H_{ij}$ are zero at most points in time, this res
 \printbibliography % TODO lots of incomplete references!
 
 \begin{appendices}
+\chapter{Detecting errors in ancilla qubits.}
 \chapter{Locked states}
 \end{appendices}
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.4)  5 MAY 2023 17:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.4)  7 MAY 2023 06:38
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -869,7 +869,32 @@ Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 \diagbox@outsepr=\dimen260
 ) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/hhline.sty
 Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
-) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen261
+\Gin@req@width=\dimen262
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf.sty
+Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
  (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
@@ -895,20 +920,20 @@ runsystem(del main.aex)...executed.
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -956,41 +981,32 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 15.
-Package biblatex Info: Reference segment=0 on input line 15.
-LaTeX Info: Command `\dddot' is already robust on input line 15.
-LaTeX Info: Command `\ddddot' is already robust on input line 15.
- (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
- (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+ (./main.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Tadokoro2021_2
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
-)
-\Gin@req@height=\dimen261
-\Gin@req@width=\dimen262
-) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-))
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 17.
+Package biblatex Info: Reference section=0 on input line 18.
+Package biblatex Info: Reference segment=0 on input line 18.
+LaTeX Info: Command `\dddot' is already robust on input line 18.
+LaTeX Info: Command `\ddddot' is already robust on input line 18.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 20.
  (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+esvect on input line 17.
+LaTeX Font Info:    Trying to load font information for U+esvect on input line 20.
  (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
  (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
  (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -1010,63 +1026,94 @@ Chapter 2.
 <Figures/7qubitlayout.png, id=21, 431.36156pt x 155.07938pt>
 File: Figures/7qubitlayout.png Graphic file (type png)
 <use Figures/7qubitlayout.png>
-Package pdftex.def Info: Figures/7qubitlayout.png  used on input line 45.
+Package pdftex.def Info: Figures/7qubitlayout.png  used on input line 48.
 (pdftex.def)             Requested size: 431.3605pt x 155.07898pt.
 [3
 
  <./Figures/7qubitlayout.png>]
-Overfull \hbox (29.69002pt too wide) detected at line 89
+
+LaTeX Warning: Citation 'Tadokoro2021_2' on page 4 undefined on input line 62.
+
+
+Overfull \hbox (29.69002pt too wide) detected at line 92
 []
  []
 
 [4] [5] [6]
 Chapter 3.
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 176.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 179.
+<Figures/fasthamiltoniser/diagram.pdf, id=50, 597.50786pt x 270.3012pt>
+File: Figures/fasthamiltoniser/diagram.pdf Graphic file (type pdf)
+<use Figures/fasthamiltoniser/diagram.pdf>
+Package pdftex.def Info: Figures/fasthamiltoniser/diagram.pdf  used on input line 182.
+(pdftex.def)             Requested size: 478.00693pt x 216.24124pt.
 
-LaTeX Warning: Citation 'Butcher1996' on page 7 undefined on input line 181.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7
 
-] [8]
+]
+Underfull \hbox (badness 1005) in paragraph at lines 206--206
+[][]\OT1/cmr/m/n/8 This pre-sented a lot of tech-ni-cal chal-lenges as the pro-cess for in-cor-po-rat-ing CUDA C++ into python C ex-ten-sions and
+ []
+
+
+Underfull \hbox (badness 1442) in paragraph at lines 206--206
+\OT1/cmr/m/n/8 com-pil-ing them is not doc-u-mented and very tech-ni-cal. I made a tem-plate project with the setup to use in the fu-ture:
+ []
+
+[8 <./Figures/fasthamiltoniser/diagram.pdf>]
+<Figures/benchmark/benchmarks.pdf, id=65, 597.50786pt x 184.94292pt>
+File: Figures/benchmark/benchmarks.pdf Graphic file (type pdf)
+<use Figures/benchmark/benchmarks.pdf>
+Package pdftex.def Info: Figures/benchmark/benchmarks.pdf  used on input line 228.
+(pdftex.def)             Requested size: 507.88408pt x 157.2022pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `table:parameters' on page 9 undefined on input line 240.
+
+[9] [10 <./Figures/benchmark/benchmarks.pdf>]
 Chapter 4.
-[9
+[11
 
-] [10
+] [12
 
-] [11
+] [13
 
 
 ]
 Appendix A.
-[12
+[14
+
+]
+Appendix B.
+[15
 
 ] (./main.aux)
 
 LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19114 strings out of 477961
- 395366 string characters out of 5836431
+ 19235 strings out of 477961
+ 399165 string characters out of 5836431
  1882068 words of memory out of 5000000
- 39074 multiletter control sequences out of 15000+600000
+ 39181 multiletter control sequences out of 15000+600000
  531137 words of font info for 104 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  77i,16n,76p,5627b,1323s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathb10.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha7.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathx10.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha10.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (14 pages, 247945 bytes).
+ <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathb10.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha7.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathx10.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha10.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on main.pdf (17 pages, 466982 bytes).
 PDF statistics:
- 188 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
+ 285 PDF objects out of 1000 (max. 8388607)
+ 168 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

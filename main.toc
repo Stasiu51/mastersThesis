@@ -18,8 +18,13 @@
 \contentsline {subsection}{\numberline {3.1.1}Python extension: \texttt {FastHamiltoniser}}{7}{}%
 \contentsline {subsubsection}{Structure of extension}{7}{}%
 \contentsline {subsubsection}{Interaction picture calculation}{8}{}%
-\contentsline {section}{\numberline {3.2}Truly continuous error correction prototype}{8}{}%
-\contentsline {chapter}{\numberline {4}Discussion}{9}{}%
-\contentsline {section}{\numberline {4.1}Conclusions}{9}{}%
-\contentsline {chapter}{Appendices}{11}{}%
-\contentsline {chapter}{\numberline {A}Locked states}{12}{}%
+\contentsline {subsubsection}{GPU acceleration}{8}{}%
+\contentsline {subsection}{\numberline {3.1.2}Python class for Hubbard model construction: \texttt {Hamiltonian}}{9}{}%
+\contentsline {subsection}{\numberline {3.1.3}Python class for time evolution of statevector: \texttt {Evolution}}{9}{}%
+\contentsline {section}{\numberline {3.2}Truly continuous error correction prototype}{9}{}%
+\contentsline {subsubsection}{Physical parameters}{9}{}%
+\contentsline {chapter}{\numberline {4}Discussion}{11}{}%
+\contentsline {section}{\numberline {4.1}Conclusions}{11}{}%
+\contentsline {chapter}{Appendices}{13}{}%
+\contentsline {chapter}{\numberline {A}Detecting errors in ancilla qubits.}{14}{}%
+\contentsline {chapter}{\numberline {B}Locked states}{15}{}%
