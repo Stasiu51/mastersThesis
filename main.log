@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.4)  9 MAY 2023 12:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.4)  10 MAY 2023 00:37
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -992,7 +992,21 @@ Package biblatex Warning: The following entry could not be found
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
+(biblatex)                Loss2021
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
 (biblatex)                Loss2022
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Nielsen2010
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -1014,6 +1028,13 @@ Package biblatex Warning: The following entry could not be found
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
 (biblatex)                Veldhorst2015
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Zwerver2022
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -1051,30 +1072,35 @@ Chapter 1.
 
 ]
 Chapter 2.
-<Figures/7qubitlayout.png, id=21, 431.36156pt x 155.07938pt>
-File: Figures/7qubitlayout.png Graphic file (type png)
-<use Figures/7qubitlayout.png>
-Package pdftex.def Info: Figures/7qubitlayout.png  used on input line 48.
-(pdftex.def)             Requested size: 431.3605pt x 155.07898pt.
+<Figures/7q.pdf, id=21, 597.50786pt x 170.71654pt>
+File: Figures/7q.pdf Graphic file (type pdf)
+<use Figures/7q.pdf>
+Package pdftex.def Info: Figures/7q.pdf  used on input line 50.
+(pdftex.def)             Requested size: 537.7521pt x 153.64345pt.
+
+Overfull \hbox (24.63466pt too wide) in paragraph at lines 50--51
+ [][] 
+ []
+
 [3
 
-{c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./Figures/7qubitlayout.png>]
+ <./Figures/7q.pdf>]
 
-LaTeX Warning: Citation 'Tadokoro2021_2' on page 4 undefined on input line 62.
+LaTeX Warning: Citation 'Tadokoro2021_2' on page 4 undefined on input line 64.
 
 
-Overfull \hbox (29.69002pt too wide) detected at line 92
+Overfull \hbox (29.69002pt too wide) detected at line 94
 []
  []
 
-[4] [5] [6]
+[4{c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [5] [6]
 Chapter 3.
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 179.
-<Figures/fasthamiltoniser/diagram.pdf, id=50, 597.50786pt x 270.3012pt>
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 181.
+<Figures/fasthamiltoniser/diagram.pdf, id=56, 597.50786pt x 270.3012pt>
 File: Figures/fasthamiltoniser/diagram.pdf Graphic file (type pdf)
 <use Figures/fasthamiltoniser/diagram.pdf>
-Package pdftex.def Info: Figures/fasthamiltoniser/diagram.pdf  used on input line 182.
+Package pdftex.def Info: Figures/fasthamiltoniser/diagram.pdf  used on input line 184.
 (pdftex.def)             Requested size: 478.00693pt x 216.24124pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1082,66 +1108,66 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [7
 
 ]
-Underfull \hbox (badness 1005) in paragraph at lines 206--206
+Underfull \hbox (badness 1005) in paragraph at lines 208--208
 [][]\OT1/cmr/m/n/8 This pre-sented a lot of tech-ni-cal chal-lenges as the pro-cess for in-cor-po-rat-ing CUDA C++ into python C ex-ten-sions and
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 206--206
+Underfull \hbox (badness 1442) in paragraph at lines 208--208
 \OT1/cmr/m/n/8 com-pil-ing them is not doc-u-mented and very tech-ni-cal. I made a tem-plate project with the setup to use in the fu-ture:
  []
 
 [8 <./Figures/fasthamiltoniser/diagram.pdf>]
-<Figures/benchmark/benchmarks.pdf, id=65, 597.50786pt x 184.94292pt>
+<Figures/benchmark/benchmarks.pdf, id=71, 597.50786pt x 184.94292pt>
 File: Figures/benchmark/benchmarks.pdf Graphic file (type pdf)
 <use Figures/benchmark/benchmarks.pdf>
-Package pdftex.def Info: Figures/benchmark/benchmarks.pdf  used on input line 228.
+Package pdftex.def Info: Figures/benchmark/benchmarks.pdf  used on input line 230.
 (pdftex.def)             Requested size: 507.88408pt x 157.2022pt.
 
 
-LaTeX Warning: Citation 'Nielsen2010' on page 9 undefined on input line 232.
+LaTeX Warning: Citation 'Nielsen2010' on page 9 undefined on input line 234.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Citation 'Shim2022' on page 9 undefined on input line 249.
+LaTeX Warning: Citation 'Shim2022' on page 9 undefined on input line 251.
 
 
-LaTeX Warning: Citation 'Jock2018' on page 9 undefined on input line 251.
+LaTeX Warning: Citation 'Jock2018' on page 9 undefined on input line 253.
 
 
-LaTeX Warning: Citation 'Veldhorst2015' on page 9 undefined on input line 255.
-
-
-LaTeX Warning: Citation 'Loss2022' on page 9 undefined on input line 257.
+LaTeX Warning: Citation 'Veldhorst2015' on page 9 undefined on input line 257.
 
 
 LaTeX Warning: Citation 'Loss2022' on page 9 undefined on input line 259.
 
+
+LaTeX Warning: Citation 'Loss2022' on page 9 undefined on input line 261.
+
 [9]
-<Figures/shifts.pdf, id=71, 794.97pt x 346.89601pt>
+<Figures/shifts.pdf, id=77, 794.97pt x 346.89601pt>
 File: Figures/shifts.pdf Graphic file (type pdf)
 <use Figures/shifts.pdf>
-Package pdftex.def Info: Figures/shifts.pdf  used on input line 282.
+Package pdftex.def Info: Figures/shifts.pdf  used on input line 284.
 (pdftex.def)             Requested size: 317.98236pt x 138.75594pt.
  [10 <./Figures/benchmark/benchmarks.pdf>]
-<Figures/singlettriplet.pdf, id=163, 512.1496pt x 284.52756pt>
+<Figures/singlettriplet.pdf, id=169, 512.1496pt x 284.52756pt>
 File: Figures/singlettriplet.pdf Graphic file (type pdf)
 <use Figures/singlettriplet.pdf>
-Package pdftex.def Info: Figures/singlettriplet.pdf  used on input line 298.
+Package pdftex.def Info: Figures/singlettriplet.pdf  used on input line 300.
 (pdftex.def)             Requested size: 512.14835pt x 284.52686pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/flips.pdf, id=164, 597.50786pt x 199.1693pt>
+<Figures/flips.pdf, id=170, 597.50786pt x 199.1693pt>
 File: Figures/flips.pdf Graphic file (type pdf)
 <use Figures/flips.pdf>
-Package pdftex.def Info: Figures/flips.pdf  used on input line 305.
+Package pdftex.def Info: Figures/flips.pdf  used on input line 307.
 (pdftex.def)             Requested size: 519.82764pt x 173.27586pt.
 
-Overfull \hbox (6.71019pt too wide) in paragraph at lines 305--307
+Overfull \hbox (6.71019pt too wide) in paragraph at lines 307--309
  [][] 
  []
 
@@ -1153,6 +1179,18 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 pdfTeX warning: pdflatex.exe (file ./Figures/flips.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 Chapter 4.
+
+LaTeX Warning: Citation 'Loss2021' on page 13 undefined on input line 316.
+
+
+LaTeX Warning: Citation 'Zwerver2022' on page 13 undefined on input line 316.
+
+
+LaTeX Warning: Citation 'Loss2021' on page 13 undefined on input line 316.
+
+
+LaTeX Warning: Reference `chap:lockedstates' on page 13 undefined on input line 320.
+
 [13
 
 ] [14
@@ -1164,36 +1202,63 @@ Chapter 4.
 Appendix A.
 [16
 
-]
+] [17]
 Appendix B.
-[17
+<Figures/9q.pdf, id=914, 597.50786pt x 284.52756pt>
+File: Figures/9q.pdf Graphic file (type pdf)
+<use Figures/9q.pdf>
+Package pdftex.def Info: Figures/9q.pdf  used on input line 422.
+(pdftex.def)             Requested size: 537.7521pt x 256.07242pt.
 
-] (./main.aux)
+Overfull \hbox (24.63466pt too wide) in paragraph at lines 422--423
+ [][] 
+ []
+
+[18
+
+ <./Figures/9q.pdf>]
+Appendix C.
+<Figures/group/group.pdf, id=926, 540.60239pt x 483.69685pt>
+File: Figures/group/group.pdf Graphic file (type pdf)
+<use Figures/group/group.pdf>
+Package pdftex.def Info: Figures/group/group.pdf  used on input line 454.
+(pdftex.def)             Requested size: 324.36392pt x 290.22034pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19
+
+]
+<Figures/locked_states.pdf, id=930, 597.50786pt x 241.84843pt>
+File: Figures/locked_states.pdf Graphic file (type pdf)
+<use Figures/locked_states.pdf>
+Package pdftex.def Info: Figures/locked_states.pdf  used on input line 466.
+(pdftex.def)             Requested size: 478.00693pt x 193.479pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[20 <./Figures/group/group.pdf>] [21 <./Figures/locked_states.pdf>] [22] (./main.aux)
 
 LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19266 strings out of 477961
- 399961 string characters out of 5836431
- 1882068 words of memory out of 5000000
- 39207 multiletter control sequences out of 15000+600000
- 531446 words of font info for 105 fonts, out of 8000000 for 9000
+ 19297 strings out of 477961
+ 400627 string characters out of 5836431
+ 1885068 words of memory out of 5000000
+ 39233 multiletter control sequences out of 15000+600000
+ 532065 words of font info for 107 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  77i,16n,76p,5627b,1323s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathb10.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha7.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathx10.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha10.600pk><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (19 pages, 748958 bytes).
+ <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathx10.420pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha5.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha8.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha6.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathb10.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha7.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathx10.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha10.600pk><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on main.pdf (24 pages, 1209767 bytes).
 PDF statistics:
- 1038 PDF objects out of 1200 (max. 8388607)
- 664 compressed objects within 7 object streams
+ 1133 PDF objects out of 1200 (max. 8388607)
+ 713 compressed objects within 8 object streams
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
