@@ -23,8 +23,11 @@
 \contentsline {subsection}{\numberline {3.1.3}Python class for time evolution of statevector: \texttt {Evolution}}{9}{}%
 \contentsline {section}{\numberline {3.2}Truly continuous error correction prototype}{9}{}%
 \contentsline {subsubsection}{Physical parameters}{9}{}%
-\contentsline {chapter}{\numberline {4}Discussion}{11}{}%
-\contentsline {section}{\numberline {4.1}Conclusions}{11}{}%
-\contentsline {chapter}{Appendices}{13}{}%
-\contentsline {chapter}{\numberline {A}Detecting errors in ancilla qubits.}{14}{}%
-\contentsline {chapter}{\numberline {B}Locked states}{15}{}%
+\contentsline {subsection}{\numberline {3.2.1}Hubbard Hamiltonian setup}{10}{}%
+\contentsline {subsection}{\numberline {3.2.2}Energy shifts due to hopping coupling}{11}{}%
+\contentsline {subsection}{\numberline {3.2.3}Demonstrating the error propagation}{11}{}%
+\contentsline {chapter}{\numberline {4}Discussion}{13}{}%
+\contentsline {section}{\numberline {4.1}Conclusions}{13}{}%
+\contentsline {chapter}{Appendices}{15}{}%
+\contentsline {chapter}{\numberline {A}Detecting errors in ancilla qubits.}{16}{}%
+\contentsline {chapter}{\numberline {B}Locked states}{17}{}%

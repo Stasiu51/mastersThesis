@@ -62,28 +62,58 @@
 \@writefile{toc}{\contentsline {subsubsection}{GPU acceleration}{8}{}\protected@file@percent }
 \abx@aux@cite{0}{Butcher1996}
 \abx@aux@segm{0}{0}{Butcher1996}
+\abx@aux@cite{0}{Nielsen2010}
+\abx@aux@segm{0}{0}{Nielsen2010}
+\abx@aux@cite{0}{Shim2022}
+\abx@aux@segm{0}{0}{Shim2022}
+\abx@aux@cite{0}{Jock2018}
+\abx@aux@segm{0}{0}{Jock2018}
+\abx@aux@cite{0}{Hwang2017}
+\abx@aux@segm{0}{0}{Hwang2017}
+\abx@aux@cite{0}{Veldhorst2015}
+\abx@aux@segm{0}{0}{Veldhorst2015}
+\abx@aux@cite{0}{Loss2022}
+\abx@aux@segm{0}{0}{Loss2022}
+\abx@aux@cite{0}{Loss2022}
+\abx@aux@segm{0}{0}{Loss2022}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Python class for Hubbard model construction: \texttt  {Hamiltonian}}{9}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Python class for time evolution of statevector: \texttt  {Evolution}}{9}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {3.2}Truly continuous error correction prototype}{9}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{Physical parameters}{9}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Testing the capabilities of the simulation software. \textbf  {a.} A plot of 5-qubit system showing the amplitudes (solid lines) and phases (dashed lines) of significant basis states. The plot demonstrates of a CPHASE gate acting on the last two qubits, so that the $\mathinner {|{\downarrow \downarrow \downarrow \uparrow \uparrow }\rangle }$ state acquires a phase shift of $\pi $. First an X gate is applied to each of the two qubits, then a coupling between them is applied, and finally a z-rotation is applied by increasing the static field (in practice the last step is unecessary). \textbf  {b.} A sequence of X flips on a 3-qubit system. This circuit is generalised to N qubits to benchmark the simulator, with results given in \textbf  {c.}. The results indicate a consistent speed of around 7.5 million statevector derivative elements calculated per second. }}{10}{}\protected@file@percent }
+\abx@aux@cite{0}{Hwang2017}
+\abx@aux@segm{0}{0}{Hwang2017}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Testing the capabilities of the simulation software. \textbf  {a.} A plot of 5-qubit system showing the amplitudes (solid lines) and phases (dashed lines) of significant basis states. The plot demonstrates of a CPHASE gate acting on the last two qubits, so that the $\mathinner {|{\downarrow \downarrow \downarrow \uparrow \uparrow }\rangle }$ state acquires a phase shift of $\pi $. First an X gate is applied to each of the two qubits, then a coupling between them is applied, and finally a z-rotation is applied by increasing the static field\footnotemark . \textbf  {b.} A sequence of X flips on a 3-qubit system. This circuit is generalised to N qubits to benchmark the simulator, with results given in \textbf  {c.}. The results indicate a consistent speed of around 7.5 million statevector derivative elements calculated per second.}}{10}{}\protected@file@percent }
 \newlabel{fig:benchmark}{{3.2}{10}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Discussion}{11}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Table of the (negative) energy shifts due to coupling of each ancilla branch, of each computational branch, of each subspace.}}{10}{}\protected@file@percent }
+\newlabel{table:parameters}{{3.1}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Hubbard Hamiltonian setup}{10}{}\protected@file@percent }
+\newlabel{sec:reduced_basis_approx}{{3.2.1}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Energy shifts due to hopping coupling}{11}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces \textbf  {a.} shows the calculation of energy shifts of the various relevant computational basis states calculated with a coupling of $0.015\unit {\milli \electronvolt }$ applied. Only one branch $\mathinner {|{\uparrow \downarrow \uparrow }\rangle }$ of the computational state in each subspace is shown. This can be compared with the second order perturbation theory result calculated in table \ref {table:shifts}. The (absolute value of) the descrepancy between the simulation and the perturbation theory result is given in \textbf  {b.}. Note the scale in the second plot. }}{11}{}\protected@file@percent }
+\newlabel{fig:shifts}{{3.3}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Demonstrating the error propagation}{11}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces The effect of applying the hopping coupling to the system still inhabilting the codespace. \textbf  {a.} shows the (elementwise absolute value of the) hamiltonian matrix in the interaction picture at full strength. \textbf  {b.} shows the rate of aquisition of phase of the relevant basis states. The phase initially drops when the coupling is applied, and then the states slowly drift apart from one another in phase due to the difference in electron g-factor of around 30 \unit {\mega \hertz }. At this rate, the triplet will `flip' into a singlet after around 200 \unit {\nano \second }, so this combination of parameters (coupling strength = 0.015 \unit {\milli \electronvolt }) is not be suitable for error correction. Either the coupling or the g-factor inhomogeneity needs to be reduced. }}{12}{}\protected@file@percent }
+\newlabel{fig:beforeflip}{{3.4}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Demonstrating the expected behaviour of the ancillas when a bit flip error is artifitially introduced on one of the code qubits: Q1 is flipped in \textbf  {a.}, resulting in a rotation of the A2 ancilla; Q2 is flipped in \textbf  {b.}, resulting in \textit  {both} A2 and A3 rotating, and Q3 is flipped in \textbf  {c.}, so that A3 rotates only. In each case, the purple dashed line shows the expected frequency of rotation derived in section \ref {sec:truly_continuous_theory}, $\Lambda _t$. Note that the period of rotation is much faster than the other typical timescales of quantum dot qubit systems. }}{12}{}\protected@file@percent }
+\newlabel{fig:afterflip}{{3.5}{12}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Discussion}{13}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Conclusions}{11}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{Appendices}{13}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Detecting errors in ancilla qubits.}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Conclusions}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{Appendices}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Detecting errors in ancilla qubits.}{16}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {B}Locked states}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}Locked states}{17}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\abx@aux@read@bbl@mdfivesum{3BAA5D6C8849B8CA46B78770914B76A5}
+\abx@aux@read@bbl@mdfivesum{001C52EF0C019134AD0F5115DF9B3BB5}
+\abx@aux@read@bblrerun
 \abx@aux@defaultrefcontext{0}{Butcher1996}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{Hwang2017}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{Nakajima2019}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{cuda}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{Oakes2022}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{Vigneau2023}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{Wiseman1996}{nty/global//global/global}
-\gdef \@abspage@last{17}
+\gdef \@abspage@last{19}

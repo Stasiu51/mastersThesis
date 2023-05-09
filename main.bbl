@@ -56,6 +56,85 @@
       \verb https://www.sciencedirect.com/science/article/pii/0168927495001085
       \endverb
     \endentry
+    \entry{Hwang2017}{article}{}
+      \name{author}{9}{}{%
+        {{hash=c99ad1f0198b9bd3c851274b7c4f935d}{%
+           family={Hwang},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi C.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=f4687e40a665d6a148ea4dd33ed9f687}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={C.\bibnamedelimi H.},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=436f6cc4dcbe5432e118cdbc3972cdfb}{%
+           family={Veldhorst},
+           familyi={V\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d489e9be9f17cf656e60f5419c1f93d3}{%
+           family={Hendrickx},
+           familyi={H\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=d8ea578017f170b9b174c2adbbf58302}{%
+           family={Fogarty},
+           familyi={F\bibinitperiod},
+           given={M.\bibnamedelimi A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=369d6bcdceee817a8d812364032e7b23}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=5c18da544f762e93c7ba7e64e8ae14a8}{%
+           family={Hudson},
+           familyi={H\bibinitperiod},
+           given={F.\bibnamedelimi E.},
+           giveni={F\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=275f18458ca48cd0aa05cc274faed267}{%
+           family={Morello},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e7ad6d11638c7755a276c56843c14c2d}{%
+           family={Dzurak},
+           familyi={D\bibinitperiod},
+           given={A.\bibnamedelimi S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{b24a140ced23a6ca6f6c7c7dd50e0ba4}
+      \strng{fullhash}{774b2645b99b4642f659c7878d7b0b43}
+      \strng{bibnamehash}{b24a140ced23a6ca6f6c7c7dd50e0ba4}
+      \strng{authorbibnamehash}{b24a140ced23a6ca6f6c7c7dd50e0ba4}
+      \strng{authornamehash}{b24a140ced23a6ca6f6c7c7dd50e0ba4}
+      \strng{authorfullhash}{774b2645b99b4642f659c7878d7b0b43}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{4}
+      \field{journaltitle}{Phys. Rev. B}
+      \field{month}{7}
+      \field{title}{Impact of $g$-factors and valleys on spin qubits in a silicon double quantum dot}
+      \field{volume}{96}
+      \field{year}{2017}
+      \field{pages}{045302}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.96.045302
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.96.045302
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.96.045302
+      \endverb
+    \endentry
     \entry{Nakajima2019}{article}{}
       \name{author}{14}{}{%
         {{hash=b9b20d8108b2b716c1d1acdeb9363da3}{%
@@ -402,7 +481,11 @@
       \range{pages}{1}
     \endentry
   \enddatalist
+  \missing{Jock2018}
+  \missing{Loss2022}
+  \missing{Shim2022}
   \missing{Tadokoro2021_2}
+  \missing{Veldhorst2015}
 \endrefsection
 \endinput
 

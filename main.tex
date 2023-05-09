@@ -200,7 +200,7 @@ A further requirement that favoured the development of a custom C backend was th
     \Rightarrow \dot{\phi} &= -i\sum_{j\ne i}{e^{- i (H_{jj} - H_{ii})t} H_{ij}\phi_j}
 \end{align*}.
 
-Since most off-diagonal terms $H_{ij}$ are zero at most points in time, this results in most states being stationary and lowering the rate of rotation of affected states to a longer timescale that can be simulated. It comes at the cost, however, of introducing a time-dependence into the hamiltonian. I wrote a C function to perform the matrix multiplication, only calculating the phase factors as required.
+Since most off-diagonal terms $H_{ij}$ are zero at most points in time, this results in most states being stationary and lowering the rate of rotation of affected states to a longer timescale that can be simulated. It introduces the additional complexity, however, of introducing a time-dependence into the hamiltonian. I wrote a C function to perform the modified matrix multiplication, calculating the phase factors as required.
 
 \subsubsection{GPU acceleration}
 The calcluation to be performed is parallel in nature, and thus a candidate for GPU acceleration. I wrote the requisite kernels\footnote{This presented a lot of technical challenges as the process for incorporating CUDA C++ into python C extensions and compiling them is not documented and very technical. I made a template project with the setup to use in the future: https://github.com/Stasiu51/TemplateCudaEx} to perform the matrix multiplication in CUDA, a variant of C++ developed by Nvidia to control their graphics processing units (`GPU's) \cite{cuda}, one of which (a P620 Quadro) is installed in my laptop. On testing, the CUDA variant outperformed the CPU calculation only for systems with more than around 15 qubits, more than required and where the speed of computation is too slow for practical use anyway ($<10$ iterations per second, several orders of magnitude too slow for the simulations of the present project).
@@ -226,9 +226,10 @@ Some demonstrations of the simulator and the results of a benchmarking exercise 
 \begin{figure}[h]
     \centering
     \includegraphics[scale = 0.85]{Figures/benchmark/benchmarks.pdf}
-    \caption{Testing the capabilities of the simulation software. \textbf{a.} A plot of 5-qubit system showing the amplitudes (solid lines) and phases (dashed lines) of significant basis states. The plot demonstrates of a CPHASE gate acting on the last two qubits, so that the $\ket{\downarrow\downarrow\downarrow\uparrow\uparrow}$ state acquires a phase shift of $\pi$. First an X gate is applied to each of the two qubits, then a coupling between them is applied, and finally a z-rotation is applied by increasing the static field (in practice the last step is unecessary). \textbf{b.} A sequence of X flips on a 3-qubit system. This circuit is generalised to N qubits to benchmark the simulator, with results given in \textbf{c.}. The results indicate a consistent speed of around 7.5 million statevector derivative elements calculated per second.
-    \label{fig:benchmark}}
+    \caption{Testing the capabilities of the simulation software. \textbf{a.} A plot of 5-qubit system showing the amplitudes (solid lines) and phases (dashed lines) of significant basis states. The plot demonstrates of a CPHASE gate acting on the last two qubits, so that the $\ket{\downarrow\downarrow\downarrow\uparrow\uparrow}$ state acquires a phase shift of $\pi$. First an X gate is applied to each of the two qubits, then a coupling between them is applied, and finally a z-rotation is applied by increasing the static field\protect\footnotemark. \textbf{b.} A sequence of X flips on a 3-qubit system. This circuit is generalised to N qubits to benchmark the simulator, with results given in \textbf{c.}. The results indicate a consistent speed of around 7.5 million statevector derivative elements calculated per second.}
+    \label{fig:benchmark}
 \end{figure}
+\footnotetext{Applying a Z unitary rotation is not a capability typically built into such processors as it is unnecessary due to a technique called $Rz$ delaying (see, e.g. \cite{Nielsen2010} chapter 4.), but I implement it here to make the operation of the CPHASE clearer.}
 \section{Truly continuous error correction prototype}
 This section explains how the software described above was used to simulate the `truly continuous' error correction scheme developed in section \ref{sec:truly_continuous_theory}. In particular, we want to explore suitable physical parameters, such that when we initialise the system in an initial codespace state, and adiabatically turn on a weak coupling between the relevant qubits
 \begin{itemize}
@@ -237,7 +238,74 @@ This section explains how the software described above was used to simulate the 
 \end{itemize}
 
 \subsubsection{Physical parameters}
-It is useful to survey the feasible ranges of the various physical paramters of the experiment based on experimental work to date. These can be found in table \ref{table:parameters}
+It is useful to survey the orders of magnitude of the various physical paramters of the experiment based on theoretical and experimental work to date. These can be found in table \ref{table:parameters}. As this is an exploratory piece of thoeretical work, I will take these as fairly liberal bounds.
+
+\begin{table}
+    \centering
+\begin{tabular}{|c|c|c|c|}
+    \hline
+    Parameter & Symbol & Range & Example Reference\\
+    \hline
+    On-site coulomb repulsion & $U_i$ & $\sim 1\mathrm{Ry} \sim$ 1-10 \unit{\milli\electronvolt} & \cite{Shim2022}\\
+    \hline 
+    Static magnetic ($z$) field & $B_i^z$ & 1 - 10 \unit{\tesla} & \cite{Jock2018} \\
+    \hline
+    Variation in electron g factor & $\delta B_i^z$ &0.01 - 0.1 \unit{\mega\hertz} &\cite{Hwang2017} \\
+    \hline
+    Hopping coupling strength & $t_{ij}$ &$0.001 - 0.01$ \unit{\milli\electronvolt} & \cite{Veldhorst2015} \\
+    \hline
+    Phase flip coherence time &$ T_2^*$ & up to $10^3$\unit{\nano\second} in Si, $10^5$\unit{\nano\second} in $^{28}$Si & \cite{Loss2022}\\
+    \hline
+    Bit flip coherence/relaxation time &$T_1$&up to $10^6$\unit{\nano\second} in normal Si& \cite{Loss2022}\\
+    \hline
+
+\end{tabular}
+\caption{Table of the (negative) energy shifts due to coupling of each ancilla branch, of each computational branch, of each subspace.}\label{table:parameters}
+\end{table}
+
+\subsection{Hubbard Hamiltonian setup} \label{sec:reduced_basis_approx}
+The software enables us to set up a qubit basis that explicitly models the qubit layout shown in \ref{fig:7qubitlayout}, with three code qubits and two pairs of ancilla qubits. This seven-qubit system has a fock basis of dimension 3432, which is just about feasible to simulate using the software I developed (simulations of sufficiently small time step take several minutes each, and there are memory limitations in storing the results). However, this can be sped up by noting that in the circuit to be simulated, the second of each pair of ancillas, A3 and A4, do not experience any coupling, so the hamiltonian is always diagonal in these dimensions. Furthermore, the ancilla part of all states that are non-zero in the simulation are constructed out of the $\ket{\uparrow\downarrow}$ and $\ket{\downarrow\uparrow}$ states with respect to these pairs of qubits, as well as non-computational states. Therefore, we may reduce our basis if we make an appropriate modification to the Hamiltonian:
+\begin{align*}
+    \ket{\dots \uparrow\downarrow\uparrow\downarrow} &\rightarrow \ket{\dots \uparrow\uparrow} &
+    \ket{\dots \uparrow\downarrow\downarrow\uparrow} &\rightarrow \ket{\dots \uparrow\downarrow}\\
+    \ket{\dots \downarrow\uparrow\uparrow\downarrow} &\rightarrow \ket{\dots \downarrow\uparrow} &
+    \ket{\dots \downarrow\uparrow\downarrow\uparrow} &\rightarrow \ket{\dots \downarrow\downarrow}\\
+    E_{A1}^z &\rightarrow E_{A1}^z - E_{A3}^z & E_{A2}^z &\rightarrow E_{A2}^z - E_{A4}^z
+\end{align*} this does not affect the energy levels of any of the computational states, and only affects the non-computational basis states by a quantity of order $E_i^z \ll U_i$. If we accept this approximation, we can reduce our basis size to 252, which increases the simulation speed by a factor of around $14 - 20\times$ (this is a non-linear speedup as all the simulation data now fits into memory).
+
+Also note that most variation in spin energy from site to site come from variation in the electron G factor at different sites rather than inhomogenaities in the magnetic field \cite{Hwang2017}. It is convenient and equivalent, however, to simply include these variations into the magnetic field\footnote{Although my software does have the capability to vary the electron g-factor from site to site, it is simpler not to use it. }
+
+\subsection{Energy shifts due to hopping coupling}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale = 0.4]{Figures/shifts.pdf}
+    \caption{\textbf{a.} shows the calculation of energy shifts of the various relevant computational basis states calculated with a coupling of $0.015\unit{\milli\electronvolt}$ applied. Only one branch $\ket{\uparrow\downarrow\uparrow}$ of the computational state in each subspace is shown. This can be compared with the second order perturbation theory result calculated in table \ref{table:shifts}. The (absolute value of) the descrepancy between the simulation and the perturbation theory result is given in \textbf{b.}. Note the scale in the second plot.
+    \label{fig:shifts}}
+\end{figure}
+It is important to know the energies of the perturbed computational states for two reasons: firstly, in order to validate the second-order perturbation theory results in section \ref{sec:truly_continuous_theory}; and secondly knowing the exact energies of these states is important if one is to use oscillating microwave signals to drive transitions between the states, to implement unitary rotations on the qubits while the coupling is active.
+
+We find these by the following procedure: we initialise the system in the computational basis state of interest, and the hamiltonian with all couplings zero. we perform an interaction picture simulation where the couplings are ramped up to the steady state value over a time period that is sufficiently long so as to ensure adiabatic evolution of the state ($100\times\braket{U_i}^{-1}$ as this is the shortest timescale in the system). We compare this state to a list of the eigenvectors of the matrix generated by the Hamiltonian with the coupling at full strength. The eigenvector which has the maximal inner product with this state (the inner product is close to unity for the correct state, and close to zero otherwise) is the perturbed eigenvector associated with the original state in the computational basis state, and we take the associated eigenvalue as the perturbed energy.
+
+The results for a coupling of 0.015\unit{\milli\electronvolt}, which is slightly higher than a typical coupling, and other typical experimental parameters are given in figure \ref{fig:shifts}. The simulation agrees with the perturbation theory calculation within 1\%. The agreement is closer for smaller coupling values.
+
+\subsection{Demonstrating the error propagation}
+We now want to demonstrate the process of propagation by which bit-flip errors in the code qubits Q1, Q2, Q3 result in the relevant ancilla pairs rotating into singlets, or in the reduced basis approximation decribed in \ref{sec:reduced_basis_approx}, the qubits A1 and A2 rotating from $(\ket{\uparrow} + \ket{\downarrow})/\sqrt{2}$ to $(\ket{\uparrow} - \ket{\downarrow})/\sqrt{2}$, which is equivalent.
+
+We can acheive this by initialising the code qubits in the codespace, and then adiabatically turning on the coupling. We let this system run in steady state for enough time to establish the rate at which the singlets are introduced in the codespace. We then instantaneously apply an X unitary on one of the qubits by, and continue to let the simulation run. Afterwards, we can project the resulting time-evolved statevector data into the singlet and triplet spaces. The system prior to the bit flip is shown in figure \ref{fig:beforeflip}, and the behvaiour when a bitflip is introduced mid-way through the simulation is shown in figure \ref{fig:afterflip}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale = 1]{Figures/singlettriplet.pdf}
+    \caption{The effect of applying the hopping coupling to the system still inhabilting the codespace. \textbf{a.} shows the (elementwise absolute value of the) hamiltonian matrix in the interaction picture at full strength. \textbf{b.} shows the rate of aquisition of phase of the relevant basis states. The phase initially drops when the coupling is applied, and then the states slowly drift apart from one another in phase due to the difference in electron g-factor of around 30 \unit{\mega\hertz}. At this rate, the triplet will `flip' into a singlet after around 200 \unit{\nano \second}, so this combination of parameters (coupling strength = 0.015 \unit{\milli\electronvolt}) is not be suitable for error correction. Either the coupling or the g-factor inhomogeneity needs to be reduced.
+    }\label{fig:beforeflip}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale = 0.87]{Figures/flips.pdf}
+    \caption{Demonstrating the expected behaviour of the ancillas when a bit flip error is artifitially introduced on one of the code qubits: Q1 is flipped in \textbf{a.}, resulting in a rotation of the A2 ancilla; Q2 is flipped in \textbf{b.}, resulting in \textit{both} A2 and A3 rotating, and Q3 is flipped in \textbf{c.}, so that A3 rotates only. In each case, the purple dashed line shows the expected frequency of rotation derived in section \ref{sec:truly_continuous_theory}, $\Lambda_t$. Note that the period of rotation is much faster than the other typical timescales of quantum dot qubit systems.
+    }\label{fig:afterflip}
+\end{figure}
 
 
 
