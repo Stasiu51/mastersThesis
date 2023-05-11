@@ -21,7 +21,7 @@
 \maketitle
 
 \begin{abstract}
-    Woop!
+Quantum error correction is essential if fault-tolerant quantum computing is to be realised. A class of techniques called `continuous quantum error correction' (CQEC) has been the subject of theoretical analysis and a recent experimental demonstration in superconducting qubits. Inspired by these works, and following an overview of the relevant physics, I develop a theoretical framework for analysing rapidly repeated discrete error correction in a general system using markovian transition matrix analysis. A scheme for implementing a truly continuous scheme in semiconductor quantum dot qubit devices is proposed, and an analysis of the scheme using second-order perturbation theory is presented. A software package for simulating these devices is developed and used to verify aspects of the proposal. It is concluded that this scheme is unlikely to find productive application in the near future owing to the limitations of current technology. Some more speculative proposals for continuous error detection and correction are given in the appendices, including the introduction of `locked states'. When a network of quantum dot qubits is placed in one of these states, the tunneling behaviour of the electrons is affected by any errors that occur on the qubits.
 \end{abstract}
 
 \tableofcontents
@@ -107,12 +107,18 @@ we see that the state of the system has moved into one of three error-spaces: $\
 \begin{equation}
     \alpha\ket{0} + \beta\ket{1} \rightarrow \alpha\ket{0} - \beta\ket{1}
 \end{equation}
-which can be achieved by further encoding the triple qubit state here into a triple of qubits in the Hadamard basis $\{\ket{+++},\ket{---}\}$. We can protect against either bit- or phase- flips, but doing both requires at least nine qubits and is therefore out of reach of the most modern semiconductor quantum devices, so is unlikely to form part of my project.
+which can be achieved by further encoding the triple qubit state here into a triple of qubits in the Hadamard basis $\{\ket{+++},\ket{---}\}$. We can protect against either bit- or phase- flips, but doing both requires nine qubits in this scheme. It is possible to perform full error correction against both bit and phase flips with just 5 qubits  using a much more complicated encoding scheme\cite{DiVincenzo1996}. The circuit for detecting and correcting errors for this five qubit code involves transforming some of the qubits into and out of the Hadamard basis between the syndrome measurments, and so the parity measurements could not be performed simultaneously as required for CQEC, and we focus on the three-bit bit-flip shor code for the remainder of the project.
 
 \section{Continuous quantum error correction}\label{sec:CQEC}
 The focus of the present project is to investigate \textit{continous quantum error correction} (CQEC) schemes, and in particular their application to semiconductor quantum dot qubit devices. 
 
-Continuous quantum error correction refers to a class of error correction schemes that rely on some always-on output signal from the qubit system to gain information about which subspace the qubits inhabit. The original theoretical formulation of these ideas proposed a system of \textit{continuous feedback} to the feedback based on the continuous output signal to reduce drift away from the codespace \cite{Ahn2002}.
+Continuous quantum error correction refers to a class of error correction schemes that rely on some always-on output signal from the qubit system to gain information about which subspace the qubits inhabit. The original theoretical formulation of these ideas proposed a system of \textit{continuous feedback} to the feedback based on the continuous output signal to reduce drift away from the codespace \cite{Ahn2002}. While there has been some continued development of this theory \cite{Cardona2018}\cite{Cardona2019}, the field has largely moved away from the idea of continuous feedback. Instead, the most promising development has been in an experimental demonstration in superconducting transmon qubits\footnote{These are another promising platform for quantum devices favoured by researchers including groups at Google and IBM. They currently (subject to some controversy) hold the records for the highest qubit counts in quantum devices, and recently claimed to perform a calculation surpassing the capabilities of classical computation `quantum supremacy' \cite{Arute2019}. For a review see \cite{Huang2020}.} of a system which uses a continuous noisy output signal from the qubits to constantly update its `best guess' at the current qubit state, but then applies \textit{discrete} correction flips to move the state back into the codespace when the system is sufficiently confident that an error has ocurred\cite{Dressel2022}. The scheme I propose in section \ref{sec:truly_continuous_theory} also relies on applying discrete correction flips on the basis of a form of continuous measurement. However, the physics of the two devices is very different: in superconducting devices, the two level system that implements a qubit consists of a mode of oscillation of a supercurrent through a Josephson junction, wheras in quantum dot qubits the qubit is implemented as the spin state of an electron. The physical implementation of such a continuous parity measurement is therefore necessarily quite different in the two cases.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale = 0.3]{Figures/dresseldiagram.png}
+    \caption{Taken from \cite{Dressel2022}. This diagram shows the principle behind the continuous error correction scheme implemented by Dressel et al., whereby an estimate of the current state of the qubits is continuously updated through two voltage signals that relate noisily to the parity state of the qubits. When threshold is reached (optimised for empirically) where the system decides an error has probably ocurred, it performs a correction flip, at which point the signal should drift back into the codespace.}
+    \label{fig:dresseldiagram}
+\end{figure}
 
 
 \chapter{Theory}
@@ -214,7 +220,7 @@ and the correction step as
 \end{equation}
 The evolution of the state in time in one step is given by $M = CE$ where $E$ and $C$ are the matrices defined in (\ref{eq:Ematrix}) and (\ref{eq:Cmatrix}) respectively. We prepare the system in a pure $\ket{000}$ state, $P_i = \delta_{i,0}$, and repeatedly apply $M$ to evolve the $P_i$.  
 \subsection{Further theory, and application}
-The transition matrix allows us to gain some insight into different error regimes, when the rate of equilibration out of the codespace is dominated by the process of two errors ocurring in one timestep, and when it is dominated by erroneous correction flips caused by incorrect parity measurements. This analysis is given in appendix \ref{appendix:flowanalysis}. These results allow for a simple understanding of certain experiments. For example, in \cite{Cramer2016}, a nuclear spin qubit experiment, the fidelities are given as $F1\approx0.999$, $F0\approx0.9$, with a quoted $T_2^*$ time of around $12\unit{\milli\second}$ (all three quantities in fact vary from qubit to qubit). Given these parameters, the model gives a reasonable estimate of the fidelity of the error-corrected qubit, remaining within 10\% of the measured fidelity for the duration of the experiment. These parameters are such that the experiment is ocurrs in the `intermediate regime' (see appendix \ref{appendix:flowanalysis}), which means that both reducing the error rate per step and increasing the readout fidelity would have an appreciable impact on the long-term fidelity of the qubit.
+The transition matrix allows us to gain some insight into different error regimes, when the rate of equilibration out of the codespace is dominated by the process of two errors ocurring in one timestep - the \textit{error-limited regime}, and when it is dominated by erroneous correction flips caused by incorrect parity measurements - the \textit{readout limited} regime. This analysis is given in appendix \ref{appendix:flowanalysis}. These results allow for a simple understanding of certain experiments. For example, in \cite{Cramer2016}, a nuclear spin qubit experiment, the fidelities are given as $F1\approx0.999$, $F0\approx0.9$, with a quoted $T_2^*$ time of around $12\unit{\milli\second}$ (all three quantities in fact vary from qubit to qubit). Given these parameters, the model gives a reasonable estimate of the fidelity of the error-corrected qubit, remaining within 10\% of the measured fidelity for the duration of the experiment. These parameters are such that the experiment is ocurrs in the `intermediate regime' $p_{\text{err}}\sim F$(see appendix \ref{appendix:flowanalysis}), which means that both reducing the error rate per step and increasing the readout fidelity would have an appreciable impact on the long-term fidelity of the qubit. On the other hand, the repeated spin-basis measurements in \cite{Nakajima2019} on a quantum dot system are performed at a repetition rate of around $7\unit{\micro\second}$, whereas the relaxation time is measured on the order of $1-3\unit{\milli\second}$, and the reported measurment fidelity is on the order of around $0.6$.  This means we are in the readout-limited regime $p_{\text{err}}\ll F$, so if these measurements were used to implement rapdily repeated QEC, the system could only be improved by improving the readout fidelity, perhaps by increasing the readout tunelling time.
 
 
 
@@ -482,17 +488,21 @@ We can acheive this by initialising the code qubits in the codespace, and then a
 \end{figure}
 
 
-\chapter {Feasibility of the scheme}\label{sec:feasibility}
+\chapter {Conclusions}
+
+\section{Future work}
+It is unfortunate that the idea for how to implement CQEC in semiconductor quantum dot devices was developed quite late into the course of my investigation, which left time only for limited analysis and simulation of the scheme. At the time of writup, I am in the process of extending my simulation software to includ the capability to condition the applied gates on the results of mid-circuit measurement; to perform the state collapse associated with such measurements; and to inlclude a noise model. I hope that upon completion, this software will allow me to more fully understand the behaviour of the scheme in noisy conditions and provide better bounds on the required physical parameters. The physics of singlet/triplet tunneling under continuous conditions and in a superposition with a small singlet component also need to be better understood to properly analyse the scheme. 
+
+Despite these limitations of the analysis up to this point, we can draw some tentative conclusions about the likely feasibility of the scheme as it is presented here.
+
+\section{Feasibility of the scheme}\label{sec:feasibility}
 There are features of this scheme which are potentially attractive, such as the fact that it does not require error correction steps to be programmed into a circuit, and the essentially instantaneous error detection that should lead to reduced `dead time'. However, the above proposal is unlikely to be practical as a means of increasing electron fidelity with current experimental parameters. 
 
 The main problem with this scheme is that it only provides a way to protect against bit flip errors. The typical coherence time for such `relaxation' processes, $T_1$ in silicon systems is typically in the hundreds of microseconds or a few milliseconds \cite{Loss2022}\cite{Zwerver2022}; the best performance in this respect is isotopically purified $^{28}$Si, in which all atomic nuclei have zero spin. The more pressing limitation for such systems are phase-flip errors, whose coherence times $T_2^*$\footnote{$T_2^*$ is the `effective' decoherence time taking into account unknown but constant inhomogeneities in the system and applied field, whereas $T_2 > T_2^*$ is for decoherence cause by purely random environmental noise. $T_2^*$ is normally the more relevant quantity.} are typically 1-3 orders of magnitude shorter \cite{Loss2022}. I can see no obvious way to extend the scheme as described here to phase-flip errors. The issue is that most discrete error corrections can make use of the fact that phase- and bit- flip errors are equivalent up to a change of basis $\ket{0} \leftrightarrow \ket{+}$, $\ket{1}\leftrightarrow\ket{-}$, and just transform into the appropriate basis before the error correcting step using Hadamard gates. This is not possible in a continuous scheme like the one described here.
 
 Even if we restrict ourselves to trying to reduce errors due to relaxation and leave phase-flip correction to other techniques, there are still limitations due to the inhomogeneities of silicon systems. In order for the correction to provide an improvement to the current $T_1$ times of order milliseconds, the time it takes the ancillas rotate into singlets whilst the system is in the codespace longer than this. This requires the overall spin difference $\delta_{A1, A3} = E_{A1}^z - E_{A3}^z$ and $\delta_{A2, A4}$ to be significantly less than $1/T_1 \approx 1\unit{\kilo\hertz}$, which is smaller than the expected range \cite{Hwang2017}.
 
-During the course of the project I also developed a highly theoretical error-correction scheme that in principle could correct against both phase flip and bit flip errors. This I describe in appendix \ref{appendix:lockedstates}. 
-\section{Conclusions}
-
-\printbibliography % TODO lots of incomplete references!
+During the course of the project I also developed a highly theoretical error-correction scheme that in principle could correct against both phase flip and bit flip errors. This I describe in appendix \ref{appendix:lockedstates}.
 
 \begin{appendices}
 \chapter{Implementing quantum gates on quantum dot devices} \label{appendix:gates}
@@ -873,4 +883,7 @@ This allows electrons to hop between qubits 1 and 2, and between 2 and 3 of the 
 \end{align*}
 where the first and second qubit represent the ancilla qubit and the first qubit of the second group respectively. This tells us the error sydrome, and it is just a matter of applying more $CX$ gates following the construction procedure detailed above to return the system to the codespace.
 \end{appendices}
+
+\printbibliography % TODO lots of incomplete references!
+
 \end{document}

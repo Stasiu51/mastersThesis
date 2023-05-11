@@ -60,6 +60,428 @@
       \verb 10.1103/PHYSREVA.65.042301
       \endverb
     \endentry
+    \entry{Arute2019}{article}{}
+      \name{author}{77}{}{%
+        {{hash=a0b41f4400dc855d7426a5f72cadaa6c}{%
+           family={Arute},
+           familyi={A\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0a2abe43325e0dd3690ccc47bfa6c6b7}{%
+           family={Arya},
+           familyi={A\bibinitperiod},
+           given={Kunal},
+           giveni={K\bibinitperiod}}}%
+        {{hash=7bb1dcf8a93d1ecc6f9531ece93ef1fa}{%
+           family={Babbush},
+           familyi={B\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5ef37e7fe45a9ff23c761910726d5e4b}{%
+           family={Bacon},
+           familyi={B\bibinitperiod},
+           given={Dave},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d831c1d824f8a4e2a69f6495b8fdc91b}{%
+           family={Bardin},
+           familyi={B\bibinitperiod},
+           given={Joseph\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=659b693e073fa93a83924447ea805d77}{%
+           family={Barends},
+           familyi={B\bibinitperiod},
+           given={Rami},
+           giveni={R\bibinitperiod}}}%
+        {{hash=44196321323dfc67fdaa85c495168130}{%
+           family={Biswas},
+           familyi={B\bibinitperiod},
+           given={Rupak},
+           giveni={R\bibinitperiod}}}%
+        {{hash=915e31fc5958183d06275c3c3e811123}{%
+           family={Boixo},
+           familyi={B\bibinitperiod},
+           given={Sergio},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cfb6bdb1d0b7056322d56e3f4fad93a8}{%
+           family={Brandao},
+           familyi={B\bibinitperiod},
+           given={Fernando\bibnamedelima G.S.L.},
+           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=11aed4b55c11ca1030deddd80f15b620}{%
+           family={Buell},
+           familyi={B\bibinitperiod},
+           given={David\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=fac8774f4c39c4cc9371a032e53c0fb6}{%
+           family={Burkett},
+           familyi={B\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=5ffb5aba0d9858b862639d446d48f8eb}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=1fac7e902845b1c2d0fd9ae4a0d00cc7}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Zijun},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=9cba836ac52ec45b3536ecac1ca0c4c4}{%
+           family={Chiaro},
+           familyi={C\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+        {{hash=f16002805dc7f9d96346bda6700be931}{%
+           family={Collins},
+           familyi={C\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+        {{hash=cf7e5385acaf82df7a53cd34a54e21e2}{%
+           family={Courtney},
+           familyi={C\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+        {{hash=ecea25363fad364a9f4a37613078f227}{%
+           family={Dunsworth},
+           familyi={D\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5e61ee12360fc49d9013fbf8fe18db89}{%
+           family={Farhi},
+           familyi={F\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+        {{hash=f27112cd6eb82fab2bc9d0542c995ea9}{%
+           family={Foxen},
+           familyi={F\bibinitperiod},
+           given={Brooks},
+           giveni={B\bibinitperiod}}}%
+        {{hash=aa6e65cd6932f53db466e337a1cb6760}{%
+           family={Fowler},
+           familyi={F\bibinitperiod},
+           given={Austin},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0101a428978c8ddc038880b7a77afd98}{%
+           family={Gidney},
+           familyi={G\bibinitperiod},
+           given={Craig},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ad64cecce98f1d14ae82dabfcaf7db86}{%
+           family={Giustina},
+           familyi={G\bibinitperiod},
+           given={Marissa},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8f816bc12e277c2a230aaab32148cef6}{%
+           family={Graff},
+           familyi={G\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ffd6b1344764207fb5b1cedb2b502a25}{%
+           family={Guerin},
+           familyi={G\bibinitperiod},
+           given={Keith},
+           giveni={K\bibinitperiod}}}%
+        {{hash=ac01d23b67bf69493082451323481b4c}{%
+           family={Habegger},
+           familyi={H\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fdafe36c75ea60b5e9310e5a98907464}{%
+           family={Harrigan},
+           familyi={H\bibinitperiod},
+           given={Matthew\bibnamedelima P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=d7ea6046bc62277e6e2c5fe7d61e78df}{%
+           family={Hartmann},
+           familyi={H\bibinitperiod},
+           given={Michael\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=7a9ef4b5db5d57071194cc11995a6499}{%
+           family={Ho},
+           familyi={H\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5f670721dca24ae1337011719914a64c}{%
+           family={Hoffmann},
+           familyi={H\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=33dfa81b00ac11936ef381208950305d}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Trent},
+           giveni={T\bibinitperiod}}}%
+        {{hash=963b22ba5e47cd073c7fc1a754ab2a55}{%
+           family={Humble},
+           familyi={H\bibinitperiod},
+           given={Travis\bibnamedelima S.},
+           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=5b1bc1fc6c73555d5af1db48cdbef9af}{%
+           family={Isakov},
+           familyi={I\bibinitperiod},
+           given={Sergei\bibnamedelima V.},
+           giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=9900c4e96164131afb8af307845df9b8}{%
+           family={Jeffrey},
+           familyi={J\bibinitperiod},
+           given={Evan},
+           giveni={E\bibinitperiod}}}%
+        {{hash=67db50e40049bac70a6d264e681d86de}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Zhang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=d2351f128f45cc307e110f1bf030fa0d}{%
+           family={Kafri},
+           familyi={K\bibinitperiod},
+           given={Dvir},
+           giveni={D\bibinitperiod}}}%
+        {{hash=399f6f0649872eb96c7b5d2253ac1654}{%
+           family={Kechedzhi},
+           familyi={K\bibinitperiod},
+           given={Kostyantyn},
+           giveni={K\bibinitperiod}}}%
+        {{hash=6a2991ec48fc939b711eac2466cbcc68}{%
+           family={Kelly},
+           familyi={K\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=cbc1620351ea65d57c28a39c84b1ac30}{%
+           family={Klimov},
+           familyi={K\bibinitperiod},
+           given={Paul\bibnamedelima V.},
+           giveni={P\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=84fa8eaf8054b75340e704427e2e7414}{%
+           family={Knysh},
+           familyi={K\bibinitperiod},
+           given={Sergey},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2290dc7590a4c730593624b7a1fdc40f}{%
+           family={Korotkov},
+           familyi={K\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a7bde64895d0208e927e79c2755b9a83}{%
+           family={Kostritsa},
+           familyi={K\bibinitperiod},
+           given={Fedor},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0106e3d3d8629adc0639fb0388e51a73}{%
+           family={Landhuis},
+           familyi={L\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1660c9b8c16952a4ec028c87eef3abc7}{%
+           family={Lindmark},
+           familyi={L\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1ca86a6dfd219877ce431f01a165a869}{%
+           family={Lucero},
+           familyi={L\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=22d2522f63c4d1770eed3debd45fd8fa}{%
+           family={Lyakh},
+           familyi={L\bibinitperiod},
+           given={Dmitry},
+           giveni={D\bibinitperiod}}}%
+        {{hash=3f2ddf64c1ea271a8a2634bbbb68d254}{%
+           family={Mandrà},
+           familyi={M\bibinitperiod},
+           given={Salvatore},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a253ddc1c4c24cde70238bd45dc9aeff}{%
+           family={McClean},
+           familyi={M\bibinitperiod},
+           given={Jarrod\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=7336ef3ca1b8bfadc8b89b8c7c59577b}{%
+           family={McEwen},
+           familyi={M\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1c6ec14427d690fa73b3021943d5439b}{%
+           family={Megrant},
+           familyi={M\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9b445b45607e1e8e0672105779ea626b}{%
+           family={Mi},
+           familyi={M\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=2338ed7a6906bd7cfdac98c5e56e45b6}{%
+           family={Michielsen},
+           familyi={M\bibinitperiod},
+           given={Kristel},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3660f6bf9d4821aa4c362d0abd316e4f}{%
+           family={Mohseni},
+           familyi={M\bibinitperiod},
+           given={Masoud},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5f06874711ade5e9c75656666220f803}{%
+           family={Mutus},
+           familyi={M\bibinitperiod},
+           given={Josh},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4bda703a11fed621732b26896f391e85}{%
+           family={Naaman},
+           familyi={N\bibinitperiod},
+           given={Ofer},
+           giveni={O\bibinitperiod}}}%
+        {{hash=6bcda02c5188bf25bad1475b8f30cecd}{%
+           family={Neeley},
+           familyi={N\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7e6d8fe85e636af42fba1f9d583e70e9}{%
+           family={Neill},
+           familyi={N\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ed18aa264c8650c491f53d6dc4118292}{%
+           family={Niu},
+           familyi={N\bibinitperiod},
+           given={Murphy\bibnamedelima Yuezhen},
+           giveni={M\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=2d89c5708f0f2aa0a4f4358d53bfc901}{%
+           family={Ostby},
+           familyi={O\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b3e0589d3dfc4ccb2c20d9bae908ad5c}{%
+           family={Petukhov},
+           familyi={P\bibinitperiod},
+           given={Andre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b18cccf0f11300769fc4b01f5fe5f13a}{%
+           family={Platt},
+           familyi={P\bibinitperiod},
+           given={John\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=d7e98df2b678f196d4696b116fb5edb6}{%
+           family={Quintana},
+           familyi={Q\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8ebda72545842e8ca358df12fd00edc6}{%
+           family={Rieffel},
+           familyi={R\bibinitperiod},
+           given={Eleanor\bibnamedelima G.},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=ab67b0d3986106680d464532f25dc939}{%
+           family={Roushan},
+           familyi={R\bibinitperiod},
+           given={Pedram},
+           giveni={P\bibinitperiod}}}%
+        {{hash=79a0c3f2d2ac6a6e26b1e6e488c3b198}{%
+           family={Rubin},
+           familyi={R\bibinitperiod},
+           given={Nicholas\bibnamedelima C.},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=9c196f976101682c061efc0614f70fa6}{%
+           family={Sank},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=640413903b4eab5258544e70c464cf91}{%
+           family={Satzinger},
+           familyi={S\bibinitperiod},
+           given={Kevin\bibnamedelima J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=087a4bb34bd0827f9235dede4eff2970}{%
+           family={Smelyanskiy},
+           familyi={S\bibinitperiod},
+           given={Vadim},
+           giveni={V\bibinitperiod}}}%
+        {{hash=a912a72b8de08532c080010f87041bda}{%
+           family={Sung},
+           familyi={S\bibinitperiod},
+           given={Kevin\bibnamedelima J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=edb9b45c05af268e690b431177e285bb}{%
+           family={Trevithick},
+           familyi={T\bibinitperiod},
+           given={Matthew\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=8c9c62d63da654e3e637727ef0ada9e9}{%
+           family={Vainsencher},
+           familyi={V\bibinitperiod},
+           given={Amit},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b483aa193391113d1234b6ae181e0dca}{%
+           family={Villalonga},
+           familyi={V\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=da61f207bd110c14a1e7e8fe213f33eb}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={Theodore},
+           giveni={T\bibinitperiod}}}%
+        {{hash=473d08a31ed9fbf52d5baf436b7a809a}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Z.\bibnamedelimi Jamie},
+           giveni={Z\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=e94b0ed312e1e2edcfe8a1b6bd1749d8}{%
+           family={Yeh},
+           familyi={Y\bibinitperiod},
+           given={Ping},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e6df2c969e6e639ddd23909ad813034d}{%
+           family={Zalcman},
+           familyi={Z\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ddcc46c5456340da59be4077c7102a27}{%
+           family={Neven},
+           familyi={N\bibinitperiod},
+           given={Hartmut},
+           giveni={H\bibinitperiod}}}%
+        {{hash=25ae3182aa7d65d6b2ce4baea1970309}{%
+           family={Martinis},
+           familyi={M\bibinitperiod},
+           given={John\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{b5ee69b81bc21fd247bbaf0f432158b6}
+      \strng{fullhash}{9ed5ca9a711651574caed94b21c9e439}
+      \strng{bibnamehash}{b5ee69b81bc21fd247bbaf0f432158b6}
+      \strng{authorbibnamehash}{b5ee69b81bc21fd247bbaf0f432158b6}
+      \strng{authornamehash}{b5ee69b81bc21fd247bbaf0f432158b6}
+      \strng{authorfullhash}{9ed5ca9a711651574caed94b21c9e439}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The promise of quantum computers is that certain computational tasks might be executed exponentially faster on a quantum processor than on a classical processor1. A fundamental challenge is to build a high-fidelity processor capable of running quantum algorithms in an exponentially large computational space. Here we report the use of a processor with programmable superconducting qubits2–7 to create quantum states on 53 qubits, corresponding to a computational state-space of dimension 253 (about 1016). Measurements from repeated experiments sample the resulting probability distribution, which we verify using classical simulations. Our Sycamore processor takes about 200 seconds to sample one instance of a quantum circuit a million times—our benchmarks currently indicate that the equivalent task for a state-of-the-art classical supercomputer would take approximately 10,000 years. This dramatic increase in speed compared to all known classical algorithms is an experimental realization of quantum supremacy8–14 for this specific computational task, heralding a much-anticipated computing paradigm. Quantum supremacy is demonstrated using a programmable superconducting processor known as Sycamore, taking approximately 200 seconds to sample one instance of a quantum circuit a million times, which would take a state-of-the-art supercomputer around ten thousand years to compute.}
+      \field{issn}{1476-4687}
+      \field{issue}{7779}
+      \field{journaltitle}{Nature 2019 574:7779}
+      \field{month}{10}
+      \field{title}{Quantum supremacy using a programmable superconducting processor}
+      \field{volume}{574}
+      \field{year}{2019}
+      \field{pages}{505\bibrangedash 510}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1038/s41586-019-1666-5
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41586-019-1666-5
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41586-019-1666-5
+      \endverb
+      \keyw{Quantum information,Quantum physics}
+    \endentry
     \entry{Baumgratz2014}{article}{}
       \name{author}{3}{}{%
         {{hash=ef446c706d6a25eb87240b6e7a84511e}{%
@@ -338,6 +760,106 @@
       \verb http://dx.doi.org/10.1021/acs.chemrev.8b00803
       \endverb
     \endentry
+    \entry{Cardona2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=31f48faf1bdb3f6b09dc16454ac9a490}{%
+           family={Cardona},
+           familyi={C\bibinitperiod},
+           given={Gerardo},
+           giveni={G\bibinitperiod}}}%
+        {{hash=bd1e0d8f49c24a92e543fcb43ba3091b}{%
+           family={Sarlette},
+           familyi={S\bibinitperiod},
+           given={Alain},
+           giveni={A\bibinitperiod}}}%
+        {{hash=94a5de927412fc711fd43a6f1f07e47b}{%
+           family={Rouchon},
+           familyi={R\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{0d475f2e7901fbb44553d434ec8bc7d1}
+      \strng{fullhash}{0d475f2e7901fbb44553d434ec8bc7d1}
+      \strng{bibnamehash}{0d475f2e7901fbb44553d434ec8bc7d1}
+      \strng{authorbibnamehash}{0d475f2e7901fbb44553d434ec8bc7d1}
+      \strng{authornamehash}{0d475f2e7901fbb44553d434ec8bc7d1}
+      \strng{authorfullhash}{0d475f2e7901fbb44553d434ec8bc7d1}
+      \field{extraname}{1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We address the standard quantum error correction using the three-qubit bit-flip code, yet in continuous-time. This entails rendering a target manifold of quantum states globally attractive. Previous feedback designs could feature spurious equilibria, or resort to discrete kicks pushing the system away from these equilibria to ensure global asymptotic stability. We present a new approach that consists of introducing controls driven by Brownian motions. Unlike the previous methods, the resulting closed-loop dynamics can be shown to stabilize the target manifold exponentially. We further present a reduced-order filter formulation with classical probabilities. The exponential property is important to quantify the protection induced by the closed-loop error-correction dynamics against disturbances. We study numerically the performance of this control law and of the reduced filter.}
+      \field{issn}{2405-8963}
+      \field{issue}{16}
+      \field{journaltitle}{IFAC-PapersOnLine}
+      \field{month}{1}
+      \field{title}{Continuous-time Quantum Error Correction with Noise-assisted Quantum Feedback}
+      \field{volume}{52}
+      \field{year}{2019}
+      \field{pages}{198\bibrangedash 203}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/J.IFACOL.2019.11.778
+      \endverb
+      \keyw{Lyapunov method,Quantum control,Quantum error correction,Stochastic systems}
+    \endentry
+    \entry{Cardona2018}{article}{}
+      \name{author}{3}{}{%
+        {{hash=31f48faf1bdb3f6b09dc16454ac9a490}{%
+           family={Cardona},
+           familyi={C\bibinitperiod},
+           given={Gerardo},
+           giveni={G\bibinitperiod}}}%
+        {{hash=bd1e0d8f49c24a92e543fcb43ba3091b}{%
+           family={Sarlette},
+           familyi={S\bibinitperiod},
+           given={Alain},
+           giveni={A\bibinitperiod}}}%
+        {{hash=94a5de927412fc711fd43a6f1f07e47b}{%
+           family={Rouchon},
+           familyi={R\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers Inc.}%
+      }
+      \strng{namehash}{0d475f2e7901fbb44553d434ec8bc7d1}
+      \strng{fullhash}{0d475f2e7901fbb44553d434ec8bc7d1}
+      \strng{bibnamehash}{0d475f2e7901fbb44553d434ec8bc7d1}
+      \strng{authorbibnamehash}{0d475f2e7901fbb44553d434ec8bc7d1}
+      \strng{authornamehash}{0d475f2e7901fbb44553d434ec8bc7d1}
+      \strng{authorfullhash}{0d475f2e7901fbb44553d434ec8bc7d1}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This article provides a novel continuous-time state feedback control strategy to stabilize an eigenstate of the Hermitian measurement operator of a two-level quantum system. In open loop, such system converges stochastically to one of the eigenstates of the measurement operator. Previous work has proposed state feedback that destabilizes the undesired eigenstates and relies on a probabilistic analysis to prove convergence. In contrast, we here associate the state observer to an adaptive version of so-called Markovian feedback (essentially, proportional control) and we show that this leads to a global exponential convergence property with a strict Lyapunov function. Furthermore, besides the instantaneous measurement output, our controller only depends on the single coordinate along the measurement axis, which opens the way to replacing the full state observer by lower-complexity filters in the future.}
+      \field{isbn}{9781538613955}
+      \field{issn}{25762370}
+      \field{journaltitle}{Proceedings of the IEEE Conference on Decision and Control}
+      \field{month}{7}
+      \field{title}{Exponential Stochastic Stabilization of a Two-Level Quantum System via Strict Lyapunov Control}
+      \field{volume}{2018-December}
+      \field{year}{2018}
+      \field{pages}{6591\bibrangedash 6596}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/CDC.2018.8618681
+      \endverb
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/330590444_Exponential_Stochastic_Stabilization_of_a_Two-Level_Quantum_System_via_Strict_Lyapunov_Control
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/330590444_Exponential_Stochastic_Stabilization_of_a_Two-Level_Quantum_System_via_Strict_Lyapunov_Control
+      \endverb
+    \endentry
     \entry{Cramer2016}{article}{}
       \name{author}{9}{}{%
         {{hash=737376236686fdd0af2225872bc6a03c}{%
@@ -467,6 +989,107 @@
       \verb{url}
       \verb http://rspa.royalsocietypublishing.org/cgi/doi/10.1098/rspa.1995.0065
       \endverb
+    \endentry
+    \entry{DiVincenzo1996}{article}{}
+      \name{author}{2}{}{%
+        {{hash=eb086f2913454eb2d88cdec4631aeb3e}{%
+           family={DiVincenzo},
+           familyi={D\bibinitperiod},
+           given={David\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=7082a9c99d5d51479d4cfba6bbac2d30}{%
+           family={Shor},
+           familyi={S\bibinitperiod},
+           given={Peter\bibnamedelima W.},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Phys Rev Lett}%
+      }
+      \strng{namehash}{281131d3b02f31703428737c0bef7279}
+      \strng{fullhash}{281131d3b02f31703428737c0bef7279}
+      \strng{bibnamehash}{281131d3b02f31703428737c0bef7279}
+      \strng{authorbibnamehash}{281131d3b02f31703428737c0bef7279}
+      \strng{authornamehash}{281131d3b02f31703428737c0bef7279}
+      \strng{authorfullhash}{281131d3b02f31703428737c0bef7279}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We exhibit a simple, systematic procedure for detecting and correcting errors using any of the recently reported quantum error-correcting codes. The procedure is shown explicitly for a code in which one qubit is mapped into five. The quantum networks obtained are fault tolerant, that is, they can function successfully even if errors occur during the error correction. Our construction is derived using a recently introduced group-theoretic framework for unifying all known quantum codes. © 1996 The American Physical Society.}
+      \field{issn}{1079-7114}
+      \field{issue}{15}
+      \field{journaltitle}{Physical review letters}
+      \field{title}{Fault-Tolerant Error Correction with Efficient Quantum Codes}
+      \field{volume}{77}
+      \field{year}{1996}
+      \field{pages}{3260\bibrangedash 3263}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PHYSREVLETT.77.3260
+      \endverb
+      \verb{urlraw}
+      \verb https://pubmed.ncbi.nlm.nih.gov/10062174/
+      \endverb
+      \verb{url}
+      \verb https://pubmed.ncbi.nlm.nih.gov/10062174/
+      \endverb
+      \keyw{DP DiVincenzo,MEDLINE,NCBI,NIH,NLM,National Center for Biotechnology Information,National Institutes of Health,National Library of Medicine,PW Shor,PubMed Abstract,doi:10.1103/PhysRevLett.77.3260,pmid:10062174}
+    \endentry
+    \entry{Huang2020}{article}{}
+      \name{author}{4}{}{%
+        {{hash=21e3e0532e48b6144077d9ec58d6cf53}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={He\bibnamedelima Liang},
+           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=f76d5604bfdfa9a483694afbdf9708c4}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Dachao},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4ae9221f0c936d686fd6a598d77a36e3}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Daojin},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c0333e3ed66519775ff9d207e4f4090c}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Xiaobo},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Science in China Press}%
+      }
+      \strng{namehash}{b9576e56962f24d909ddb3cd63d6b779}
+      \strng{fullhash}{ce54067503cd215d7241d0902751dc30}
+      \strng{bibnamehash}{b9576e56962f24d909ddb3cd63d6b779}
+      \strng{authorbibnamehash}{b9576e56962f24d909ddb3cd63d6b779}
+      \strng{authornamehash}{b9576e56962f24d909ddb3cd63d6b779}
+      \strng{authorfullhash}{ce54067503cd215d7241d0902751dc30}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Over the last two decades, tremendous advances have been made for constructing large-scale quantum computers. In particular, quantum computing platforms based on superconducting qubits have become the leading candidate for scalable quantum processor architecture, and the milestone of demonstrating quantum supremacy has been first achieved using 53 superconducting qubits in 2019. In this study, we provide a brief review on the experimental efforts towards the large-scale superconducting quantum computer, including qubit design, quantum control, readout techniques, and the implementations of error correction and quantum algorithms. Besides the state of the art, we finally discuss future perspectives, and which we hope will motivate further research.}
+      \field{issn}{18691919}
+      \field{issue}{8}
+      \field{journaltitle}{Science China Information Sciences}
+      \field{month}{8}
+      \field{title}{Superconducting quantum computing: a review}
+      \field{volume}{63}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1007/S11432-020-2881-9
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2006.10433 http://dx.doi.org/10.1007/s11432-020-2881-9
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2006.10433%20http://dx.doi.org/10.1007/s11432-020-2881-9
+      \endverb
+      \keyw{quantum algorithm,quantum bit,quantum computing,qubit control,qubit design,qubit readout,superconducting quantum computing}
     \endentry
     \entry{Hubbard1963}{article}{}
       \name{author}{1}{}{%

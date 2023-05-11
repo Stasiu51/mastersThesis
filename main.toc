@@ -27,20 +27,21 @@
 \contentsline {subsection}{\numberline {4.2.1}Hubbard Hamiltonian setup}{15}{}%
 \contentsline {subsection}{\numberline {4.2.2}Energy shifts due to hopping coupling}{16}{}%
 \contentsline {subsection}{\numberline {4.2.3}Demonstrating the error propagation}{16}{}%
-\contentsline {chapter}{\numberline {5}Feasibility of the scheme}{18}{}%
-\contentsline {section}{\numberline {5.1}Conclusions}{18}{}%
-\contentsline {chapter}{Appendices}{21}{}%
-\contentsline {chapter}{\numberline {A}Implementing quantum gates on quantum dot devices}{22}{}%
-\contentsline {subsubsection}{Single Qubit Gates}{22}{}%
-\contentsline {subsubsection}{Two Qubit Operations}{22}{}%
-\contentsline {chapter}{\numberline {B}Decoherence theory}{25}{}%
-\contentsline {subsubsection}{Explanation in terms of Coherence Theory}{26}{}%
-\contentsline {chapter}{\numberline {C}Characterising flow regimes of the three-qubit shor code}{27}{}%
-\contentsline {chapter}{\numberline {D}Change of basis to regard the codespace as one state}{29}{}%
-\contentsline {chapter}{\numberline {E}Using alternative codespaces for continuous error correction}{30}{}%
-\contentsline {chapter}{\numberline {F}Detecting errors in ancilla qubits.}{32}{}%
-\contentsline {chapter}{\numberline {G}Locked states}{33}{}%
-\contentsline {subsubsection}{Bit-flip only scheme}{33}{}%
-\contentsline {subsubsection}{Locked states}{33}{}%
-\contentsline {subsubsection}{Creating the locked states}{34}{}%
-\contentsline {subsubsection}{Error detection and correction}{35}{}%
+\contentsline {chapter}{\numberline {5}Conclusions}{18}{}%
+\contentsline {section}{\numberline {5.1}Future work}{18}{}%
+\contentsline {section}{\numberline {5.2}Feasibility of the scheme}{18}{}%
+\contentsline {chapter}{Appendices}{19}{}%
+\contentsline {chapter}{\numberline {A}Implementing quantum gates on quantum dot devices}{20}{}%
+\contentsline {subsubsection}{Single Qubit Gates}{20}{}%
+\contentsline {subsubsection}{Two Qubit Operations}{20}{}%
+\contentsline {chapter}{\numberline {B}Decoherence theory}{23}{}%
+\contentsline {subsubsection}{Explanation in terms of Coherence Theory}{24}{}%
+\contentsline {chapter}{\numberline {C}Characterising flow regimes of the three-qubit shor code}{25}{}%
+\contentsline {chapter}{\numberline {D}Change of basis to regard the codespace as one state}{27}{}%
+\contentsline {chapter}{\numberline {E}Using alternative codespaces for continuous error correction}{28}{}%
+\contentsline {chapter}{\numberline {F}Detecting errors in ancilla qubits.}{30}{}%
+\contentsline {chapter}{\numberline {G}Locked states}{31}{}%
+\contentsline {subsubsection}{Bit-flip only scheme}{31}{}%
+\contentsline {subsubsection}{Locked states}{31}{}%
+\contentsline {subsubsection}{Creating the locked states}{32}{}%
+\contentsline {subsubsection}{Error detection and correction}{33}{}%
