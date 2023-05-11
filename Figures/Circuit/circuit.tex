@@ -1,0 +1,12 @@
+\documentclass[tikz,convert={outfile=\jobname.svg}]{standalone}
+\usepackage{quantikz}
+%\usetikzlibrary{...}% tikz package already loaded by 'tikz' option
+\begin{document}
+\begin{quantikz}
+    &\ctrl{3}   &           &      &            &\targ{}\wire[d][1]{c}   &\\
+    &           &\ctrl{3}   &           &            &\targ{}\wire[d][1]{c}   &\\
+    &           &           &\ctrl{2}   &            &\targ{}\wire[d][1]{c}   &\\
+    \lstick{$\ket{0}$}&\targ{}    &\targ{}    &           &\meter{}   &\gate[2][2]{Controller}\setwiretype{c} &\setwiretype{q}   \\
+    \lstick{$\ket{0}$}&           &\targ{}  &\targ{}    &\meter{}      &\setwiretype{c}                        &\setwiretype{q}   \\
+\end{quantikz}
+\end{document}

@@ -19,13 +19,204 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Ahn2002}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d8808cd5fdd9032a5f7a989fcbd528fe}{%
+           family={Ahn},
+           familyi={A\bibinitperiod},
+           given={Charlene},
+           giveni={C\bibinitperiod}}}%
+        {{hash=40a30e448533c2e229ba4767cabc832c}{%
+           family={Doherty},
+           familyi={D\bibinitperiod},
+           given={Andrew\bibnamedelima C.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=567439e4c5c6adaede20b13c5b7b7556}{%
+           family={Landahl},
+           familyi={L\bibinitperiod},
+           given={Andrew\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{34031faa02590074bda2b530e96e5971}
+      \strng{fullhash}{34031faa02590074bda2b530e96e5971}
+      \strng{bibnamehash}{34031faa02590074bda2b530e96e5971}
+      \strng{authorbibnamehash}{34031faa02590074bda2b530e96e5971}
+      \strng{authornamehash}{34031faa02590074bda2b530e96e5971}
+      \strng{authorfullhash}{34031faa02590074bda2b530e96e5971}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We describe a protocol for continuously protecting unknown quantum states from decoherence that incorporates design principles from both quantum error correction and quantum feedback control. Our protocol uses continuous measurements and Hamiltonian operations, which are weaker control tools than are typically assumed for quantum error correction. We develop a cost function appropriate for unknown quantum states and use it to optimize our state-estimate feedback. Using Monte Carlo simulations, we study our protocol for the three-qubit bit-flip code in detail and demonstrate that it can improve the fidelity of quantum states beyond what is achievable using quantum error correction when the time between quantum error-correction cycles is limited. © 2002 The American Physical Society.}
+      \field{issn}{10941622}
+      \field{issue}{4}
+      \field{journaltitle}{Physical Review A - Atomic, Molecular, and Optical Physics}
+      \field{title}{Continuous quantum error correction via quantum feedback control}
+      \field{volume}{65}
+      \field{year}{2002}
+      \field{pages}{10}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PHYSREVA.65.042301
+      \endverb
+    \endentry
+    \entry{Baumgratz2014}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ef446c706d6a25eb87240b6e7a84511e}{%
+           family={Baumgratz},
+           familyi={B\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=bbfccc3bc81330bb40d9b2f1685e0249}{%
+           family={Cramer},
+           familyi={C\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d0b244a8c75ea33516270f686fe851fa}{%
+           family={Plenio},
+           familyi={P\bibinitperiod},
+           given={M\bibnamedelima B},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{64d2b2f62f7ef99ecaebae461a63abad}
+      \strng{fullhash}{64d2b2f62f7ef99ecaebae461a63abad}
+      \strng{bibnamehash}{64d2b2f62f7ef99ecaebae461a63abad}
+      \strng{authorbibnamehash}{64d2b2f62f7ef99ecaebae461a63abad}
+      \strng{authornamehash}{64d2b2f62f7ef99ecaebae461a63abad}
+      \strng{authorfullhash}{64d2b2f62f7ef99ecaebae461a63abad}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{14}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{month}{9}
+      \field{title}{Quantifying Coherence}
+      \field{volume}{113}
+      \field{year}{2014}
+      \field{pages}{140401}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.113.140401
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.113.140401
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.113.140401
+      \endverb
+    \endentry
+    \entry{bravyi_2011}{article}{}
+      \name{author}{3}{}{%
+        {{hash=964ccce884d5c27e980e285b18d587cd}{%
+           family={Bravyi},
+           familyi={B\bibinitperiod},
+           given={Sergey},
+           giveni={S\bibinitperiod}}}%
+        {{hash=eb086f2913454eb2d88cdec4631aeb3e}{%
+           family={DiVincenzo},
+           familyi={D\bibinitperiod},
+           given={David\bibnamedelima P},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=484a7301172505faf210926187741479}{%
+           family={Loss},
+           familyi={L\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{aca067e779368571a50f4184557a8338}
+      \strng{fullhash}{aca067e779368571a50f4184557a8338}
+      \strng{bibnamehash}{aca067e779368571a50f4184557a8338}
+      \strng{authorbibnamehash}{aca067e779368571a50f4184557a8338}
+      \strng{authornamehash}{aca067e779368571a50f4184557a8338}
+      \strng{authorfullhash}{aca067e779368571a50f4184557a8338}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Schrieffer-Wolff (SW) method is a version of degenerate perturbation theory in which the low-energy effective Hamiltonian H_\{eff\} is obtained from the exact Hamiltonian by a unitary transformation decoupling the low-energy and high-energy subspaces. We give a self-contained summary of the SW method with a focus on rigorous results. We begin with an exact definition of the SW transformation in terms of the so-called direct rotation between linear subspaces. From this we obtain elementary proofs of several important properties of H_\{eff\} such as the linked cluster theorem. We then study the perturbative version of the SW transformation obtained from a Taylor series representation of the direct rotation. Our perturbative approach provides a systematic diagram technique for computing high-order corrections to H_\{eff\}. We then specialize the SW method to quantum spin lattices with short-range interactions. We establish unitary equivalence between effective low-energy Hamiltonians obtained using two different versions of the SW method studied in the literature. Finally, we derive an upper bound on the precision up to which the ground state energy of the n-th order effective Hamiltonian approximates the exact ground state energy.}
+      \field{issn}{00034916}
+      \field{issue}{10}
+      \field{journaltitle}{Annals of physics}
+      \field{month}{10}
+      \field{title}{Schrieffer–Wolff transformation for quantum many-body systems}
+      \field{volume}{326}
+      \field{year}{2011}
+      \field{pages}{2793\bibrangedash 2826}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1016/j.aop.2011.06.004
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0003491611001059
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0003491611001059
+      \endverb
+    \endentry
+    \entry{Burkard2022}{article}{}
+      \name{author}{5}{}{%
+        {{hash=7fb647dc391b6f99c5f4f8d47ad8145a}{%
+           family={Burkard},
+           familyi={B\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod}}}%
+        {{hash=13339fa55032df027a76ded654e01dfc}{%
+           family={Ladd},
+           familyi={L\bibinitperiod},
+           given={Thaddeus\bibnamedelima D.},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=b677635ce83e4d818776b0e823ab659d}{%
+           family={Nichol},
+           familyi={N\bibinitperiod},
+           given={John\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=459e3117e069a2646b49d81b207be982}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ff31433bc80b1c6e8623dd4445906759}{%
+           family={Petta},
+           familyi={P\bibinitperiod},
+           given={Jason\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{16bc0ddd950135b2fc9a5fa15f2f3b24}
+      \strng{fullhash}{de252df7a370665d9ee9d42d7cf987c4}
+      \strng{bibnamehash}{16bc0ddd950135b2fc9a5fa15f2f3b24}
+      \strng{authorbibnamehash}{16bc0ddd950135b2fc9a5fa15f2f3b24}
+      \strng{authornamehash}{16bc0ddd950135b2fc9a5fa15f2f3b24}
+      \strng{authorfullhash}{de252df7a370665d9ee9d42d7cf987c4}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The spin degree of freedom of an electron or a nucleus is one of the most basic properties of nature and functions as an excellent qubit, as it provides a natural two-level system that is insensitive to electric fields, leading to long quantum coherence times. We review the physics of semiconductor spin qubits, focusing not only on the early achievements of spin initialization, control, and readout in GaAs quantum dots, but also on recent advances in Si and Ge spin qubits, including improved charge control and readout, coupling to other quantum degrees of freedom, and scaling to larger system sizes. We begin by introducing the four major types of spin qubits: single spin qubits, donor spin qubits, singlet-triplet spin qubits, and exchange-only spin qubits. We then review the mesoscopic physics of quantum dots, including single-electron charging, valleys, and spin-orbit coupling. We next give a comprehensive overview of the physics of exchange interactions, a crucial resource for single- and two-qubit control in spin qubits. The bulk of this review is centered on the presentation of results from each major spin qubit type, the present limits of fidelity, and a brief overview of alternative spin qubit platforms. We then give a physical description of the impact of noise on semiconductor spin qubits, aided in large part by an introduction to the filter function formalism. Lastly, we review recent efforts to hybridize spin qubits with superconducting systems, including charge-photon coupling, spin-photon coupling, and long-range cavity-mediated spin-spin interactions. Cavity-based readout approaches are also discussed. This review is intended to give an appreciation for the future prospects of semiconductor spin qubits, while highlighting the key advances in mesoscopic physics over the past two decades that underlie the operation of modern quantum-dot and donor spin qubits.}
+      \field{journaltitle}{Unpublished; to appear in Reviews of Modern Physics}
+      \field{month}{12}
+      \field{title}{Semiconductor Spin Qubits}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2112.08863v1
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2112.08863v1
+      \endverb
+    \endentry
     \entry{Butcher1996}{article}{}
       \name{author}{1}{}{%
         {{hash=8243f76db475c19fb4e78a700c85a343}{%
            family={Butcher},
            familyi={B\bibinitperiod},
-           given={J.C.},
-           giveni={J\bibinitperiod}}}%
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
       }
       \strng{namehash}{8243f76db475c19fb4e78a700c85a343}
       \strng{fullhash}{8243f76db475c19fb4e78a700c85a343}
@@ -38,70 +229,327 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper constitutes a centenary survey of Runge-Kutta methods. It reviews some of the early contributions due to Runge, Heun, Kutta and Nyström and leads on to the theory of order of accuracy of Runge-Kutta methods, and includes a discussion of implicit methods, stability analysis and methods of error estimation and dense output.}
-      \field{issn}{0168-9274}
+      \field{issn}{01689274}
+      \field{issue}{3}
       \field{journaltitle}{Applied Numerical Mathematics}
-      \field{number}{3}
       \field{title}{A history of Runge-Kutta methods}
       \field{volume}{20}
       \field{year}{1996}
       \field{pages}{247\bibrangedash 260}
       \range{pages}{14}
       \verb{doi}
-      \verb https://doi.org/10.1016/0168-9274(95)00108-5
+      \verb 10.1016/0168-9274(95)00108-5
+      \endverb
+    \endentry
+    \entry{cao_2019}{article}{}
+      \name{author}{13}{}{%
+        {{hash=9d14b450758cf26d28129c893c5dbb06}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Yudong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=8c1a9ea5a335989d4957424b7cc2f7b9}{%
+           family={Romero},
+           familyi={R\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=433f3ac7774e65b695d791ef0128cddf}{%
+           family={Olson},
+           familyi={O\bibinitperiod},
+           given={Jonathan\bibnamedelima P},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=ce554a1b376ee1be7e82f136d4237255}{%
+           family={Degroote},
+           familyi={D\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9831fd95cc14da373cb72142dd856b48}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Peter\bibnamedelima D},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=db2013636ea18059a1f14d4455a59b58}{%
+           family={Kieferová},
+           familyi={K\bibinitperiod},
+           given={Mária},
+           giveni={M\bibinitperiod}}}%
+        {{hash=96586fe81debb62fa36b7cc6d84cde5e}{%
+           family={Kivlichan},
+           familyi={K\bibinitperiod},
+           given={Ian\bibnamedelima D},
+           giveni={I\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=7c555b38206c5fb0ccec33164f55a8ff}{%
+           family={Menke},
+           familyi={M\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=153096fdb393cbbf4ecedbaf5839c3b6}{%
+           family={Peropadre},
+           familyi={P\bibinitperiod},
+           given={Borja},
+           giveni={B\bibinitperiod}}}%
+        {{hash=fa5a81edbec820ec863a0acd11b4283b}{%
+           family={Sawaya},
+           familyi={S\bibinitperiod},
+           given={Nicolas\bibnamedelimb P\bibnamedelima D},
+           giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=f156a71a758735a1cfc0aab991a121e2}{%
+           family={Sim},
+           familyi={S\bibinitperiod},
+           given={Sukin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5639fb699a197e299538fab136606a45}{%
+           family={Veis},
+           familyi={V\bibinitperiod},
+           given={Libor},
+           giveni={L\bibinitperiod}}}%
+        {{hash=083dcdd0db2687433b22fabfb2e55c17}{%
+           family={Aspuru-Guzik},
+           familyi={A\bibinithyphendelim G\bibinitperiod},
+           given={Alán},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ca24edd932063f74122cbb2f3bd24580}
+      \strng{fullhash}{da91d9eb4c8e905c88267cd39ed1efc6}
+      \strng{bibnamehash}{ca24edd932063f74122cbb2f3bd24580}
+      \strng{authorbibnamehash}{ca24edd932063f74122cbb2f3bd24580}
+      \strng{authornamehash}{ca24edd932063f74122cbb2f3bd24580}
+      \strng{authorfullhash}{da91d9eb4c8e905c88267cd39ed1efc6}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Practical challenges in simulating quantum systems on classical computers have been widely recognized in the quantum physics and quantum chemistry communities over the past century. Although many approximation methods have been introduced, the complexity of quantum mechanics remains hard to appease. The advent of quantum computation brings new pathways to navigate this challenging and complex landscape. By manipulating quantum states of matter and taking advantage of their unique features such as superposition and entanglement, quantum computers promise to efficiently deliver accurate results for many important problems in quantum chemistry, such as the electronic structure of molecules. In the past two decades, significant advances have been made in developing algorithms and physical hardware for quantum computing, heralding a revolution in simulation of quantum systems. This Review provides an overview of the algorithms and results that are relevant for quantum chemistry. The intended audience is both quantum chemists who seek to learn more about quantum computing and quantum computing researchers who would like to explore applications in quantum chemistry.}
+      \field{issue}{19}
+      \field{journaltitle}{Chemical Reviews}
+      \field{month}{10}
+      \field{title}{Quantum chemistry in the age of quantum computing.}
+      \field{volume}{119}
+      \field{year}{2019}
+      \field{pages}{10856\bibrangedash 10915}
+      \range{pages}{60}
+      \verb{doi}
+      \verb 10.1021/acs.chemrev.8b00803
       \endverb
       \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/0168927495001085
+      \verb http://dx.doi.org/10.1021/acs.chemrev.8b00803
       \endverb
       \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/0168927495001085
+      \verb http://dx.doi.org/10.1021/acs.chemrev.8b00803
       \endverb
+    \endentry
+    \entry{Cramer2016}{article}{}
+      \name{author}{9}{}{%
+        {{hash=737376236686fdd0af2225872bc6a03c}{%
+           family={Cramer},
+           familyi={C\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=790b267d8c5f918f4af1ac8959884fd1}{%
+           family={Kalb},
+           familyi={K\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=02377ae698dd22e75e5a130cf52d14bc}{%
+           family={Rol},
+           familyi={R\bibinitperiod},
+           given={M.\bibnamedelimi A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=8e4c0aa0ac20783626d79306998b326b}{%
+           family={Hensen},
+           familyi={H\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d5a28f83bfbc2f3f4e3ed070e66a71b3}{%
+           family={Blok},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=bfa22922e1a74ef0f4e0aa51621f7b34}{%
+           family={Markham},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a7a2a908b10027309b539d8c8b6046a7}{%
+           family={Twitchen},
+           familyi={T\bibinitperiod},
+           given={D.\bibnamedelimi J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=205d73a028e4793fefdd098845c8851f}{%
+           family={Hanson},
+           familyi={H\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c5d39ad2ce1fd34572085885ebaeaf3f}{%
+           family={Taminiau},
+           familyi={T\bibinitperiod},
+           given={T.\bibnamedelimi H.},
+           giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{651fef62d406230747d8cdcbe5dc5308}
+      \strng{fullhash}{9c9cd0e2c9497d98cf9b3c20fad7de76}
+      \strng{bibnamehash}{651fef62d406230747d8cdcbe5dc5308}
+      \strng{authorbibnamehash}{651fef62d406230747d8cdcbe5dc5308}
+      \strng{authornamehash}{651fef62d406230747d8cdcbe5dc5308}
+      \strng{authorfullhash}{9c9cd0e2c9497d98cf9b3c20fad7de76}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Reliable quantum information processing in the face of errors is a major fundamental and technological challenge. Quantum error correction protects quantum states by encoding a logical quantum bit (qubit) in multiple physical qubits. To be compatible with universal fault-tolerant computations, it is essential that states remain encoded at all times and that errors are actively corrected. Here we demonstrate such active error correction on a continuously protected logical qubit using a diamond quantum processor. We encode the logical qubit in three long-lived nuclear spins, repeatedly detect phase errors by non-destructive measurements, and apply corrections by real-time feedback. The actively error-corrected qubit is robust against errors and encoded quantum superposition states are preserved beyond the natural dephasing time of the best physical qubit in the encoding. These results establish a powerful platform to investigate error correction under different types of noise and mark an important step towards fault-tolerant quantum information processing. Large-scale quantum information processing requires the continuous protection of quantum states against errors. Here, the authors demonstrate active quantum error correction that improves the dephasing time of quantum states using a diamond quantum processor.}
+      \field{issn}{2041-1723}
+      \field{issue}{1}
+      \field{journaltitle}{Nature Communications 2016 7:1}
+      \field{month}{5}
+      \field{title}{Repeated quantum error correction on a continuously encoded qubit by real-time feedback}
+      \field{volume}{7}
+      \field{year}{2016}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1038/ncomms11526
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/ncomms11526
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/ncomms11526
+      \endverb
+      \keyw{Applied physics,Quantum information,Qubits}
+    \endentry
+    \entry{deutsch_1995}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6348af8b7acb284da13ca1c05d28c27e}{%
+           family={Deutsch},
+           familyi={D\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2c5bc9d05a0ed02006ab74a3089ddca7}{%
+           family={Barenco},
+           familyi={B\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1395f39eb493cf3ed78c74785d3f9a9b}{%
+           family={Ekert},
+           familyi={E\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f84973641ac8fcf21e9e573ebaa433da}
+      \strng{fullhash}{f84973641ac8fcf21e9e573ebaa433da}
+      \strng{bibnamehash}{f84973641ac8fcf21e9e573ebaa433da}
+      \strng{authorbibnamehash}{f84973641ac8fcf21e9e573ebaa433da}
+      \strng{authornamehash}{f84973641ac8fcf21e9e573ebaa433da}
+      \strng{authorfullhash}{f84973641ac8fcf21e9e573ebaa433da}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We show that in quantum computation almost every gate that operates on two or more bits is a universal gate. We discuss various physical considerations bearing on the proper definition of universality for computational components such as logic gates.}
+      \field{issn}{1364-5021}
+      \field{issue}{1937}
+      \field{journaltitle}{Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences}
+      \field{month}{6}
+      \field{title}{Universality in quantum computation}
+      \field{volume}{449}
+      \field{year}{1995}
+      \field{pages}{669\bibrangedash 677}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1098/rspa.1995.0065
+      \endverb
+      \verb{urlraw}
+      \verb http://rspa.royalsocietypublishing.org/cgi/doi/10.1098/rspa.1995.0065
+      \endverb
+      \verb{url}
+      \verb http://rspa.royalsocietypublishing.org/cgi/doi/10.1098/rspa.1995.0065
+      \endverb
+    \endentry
+    \entry{Hubbard1963}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e8fad1a90868b785d776eb1ac2a631eb}{%
+           family={Hubbard},
+           familyi={H\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society}%
+      }
+      \strng{namehash}{e8fad1a90868b785d776eb1ac2a631eb}
+      \strng{fullhash}{e8fad1a90868b785d776eb1ac2a631eb}
+      \strng{bibnamehash}{e8fad1a90868b785d776eb1ac2a631eb}
+      \strng{authorbibnamehash}{e8fad1a90868b785d776eb1ac2a631eb}
+      \strng{authornamehash}{e8fad1a90868b785d776eb1ac2a631eb}
+      \strng{authorfullhash}{e8fad1a90868b785d776eb1ac2a631eb}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{It is pointed out that one of the main effects of correlation phenomena in d- and f-bands is to give rise to behavior characteristic of the atomic or Heitler-London model. To investigate this situation a simple, approximate model for the interaction of electrons in narrow energy bands is introduced. The results of applying the Hartree --Fock approximation to this model are examined. Using a Greenfunction technique an approximate solution of the correlation problem for this model is obtained. This solution has the property of reducing to the exact atomic solution in the appropriate unit and to the ordinary uncorrelated band picture in the opposite limit. The condition for ferromagnetism of this solution is discussed. To clarify the physical meaning of the solution a two-electron example is examined. (auth)}
+      \field{issn}{0080-4630}
+      \field{issue}{1365}
+      \field{journaltitle}{Proc. Roy. Soc. (London), Ser. A}
+      \field{month}{11}
+      \field{title}{ELECTRON CORRELATIONS IN NARROW ENERGY BANDS}
+      \field{volume}{Vol: 276}
+      \field{year}{1963}
+      \field{pages}{238\bibrangedash 257}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1098/RSPA.1963.0204
+      \endverb
+      \keyw{atomic models,atoms,electrons,energy levels,ferromagnetic materials,green function,hartree-fock method,interactions,magnetism,numericals,physics,quantum mechanics}
     \endentry
     \entry{Hwang2017}{article}{}
       \name{author}{9}{}{%
         {{hash=c99ad1f0198b9bd3c851274b7c4f935d}{%
            family={Hwang},
            familyi={H\bibinitperiod},
-           given={J.\bibnamedelimi C.\bibnamedelimi C.},
+           given={J\bibnamedelima C\bibnamedelima C},
            giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
         {{hash=f4687e40a665d6a148ea4dd33ed9f687}{%
            family={Yang},
            familyi={Y\bibinitperiod},
-           given={C.\bibnamedelimi H.},
+           given={C\bibnamedelima H},
            giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
         {{hash=436f6cc4dcbe5432e118cdbc3972cdfb}{%
            family={Veldhorst},
            familyi={V\bibinitperiod},
-           given={M.},
+           given={M},
            giveni={M\bibinitperiod}}}%
         {{hash=d489e9be9f17cf656e60f5419c1f93d3}{%
            family={Hendrickx},
            familyi={H\bibinitperiod},
-           given={N.},
+           given={N},
            giveni={N\bibinitperiod}}}%
         {{hash=d8ea578017f170b9b174c2adbbf58302}{%
            family={Fogarty},
            familyi={F\bibinitperiod},
-           given={M.\bibnamedelimi A.},
+           given={M\bibnamedelima A},
            giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
         {{hash=369d6bcdceee817a8d812364032e7b23}{%
            family={Huang},
            familyi={H\bibinitperiod},
-           given={W.},
+           given={W},
            giveni={W\bibinitperiod}}}%
         {{hash=5c18da544f762e93c7ba7e64e8ae14a8}{%
            family={Hudson},
            familyi={H\bibinitperiod},
-           given={F.\bibnamedelimi E.},
+           given={F\bibnamedelima E},
            giveni={F\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
         {{hash=275f18458ca48cd0aa05cc274faed267}{%
            family={Morello},
            familyi={M\bibinitperiod},
-           given={A.},
+           given={A},
            giveni={A\bibinitperiod}}}%
         {{hash=e7ad6d11638c7755a276c56843c14c2d}{%
            family={Dzurak},
            familyi={D\bibinitperiod},
-           given={A.\bibnamedelimi S.},
+           given={A\bibnamedelima S},
            giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
@@ -120,10 +568,10 @@
       \field{issue}{4}
       \field{journaltitle}{Phys. Rev. B}
       \field{month}{7}
-      \field{title}{Impact of $g$-factors and valleys on spin qubits in a silicon double quantum dot}
+      \field{title}{Impact of g-factors and valleys on spin qubits in a silicon double quantum dot}
       \field{volume}{96}
       \field{year}{2017}
-      \field{pages}{045302}
+      \field{pages}{45302}
       \range{pages}{1}
       \verb{doi}
       \verb 10.1103/PhysRevB.96.045302
@@ -134,6 +582,280 @@
       \verb{url}
       \verb https://link.aps.org/doi/10.1103/PhysRevB.96.045302
       \endverb
+    \endentry
+    \entry{Jock2018}{article}{}
+      \name{author}{15}{}{%
+        {{hash=593b8b44f4ea29b72b698c7e098d15df}{%
+           family={Jock},
+           familyi={J\bibinitperiod},
+           given={Ryan\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=32f00096c67189a75293ff10e34b23bb}{%
+           family={Jacobson},
+           familyi={J\bibinitperiod},
+           given={N.\bibnamedelimi Tobias},
+           giveni={N\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=37bae22b2c94a301b3072be9dcd2f20b}{%
+           family={Harvey-Collard},
+           familyi={H\bibinithyphendelim C\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=07e7b00c4b4aec956c1dbe92f6f1d88d}{%
+           family={Mounce},
+           familyi={M\bibinitperiod},
+           given={Andrew\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=36bbf41b410a3c22bb530b4399e0eaae}{%
+           family={Srinivasa},
+           familyi={S\bibinitperiod},
+           given={Vanita},
+           giveni={V\bibinitperiod}}}%
+        {{hash=52a24c8cb2955fbd6e1615337185d71d}{%
+           family={Ward},
+           familyi={W\bibinitperiod},
+           given={Dan\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=fec5ecb2986d46cd1d53ab2f051ec153}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=26044b14f3d0ad9ee0fc444e57ce4389}{%
+           family={Manginell},
+           familyi={M\bibinitperiod},
+           given={Ron},
+           giveni={R\bibinitperiod}}}%
+        {{hash=270662c77382f7843cfb0704204886d5}{%
+           family={Wendt},
+           familyi={W\bibinitperiod},
+           given={Joel\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=154d6d2b932cb9374df19c12afb3eb49}{%
+           family={Rudolph},
+           familyi={R\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=29c40c8240b49d31f76a507465ec283c}{%
+           family={Pluym},
+           familyi={P\bibinitperiod},
+           given={Tammy},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b1360bdc8ff5f9558f0488a512eac60f}{%
+           family={Gamble},
+           familyi={G\bibinitperiod},
+           given={John\bibnamedelima King},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=70c47a7443a0e0d81661ad85445be83a}{%
+           family={Baczewski},
+           familyi={B\bibinitperiod},
+           given={Andrew\bibnamedelima D.},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=4b3612181849e4f9ebac2479c189e3e9}{%
+           family={Witzel},
+           familyi={W\bibinitperiod},
+           given={Wayne\bibnamedelima M.},
+           giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=13d8f374a8e80605eeb0311c9a16b582}{%
+           family={Carroll},
+           familyi={C\bibinitperiod},
+           given={Malcolm\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{5c13cb0f5a3c20ae623624801f0a05e3}
+      \strng{fullhash}{63a9a6538179ec4d9e89f06d983caa00}
+      \strng{bibnamehash}{5c13cb0f5a3c20ae623624801f0a05e3}
+      \strng{authorbibnamehash}{5c13cb0f5a3c20ae623624801f0a05e3}
+      \strng{authornamehash}{5c13cb0f5a3c20ae623624801f0a05e3}
+      \strng{authorfullhash}{63a9a6538179ec4d9e89f06d983caa00}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The silicon metal-oxide-semiconductor (MOS) material system is a technologically important implementation of spin-based quantum information processing. However, the MOS interface is imperfect leading to concerns about 1/f trap noise and variability in the electron g-factor due to spin-orbit (SO) effects. Here we advantageously use interface-SO coupling for a critical control axis in a double-quantum-dot singlet-triplet qubit. The magnetic fieldorientation dependence of the g-factors is consistent with Rashba and Dresselhaus interface-SO contributions. The resulting all-electrical, two-Axis control is also used to probe the MOS interface noise. The measured inhomogeneous dephasing time, T2m, of 1.6 ?s is consistent with 99.95 28Si enrichment. Furthermore, when tuned to be sensitive to exchange fluctuations, a quasi-static charge noise detuning variance of 2 μeV is observed, competitive with low-noise reports in other semiconductor qubits. This work, therefore, demonstrates that the MOS interface inherently provides properties for two-Axis qubit control, while not increasing noise relative to other material choices.}
+      \field{issn}{20411723}
+      \field{issue}{1}
+      \field{journaltitle}{Nature Communications}
+      \field{month}{12}
+      \field{title}{A silicon metal-oxide-semiconductor electron spin-orbit qubit}
+      \field{volume}{9}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1038/S41467-018-04200-0
+      \endverb
+      \verb{urlraw}
+      \verb /pmc/articles/PMC5931988/ /pmc/articles/PMC5931988/?report=abstract https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5931988/
+      \endverb
+      \verb{url}
+      \verb /pmc/articles/PMC5931988/%20/pmc/articles/PMC5931988/?report=abstract%20https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5931988/
+      \endverb
+    \endentry
+    \entry{Keith2019}{article}{}
+      \name{author}{7}{}{%
+        {{hash=aa13469e3ef6bcd32b108c20e2d91e67}{%
+           family={Keith},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9c59775b58cad47c33a4a1b952e32086}{%
+           family={Gorman},
+           familyi={G\bibinitperiod},
+           given={S.\bibnamedelimi K.},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=8e77d0822c293a073bb45713eb90ad38}{%
+           family={Kranz},
+           familyi={K\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=655b6a87a756b5652aefc774a322ac3f}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b421e66f20d7226577d084713686fd68}{%
+           family={Keizer},
+           familyi={K\bibinitperiod},
+           given={J.\bibnamedelimi G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=90d9dab844e64d4ab339de7221ff819d}{%
+           family={Broome},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=9c0e6008af21f67008ff7b680bec152d}{%
+           family={Simmons},
+           familyi={S\bibinitperiod},
+           given={M.\bibnamedelimi Y.},
+           giveni={M\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Physics Publishing}%
+      }
+      \strng{namehash}{ada096cf891c2981e8d68ccb02f02f45}
+      \strng{fullhash}{1d289cee79e1a51220c87b388d1e9553}
+      \strng{bibnamehash}{ada096cf891c2981e8d68ccb02f02f45}
+      \strng{authorbibnamehash}{ada096cf891c2981e8d68ccb02f02f45}
+      \strng{authornamehash}{ada096cf891c2981e8d68ccb02f02f45}
+      \strng{authorfullhash}{1d289cee79e1a51220c87b388d1e9553}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Determination of qubit initialisation and measurement fidelity is important for the overall performance of a quantum computer. However, the method by which it is calculated in semiconductor qubits varies between experiments. In this paper we present a full theoretical analysis of electronic single-shot readout and describe critical parameters to achieve high fidelity readout. In particular, we derive a model for energy selective state readout based on a charge detector response and examine how to optimise the fidelity by choosing correct experimental parameters. Although we focus on single electron spin readout, the theory presented can be applied to other electronic readout techniques in semiconductors that use a reservoir.}
+      \field{issn}{13672630}
+      \field{issue}{6}
+      \field{journaltitle}{New Journal of Physics}
+      \field{month}{6}
+      \field{title}{Benchmarking high fidelity single-shot readout of semiconductor qubits}
+      \field{volume}{21}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.1088/1367-2630/AB242C
+      \endverb
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/333336348_Benchmarking_high_fidelity_single-shot_readout_of_semiconductor_qubits
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/333336348_Benchmarking_high_fidelity_single-shot_readout_of_semiconductor_qubits
+      \endverb
+      \keyw{Benchmark,Fidelity,Readout,Semiconductor,Single-shot}
+    \endentry
+    \entry{Dressel2022}{article}{}
+      \name{author}{6}{}{%
+        {{hash=a2aad59cca4802085ca304918391ea22}{%
+           family={Livingston},
+           familyi={L\bibinitperiod},
+           given={William\bibnamedelima P.},
+           giveni={W\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=76fd55834bcbc122f1ba18f0aabd20ea}{%
+           family={Blok},
+           familyi={B\bibinitperiod},
+           given={Machiel\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=82a2a79ab27071123849b1040157c657}{%
+           family={Flurin},
+           familyi={F\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+        {{hash=565380e088bbadc6ef09ee23d96ea09d}{%
+           family={Dressel},
+           familyi={D\bibinitperiod},
+           given={Justin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a49c6e21a33839255b732ee3085d9548}{%
+           family={Jordan},
+           familyi={J\bibinitperiod},
+           given={Andrew\bibnamedelima N.},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=87601df04adf30927e0cfebed72f1fc8}{%
+           family={Siddiqi},
+           familyi={S\bibinitperiod},
+           given={Irfan},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{b1d14c1f8a676d7632f6c01d87009dbf}
+      \strng{fullhash}{898b12638e5ad16fd021f7c16c405108}
+      \strng{bibnamehash}{b1d14c1f8a676d7632f6c01d87009dbf}
+      \strng{authorbibnamehash}{b1d14c1f8a676d7632f6c01d87009dbf}
+      \strng{authornamehash}{b1d14c1f8a676d7632f6c01d87009dbf}
+      \strng{authorfullhash}{898b12638e5ad16fd021f7c16c405108}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The storage and processing of quantum information are susceptible to external noise, resulting in computational errors. A powerful method to suppress these effects is quantum error correction. Typically, quantum error correction is executed in discrete rounds, using entangling gates and projective measurement on ancillary qubits to complete each round of error correction. Here we use direct parity measurements to implement a continuous quantum bit-flip correction code in a resource-efficient manner, eliminating entangling gates, ancillary qubits, and their associated errors. An FPGA controller actively corrects errors as they are detected, achieving an average bit-flip detection efficiency of up to 91. Furthermore, the protocol increases the relaxation time of the protected logical qubit by a factor of 2.7 over the relaxation times of the bare comprising qubits. Our results showcase resource-efficient stabilizer measurements in a multi-qubit architecture and demonstrate how continuous error correction codes can address challenges in realizing a fault-tolerant system. Continuous quantum error correction requires less ancillary resources compared to standard QEC methods. Here, the authors demonstrate experimentally a continuous quantum error correction code in a planar superconducting architecture.}
+      \field{issn}{2041-1723}
+      \field{issue}{1}
+      \field{journaltitle}{Nature Communications 2022 13:1}
+      \field{month}{4}
+      \field{title}{Experimental demonstration of continuous quantum error correction}
+      \field{volume}{13}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1038/s41467-022-29906-0
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41467-022-29906-0
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41467-022-29906-0
+      \endverb
+      \keyw{Quantum information,Qubits}
+    \endentry
+    \entry{moon_2005}{book}{}
+      \name{author}{1}{}{%
+        {{hash=2bc1fd060e4f216a62bb0eb407606ece}{%
+           family={Moon},
+           familyi={M\bibinitperiod},
+           given={Todd\bibnamedelima K},
+           giveni={T\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley-Interscience}%
+      }
+      \strng{namehash}{2bc1fd060e4f216a62bb0eb407606ece}
+      \strng{fullhash}{2bc1fd060e4f216a62bb0eb407606ece}
+      \strng{bibnamehash}{2bc1fd060e4f216a62bb0eb407606ece}
+      \strng{authorbibnamehash}{2bc1fd060e4f216a62bb0eb407606ece}
+      \strng{authornamehash}{2bc1fd060e4f216a62bb0eb407606ece}
+      \strng{authorfullhash}{2bc1fd060e4f216a62bb0eb407606ece}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{isbn}{0471648000}
+      \field{title}{Error Correction Coding: Mathematical Methods and Algorithms}
+      \field{year}{2005}
+      \field{pages}{800}
+      \range{pages}{1}
     \endentry
     \entry{Nakajima2019}{article}{}
       \name{author}{14}{}{%
@@ -233,7 +955,43 @@
       \verb https://doi.org/10.1038/s41565-019-0426-x
       \endverb
     \endentry
-    \entry{cuda}{misc}{}
+    \entry{Nielsen2010}{article}{}
+      \name{author}{2}{}{%
+        {{hash=afe17482fc813e497188aee3b3783879}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={Michael\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=415ddff2f58b25977b1a2dedf18f4501}{%
+           family={Chuang},
+           familyi={C\bibinitperiod},
+           given={Isaac\bibnamedelima L.},
+           giveni={I\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{fullhash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{bibnamehash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{authorbibnamehash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{authornamehash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{authorfullhash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{One of the most cited books in physics of all time, Quantum Computation and Quantum Information remains the best textbook in this exciting field of science. This 10th anniversary edition includes an introduction from the authors setting the work in context. This comprehensive textbook describes such remarkable effects as fast quantum algorithms, quantum teleportation, quantum cryptography and quantum error-correction. Quantum mechanics and computer science are introduced before moving on to describe what a quantum computer is, how it can be used to solve problems faster than 'classical' computers and its real-world implementation. It concludes with an in-depth treatment of quantum information. Containing a wealth of figures and exercises, this well-known textbook is ideal for courses on the subject, and will interest beginning graduate students and researchers in physics, computer science, mathematics, and electrical engineering.}
+      \field{isbn}{9780511976667}
+      \field{journaltitle}{Quantum Computation and Quantum Information}
+      \field{month}{12}
+      \field{title}{Quantum Computation and Quantum Information: 10th Anniversary Edition}
+      \field{year}{2010}
+      \verb{doi}
+      \verb 10.1017/CBO9780511976667
+      \endverb
+    \endentry
+    \entry{cuda}{generic}{}
       \name{author}{3}{}{%
         {{hash=a2fe9051fe051f819bd739ef3e340377}{%
            family={NVIDIA},
@@ -246,8 +1004,8 @@
         {{hash=d3e7f971501ea31ce2bc16e2c490eb05}{%
            family={Fitzek},
            familyi={F\bibinitperiod},
-           given={Frank\bibnamedelima H.P.},
-           giveni={F\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+           given={Frank\bibnamedelimb H\bibnamedelima P},
+           giveni={F\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
       }
       \strng{namehash}{fa836513bc270a16195fdbae96d2fb6d}
       \strng{fullhash}{fa836513bc270a16195fdbae96d2fb6d}
@@ -394,6 +1152,477 @@
       \endverb
       \keyw{doi:10.1103/PhysRevX.13.011023 url:https://doi.org/10.1103/PhysRevX.13.011023}
     \endentry
+    \entry{roffe_2019}{article}{}
+      \name{author}{1}{}{%
+        {{hash=221ffd441612b230ede4aafcb78fe79e}{%
+           family={Roffe},
+           familyi={R\bibinitperiod},
+           given={Joschka},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{221ffd441612b230ede4aafcb78fe79e}
+      \strng{fullhash}{221ffd441612b230ede4aafcb78fe79e}
+      \strng{bibnamehash}{221ffd441612b230ede4aafcb78fe79e}
+      \strng{authorbibnamehash}{221ffd441612b230ede4aafcb78fe79e}
+      \strng{authornamehash}{221ffd441612b230ede4aafcb78fe79e}
+      \strng{authorfullhash}{221ffd441612b230ede4aafcb78fe79e}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Quantum error correction protocols will play a central role in the realisation of quantum computing; the choice of error correction code will influence the full quantum computing stack, from the layout of qubits at the physical level to gate compilation strategies at the software level. As such, familiarity with quantum coding is an essential prerequisite for the understanding of current and future quantum computing architectures. In this review, we provide an introductory guide to the theory and implementation of quantum error correction codes. Where possible, fundamental concepts are described using the simplest examples of detection and correction codes, the working of which can be verified by hand. We outline the construction and operation of the surface code, the most widely pursued error correction protocol for experiment. Finally, we discuss issues that arise in the practical implementation of the surface code and other quantum error correction codes.}
+      \field{issn}{0010-7514}
+      \field{issue}{3}
+      \field{journaltitle}{Contemporary physics}
+      \field{month}{7}
+      \field{title}{Quantum error correction: an introductory guide}
+      \field{volume}{60}
+      \field{year}{2019}
+      \field{pages}{226\bibrangedash 245}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1080/00107514.2019.1667078
+      \endverb
+      \verb{urlraw}
+      \verb https://www.tandfonline.com/doi/full/10.1080/00107514.2019.1667078
+      \endverb
+      \verb{url}
+      \verb https://www.tandfonline.com/doi/full/10.1080/00107514.2019.1667078
+      \endverb
+    \endentry
+    \entry{Shim2022}{article}{}
+      \name{author}{1}{}{%
+        {{hash=385004d7957ac6ee2f1b965df3940267}{%
+           family={Shim},
+           familyi={S\bibinitperiod},
+           given={Yun\bibnamedelima Pil},
+           giveni={Y\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Institute of Physics Inc.}%
+      }
+      \strng{namehash}{385004d7957ac6ee2f1b965df3940267}
+      \strng{fullhash}{385004d7957ac6ee2f1b965df3940267}
+      \strng{bibnamehash}{385004d7957ac6ee2f1b965df3940267}
+      \strng{authorbibnamehash}{385004d7957ac6ee2f1b965df3940267}
+      \strng{authornamehash}{385004d7957ac6ee2f1b965df3940267}
+      \strng{authorfullhash}{385004d7957ac6ee2f1b965df3940267}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A Pauli spin blockade in quantum dot systems occurs when the charge transport is allowed only for some spin states, and it has been an efficient tool in spin-based qubit devices in semiconductors. We theoretically investigate a Pauli spin blockade in a triple quantum dot molecule consisting of three identical quantum dots in a semiconductor in the presence of an external magnetic field through the molecule. When the three-electron state is on resonance with two- or four-electron states, the Aharonov-Bohm oscillation and the Zeeman splitting lead to a periodic spin blockade effect. We focus on the spin blockade at a two- and three-electron resonance and show that we can tune the magnetic field to selectively allow only either a spin-singlet or spin-triplet state to add an additional electron from tunnel-coupled leads. This spin blockade maintains the three quantum dots at the optimal sweet spot against the charge noise, demonstrating its potential as an efficient readout scheme for the qubits in quantum dot systems.}
+      \field{issn}{10897550}
+      \field{issue}{6}
+      \field{journaltitle}{Journal of Applied Physics}
+      \field{month}{8}
+      \field{title}{Pauli spin blockade in a resonant triple quantum dot molecule}
+      \field{volume}{132}
+      \field{year}{2022}
+      \field{pages}{64402}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/5.0098716/2837337
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.aip.org/aip/jap/article/132/6/064402/2837337/Pauli-spin-blockade-in-a-resonant-triple-quantum
+      \endverb
+      \verb{url}
+      \verb https://pubs.aip.org/aip/jap/article/132/6/064402/2837337/Pauli-spin-blockade-in-a-resonant-triple-quantum
+      \endverb
+    \endentry
+    \entry{shor_1997}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7082a9c99d5d51479d4cfba6bbac2d30}{%
+           family={Shor},
+           familyi={S\bibinitperiod},
+           given={Peter\bibnamedelima W},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{7082a9c99d5d51479d4cfba6bbac2d30}
+      \strng{fullhash}{7082a9c99d5d51479d4cfba6bbac2d30}
+      \strng{bibnamehash}{7082a9c99d5d51479d4cfba6bbac2d30}
+      \strng{authorbibnamehash}{7082a9c99d5d51479d4cfba6bbac2d30}
+      \strng{authornamehash}{7082a9c99d5d51479d4cfba6bbac2d30}
+      \strng{authorfullhash}{7082a9c99d5d51479d4cfba6bbac2d30}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A digital computer is generally believed to be an efficient universal computing device; that is, it is believed able to simulate any physical computing device with an increase in computation time of at most a polynomial factor. This may not be true when quantum mechanics is taken into consideration. This paper considers factoring integers and finding discrete logarithms, two problems which are generally thought to be hard on a classical computer and have been used as the basis of several proposed cryptosystems. Efficient randomized algorithms are given for these two problems on a hypothetical quantum computer. These algorithms take a number of steps polynomial in the input size, e.g., the number of digits of the integer to be factored.}
+      \field{issn}{0097-5397}
+      \field{issue}{5}
+      \field{journaltitle}{SIAM Journal on Computing}
+      \field{month}{10}
+      \field{title}{Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer}
+      \field{volume}{26}
+      \field{year}{1997}
+      \field{pages}{1484\bibrangedash 1509}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1137/S0097539795293172
+      \endverb
+      \verb{urlraw}
+      \verb http://epubs.siam.org/doi/10.1137/S0097539795293172
+      \endverb
+      \verb{url}
+      \verb http://epubs.siam.org/doi/10.1137/S0097539795293172
+      \endverb
+    \endentry
+    \entry{shor_1995}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7082a9c99d5d51479d4cfba6bbac2d30}{%
+           family={Shor},
+           familyi={S\bibinitperiod},
+           given={Peter\bibnamedelima W},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{7082a9c99d5d51479d4cfba6bbac2d30}
+      \strng{fullhash}{7082a9c99d5d51479d4cfba6bbac2d30}
+      \strng{bibnamehash}{7082a9c99d5d51479d4cfba6bbac2d30}
+      \strng{authorbibnamehash}{7082a9c99d5d51479d4cfba6bbac2d30}
+      \strng{authornamehash}{7082a9c99d5d51479d4cfba6bbac2d30}
+      \strng{authorfullhash}{7082a9c99d5d51479d4cfba6bbac2d30}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1050-2947}
+      \field{issue}{4}
+      \field{journaltitle}{Physical Review A}
+      \field{month}{10}
+      \field{title}{Scheme for reducing decoherence in quantum computer memory}
+      \field{volume}{52}
+      \field{year}{1995}
+      \field{pages}{R2493\bibrangedash R2496}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1103/PhysRevA.52.R2493
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevA.52.R2493
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevA.52.R2493
+      \endverb
+    \endentry
+    \entry{Loss2022}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c8ad6ebdc162d025f440bf08b2c0368f}{%
+           family={Stano},
+           familyi={S\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=484a7301172505faf210926187741479}{%
+           family={Loss},
+           familyi={L\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{20470f0dd23e7cb05fb764bd93110ce2}
+      \strng{fullhash}{20470f0dd23e7cb05fb764bd93110ce2}
+      \strng{bibnamehash}{20470f0dd23e7cb05fb764bd93110ce2}
+      \strng{authorbibnamehash}{20470f0dd23e7cb05fb764bd93110ce2}
+      \strng{authornamehash}{20470f0dd23e7cb05fb764bd93110ce2}
+      \strng{authorfullhash}{20470f0dd23e7cb05fb764bd93110ce2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This Technical Review collects values of selected performance characteristics of semiconductor spin qubits defined in electrically controlled nanostructures. The characteristics are envisaged to serve as a community source for the values of figures of merit with agreed definitions allowing the comparison of different spin-qubit platforms. We include characteristics on the qubit coherence, speed, fidelity and qubit size of multi-qubit devices. The focus is on collecting and curating the values of these characteristics as reported in the literature, rather than on their motivation or significance. Spin qubits hosted in semiconducting nanostructures controlled and probed electrically are among platforms pursued to serve as quantum computing hardware. This Technical Review surveys experimentally achieved values on coherence, speed, fidelity and multi-qubit array size, reflecting the progress of semiconducting spin qubits over the past two decades.}
+      \field{isbn}{0123456789}
+      \field{issn}{2522-5820}
+      \field{issue}{10}
+      \field{journaltitle}{Nature Reviews Physics 2022 4:10}
+      \field{month}{8}
+      \field{title}{Review of performance metrics of spin qubits in gated semiconducting nanostructures}
+      \field{volume}{4}
+      \field{year}{2022}
+      \field{pages}{672\bibrangedash 688}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1038/s42254-022-00484-w
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s42254-022-00484-w
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s42254-022-00484-w
+      \endverb
+      \keyw{Quantum information,Qubits}
+    \endentry
+    \entry{Tadokoro2021}{article}{}
+      \name{author}{9}{}{%
+        {{hash=40923674e2cb82414526dea341e59cd6}{%
+           family={Tadokoro},
+           familyi={T\bibinitperiod},
+           given={Masahiro},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b9b20d8108b2b716c1d1acdeb9363da3}{%
+           family={Nakajima},
+           familyi={N\bibinitperiod},
+           given={Takashi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=14ba7b64a13feb6cafd45bf1f4e9c72f}{%
+           family={Kobayashi},
+           familyi={K\bibinitperiod},
+           given={Takashi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=5e6f8eaf923121a756bc2ee303eb2984}{%
+           family={Takeda},
+           familyi={T\bibinitperiod},
+           given={Kenta},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e5affeb60c5b106079be1f8c43e00312}{%
+           family={Noiri},
+           familyi={N\bibinitperiod},
+           given={Akito},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b130771ddc23a6aa66a7285492cfc9ad}{%
+           family={Tomari},
+           familyi={T\bibinitperiod},
+           given={Kaito},
+           giveni={K\bibinitperiod}}}%
+        {{hash=104c16f21dac8ed90e3c74d6681cb784}{%
+           family={Yoneda},
+           familyi={Y\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4456d8a640205d83cdbc3d7e14c81516}{%
+           family={Tarucha},
+           familyi={T\bibinitperiod},
+           given={Seigo},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8936756b200126df98ebec92a11ec238}{%
+           family={Kodera},
+           familyi={K\bibinitperiod},
+           given={Tetsuo},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{d8615046d0d507240a1609f425cf4081}
+      \strng{fullhash}{4aeadbaf44cc11342c77518b0f517f9f}
+      \strng{bibnamehash}{d8615046d0d507240a1609f425cf4081}
+      \strng{authorbibnamehash}{d8615046d0d507240a1609f425cf4081}
+      \strng{authornamehash}{d8615046d0d507240a1609f425cf4081}
+      \strng{authorfullhash}{4aeadbaf44cc11342c77518b0f517f9f}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Electron spins in Si are an attractive platform for quantum computation, backed with their scalability and fast, high-fidelity quantum logic gates. Despite the importance of two-dimensional integration with efficient connectivity between qubits for medium- to large-scale quantum computation, however, a practical device design that guarantees qubit addressability is yet to be seen. Here, we propose a practical 3 × 3 quantum dot device design and a larger-scale design as a longer-term target. The design goal is to realize qubit connectivity to the four nearest neighbors while ensuring addressability. We show that a 3 × 3 quantum dot array can execute four-qubit Grover’s algorithm more efficiently than the one-dimensional counterpart. To scale up the two-dimensional array beyond 3 × 3, we propose a novel structure with ferromagnetic gate electrodes. Our results showcase the possibility of medium-sized quantum processors in Si with fast quantum logic gates and long coherence times.}
+      \field{isbn}{0123456789}
+      \field{issn}{2045-2322}
+      \field{issue}{1}
+      \field{journaltitle}{Scientific Reports 2021 11:1}
+      \field{month}{5}
+      \field{title}{Designs for a two-dimensional Si quantum dot array with spin qubit addressability}
+      \field{volume}{11}
+      \field{year}{2021}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1038/s41598-021-98212-4
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41598-021-98212-4
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41598-021-98212-4
+      \endverb
+      \keyw{Quantum dots,Quantum information,Qubits}
+    \endentry
+    \entry{tilly_2022}{article}{}
+      \name{author}{11}{}{%
+        {{hash=e89afd76e739d24b6a9e723873e46a0d}{%
+           family={Tilly},
+           familyi={T\bibinitperiod},
+           given={Jules},
+           giveni={J\bibinitperiod}}}%
+        {{hash=815b49d34a2166323e21f54355f9ce2c}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Hongxiang},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e5d3d918b7be338f8a424a23f0dce0ba}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Shuxiang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=400cb20be1a645ad4be6c55d828fab8b}{%
+           family={Picozzi},
+           familyi={P\bibinitperiod},
+           given={Dario},
+           giveni={D\bibinitperiod}}}%
+        {{hash=abfb3de829a93fdf1dbd5bcac06ef044}{%
+           family={Setia},
+           familyi={S\bibinitperiod},
+           given={Kanav},
+           giveni={K\bibinitperiod}}}%
+        {{hash=96641b60b95eb223b3df53d9263f63ff}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Ying},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b1d176833e606713973a4617ef10e618}{%
+           family={Grant},
+           familyi={G\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+        {{hash=87c1e1f5d917ee25158301ca68f9794d}{%
+           family={Wossnig},
+           familyi={W\bibinitperiod},
+           given={Leonard},
+           giveni={L\bibinitperiod}}}%
+        {{hash=a94f26fffc034d863986f733b1ceaeff}{%
+           family={Rungger},
+           familyi={R\bibinitperiod},
+           given={Ivan},
+           giveni={I\bibinitperiod}}}%
+        {{hash=8c7b2231792946b925014d762dcf665a}{%
+           family={Booth},
+           familyi={B\bibinitperiod},
+           given={George\bibnamedelima H},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=abde27073a2ab1a81311c3289a4e28c5}{%
+           family={Tennyson},
+           familyi={T\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{7aa107736bfa0f89edac9f086a4ab520}
+      \strng{fullhash}{f0d12517a9bb62c689bbce2a571c3243}
+      \strng{bibnamehash}{7aa107736bfa0f89edac9f086a4ab520}
+      \strng{authorbibnamehash}{7aa107736bfa0f89edac9f086a4ab520}
+      \strng{authornamehash}{7aa107736bfa0f89edac9f086a4ab520}
+      \strng{authorfullhash}{f0d12517a9bb62c689bbce2a571c3243}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The variational quantum eigensolver (or VQE) uses the variational principle to compute the ground state energy of a Hamiltonian, a problem that is central to quantum chemistry and condensed matter physics. Conventional computing methods are constrained in their accuracy due to the computational limits. The VQE may be used to model complex wavefunctions in polynomial time, making it one of the most promising near-term applications for quantum computing. Finding a path to navigate the relevant literature has rapidly become an overwhelming task, with many methods promising to improve different parts of the algorithm. Despite strong theoretical underpinnings suggesting excellent scaling of individual VQE components, studies have pointed out that their various pre-factors could be too large to reach a quantum computing advantage over conventional methods. This review aims to provide an overview of the progress that has been made on the different parts of the algorithm. All the different components of the algorithm are reviewed in detail including representation of Hamiltonians and wavefunctions on a quantum computer, the optimization process, the post-processing mitigation of errors, and best practices are suggested. We identify four main areas of future research:(1) optimal measurement schemes for reduction of circuit repetitions; (2) large scale parallelization across many quantum computers;(3) ways to overcome the potential appearance of vanishing gradients in the optimization process, and how the number of iterations required for the optimization scales with system size; (4) the extent to which VQE suffers for quantum noise, and whether this noise can be mitigated. The answers to these open research questions will determine the routes for the VQE to achieve quantum advantage as the quantum computing hardware scales up and as the noise levels are reduced.}
+      \field{issn}{03701573}
+      \field{journaltitle}{Physics Reports}
+      \field{month}{11}
+      \field{title}{The Variational Quantum Eigensolver: A review of methods and best practices}
+      \field{volume}{986}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 128}
+      \range{pages}{128}
+      \verb{doi}
+      \verb 10.1016/j.physrep.2022.08.003
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0370157322003118
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0370157322003118
+      \endverb
+    \endentry
+    \entry{Veldhorst2015}{article}{}
+      \name{author}{12}{}{%
+        {{hash=436f6cc4dcbe5432e118cdbc3972cdfb}{%
+           family={Veldhorst},
+           familyi={V\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f4687e40a665d6a148ea4dd33ed9f687}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={C.\bibnamedelimi H.},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=c99ad1f0198b9bd3c851274b7c4f935d}{%
+           family={Hwang},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi C.C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=369d6bcdceee817a8d812364032e7b23}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=a07d88ad2c2bb26066520531b32b1d15}{%
+           family={Dehollain},
+           familyi={D\bibinitperiod},
+           given={J.\bibnamedelimi P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=815de6141a40d8cc1ebcfc61263fe5bb}{%
+           family={Muhonen},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=e2f2c7b31069c9fcb75931be4bacdf4a}{%
+           family={Simmons},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ec350a165d9a433adc6b8ff65a9320c7}{%
+           family={Laucht},
+           familyi={L\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5c18da544f762e93c7ba7e64e8ae14a8}{%
+           family={Hudson},
+           familyi={H\bibinitperiod},
+           given={F.\bibnamedelimi E.},
+           giveni={F\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=0e1622ebdabfdba4b74326b1097f8678}{%
+           family={Itoh},
+           familyi={I\bibinitperiod},
+           given={K.\bibnamedelimi M.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=275f18458ca48cd0aa05cc274faed267}{%
+           family={Morello},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e7ad6d11638c7755a276c56843c14c2d}{%
+           family={Dzurak},
+           familyi={D\bibinitperiod},
+           given={A.\bibnamedelimi S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature}%
+      }
+      \strng{namehash}{df4d618cdc521938e2a04e4dd90a4336}
+      \strng{fullhash}{3dc7c524e812ccddd7f3adb81ed7e16e}
+      \strng{bibnamehash}{df4d618cdc521938e2a04e4dd90a4336}
+      \strng{authorbibnamehash}{df4d618cdc521938e2a04e4dd90a4336}
+      \strng{authornamehash}{df4d618cdc521938e2a04e4dd90a4336}
+      \strng{authorfullhash}{3dc7c524e812ccddd7f3adb81ed7e16e}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Quantum computation requires qubits that can be coupled in a scalable manner, together with universal and high-fidelity one- and two-qubit logic gates. Many physical realizations of qubits exist, including single photons, trapped ions, superconducting circuits, single defects or atoms in diamond and silicon, and semiconductor quantum dots, with single-qubit fidelities that exceed the stringent thresholds required for fault-tolerant quantum computing. Despite this, high-fidelity two-qubit gates in the solid state that can be manufactured using standard lithographic techniques have so far been limited to superconducting qubits, owing to the difficulties of coupling qubits and dephasing in semiconductor systems. Here we present a two-qubit logic gate, which uses single spins in isotopically enriched silicon and is realized by performing single- and two-qubit operations in a quantum dot system using the exchange interaction, as envisaged in the Loss-DiVincenzo proposal. We realize CNOT gates via controlled-phase operations combined with single-qubit operations. Direct gate-voltage control provides single-qubit addressability, together with a switchable exchange interaction that is used in the two-qubit controlled-phase gate. By independently reading out both qubits, we measure clear anticorrelations in the two-spin probabilities of the CNOT gate.}
+      \field{issn}{1476-4687}
+      \field{issue}{7573}
+      \field{journaltitle}{Nature}
+      \field{month}{10}
+      \field{title}{A two-qubit logic gate in silicon}
+      \field{volume}{526}
+      \field{year}{2015}
+      \field{pages}{410\bibrangedash 414}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1038/NATURE15263
+      \endverb
+      \verb{urlraw}
+      \verb https://pubmed.ncbi.nlm.nih.gov/26436453/
+      \endverb
+      \verb{url}
+      \verb https://pubmed.ncbi.nlm.nih.gov/26436453/
+      \endverb
+      \keyw{A S Dzurak,C H Yang,M Veldhorst,MEDLINE,NCBI,NIH,NLM,National Center for Biotechnology Information,National Institutes of Health,National Library of Medicine,Non-P.H.S.,Non-U.S. Gov't,PubMed Abstract,Research Support,U.S. Gov't,doi:10.1038/nature15263,pmid:26436453}
+    \endentry
     \entry{Vigneau2023}{article}{}
       \name{author}{8}{}{%
         {{hash=a19b5ca17663f02b1ead21b7d540ab3b}{%
@@ -472,23 +1701,392 @@
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{issue}{1}
       \field{journaltitle}{Quantum and Semiclassical Optics: Journal of the European Optical Society Part B}
-      \field{number}{1}
       \field{title}{Quantum trajectories and quantum measurement theory}
       \field{volume}{8}
       \field{year}{1996}
       \field{pages}{205}
       \range{pages}{1}
     \endentry
+    \entry{wootters_1982}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7c42dbdfa523f87633ee456f4fa13ee1}{%
+           family={Wootters},
+           familyi={W\bibinitperiod},
+           given={W\bibnamedelima K},
+           giveni={W\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=7870a9932e246b06d809182cc15a7840}{%
+           family={Zurek},
+           familyi={Z\bibinitperiod},
+           given={W\bibnamedelima H},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{34515a74af2cc831bde694227c71205b}
+      \strng{fullhash}{34515a74af2cc831bde694227c71205b}
+      \strng{bibnamehash}{34515a74af2cc831bde694227c71205b}
+      \strng{authorbibnamehash}{34515a74af2cc831bde694227c71205b}
+      \strng{authornamehash}{34515a74af2cc831bde694227c71205b}
+      \strng{authorfullhash}{34515a74af2cc831bde694227c71205b}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0028-0836}
+      \field{issue}{5886}
+      \field{journaltitle}{Nature}
+      \field{month}{10}
+      \field{title}{A single quantum cannot be cloned}
+      \field{volume}{299}
+      \field{year}{1982}
+      \field{pages}{802\bibrangedash 803}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1038/299802a0
+      \endverb
+      \verb{urlraw}
+      \verb http://www.nature.com/doifinder/10.1038/299802a0
+      \endverb
+      \verb{url}
+      \verb http://www.nature.com/doifinder/10.1038/299802a0
+      \endverb
+    \endentry
+    \entry{Xue2020}{article}{}
+      \name{author}{11}{}{%
+        {{hash=3b92a1c4c32bd7a056011cb27764d320}{%
+           family={Xue},
+           familyi={X\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=05d9941a730ee4faa644103fbe9d642c}{%
+           family={D'anjou},
+           familyi={D\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a01cabb5dec99525e772168e316b5187}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={Thomas\bibnamedelima F.},
+           giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=867447e079ac421cecd600b28fb48d0b}{%
+           family={Ward},
+           familyi={W\bibinitperiod},
+           given={Daniel\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=41f2f8fd5dc51fa22abc67f9014943fe}{%
+           family={Savage},
+           familyi={S\bibinitperiod},
+           given={Donald\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=19c104b55d3941c91cb291735ca2f848}{%
+           family={Lagally},
+           familyi={L\bibinitperiod},
+           given={Max\bibnamedelima G.},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=4ab30f4b90f622c748382db95f870896}{%
+           family={Friesen},
+           familyi={F\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6b427f173157d66fe5844ec3509e10fe}{%
+           family={Coppersmith},
+           familyi={C\bibinitperiod},
+           given={Susan\bibnamedelima N.},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=c22891540509b24690b1331813b23d89}{%
+           family={Eriksson},
+           familyi={E\bibinitperiod},
+           given={Mark\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=7a035895ae922713b9f2244391b68e48}{%
+           family={Coish},
+           familyi={C\bibinitperiod},
+           given={William\bibnamedelima A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=32374120f06a95944f0ca5e62ad87444}{%
+           family={Vandersypen},
+           familyi={V\bibinitperiod},
+           given={Lieven\bibnamedelima M.K.},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{7cc3ab53a04ad1369de2b8b9ee01e657}
+      \strng{fullhash}{b30f636acca2e2d4267c9397f75428fc}
+      \strng{bibnamehash}{7cc3ab53a04ad1369de2b8b9ee01e657}
+      \strng{authorbibnamehash}{7cc3ab53a04ad1369de2b8b9ee01e657}
+      \strng{authornamehash}{7cc3ab53a04ad1369de2b8b9ee01e657}
+      \strng{authorfullhash}{b30f636acca2e2d4267c9397f75428fc}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Quantum error correction is of crucial importance for fault-tolerant quantum computers. As an essential step toward the implementation of quantum error-correcting codes, quantum nondemolition measurements are needed to efficiently detect the state of a logical qubit without destroying it. Here we implement quantum nondemolition measurements in a Si/SiGe two-qubit system, with one qubit serving as the logical qubit and the other serving as the ancilla. Making use of a two-qubit controlled-rotation gate, the state of the logical qubit is mapped onto the ancilla, followed by a destructive readout of the ancilla. Repeating this procedure enhances the logical readout fidelity from 75.5±0.3 to 94.5±0.2 after 15 ancilla readouts. In addition, we compare the conventional thresholding method with an improved signal processing method called soft decoding that makes use of analog information in the readout signal to better estimate the state of the logical qubit. We demonstrate that soft decoding leads to a significant reduction in the required number of repetitions when the readout errors become limited by Gaussian noise, for instance, in the case of readouts with a low signal-to-noise ratio. These results pave the way for the implementation of quantum error correction with spin qubits in silicon.}
+      \field{issn}{21603308}
+      \field{issue}{2}
+      \field{journaltitle}{Physical Review X}
+      \field{month}{6}
+      \field{title}{Repetitive Quantum Nondemolition Measurement and Soft Decoding of a Silicon Spin Qubit}
+      \field{volume}{10}
+      \field{year}{2020}
+      \field{pages}{021006}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PHYSREVX.10.021006/FIGURES/5/MEDIUM
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.aps.org/prx/abstract/10.1103/PhysRevX.10.021006
+      \endverb
+      \verb{url}
+      \verb https://journals.aps.org/prx/abstract/10.1103/PhysRevX.10.021006
+      \endverb
+      \keyw{doi:10.1103/PhysRevX.10.021006 url:https://doi.org/10.1103/PhysRevX.10.021006}
+    \endentry
+    \entry{Yadin2016}{article}{}
+      \name{author}{5}{}{%
+        {{hash=c0ed5baa2503af413bf31697eb8fb60e}{%
+           family={Yadin},
+           familyi={Y\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d6d54cdbfeb45dfbefac641e0a1b7dea}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Jiajun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=31c59d6d090e1c6e6b2e17a0869ad107}{%
+           family={Girolami},
+           familyi={G\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+        {{hash=01eff13c9ee07ed51d1dfe1b598bf969}{%
+           family={Gu},
+           familyi={G\bibinitperiod},
+           given={Mile},
+           giveni={M\bibinitperiod}}}%
+        {{hash=dc5f56e55a3999eda6373f9ef697da07}{%
+           family={Vedral},
+           familyi={V\bibinitperiod},
+           given={Vlatko},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{eddda798688f88f397e36b571a56b39d}
+      \strng{fullhash}{497b120d5eaf27623dd5f38d7989e6fb}
+      \strng{bibnamehash}{eddda798688f88f397e36b571a56b39d}
+      \strng{authorbibnamehash}{eddda798688f88f397e36b571a56b39d}
+      \strng{authornamehash}{eddda798688f88f397e36b571a56b39d}
+      \strng{authorfullhash}{497b120d5eaf27623dd5f38d7989e6fb}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A major signature of quantum mechanics beyond classical physics is coherence, the existence of superposition states. The recently developed resource theory of quantum coherence allows the formalization of incoherent operations-those operations which cannot create coherence. We identify the set of operations which additionally do not use coherence. These are such that coherence cannot be exploited by a classical observer, who measures incoherent properties of the system, to go beyond classical dynamics. We give a physical interpretation in terms of interferometry and prove a dilation theorem, showing how these operations can always be constructed by the system interacting, in an incoherent way, with an ancilla. Such a physical justification is not known for the incoherent operations; thus, our results lead to a physically well-motivated resource theory of coherence. Next, we investigate the implications for coherence in multipartite systems. We show that quantum correlations can be defined naturally with respect to a fixed basis, providing a link between coherence and quantum discord. We demonstrate the interplay between these two quantities in the operations that we study and suggest implications for the theory of quantum discord by relating these operations to those which cannot create discord.}
+      \field{issn}{21603308}
+      \field{issue}{4}
+      \field{journaltitle}{Physical Review X}
+      \field{month}{11}
+      \field{title}{Quantum processes which do not use coherence}
+      \field{volume}{6}
+      \field{year}{2016}
+      \field{pages}{041028}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PHYSREVX.6.041028/FIGURES/6/MEDIUM
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.aps.org/prx/abstract/10.1103/PhysRevX.6.041028
+      \endverb
+      \verb{url}
+      \verb https://journals.aps.org/prx/abstract/10.1103/PhysRevX.6.041028
+      \endverb
+      \keyw{Quantum information,Quantum physics}
+    \endentry
+    \entry{Zwerver2022}{article}{}
+      \name{author}{29}{}{%
+        {{hash=027da1e70eb695730ba23bfca97e986f}{%
+           family={Zwerver},
+           familyi={Z\bibinitperiod},
+           given={A.\bibnamedelimi M.J.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=25fa7bcea9ec7a1cf996aa2e05f23553}{%
+           family={Krähenmann},
+           familyi={K\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=93c4fa1d470a232bc7d5377c12276771}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={T.\bibnamedelimi F.},
+           giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=e1f57520fce3c8c05e258190db760376}{%
+           family={Lampert},
+           familyi={L\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=dc9baea4a5d2c393513769e990054305}{%
+           family={George},
+           familyi={G\bibinitperiod},
+           given={H.\bibnamedelimi C.},
+           giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=1954600d9279aafd13c0b666a7435cd9}{%
+           family={Pillarisetty},
+           familyi={P\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f994a1a4b94cf96e66c6b693bc205f31}{%
+           family={Bojarski},
+           familyi={B\bibinitperiod},
+           given={S.\bibnamedelimi A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=ef99d8dfe99b8c0a6a1687c4109a5b7a}{%
+           family={Amin},
+           familyi={A\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=dde716643fb23178e035e6b7c531605c}{%
+           family={Amitonov},
+           familyi={A\bibinitperiod},
+           given={S.\bibnamedelimi V.},
+           giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=e6bc780f90f0c2d8074341130cca3fe6}{%
+           family={Boter},
+           familyi={B\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=0067e3e465baa08ab51bf48c92c312d5}{%
+           family={Caudillo},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d294947cc56edad13d7275577f264b01}{%
+           family={Corras-Serrano},
+           familyi={C\bibinithyphendelim S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a07d88ad2c2bb26066520531b32b1d15}{%
+           family={Dehollain},
+           familyi={D\bibinitperiod},
+           given={J.\bibnamedelimi P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=c11cbd0399b6b506de59a04c2510b577}{%
+           family={Droulers},
+           familyi={D\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=bf312b85abb82775b8b5be3b3c744528}{%
+           family={Henry},
+           familyi={H\bibinitperiod},
+           given={E.\bibnamedelimi M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=95610660d941a4bf29d04aafd919836b}{%
+           family={Kotlyar},
+           familyi={K\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=0dcab1fa9e597c7f726aabc721a37d8c}{%
+           family={Lodari},
+           familyi={L\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=55b6bdcc339609ee41af728751b02b0e}{%
+           family={Lüthi},
+           familyi={L\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=d1bcd1bf5502ed773d21fd34d5c24260}{%
+           family={Michalak},
+           familyi={M\bibinitperiod},
+           given={D.\bibnamedelimi J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=eb34816b8f586e957b6491b81e1993f0}{%
+           family={Mueller},
+           familyi={M\bibinitperiod},
+           given={B.\bibnamedelimi K.},
+           giveni={B\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=303abcb46d468f2a756189b952e0d202}{%
+           family={Neyens},
+           familyi={N\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a57e41a448c4801949a5976973a6fa72}{%
+           family={Roberts},
+           familyi={R\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=01ec5f2f32a519a3c11caa63b08ecb71}{%
+           family={Samkharadze},
+           familyi={S\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=72a20370005f362f6c4a5c07e38cba08}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=240d161cf8d0ce3d776a0469e1ffd713}{%
+           family={Zietz},
+           familyi={Z\bibinitperiod},
+           given={O.\bibnamedelimi K.},
+           giveni={O\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=44b94b96f3aeb6dc91b986f4084cc0e0}{%
+           family={Scappucci},
+           familyi={S\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=436f6cc4dcbe5432e118cdbc3972cdfb}{%
+           family={Veldhorst},
+           familyi={V\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ce80bedea21b4475d781de8b597664ef}{%
+           family={Vandersypen},
+           familyi={V\bibinitperiod},
+           given={L.\bibnamedelimi M.K.},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=651ca2b2d8addb1fe864db45ef97fc5a}{%
+           family={Clarke},
+           familyi={C\bibinitperiod},
+           given={J.\bibnamedelimi S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{67b54b273da5681bb0e457431c8099c7}
+      \strng{fullhash}{48db142287a57e50642327eae977446b}
+      \strng{bibnamehash}{67b54b273da5681bb0e457431c8099c7}
+      \strng{authorbibnamehash}{67b54b273da5681bb0e457431c8099c7}
+      \strng{authornamehash}{67b54b273da5681bb0e457431c8099c7}
+      \strng{authorfullhash}{48db142287a57e50642327eae977446b}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Full-scale quantum computers require the integration of millions of qubits, and the potential of using industrial semiconductor manufacturing to meet this need has driven the development of quantum computing in silicon quantum dots. However, fabrication has so far relied on electron-beam lithography and, with a few exceptions, conventional lift-off processes that suffer from low yield and poor uniformity. Here we report quantum dots that are hosted at a 28Si/28SiO2 interface and fabricated in a 300 mm semiconductor manufacturing facility using all-optical lithography and fully industrial processing. With this approach, we achieve nanoscale gate patterns with excellent yield. In the multi-electron regime, the quantum dots allow good tunnel barrier control—a crucial feature for fault-tolerant two-qubit gates. Single-spin qubit operation using magnetic resonance in the few-electron regime reveals relaxation times of over 1 s at 1 T and coherence times of over 3 ms.}
+      \field{issn}{25201131}
+      \field{issue}{3}
+      \field{journaltitle}{Nature Electronics}
+      \field{month}{3}
+      \field{title}{Qubits made by advanced semiconductor manufacturing}
+      \field{volume}{5}
+      \field{year}{2022}
+      \field{pages}{184\bibrangedash 190}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1038/S41928-022-00727-9
+      \endverb
+      \verb{urlraw}
+      \verb https://research.tudelft.nl/en/publications/qubits-made-by-advanced-semiconductor-manufacturing
+      \endverb
+      \verb{url}
+      \verb https://research.tudelft.nl/en/publications/qubits-made-by-advanced-semiconductor-manufacturing
+      \endverb
+    \endentry
   \enddatalist
-  \missing{Jock2018}
-  \missing{Loss2021}
-  \missing{Loss2022}
-  \missing{Nielsen2010}
-  \missing{Shim2022}
-  \missing{Tadokoro2021_2}
-  \missing{Veldhorst2015}
-  \missing{Zwerver2022}
 \endrefsection
 \endinput
 
