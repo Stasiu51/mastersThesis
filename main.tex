@@ -85,29 +85,11 @@ Alas the no-cloning theorem due to Wootters and Zurek\cite{wootters_1982} proscr
     (\alpha\ket{0_1} + \beta\ket{1_1})\ket{\Psi_2} \rightarrow (\alpha\ket{0_1} + \beta\ket{1_1})(\alpha\ket{0_2} + \beta\ket{1_2})
 \end{equation*} is forbidden by quantum mechanics. Additionally, the measurement of a quantum state destroys its superposition. It is therefore difficult to see how a quantum system can be kept in a superposition state through measurements, which inherently act to destroy superpositions.
 
-The solution to this conundrum presents itself in the formalism of stabiliser codes. The key idea to encode our quantum information onto a greater number of qubits than necessary to hold it, and divide the state-space of this new set of qubits into a valid code-space and a larger error-space. The code-space and all error-spaces are each large enough to encode every valid computational state within them, and so that a single error event will push the state out of the code-space and towards the error-space. These are each degenerate subspaces of the measurement outcomes of certain sets of projective measurements called `stabilisers'. Performing these `stabiliser' measurements projects the resulting state precisely into either the code-space - in which case the error is corrected - or the error-space, in which case the error is now precisely known and can be corrected using a known unitary operation. Because the spaces are degenerate, knowledge of which sub-space the state of the system inhabits provides no information as to which valid computational state the system state represents. For more details see \cite{roffe_2019}.
+The solution to this conundrum presents itself in the formalism of stabiliser codes. The key idea to encode our quantum information onto a greater number of qubits than necessary to hold it, and divide the state-space of this new set of qubits into a valid code-space and a larger error-space. The code-space and all error-spaces are each large enough to encode every valid computational state within them, and so that a single error event will push the state out of the code-space and towards the error-space. These are each degenerate subspaces of the measurement outcomes of certain sets of projective measurements called `stabilisers'. Performing these `stabiliser' measurements projects the resulting state precisely into either the code-space - in which case the error is corrected - or the error-space, in which case the error is now precisely known and can be corrected using a known unitary operation. Because the spaces are degenerate, knowledge of which sub-space the state of the system inhabits provides no information as to which valid computational state the system state represents. The original, and simplest, proposal is the three-bit shor code, which encodes each qubit in the hilbert space of three qubits, according to
+\begin{equation*}
+    \alpha\ket{0} + \beta\ket{1} \rightarrow \alpha\ket{0_10_20_3} + \beta\ket{1_11_21_3}.
+\end{equation*} We can then determine if an error has ocurred by performing tow parity measurments $Z_1Z_2$ and $Z_2Z_3$, and perform an appropriate correction flip. This is explained in appendix \ref{appendix:shorcode}.
 
-The original and simplest example of such a correction scheme is due to Shor \cite{shor_1995}, which I outline here. In order to correct a single bit-flip error, that is to defend against the risk of the event
-\begin{equation*}
-    \alpha\ket{0} + \beta\ket{1} \rightarrow \alpha\ket{1} + \beta\ket{0}
-\end{equation*}
-we can encode a single computational qubit into a set of three (with the latter two initialised in the state $\ket{0}$) using two \texttt{CNOT} operations:
-\begin{equation*}
-\begin{aligned}
-    & (\alpha\ket{0_1} + \beta\ket{1_1})\ket{0_2}\ket{0_3}\\
-      \xrightarrow{\texttt{CNOT(1,2)}} &(\alpha\ket{0_1 0_2} + \beta\ket{1_1 1_2})\ket{0_3} \\
-     \xrightarrow{\texttt{CNOT(1,3)}}  &\alpha\ket{0_1 0_2 0_3} + \beta\ket{1_1 1_2 1_3}
-\end{aligned}
-\end{equation*}
-. Here, the code-space is $\spa[\ket{0 0 0}, \ket{1 1 1}]$ (we have dropped the qubit labels). If an error occurs on, say, the second qubit:
-\begin{equation}
-    \alpha\ket{0 0 0} + \beta\ket{1 1 1} \rightarrow \alpha\ket{0 1 0} + \beta\ket{1 0 1}
-\end{equation}
-we see that the state of the system has moved into one of three error-spaces: $\spa[\ket{0 1 0}, \ket{1 0 1}]$. We then perform a stabiliser measurement consisting of two projective measurements, \texttt{Z$_1$Z$_2$} and \texttt{Z$_2$Z$_3$}. Our disrupted state is an eigenstate of both of these measurements with eigenvalue $-1$ for both. More generally the error might move the state into a superposition of vectors in more than one of the error-spaces and/or the code-space, in which case these measurements have the virtue of collapsing the state exactly into one or other subspace. In this case, the only information we gain by the measurement, which consists of the two $-1$ eigenvalues, tells us the system lies in the error-space corresponding to a bit-flip of the second qubit. We can then apply \texttt{X$_2$} to correct the error, all without ever learning the values of $\alpha$ and $\beta$. In fact, in order to project a general error $\alpha, \beta \rightarrow \alpha', \beta'$ we must also protect against \textit{phase-flips}, that is 
-\begin{equation}
-    \alpha\ket{0} + \beta\ket{1} \rightarrow \alpha\ket{0} - \beta\ket{1}
-\end{equation}
-which can be achieved by further encoding the triple qubit state here into a triple of qubits in the Hadamard basis $\{\ket{+++},\ket{---}\}$. We can protect against either bit- or phase- flips, but doing both requires nine qubits in this scheme. It is possible to perform full error correction against both bit and phase flips with just 5 qubits  using a much more complicated encoding scheme\cite{DiVincenzo1996}. The circuit for detecting and correcting errors for this five qubit code involves transforming some of the qubits into and out of the Hadamard basis between the syndrome measurments, and so the parity measurements could not be performed simultaneously as required for CQEC, and we focus on the three-bit bit-flip shor code for the remainder of the project.
 
 \section{Continuous quantum error correction}\label{sec:CQEC}
 The focus of the present project is to investigate \textit{continous quantum error correction} (CQEC) schemes, and in particular their application to semiconductor quantum dot qubit devices. 
@@ -139,39 +121,12 @@ Here I model the effects of a process of repeated error-correction scheme for mi
     
 The correction scheme modelled here is the standard three-bit parity code. We assume errors accumulate for time $\Delta t$. At the end of this period, a combination of H and CNOT gates is applied to encode the parity state of the three qubits onto two ancilla qubits. These qubits are read out for time $\Delta t$, during which more errors accumulate. At the end of this period, two operations are performed in quick succession: first any correction flips that are required to undo errors detected in the previous cycle are performed, and secondly the ancillas are rotated back to $\ket{0}$ and encoded with the new parity state of the qubits. Since X gates all commute with each other, it does not matter if previous errors are corrected after new errors have occurred, so long as they are corrected before the new set of errors is loaded onto the ancillas for readout. This scheme is shown in figure \ref{fig:circuitdiagram}.
 
-\subsection{Readout Fidelities}
-The readout involves some form of tunneling process, of which the simplest form is Elzerman readout, where spin-up and spin-down electrons tunnel to a reservoir with different tunneling rates, which we define as $\gamma$ for spin up electrons, resulting from an odd parity state between the relevant qubits, and $\Gamma$ for spin down electrons. Techniques such as RF reflectometry also involve waiting for some form of electron tunnelling event, so this model could potentially be used to describe these techniques as well. For an effective scheme, we expect that $\gamma \gg \Gamma$.
-
-From these we can calculate the chance that we detect a tunneling event given that the ancilla is spin up $F_1$ and the chance that there is no tunneling event detected given the electron is spin down $F_0$. A perfect scheme would have $F_0 = F_1 = 1$. A simple model for these readout times, assuming the amplitude relaxation time $T_1 \gg \Gamma^{-1}, \gamma^{-1}$ is (simplified \cite{Keith2019}):
-\begin{align*}
-    F_0 &= e^{-\Delta t \Gamma} & F_1 &= 1-e^{-\Delta t \gamma}
-\end{align*}
-\subsection{Correction Matrix}
-Thanks to the results of the first section (the density matrix remains diagonal) we may treat the correction step entirely classically. For example, if we find ourselves in the $\ket{001}$ state after the error step, we will measure an even parity on qubits 0 and 1 with probability $F_0$ and an odd parity on qubits 1 and 2 with probability $F_1$. If we perform both of these measurements correctly, we will ascertain that we are in the even-odd subspace and we need to flip qubit 2, returning us to the $\ket{000}$ state. If, however, the $A_{12}$ ancilla qubit electron fails to tunnel out in time, we will believe that we are still in the even-even subspace, and no correction step will be taken. Similarly, there eventualities (of varying probability) that will lead to any one (or none) of the three qubits being flipped by the correction processor. For this state, the full complement of options is:
+In appendix \ref{appendix:markovanalysis}, it is derived that the evolution of this state over one cycle can be written as 
 \begin{equation*}
-\ket{001} \longrightarrow 
-\begin{cases} 
-      \ket{000} F_0 F_1 \\
-      \ket{001} F_0 F_1' \\
-      \ket{011} F_0' F_1 \\
-      \ket{101} F_0' F_1'
-   \end{cases}
-\end{equation*}
-with $F_0' = 1-F_0$, $F_1' = 1-F_1$.
-
-Before continuing to write the whole evolution matrix like this, there is a simplification one can make: the states $\ket{001}$ and $\ket{100}$ behave identically: for every state that could follow from either state (other than the states themselves) these two states have the same probability of transitioning to it. The same goes for the pair of states $\ket{011}$ and $\ket{110}$. We therefore choose to define a single probability for each of these pairs of states, and not care which of the two it inhabits. The error matrix can also be modified to accommodate this amalgamation, meaning that out system is now one of 6-dimensional vectors rather than 8-dimensional vectors.
-
-With this in mind, we can describe the error step as:
-\begin{equation} \label{eq:Ematrix}
-    \begin{bmatrix}
-        P_0(t+\Delta t) \\
-        P_1(t+\Delta t) + P_4(t+\Delta t) \\
-        P_2(t+\Delta t) \\
-        P_5(t+\Delta t) \\
-        P_6(t+\Delta t)  + P_3(t + \Delta t)\\
-        P_7(t+\Delta t) \\
-    \end{bmatrix}
-    =
+    \mathbf{P}(t + \Delta t) = CE\mathbf{P}(t),
+\end{equation*} where $\mathbf{P}$ is a vector describing the on-diagonal terms of the state density matrix, and C and E are matrices:
+\begin{align*}
+    E &=     
     \begin{bmatrix}
         q^3& q^2p& q^2p& qp^2& qp^2& p^3 \\
         2 q^2p& qp^2 + q^3& 2 qp^2& 2 q^2p& p^3 + q^2p& 2 qp^2\\
@@ -179,28 +134,8 @@ With this in mind, we can describe the error step as:
         qp^2& q^2p& p^3& q^3& qp^2& q^2p\\
         2 qp^2& p^3 + q^2p& 2 q^2p& 2 qp^2& q^3 + qp^2& 2 q^2p\\
         p^3& qp^2& qp^2& q^2p& q^2p& q^3\\
-
-    \end{bmatrix}
-    \begin{bmatrix}
-        P_0(t) \\
-        P_1(t) + P_4(t) \\
-        P_2(t) \\
-        P_5(t) \\
-        P_6(t)  + P_3(t)\\
-        P_7(t) \\
-    \end{bmatrix}
-\end{equation}
-and the correction step as
-\begin{equation} \label{eq:Cmatrix}
-    \begin{bmatrix}
-        P_0(t+\Delta t) \\
-        P_1(t+\Delta t) + P_4(t+\Delta t) \\
-        P_2(t+\Delta t) \\
-        P_5(t+\Delta t) \\
-        P_6(t+\Delta t)  + P_3(t + \Delta t)\\
-        P_7(t+\Delta t) \\
-    \end{bmatrix}
-    =
+    \end{bmatrix}\\
+    C &= 
     \begin{bmatrix}
         F_0^2 & F_0 F_1 & F_1^2 & 0 & 0 & 0 \\
         2F_0'F_0 & F_0 F_1' & 0 & 2F_1 F_1' & F_0' F_1 & 0\\
@@ -208,17 +143,9 @@ and the correction step as
         0 & F_0' F_1' & 0 & F_1'^2 & 0 &F_0'^2 \\
         0 &F_0' F_1 & 2F_1' F_1&0&F_0F_1'&2F_0'F_0 \\
         0&0&0& F_1^2 &F_0 F_1 & F_0^2
-    \end{bmatrix}
-    \begin{bmatrix}
-        P_0(t) \\
-        P_1(t) + P_4(t) \\
-        P_2(t) \\
-        P_5(t) \\
-        P_6(t)  + P_3(t)\\
-        P_7(t) \\
-    \end{bmatrix}
-\end{equation}
-The evolution of the state in time in one step is given by $M = CE$ where $E$ and $C$ are the matrices defined in (\ref{eq:Ematrix}) and (\ref{eq:Cmatrix}) respectively. We prepare the system in a pure $\ket{000}$ state, $P_i = \delta_{i,0}$, and repeatedly apply $M$ to evolve the $P_i$.  
+    \end{bmatrix}.
+\end{align*} Here $p = \frac{1}{2}(1-e^{-\Delta t /T_{\text{err}}})$ (see appendix \ref{appendix:decoherence}), and $F_1 = F_1(\Delta t)$ and $F_0 = F_0(\Delta t)$ are the probabilities of correctly measuring an even or odd parity state, which will typically depend exponentially on the readout time.
+
 \subsection{Further theory, and application}
 The transition matrix allows us to gain some insight into different error regimes, when the rate of equilibration out of the codespace is dominated by the process of two errors ocurring in one timestep - the \textit{error-limited regime}, and when it is dominated by erroneous correction flips caused by incorrect parity measurements - the \textit{readout limited} regime. This analysis is given in appendix \ref{appendix:flowanalysis}. These results allow for a simple understanding of certain experiments. For example, in \cite{Cramer2016}, a nuclear spin qubit experiment, the fidelities are given as $F1\approx0.999$, $F0\approx0.9$, with a quoted $T_2^*$ time of around $12\unit{\milli\second}$ (all three quantities in fact vary from qubit to qubit). Given these parameters, the model gives a reasonable estimate of the fidelity of the error-corrected qubit, remaining within 10\% of the measured fidelity for the duration of the experiment. These parameters are such that the experiment is ocurrs in the `intermediate regime' $p_{\text{err}}\sim F$(see appendix \ref{appendix:flowanalysis}), which means that both reducing the error rate per step and increasing the readout fidelity would have an appreciable impact on the long-term fidelity of the qubit. On the other hand, the repeated spin-basis measurements in \cite{Nakajima2019} on a quantum dot system are performed at a repetition rate of around $7\unit{\micro\second}$, whereas the relaxation time is measured on the order of $1-3\unit{\milli\second}$, and the reported measurment fidelity is on the order of around $0.6$.  This means we are in the readout-limited regime $p_{\text{err}}\ll F$, so if these measurements were used to implement rapdily repeated QEC, the system could only be improved by improving the readout fidelity, perhaps by increasing the readout tunelling time.
 
@@ -352,55 +279,12 @@ My supervisor Dr. Arvidsson-Shukur and his collegues have developed a code (yet 
 
 I therefore designed a Hamiltonian simulation code, inspired by the work of Dr Arvidsson-Shuker et al., with the ability to handle higher dimensional systems. The system has three main components: 
 \begin{enumerate}
-    \item A python extension, \texttt{FastHamiltoniser}, written in C, C++ and CUDA, which provides highly performant specialised sparse matrix operations for use in Hamiltonian time evolution;
-    \item \texttt{Hamiltonian}, a python class that builds a Hubbard model Hamiltonian from physical parameters; and
-    \item \texttt{Evolution}, a python class which takes as input a Hamiltonian and a set of continuous time instructions to produce a time evolution of a given starting statevector.
-\end{enumerate}
-\subsection{Python extension: \texttt{FastHamiltoniser}}
-\begin{figure}[ht]
-    \centering
-    \includegraphics[scale = 0.8]{Figures/fasthamiltoniser/diagram.pdf}
-    \caption{How sparse Hamiltonian matrices are represented in the custom python extension \texttt{FastHamiltoniser}. The non-zero matrix elements are grouped into objects of type \texttt{Permuter}, whose structure is calculated in advance but whose activation and multiplicative coefficients are modified efficiently as runtime.}
-    \label{fig:fasthamiltoniser}
-\end{figure}
-\subsubsection{Structure of extension}
-The purpose of the simulator is to solve the Schrödinger equation
-\begin{equation} \label{eq:schrodinger}
-    \dot{\psi} = -i H \psi 
-\end{equation} (here expressed in natural units $\hbar = 1$) where $\psi$ is a vector in the occupation basis of a Hubbard Hamiltonian. In order to use Runge-Kutta \cite{Butcher1996} methods of integration, we need to be able to calculate this derivative efficiently at an arbitrary time and with arbitrary input. $H$ is typically very sparse, with the only off-diagonal terms given by magnetic drives and hopping couplngs, of which typically only a subset of size linear in the number of qubits are non-zero at a given time. 
-
-To perform this calculation efficiently, I implemented the following data structure in C. A \texttt{HamiltonianMatrix} object, illustrated in figure \ref{fig:fasthamiltoniser}, contains basic data about the dimension of the array, as well as an array of pointers to objects of type \texttt{Permuter}. Each of these \texttt{Permuter} objects stores three arrays of equal length, two of integers representing source and target vector indices, and one of floats representing matrix coefficients, where each entry represents a matrix element. \texttt{Permuter}s also store a complex coefficient, which can be changed over time by writing to a single variable, and a boolean representing whether it is `on' or `off'. The internal arrays are determined in advance of the simulation by python code, and thereafter only the strength and activations of the \texttt{Permuter} objects need be modified during the simulation. For example, one such object provides all the on-diagonal elements of the matrix, and another might provide all the off-diagonal elements associated with a particular J-coupling between two qubits.
-
-The calculation \ref{eq:schrodinger} can then be performed by iterating over the active permuters and building up the derivative vector according to the permutation and coefficient arrays. 
-\subsubsection{Interaction picture calculation}
-A further requirement that favoured the development of a custom C backend was the ability to perform simulations in the interaction picture. Performing simulations in the interaction picture is necessary due to the large differences in energy between eigenstates, for example due to the $U_i$ on-site repulsion in some states. With any choice of reference energy in a static basis, there are always states whose phase rotate much faster than the timescale of the evolutions that I wish to simulate, meaning there is no suitable step-size that captures the desired phenomena within reasonable computational time with the simulation remaining stable. Instead, we perform the following transformation to the interaction picture:
-\begin{align*}
-    \dot{\psi_i} &= -i\sum_j{H_{ij}\psi_j}\\
-     \psi_i \rightarrow \phi_i &= e^{-i H_{ii} t} \psi_i \\
-    \Rightarrow \dot{\phi} &= -i\sum_{j\ne i}{e^{- i (H_{jj} - H_{ii})t} H_{ij}\phi_j}
-\end{align*}.
-
-Since most off-diagonal terms $H_{ij}$ are zero at most points in time, this results in most states being stationary and lowering the rate of rotation of affected states to a longer timescale that can be simulated. It introduces the additional complexity, however, of introducing a time-dependence into the hamiltonian. I wrote a C function to perform the modified matrix multiplication, calculating the phase factors as required.
-
-\subsubsection{GPU acceleration}
-The calcluation to be performed is parallel in nature, and thus a candidate for GPU acceleration. I wrote the requisite kernels\footnote{This presented a lot of technical challenges as the process for incorporating CUDA C++ into python C extensions and compiling them is not documented and very technical. I made a template project with the setup to use in the future: https://github.com/Stasiu51/TemplateCudaEx} to perform the matrix multiplication in CUDA, a variant of C++ developed by Nvidia to control their graphics processing units (`GPU's) \cite{cuda}, one of which (a P620 Quadro) is installed in my laptop. On testing, the CUDA variant outperformed the CPU calculation only for systems with more than around 15 qubits, more than required and where the speed of computation is too slow for practical use anyway ($<10$ iterations per second, several orders of magnitude too slow for the simulations of the present project).
-
-\subsection{Python class for Hubbard model construction: \texttt{Hamiltonian}}
-This is a python class (and supporting code) that implements a Hubbard Hamiltonian, using \texttt{FastHamiltoniser} as a backend to store the underlying matrix. In particular it
-\begin{enumerate}
-    \item creates a list of basis vectors, represented as bit strings (with convenience functions for printing them in canonical notation), that span the fock basis of a system with a specified number of sites and number of electrons;
-    \item defines creation and annhilation operators on these states, which it uses to
-    \item construct the diagonal \texttt{Permuter} object that represents the self-energy terms due to chemical potential, coulomb repulsion, and static magnetic z-fields; and to
-    \item construct the off diagonal \texttt{Permuter} objects generated by hopping terms and x and y magnetic fields. It also
-    \item provides transformations to and from the interaction picture; and
-    \item provides functions for creating projector and X matrices in the fock basis, which are more involved to calculate than in the computational (single electron per site) basis. 
+    \item A python extension, \texttt{FastHamiltoniser}, written in C, C++ and CUDA, which provides highly performant specialised sparse matrix operations for use in Hamiltonian time evolution. This stores and updates the Hamiltonian as a set of sparse \texttt{Permuter} objects to improve performance.
+    \item \texttt{Hamiltonian}, a python class that builds a Hubbard model Hamiltonian from physical parameters. This implements all the relevant second-quantised physical calculations necessary for Hubbard model, building the $n$ site, $m$ electron fock basis as a set of bit strings and defining raising and lowering operators, projector matrices, unitary matrices, etc. in this basis.
+    \item \texttt{Evolution}, a python class which takes as input a Hamiltonian and a set of continuous time instructions, which are defined as recursive composite instructions, to produce a time evolution of a given starting statevector.
 \end{enumerate}
 
-\subsection{Python class for time evolution of statevector: \texttt{Evolution}}
-
-This class takes a reference to a \texttt{Hamiltonian} object, and a set\footnote{There is in fact only one such object, as they are defined in a recursive tree structure.} of objects that subclass the abstract base class \texttt{TimeStep} whose role is to provide instructions as to how to modify the parameters of the Hubbard model at given time. For example, one such object instructs the simulation to ramp a set of hopping couplings to a specified value over a given period of time, and another might oscillate the strength of the x component of the applied magnetic field at a given frequency and phase.
-
-The \texttt{scipy} routine \texttt{solve\_ivp} is used along with the calculations of the derivative described above in a Runge-Kutta 5th order \cite{Butcher1996} integration routine to calculate the evolution of a given initial statevector. The routine is designed to estimate the errors and dynamically choose a step size for the integration. This works poorly in the present use case, as the calculated (vector-norm) error scales with the number of non-zero elements of the vector. Instead, the code allows the user to manually specify a step size, typically around $1/10$ of the smallest relevant timescale of the system, and checks the continued normalisation of the statevector as an imperfect check on the stability of the simulation.
+The pertinent and interesting details of each of these components are explained in appendix \ref{appendix:software}.
 
 Some demonstrations of the simulator and the results of a benchmarking exercise are shown in figure \ref{fig:benchmark}. 
 \begin{figure}[ht]
@@ -505,6 +389,29 @@ Even if we restrict ourselves to trying to reduce errors due to relaxation and l
 During the course of the project I also developed a highly theoretical error-correction scheme that in principle could correct against both phase flip and bit flip errors. This I describe in appendix \ref{appendix:lockedstates}.
 
 \begin{appendices}
+\chapter{The three qubit bit flip shor code}\label{appendix:shorcode}
+The original and simplest example of an error correction scheme is due to Shor \cite{shor_1995}, which I outline here. For more detail, see \cite{roffe_2019}. In order to correct a single bit-flip error, that is to defend against the risk of the event
+\begin{equation*}
+    \alpha\ket{0} + \beta\ket{1} \rightarrow \alpha\ket{1} + \beta\ket{0}
+\end{equation*}
+we can encode a single computational qubit into a set of three (with the latter two initialised in the state $\ket{0}$) using two \texttt{CNOT} operations:
+\begin{equation*}
+\begin{aligned}
+    & (\alpha\ket{0_1} + \beta\ket{1_1})\ket{0_2}\ket{0_3}\\
+      \xrightarrow{\texttt{CNOT(1,2)}} &(\alpha\ket{0_1 0_2} + \beta\ket{1_1 1_2})\ket{0_3} \\
+     \xrightarrow{\texttt{CNOT(1,3)}}  &\alpha\ket{0_1 0_2 0_3} + \beta\ket{1_1 1_2 1_3}
+\end{aligned}
+\end{equation*}
+. Here, the code-space is $\spa[\ket{0 0 0}, \ket{1 1 1}]$ (we have dropped the qubit labels). If an error occurs on, say, the second qubit:
+\begin{equation}
+    \alpha\ket{0 0 0} + \beta\ket{1 1 1} \rightarrow \alpha\ket{0 1 0} + \beta\ket{1 0 1}
+\end{equation}
+we see that the state of the system has moved into one of three error-spaces: $\spa[\ket{0 1 0}, \ket{1 0 1}]$. We then perform a stabiliser measurement consisting of two projective measurements, \texttt{Z$_1$Z$_2$} and \texttt{Z$_2$Z$_3$}. Our disrupted state is an eigenstate of both of these measurements with eigenvalue $-1$ for both. More generally the error might move the state into a superposition of vectors in more than one of the error-spaces and/or the code-space, in which case these measurements have the virtue of collapsing the state exactly into one or other subspace. In this case, the only information we gain by the measurement, which consists of the two $-1$ eigenvalues, tells us the system lies in the error-space corresponding to a bit-flip of the second qubit. We can then apply \texttt{X$_2$} to correct the error, all without ever learning the values of $\alpha$ and $\beta$. In fact, in order to project a general error $\alpha, \beta \rightarrow \alpha', \beta'$ we must also protect against \textit{phase-flips}, that is 
+\begin{equation}
+    \alpha\ket{0} + \beta\ket{1} \rightarrow \alpha\ket{0} - \beta\ket{1}
+\end{equation}
+which can be achieved by further encoding the triple qubit state here into a triple of qubits in the Hadamard basis $\{\ket{+++},\ket{---}\}$. We can protect against either bit- or phase- flips, but doing both requires nine qubits in this scheme. It is possible to perform full error correction against both bit and phase flips with just 5 qubits  using a much more complicated encoding scheme\cite{DiVincenzo1996}. The circuit for detecting and correcting errors for this five qubit code involves transforming some of the qubits into and out of the Hadamard basis between the syndrome measurments, and so the parity measurements could not be performed simultaneously as required for CQEC, and we focus on the three-bit bit-flip shor code for the remainder of the project.
+
 \chapter{Implementing quantum gates on quantum dot devices} \label{appendix:gates}
 \subsubsection{Single Qubit Gates}
 Implementing a single qubit gate on the $i$th qubit is achieved by applying a microwave drive at a frequency equal to $E^z_i$. The time $T$ and phase $\gamma$ of this drive determine the effective unitary transformation that is applied to the qubit, which is given by
@@ -682,6 +589,89 @@ An incoherent operation is defined in this theory as one that maps incoherent st
 \end{equation*}
 While not mentioned by the authors, it is straightforward to show that the property of incoherence of an operation, in contrast to the property of incoherence of a \textit{state}, is unitarily invariant, that is, an operation that is incoherent in one basis is necessarily incoherent in all others. In addition, it is obvious that an operation whose Krauss operators are chosen from the (possibly scaled) Krauss operators of other incoherent operators is itself incoherent. Within this framework it is easy to see why amplitude damping, bit flip (both manifestly incoherent in the computational basis), phase flip (manifestly incoherent in the $\ket{+}$, $\ket{-}$ basis), and phase-bit flip (manifestly incoherent in the $(\ket{0} \pm i\ket{1})/\sqrt{2}$ basis) channels as well as combinations of the above such as the depolarising channel are all incoherent operations. Of these, the amplitude damping and bit-flip channels are further \textit{strictly incoherent}, meaning the measurement statistics of the state after their application are independent of the off-diagonal elements of the state prior to the application. The theory of quantifying coherence then requires that any useful measure of coherence monotonically decrease under the application of these operations. In our case, we start in a incoherent state, so for all such measures $\mathcal{C}$, we have $\mathcal{C}(\rho_0) = 0$, which remains true for all subsequent time.
 
+\chapter{Markovian analysis of repeated error correction schemes}\label{appendix:markovanalysis}
+\subsubsection{Modelling readout fidelities}
+Readout for quantum dot qubits always involves some form of \textit{spin to charge conversion} as the interaction of the spins themselves with the environment is weak (this is why the $T_1$ times for these systems are so good). Spin to charge conversion involves some form of tunneling process, of which the simplest form is Elzerman readout, where spin-up and spin-down electrons tunnel to a reservoir with different tunneling rates, which we define as $\gamma$ for spin up electrons, resulting from an odd parity state between the relevant qubits, and $\Gamma$ for spin down electrons. Techniques such as RF reflectometry also involve waiting for some form of electron tunnelling event, so this model could potentially be used to describe these techniques as well. For an effective scheme, we expect that $\gamma \gg \Gamma$.
+
+From these we can calculate the chance that we detect a tunneling event given that the ancilla is spin up $F_1$ and the chance that there is no tunneling event detected given the electron is spin down $F_0$. A perfect scheme would have $F_0 = F_1 = 1$. A simple model for these readout times, assuming the amplitude relaxation time $T_1 \gg \Gamma^{-1}, \gamma^{-1}$ is (simplified \cite{Keith2019}):
+\begin{align*}
+    F_0 &= e^{-\Delta t \Gamma} & F_1 &= 1-e^{-\Delta t \gamma}
+\end{align*}
+\subsubsection{Error matrix and correction matrix}
+Thanks to the results of the first section (the density matrix remains diagonal) we may treat the correction step entirely classically. For example, if we find ourselves in the $\ket{001}$ state after the error step, we will measure an even parity on qubits 0 and 1 with probability $F_0$ and an odd parity on qubits 1 and 2 with probability $F_1$. If we perform both of these measurements correctly, we will ascertain that we are in the even-odd subspace and we need to flip qubit 2, returning us to the $\ket{000}$ state. If, however, the $A_{12}$ ancilla qubit electron fails to tunnel out in time, we will believe that we are still in the even-even subspace, and no correction step will be taken. Similarly, there eventualities (of varying probability) that will lead to any one (or none) of the three qubits being flipped by the correction processor. For this state, the full complement of options is:
+\begin{equation*}
+\ket{001} \longrightarrow 
+\begin{cases} 
+      \ket{000} F_0 F_1 \\
+      \ket{001} F_0 F_1' \\
+      \ket{011} F_0' F_1 \\
+      \ket{101} F_0' F_1'
+   \end{cases}
+\end{equation*}
+with $F_0' = 1-F_0$, $F_1' = 1-F_1$.
+
+Before continuing to write the whole evolution matrix like this, there is a simplification one can make: the states $\ket{001}$ and $\ket{100}$ behave identically: for every state that could follow from either state (other than the states themselves) these two states have the same probability of transitioning to it. The same goes for the pair of states $\ket{011}$ and $\ket{110}$. We therefore choose to define a single probability for each of these pairs of states, and not care which of the two it inhabits. The error matrix can also be modified to accommodate this amalgamation, meaning that out system is now one of 6-dimensional vectors rather than 8-dimensional vectors.
+
+With this in mind, we can describe the error step as:
+\begin{equation} \label{eq:Ematrix}
+    \begin{bmatrix}
+        P_0(t+\Delta t) \\
+        P_1(t+\Delta t) + P_4(t+\Delta t) \\
+        P_2(t+\Delta t) \\
+        P_5(t+\Delta t) \\
+        P_6(t+\Delta t)  + P_3(t + \Delta t)\\
+        P_7(t+\Delta t) \\
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        q^3& q^2p& q^2p& qp^2& qp^2& p^3 \\
+        2 q^2p& qp^2 + q^3& 2 qp^2& 2 q^2p& p^3 + q^2p& 2 qp^2\\
+        q^2p& qp^2& q^3& p^3& q^2p& qp^2\\
+        qp^2& q^2p& p^3& q^3& qp^2& q^2p\\
+        2 qp^2& p^3 + q^2p& 2 q^2p& 2 qp^2& q^3 + qp^2& 2 q^2p\\
+        p^3& qp^2& qp^2& q^2p& q^2p& q^3\\
+
+    \end{bmatrix}
+    \begin{bmatrix}
+        P_0(t) \\
+        P_1(t) + P_4(t) \\
+        P_2(t) \\
+        P_5(t) \\
+        P_6(t)  + P_3(t)\\
+        P_7(t) \\
+    \end{bmatrix}
+\end{equation}
+and the correction step as
+\begin{equation} \label{eq:Cmatrix}
+    \begin{bmatrix}
+        P_0(t+\Delta t) \\
+        P_1(t+\Delta t) + P_4(t+\Delta t) \\
+        P_2(t+\Delta t) \\
+        P_5(t+\Delta t) \\
+        P_6(t+\Delta t)  + P_3(t + \Delta t)\\
+        P_7(t+\Delta t) \\
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        F_0^2 & F_0 F_1 & F_1^2 & 0 & 0 & 0 \\
+        2F_0'F_0 & F_0 F_1' & 0 & 2F_1 F_1' & F_0' F_1 & 0\\
+        F_0'^2 & 0 & F_1'^2 & 0 & F_0' F_1' & 0 \\
+        0 & F_0' F_1' & 0 & F_1'^2 & 0 &F_0'^2 \\
+        0 &F_0' F_1 & 2F_1' F_1&0&F_0F_1'&2F_0'F_0 \\
+        0&0&0& F_1^2 &F_0 F_1 & F_0^2
+    \end{bmatrix}
+    \begin{bmatrix}
+        P_0(t) \\
+        P_1(t) + P_4(t) \\
+        P_2(t) \\
+        P_5(t) \\
+        P_6(t)  + P_3(t)\\
+        P_7(t) \\
+    \end{bmatrix}
+\end{equation}
+The evolution of the state in time in one step is given by $M = CE$ where $E$ and $C$ are the matrices defined in (\ref{eq:Ematrix}) and (\ref{eq:Cmatrix}) respectively. We prepare the system in a pure $\ket{000}$ state, $P_i = \delta_{i,0}$, and repeatedly apply $M$ to evolve the $P_i$.  
+
+
 \chapter{Characterising flow regimes of the three-qubit shor code}
 \label{appendix:flowanalysis}
 Intuitively, there are two ways in which the error correction scheme can fail. Firstly, error flips could occur on two or more of the qubits, for example $\ket{000} \longrightarrow \ket{110}$. Then a successful set of parity measurements will push the state into the error space, in our example $\ket{110} \longrightarrow \ket{111}$. One supposes there may well be a parameter space in which this is the dominant mechanism for loss of qubit fidelity; this I call the \textit{error-limited} regime.
@@ -784,7 +774,7 @@ E3 & \diagbox{$\uparrow\uparrow\downarrow$}{$\downarrow\downarrow\uparrow$} & \d
 
 
 
-\chapter{Detecting errors in ancilla qubits.} \label{appendix:9qubitsystem}
+\chapter{Detecting errors in ancilla qubits} \label{appendix:9qubitsystem}
 One problem the error correction scheme described in section \ref{sec:truly_continuous_theory} is that it is enturely vulnerable to errors ocurring in the ancilla qubits. If one such error did occur, the system would assume the resulting tunneling event was a result of a code qubit error and apply an erroneous correction gate, which would then push the system irreversibly out of the codespace.
 \begin{figure}[ht]
     \centering
@@ -882,6 +872,55 @@ This allows electrons to hop between qubits 1 and 2, and between 2 and 3 of the 
     P_1 = \ket{00}\bra{00} + \ket{11}\bra{11} && P_2 = \ket{01}\bra{01} + \ket{10}\bra{10}
 \end{align*}
 where the first and second qubit represent the ancilla qubit and the first qubit of the second group respectively. This tells us the error sydrome, and it is just a matter of applying more $CX$ gates following the construction procedure detailed above to return the system to the codespace.
+
+\chapter{Hubbard model Hamiltonian simulator}\label{appendix:software}
+
+\subsubsection{Python extension: \texttt{FastHamiltoniser}}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale = 0.8]{Figures/fasthamiltoniser/diagram.pdf}
+    \caption{How sparse Hamiltonian matrices are represented in the custom python extension \texttt{FastHamiltoniser}. The non-zero matrix elements are grouped into objects of type \texttt{Permuter}, whose structure is calculated in advance but whose activation and multiplicative coefficients are modified efficiently as runtime.}
+    \label{fig:fasthamiltoniser}
+\end{figure}
+\subsubsection{Structure of extension}
+The purpose of the simulator is to solve the Schrödinger equation
+\begin{equation} \label{eq:schrodinger}
+    \dot{\psi} = -i H \psi 
+\end{equation} (here expressed in natural units $\hbar = 1$) where $\psi$ is a vector in the occupation basis of a Hubbard Hamiltonian. In order to use Runge-Kutta \cite{Butcher1996} methods of integration, we need to be able to calculate this derivative efficiently at an arbitrary time and with arbitrary input. $H$ is typically very sparse, with the only off-diagonal terms given by magnetic drives and hopping couplngs, of which typically only a subset of size linear in the number of qubits are non-zero at a given time. 
+
+To perform this calculation efficiently, I implemented the following data structure in C. A \texttt{HamiltonianMatrix} object, illustrated in figure \ref{fig:fasthamiltoniser}, contains basic data about the dimension of the array, as well as an array of pointers to objects of type \texttt{Permuter}. Each of these \texttt{Permuter} objects stores three arrays of equal length, two of integers representing source and target vector indices, and one of floats representing matrix coefficients, where each entry represents a matrix element. \texttt{Permuter}s also store a complex coefficient, which can be changed over time by writing to a single variable, and a boolean representing whether it is `on' or `off'. The internal arrays are determined in advance of the simulation by python code, and thereafter only the strength and activations of the \texttt{Permuter} objects need be modified during the simulation. For example, one such object provides all the on-diagonal elements of the matrix, and another might provide all the off-diagonal elements associated with a particular J-coupling between two qubits.
+
+The calculation \ref{eq:schrodinger} can then be performed by iterating over the active permuters and building up the derivative vector according to the permutation and coefficient arrays. 
+\subsubsection{Interaction picture calculation}
+A further requirement that favoured the development of a custom C backend was the ability to perform simulations in the interaction picture. Performing simulations in the interaction picture is necessary due to the large differences in energy between eigenstates, for example due to the $U_i$ on-site repulsion in some states. With any choice of reference energy in a static basis, there are always states whose phase rotate much faster than the timescale of the evolutions that I wish to simulate, meaning there is no suitable step-size that captures the desired phenomena within reasonable computational time with the simulation remaining stable. Instead, we perform the following transformation to the interaction picture:
+\begin{align*}
+    \dot{\psi_i} &= -i\sum_j{H_{ij}\psi_j}\\
+     \psi_i \rightarrow \phi_i &= e^{-i H_{ii} t} \psi_i \\
+    \Rightarrow \dot{\phi} &= -i\sum_{j\ne i}{e^{- i (H_{jj} - H_{ii})t} H_{ij}\phi_j}
+\end{align*}.
+
+Since most off-diagonal terms $H_{ij}$ are zero at most points in time, this results in most states being stationary and lowering the rate of rotation of affected states to a longer timescale that can be simulated. It introduces the additional complexity, however, of introducing a time-dependence into the hamiltonian. I wrote a C function to perform the modified matrix multiplication, calculating the phase factors as required.
+
+\subsubsection{GPU acceleration}
+The calcluation to be performed is parallel in nature, and thus a candidate for GPU acceleration. I wrote the requisite kernels\footnote{This presented a lot of technical challenges as the process for incorporating CUDA C++ into python C extensions and compiling them is not documented and very technical. I made a template project with the setup to use in the future: https://github.com/Stasiu51/TemplateCudaEx} to perform the matrix multiplication in CUDA, a variant of C++ developed by Nvidia to control their graphics processing units (`GPU's) \cite{cuda}, one of which (a P620 Quadro) is installed in my laptop. On testing, the CUDA variant outperformed the CPU calculation only for systems with more than around 15 qubits, more than required and where the speed of computation is too slow for practical use anyway ($<10$ iterations per second, several orders of magnitude too slow for the simulations of the present project).
+
+\subsubsection{Python class for Hubbard model construction: \texttt{Hamiltonian}}
+This is a python class (and supporting code) that implements a Hubbard Hamiltonian, using \texttt{FastHamiltoniser} as a backend to store the underlying matrix. In particular it
+\begin{enumerate}
+    \item creates a list of basis vectors, represented as bit strings (with convenience functions for printing them in canonical notation), that span the fock basis of a system with a specified number of sites and number of electrons;
+    \item defines creation and annhilation operators on these states, which it uses to
+    \item construct the diagonal \texttt{Permuter} object that represents the self-energy terms due to chemical potential, coulomb repulsion, and static magnetic z-fields; and to
+    \item construct the off diagonal \texttt{Permuter} objects generated by hopping terms and x and y magnetic fields. It also
+    \item provides transformations to and from the interaction picture; and
+    \item provides functions for creating projector and X matrices in the fock basis, which are more involved to calculate than in the computational (single electron per site) basis. 
+\end{enumerate}
+
+\subsubsection{Python class for time evolution of statevector: \texttt{Evolution}}
+
+This class takes a reference to a \texttt{Hamiltonian} object, and a set\footnote{There is in fact only one such object, as they are defined in a recursive tree structure.} of objects that subclass the abstract base class \texttt{TimeStep} whose role is to provide instructions as to how to modify the parameters of the Hubbard model at given time. For example, one such object instructs the simulation to ramp a set of hopping couplings to a specified value over a given period of time, and another might oscillate the strength of the x component of the applied magnetic field at a given frequency and phase.
+
+The \texttt{scipy} routine \texttt{solve\_ivp} is used along with the calculations of the derivative described above in a Runge-Kutta 5th order \cite{Butcher1996} integration routine to calculate the evolution of a given initial statevector. The routine is designed to estimate the errors and dynamically choose a step size for the integration. This works poorly in the present use case, as the calculated (vector-norm) error scales with the number of non-zero elements of the vector. Instead, the code allows the user to manually specify a step size, typically around $1/10$ of the smallest relevant timescale of the system, and checks the continued normalisation of the statevector as an imperfect check on the stability of the simulation.
+
 \end{appendices}
 
 \printbibliography % TODO lots of incomplete references!

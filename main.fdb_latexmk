@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1683825482 "main.bcf" "main.bbl" "main" 1683825496 0
+["biber main"] 1683829409 "main.bcf" "main.bbl" "main" 1683829425 0
   "./library.bib" 1683825426 61100 89ba93cb7551c6c2780bbb4015ab9df1 ""
-  "main.bcf" 1683825495 111315 8e6fb5e8105756bc3978b1b0dc77927c "pdflatex"
+  "main.bcf" 1683829425 111315 14c50408bb1b878bc993f374321a6b85 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1683825492 "c:/Users/Stasiu Wolanski/Projects/Part3Report/main.tex" "main.pdf" "main" 1683825496 0
+["pdflatex"] 1683829421 "c:/Users/Stasiu Wolanski/Projects/Part3Report/main.tex" "main.pdf" "main" 1683829425 0
   "Figures/7q.pdf" 1683673377 10468 2cfd5df87acee8ec7c16894351504af6 ""
   "Figures/9q.pdf" 1683673816 12895 7a0ebf686fc4ae6808366eda40aafeef ""
   "Figures/Circuit/diagram.pdf" 1683722645 46629 db42ecc95b438fffc2c56166d5738169 ""
@@ -55,7 +55,6 @@
   "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1683166850 1120 8b7d695260f3cff42e636090a8002094 ""
   "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1683166850 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm" 1683166850 768 1321e9409b4137d6fb428ac9dc956269 ""
-  "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm" 1683166850 772 9a936b7f5e2ff0557fce0f62822f0bbf ""
   "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm" 1683166850 768 d7b9a2629a0c353102ad947dc9221d49 ""
   "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/esvect/vect10.tfm" 1683226068 372 07da2e555f4c8dac959d0bb59cacb4dc ""
   "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/esvect/vect5.tfm" 1683226068 372 28e18d88a38be26cb20dc1302f0fdc04 ""
@@ -96,7 +95,6 @@
   "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1683166888 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1683166888 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1683166888 31099 342ef5a582aacbd3346f3cf4579679fa ""
-  "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb" 1683166888 24252 1e4e051947e12dfb50fee0b7f4e26e3a ""
   "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb" 1683166888 24287 6b803fa9eb1ddff9112e00519b09dd9e ""
   "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1683166888 34694 870c211f62cb72718a00e353f14f254d ""
   "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb" 1683166888 35309 940e81a5b9e04201a07e8b33a3ae6e64 ""
@@ -293,12 +291,12 @@
   "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathx10.600pk" 1683280297 30920 1a4574cf90307628aa125fc8673c52bc ""
   "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/web2c/pdftex/pdflatex.fmt" 1683166962 6479798 2020db529ed54565c62373ad8421268d ""
   "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf.cnf" 1683166864 903 164c5b127cd0d6dc91abad2f62421ea2 ""
-  "c:/Users/Stasiu Wolanski/Projects/Part3Report/main.tex" 1683825478 105802 da2f71a2fac397391a9ef79dde1ca800 ""
-  "main.aux" 1683825495 22958 83ba08f38220d1a4193122c792dd3c80 "pdflatex"
-  "main.bbl" 1683825485 145800 972ebe7da496f845a3b486089aa3b3c0 "biber main"
-  "main.run.xml" 1683825495 2302 428a500e86a16046e755980d0fb9dfa7 "pdflatex"
-  "main.tex" 1683825478 105802 da2f71a2fac397391a9ef79dde1ca800 ""
-  "main.toc" 1683825495 3637 21630f6b06553194356c74eef3488c7b "pdflatex"
+  "c:/Users/Stasiu Wolanski/Projects/Part3Report/main.tex" 1683829405 108744 c8b0b30d4c916f1b138f5ec9556ddb2b ""
+  "main.aux" 1683829424 23645 8bc6d5ce6df459e499e165ce7285ee1d "pdflatex"
+  "main.bbl" 1683829412 145800 972ebe7da496f845a3b486089aa3b3c0 "biber main"
+  "main.run.xml" 1683829425 2302 428a500e86a16046e755980d0fb9dfa7 "pdflatex"
+  "main.tex" 1683829405 108744 c8b0b30d4c916f1b138f5ec9556ddb2b ""
+  "main.toc" 1683829425 3853 af22ea77d69306d804802aac8961b52a "pdflatex"
   "nul" 0 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "main.aux"
