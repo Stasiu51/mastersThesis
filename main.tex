@@ -203,13 +203,16 @@ We can fix the parity readout fidelities $F0 = F1 = F$ (= 0.99), and vary the er
         \label{fig:flowprop2}
 \end{figure}
 
-\subsection{Further theory, and application}
-The transition matrix allows us to gain some insight into different error regimes, when the rate of equilibration out of the codespace is dominated by the process of two errors ocurring in one timestep - the \textit{error-limited regime}, and when it is dominated by erroneous correction flips caused by incorrect parity measurements - the \textit{readout limited} regime. This analysis is given in appendix \ref{appendix:flowanalysis}. These results allow for a simple understanding of certain experiments. For example, in \cite{Cramer2016}, a nuclear spin qubit experiment, the fidelities are given as $F1\approx0.999$, $F0\approx0.9$, with a quoted $T_2^*$ time of around $12\unit{\milli\second}$ (all three quantities in fact vary from qubit to qubit). Given these parameters, the model gives a reasonable estimate of the fidelity of the error-corrected qubit, remaining within 10\% of the measured fidelity for the duration of the experiment. These parameters are such that the experiment is ocurrs in the `intermediate regime' $p_{\text{err}}\sim F$(see appendix \ref{appendix:flowanalysis}), which means that both reducing the error rate per step and increasing the readout fidelity would have an appreciable impact on the long-term fidelity of the qubit. On the other hand, the repeated spin-basis measurements in \cite{Nakajima2019} on a quantum dot system are performed at a repetition rate of around $7\unit{\micro\second}$, whereas the relaxation time is measured on the order of $1-3\unit{\milli\second}$, and the reported measurment fidelity is on the order of around $0.6$.  This means we are in the readout-limited regime $p_{\text{err}}\ll F$, so if these measurements were used to implement rapdily repeated QEC, the system could only be improved by improving the readout fidelity, perhaps by increasing the readout tunelling time.
+\subsection{Understanding the state of error correction in silicon using the analysis}
+The transition matrix allows us to gain some insight into different error regimes: one where the rate of equilibration out of the codespace is dominated by the process of two errors ocurring in one timestep - the \textit{error-limited regime}, and another where it is dominated by erroneous correction flips caused by incorrect parity measurements - the \textit{readout limited} regime.  These results allow for a simple understanding of certain experiments. For example, in \cite{Cramer2016}, not silicon quantum dot qubit but rather a nuclear spin qubit experiment, the fidelities are given as $F1\approx0.999$, $F0\approx0.9$, with a quoted $T_2^*$ time of around $12\unit{\milli\second}$ (all three quantities in fact vary from qubit to qubit). Given these parameters, the model gives a reasonable estimate of the fidelity of the error-corrected qubit, remaining within 10\% of the measured fidelity for the duration of the experiment. These parameters are such that the experiment is ocurrs in the `intermediate regime' $p_{\text{err}}\sim 1-F$(see appendix \ref{appendix:flowanalysis}), which means that both reducing the error rate per step and increasing the readout fidelity would have an appreciable impact on the long-term fidelity of the qubit. 
 
+In silicon, however, the rate of bit flip errors and the repetition cycle time of error correction means that $p \ll 1-F$. As an example of Elzerman readout, in \cite{Xue2020} a bit-flip $T_1$ time of 50\unit{\milli \second} is reported, with a readout cycle time of 475 \unit{\micro\second}, so that $p \approx 0.005$, wheras they report a single-shot measurement fidelity of 75\%. For bit flip errors, they are firmly in the readout-limited regime. However, dephasing times on these systems can be up to hundreds of \unit{\micro\second}, so if their measurment were applied to error correction they would find themselves in the intermediate regime.
 
+RF reflectometry techniques allow much faster readout with potentially higher fidelity. The repeated spin-basis measurements in \cite{Nakajima2019} on a quantum dot system are performed at a repetition rate of around $7\unit{\micro\second}$, whereas the relaxation time is measured on the order of $1-3\unit{\milli\second}$, and the reported measurment fidelity is on the order of around $0.6$.  Depite the increase in fidelity, the speedup in measurement times means that for bit flip errors the use of such technology would still be readout-limited. The difference with RF-reflectometry techniques is that with faster readout, even phase-flip protection will likely be readout-limited. 
 
+This analysis leads us to the conclusion that the field should focus as a matter of priority on improving the fidelity of non-demolition measurements in order to improve qubit coherence times through error correction. This will have more of an impact than improving readout time or improving the natural coherence times $T_1$ and $T_2^*$. Only if measurement fidelities reach $\sim 99\%$ for phase-flip errors, and at least $\sim99.9\%$ (probably higher) for bit-flip errors, will the performance of QEC be limited by the rate of naturally ocurring errors.
 
-\section{Truly continuous error correction in quantum dot systems} \label{sec:truly_continuous_theory}
+\chapter{Continuous QEC using RF reflectometry techniques} \label{chapter:CQEC}
 \begin{figure}[ht]
     \centering
     \includegraphics[scale = 0.9]{Figures/7q.pdf}
@@ -218,132 +221,22 @@ The transition matrix allows us to gain some insight into different error regime
 \end{figure}
 \subsection{Scheme summary}
 
-In this section a proposal for truly continuous error correction is developed. I thank Chris Long, Dr Mertig, Giovanni Oakes and my supervisor Dr Arvidsson-Shukur for contributing variously to the development of the ideas presented here. Recent developments in the field of RF reflectometry measurements enable the measurement of the singlet/triplet state of two adjacent qubits coupled via a tunnel barrier, by monitoring the rf reflection characteristics of a neighbouring electron reservior \cite{Oakes2022}. The codespace qubits are to be coupled pairwise to two ancilliary qubits whose function is to perform parity measurements, in such a way that any deviation from the codespace will result in a change of state of one or both of the ancilla qubits, depending on the error syndrome. The rate at which the error propogates to the ancilla qubit(s) is in the tens of nanoseconds, a faster timescale than either gate times (hundreds of nanoseconds) or readout (the state of the art \cite{Oakes2022} achives 6\unit{\micro\second}). 
+In this section a proposal for continuous error correction is developed\footnote{I thank Chris Long, Dr Mertig, Giovanni Oakes and my supervisor Dr Arvidsson-Shukur for contributing variously to the development of the ideas presented here}. Recent developments in the field of RF reflectometry measurements enable the measurement of the singlet/triplet state of two adjacent qubits coupled via a tunnel barrier, by monitoring the rf reflection characteristics of a neighbouring electron reservior \cite{Oakes2022}. The codespace qubits are to be coupled pairwise to two ancilliary qubits whose function is to perform parity measurements, in such a way that any deviation from the codespace will result in a change of state of one or both of the ancilla qubits, depending on the error syndrome. The rate at which the error propogates to the ancilla qubit(s) is in the tens of nanoseconds, a faster timescale than either gate times (hundreds of nanoseconds) or readout (the state of the art \cite{Oakes2022} achives 6\unit{\micro\second}).
 
 This scheme is potentially more efficient than a repeated error correction scheme like those analysed in section \ref{sec:repeat_analysis}. One reason for this is that the `dead time' after an error has occurred during which the system is vulnerable to a second error is limited by the time for the ancilla to be reset, which is also on the order of microseconds (e.g. see \cite{Nakajima2019}). A second, more significant advantage is that the scheme does not require any quantum gates to be performed for the purposes of error sydrome detection, as such detection happens continuously and simultaneously with circuit gates. This reduces circuit complexity, and avoids the error accumulation associated with performing the syndrome measurements. However, I conclude that, at least with present technology, it is unlikely to provide a practical means of improving qubit fidelity (see section \ref{sec:feasibility}).
 
 
 The proposed qubit layout is given in figure \ref{fig:7qubitlayout}. The nature of the circuit requires a 2D array of quantum dot structures, of which there is not yet any published experimental demonstration, but a proposed architecture was proposed in \cite{Tadokoro2021}. In the scheme as analysed here, the logical qubit is encoded in the \textit{odd-odd parity subspace} of three qubits Q1, Q2, and Q3. Any of the four subspaces (even-even, even-odd, odd-even, odd-odd) may be used as codespaces with a modified scheme, as explained in appendix \ref{appendix:evenparitycodespace}. There are two pairs of ancilla qubits: A1, A3, and A2, A4. Each of these is initially prepared in the $T_0$ triplet state. As shown in the figure, each pair of qubits Q1 and Q2, Q2 and Q3, is weakly coupled to one ancilla qubit through a voltage-controlled tunnel barrier. If the couplings are sufficiently well-tuned, the ancilla qubits will remain as triplets and no tunneling will occurr. When a bit-flip error occurrs on one of Q1, Q2 or Q3, this will cause one or both (depending on the error syndrome) of the ancilla pairs to rotate into a singlet state. This allows (subject to complexities discussed in section \ref{sec:tunneling_question}) tunneling between the electrons in the affected pair, which is registered as a change in dispersive response of the nearby resonator. Thus the error syndrome is immediately detected as a signal in the continuously monitored reflectometry circuit.
 
-\subsection{Theoretical treatment of scheme with second order perturbation theory}
+\section{Theoretical treatment of scheme with second order perturbation theory}
+ In appendix \ref{appendex:perturbationtheory} the behaviour of this system is predicted using second order perturbation theory. The results are:
+ \begin{itemize}
+    \item as long as the system remains in the codespace, both pairs of ancilla qubits will rotate into singlets at frequency $\delta$ set by the inhomogeneities in the qubits potentials and Zeeman splittings. This frequency must be lower than the rate of errors for the scheme to have a positive impact on the lifetime of qubits.
+    \item  When a bit-flip error ocurrs on one of the code qubits, one or both of the ancilla pairs will rotate into singlets at a frequency $2\Lambda_t = 4t^2/U$, where $t$ is the coupling strength between the qubits and $U$ is the on-site coulomb repulsion. The analysis treats the variation in these quntities from site to site as small.
+ \end{itemize}
 
-Suppose the system is initally in an arbitrary codespace state, with each of the ancilla pairs starting in triplet states:
-\begin{equation*}
-    \ket{\psi(t = 0)} = (\alpha\ket{\uparrow_{Q1}\downarrow_{Q2}\uparrow_{Q3}} + \beta\ket{\downarrow_{Q1}\uparrow_{Q2}\downarrow_{Q3}})(\ket{\uparrow_{A1}\downarrow_{A3}} + \ket{\downarrow_{A1}\uparrow_{A3}})(\ket{\uparrow_{A2}\downarrow_{A4}} + \ket{\downarrow_{A2}\uparrow_{A4}}) / 2
-\end{equation*}
-First consider the case where no coupling is applied between the qubits. If we can engineer our system so that $\delta_{1,3}^z = E_{A1}^z - E_{A3}^z \ll 1/T_1$, and similarly $\delta_{2,4}^z \ll 1/T_1$ (with $T_1$ the timescale of bit flip errors), then the energy difference between the two branches of each qubit singlet is sufficiently small that rate at which the triplets rotate into triplets, and so register a tunnelling event on the reflectometry apparatus, is long compared to the error time and so not limiting. We can see this by considering a single ancilla branch:
-\begin{equation}
-    \ket{\psi(t)} = \frac{1}{\sqrt{2}}(\ket{\uparrow\downarrow} + \exp(-2i\delta t)\ket{\downarrow\uparrow}) = \frac{1}{2}\ket{T_0}(1 + \exp(-2i\delta t)) + \frac{1}{2}\ket{S_0}(1 - \exp(-2i\delta t)))
-\end{equation} \label{eq:triplet_to_singlet}, so that the amplitude of the singlet state goes as 
-\begin{equation*}
-    \left|\braket{S_0|\psi(t)}\right|^2 = \sin(\delta t)^2
-\end{equation*}.
-
-Now we apply a coupling between the following four pairs of qubits: Q1 and A1, Q2 and A1, Q2 and A2, Q3 and A2. We consider the four branches of the state in the computational basis of the ancilla qubits seperately, and apply second order perturbation theory to approximate the energy shift of each state due to the adiabatic application of a weak coupling, of strength $t$. The limits of this approximate treatment will be tested using a numerical simulation developed in chapter \ref{chap:methods}.
-
-The standard formula for second order perturbation theory is (there is no first-order shift in energy as the perturbing terms are off-diagonal):
-
-\begin{equation*}
-    E_i^1 \approx E_i^0 + \sum_j{\frac{|\braket{\psi_i|V|\psi_j}|^2}{E_i^0 - E_j^0}}
-\end{equation*} where $E_i^0$ and $E_i^1$ are the unperturbed and perturbed energies of state $i$, and $H_0$ and $V$ are the basic and perturbative hamiltonians. If we set $V$ to the hopping term in the hubbard model, then we obtain, for example,
-\begin{align*}
-    E_{\uparrow\downarrow\uparrow,\uparrow\downarrow,\uparrow\downarrow}^1 - E_{\uparrow\downarrow\uparrow,\uparrow\downarrow,\uparrow\downarrow}^0 &= 
-    -\frac{t^2}{E_{\uparrow\updownarrow \uparrow,\varnothing\downarrow,\uparrow\downarrow}^0 - E_{\uparrow\downarrow\uparrow,\uparrow\downarrow,\uparrow\downarrow}^0}
-    -\frac{t^2}{E_{\uparrow\varnothing \uparrow,\updownarrow\downarrow,\uparrow\downarrow}^0 - E_{\uparrow\downarrow\uparrow,\uparrow\downarrow,\uparrow\downarrow}^0}
-    -\frac{t^2}{E_{\uparrow\updownarrow \uparrow,\uparrow\downarrow,\varnothing\downarrow}^0 - E_{\uparrow\downarrow\uparrow,\uparrow\downarrow,\uparrow\downarrow}^0}
-    -\frac{t^2}{E_{\uparrow\varnothing \uparrow,\uparrow\downarrow,\updownarrow\downarrow}^0 - E_{\uparrow\downarrow\uparrow,\uparrow\downarrow,\uparrow\downarrow}^0}\\
-    &= -t^2\left(\frac{1}{\Delta_1} + \frac{1}{\Delta_2} + \frac{1}{\Delta_3}+ \frac{1}{\Delta_4}\right)
-\end{align*} with
-\begin{align*}
-    \Delta_1 &= U_{Q2} + \mu_{Q2} - \mu_{A1} + \E_{Q2}^z - \E_{A1}^z \\
-    \Delta_2 &= U_{A1} + \mu_{A1} - \mu_{Q2} + \E_{Q2}^z - \E_{A1}^z \\
-    \Delta_3 &= U_{Q2} + \mu_{Q2} - \mu_{A2} + \E_{Q2}^z - \E_{A2}^z \\
-    \Delta_4 &= U_{A2} + \mu_{A2} - \mu_{Q2} + \E_{Q2}^z - \E_{A2}^z \\
-\end{align*}, where the terms describe parameters of the Hubbard model described in section \ref{sec:hubbard_model}.
-
-We note that $U_i \gg \Delta \mu_i, E^z_i$, and that the magnitude of $U_i$ (order of a few \unit{\milli\electronvolt}) varies little from site to site , so that we may define $\Lambda_t = 2t^2/\braket{U_i}$. Then we have 
-\begin{equation*}
-    E_{\mathrm{C}\uparrow\downarrow,\uparrow\downarrow}^1 - E_{\mathrm{C}\uparrow\downarrow,\uparrow\downarrow}^0  = \Delta E_{\mathrm{C}\uparrow\downarrow,\uparrow\downarrow} \approx
-    \Delta E_{\mathrm{C}\uparrow\downarrow,\downarrow\uparrow} \approx
-    \Delta E_{\mathrm{C}\downarrow\uparrow,\uparrow\downarrow} \approx
-    \Delta E_{\mathrm{C}\downarrow\uparrow,\downarrow\uparrow} \approx -2\Lambda_t
-\end{equation*}, where we note the shift in energy is the same, within the above approximations, for both of the codespace branches, $\ket{\uparrow\downarrow\uparrow}$ and $\ket{\downarrow\uparrow\downarrow}$, and denote the energies of both branches by the subscript C. All branches of the ancilla state will therefore accure phase at the same rate as long as the state code qubits remains within the codespace.
-
-\newcommand{\dlam}[2]{\diagbox{$#1\Lambda_t$}{$#2\Lambda_t$}}
-\begin{table}
-    \centering
-\begin{tabular}{|c|c||c|c|c|c|}
-\hline
-\multicolumn{2}{|c||}{Computational branch} & \multicolumn{4}{c|}{Ancilla branch} \\
-\hline
- Subspace & branch & $\uparrow\downarrow\uparrow\downarrow$ & $\uparrow\downarrow\downarrow\uparrow$ & $\downarrow\uparrow\uparrow\downarrow$ & $\downarrow\uparrow\downarrow\uparrow$ \\
- \hhline{|=|=||=|=|=|=|}
-
-Codespace & \diagbox{$\uparrow\downarrow\uparrow$}{$\downarrow\uparrow\downarrow$} & $2\Lambda_t$ & $2\Lambda_t$ & $2\Lambda_t$ & $2\Lambda_t$\\
-\hline
-E1 & \diagbox{$\downarrow\downarrow\uparrow$}{$\uparrow\uparrow\downarrow$} & \dlam{3}{1} & \dlam{3}{1} & \dlam{1}{3} & \dlam{1}{3}\\
-\hline
-E2 &\diagbox{$\uparrow\uparrow\uparrow$}{$\downarrow\downarrow\downarrow$} & \diagbox{$0$}{$4\Lambda_t$} & $2\Lambda_t$ & $2\Lambda_t$ & \diagbox{$4\Lambda_t$}{$0$}\\
-\hline
-E3 & \diagbox{$\uparrow\downarrow\downarrow$}{$\downarrow\uparrow\uparrow$} & \dlam{3}{1} & \dlam{1}{3} & \dlam{3}{1} & \dlam{1}{3}\\
-\hline
-\end{tabular}
-\caption{Table of the (negative) energy shifts due to coupling of each ancilla branch, of each computational branch, of each subspace.}\label{table:shifts}
-\end{table}
-
-
-When a bit-flip error occurs, the state will aquire a component in one of the error subspaces, denoted E1, E2 and E3 depending on which qubit has flipped. Applying the above analysis, we calculate the energy shifts of each of the ancilla branches of each computational branch in each codespace. These are given in table \ref{table:shifts}. These shifts result in the A1, A3, or A2, A4 ancilla pairs rotating from triplets to singlets, or both, depending on the error subspace. To see this, consider the E1 error subspace, into which the state moves when the Q1 qubit experiences a bit-flip error. If both ancilla pairs are in triplet states at the point when the system transitions into the E1 subspace from the codespace, the state undergoes the following evolution \footnote{We assume that the resultant state is approximately a stationary state of the perturbed hamiltonian.}:
-
-\begin{align*}
-    \ket{\psi(t)} = &\alpha\ket{\downarrow\downarrow\uparrow}(
-        e^{-3 i \Lambda_t t }\ket{\uparrow\downarrow\uparrow\downarrow} 
-    + e^{-3 i \Lambda_t t }\ket{\uparrow\downarrow\downarrow\uparrow}
-    + e^{-i \Lambda_t t }\ket{\downarrow\uparrow\uparrow\downarrow}
-    + e^{-i \Lambda_t t }\ket{\downarrow\uparrow\downarrow\uparrow})/2 \\
-    + e^{-i\delta_{Q1,Q3} t} &\beta\ket{\uparrow\uparrow\downarrow}(
-        e^{- i \Lambda_t t }\ket{\uparrow\downarrow\uparrow\downarrow} 
-    + e^{- i \Lambda_t t }\ket{\uparrow\downarrow\downarrow\uparrow}
-    + e^{-3i \Lambda_t t }\ket{\downarrow\uparrow\uparrow\downarrow}
-    + e^{-3i \Lambda_t t }\ket{\downarrow\uparrow\downarrow\uparrow})/2 \\
-    &\approx e^{-3 i \Lambda_t t}\alpha\ket{\downarrow\downarrow\uparrow}
-    (\ket{\uparrow\downarrow} + e^{2 i \Lambda_t t }\ket{\downarrow\uparrow})
-    (\ket{\uparrow\downarrow} + \ket{\downarrow\uparrow})/2 \\
-    &+ e^{- i \Lambda_t t}\beta\ket{\uparrow\uparrow\downarrow}
-    (\ket{\uparrow\downarrow} + e^{-2 i \Lambda_t t }\ket{\downarrow\uparrow})
-    (\ket{\uparrow\downarrow} + \ket{\downarrow\uparrow})/2
-\end{align*}, where the $\delta_{Q1, Q3}$ phase term accounts for the difference in energy between the two branches, which is small compared to $\Lambda_t$, and irrelevant to our conclusion, so we ignore it. By comparison with equation \ref{eq:triplet_to_singlet}, we see that the A1,A3 ancilla pair in both branches will rotate into a triplet state with a characteristic timescale $1/\Lambda_t$. The same analysis yields for E2 error subspace:
-\begin{align*}
-    \ket{\psi(t)} \approx &\alpha\ket{\downarrow\downarrow\uparrow}
-    (\ket{\uparrow\downarrow} + e^{ -2 i \Lambda_t t }\ket{\downarrow\uparrow})
-    (\ket{\uparrow\downarrow} + e^{ -2 i \Lambda_t t }\ket{\downarrow\uparrow})/2 \\
-    + e^{-4 i \Lambda_t t} &\beta\ket{\downarrow\downarrow\uparrow}
-    (\ket{\uparrow\downarrow} + e^{ 2 i \Lambda_t t }\ket{\downarrow\uparrow})
-    (\ket{\uparrow\downarrow} + e^{ 2 i \Lambda_t t }\ket{\downarrow\uparrow})/2
-\end{align*}, so that both pairs of ancillas rotate into singlets. The E3 case is identical to the E1 case with the appropriate qubits exchanged, and leads to only the A2, A4 qubit pair rotating into a singlet.
-
-\subsection{Further questions related to tunnelling physics} \label{sec:tunneling_question}
-
-Much work has been done optimising the implementation and and examining the classical physics of reflectometry as a tool for quantum measurement. For a review see, e.g. \cite{Vigneau2023}, especially section VIII. During the project the author has not had time to study the physics behind this technique in detail. It appears, however, that present analyses treat the system semi-classically in assuming that an electron tunnels, or does not, within the measurement period (i.e. the period of time that the tunneling barrier between the pair of qubits is lowered). They then seek to maximise the fidelity with which this charge-shifting event, or lack thereof, is detected. This tunneling event is interpreted as a projective measurement of the singlet/triplet system at the point of measurement, with probabilities of either state given by Born's rule. In the present case this is an insufficient analysis: at any given time, there is necessarily some finite component of the electron pair state that is a singlet, and we need to establish a rate at which tunnelling occurs as a function of the amplitude of this component. A full treatment of this problem probably needs to be formulated in terms of quantum master equations and the theory of quantum decoherence \cite{Wiseman1996}.
-
-Time has not permitted me to look into this issue, so at the suggestion of my supervisor I will make the simplifying assumption that any ancilla pair that aquires more than a 10\% square-amplitude of singlet immediately tunnels and is hence registered by the dispersive readout device with empirically determined fidelity.
-
-\chapter{Computational Methods} \label{chap:methods}
-
-\section{Simulating the hubbard model}
-This section will discuss the methodology used to perform simulations of scheme described in section \ref{sec:truly_continuous_theory} on a hubbard model of a multiple quantum dot system. The treatment of the error correction scheme described in section \ref{sec:truly_continuous_theory} is necessarily highly approximate due to the complexity of the high-dimensional hilbert space involved (for 7 electrons on 7 sites, the occupation basis is of dimension 3432) and the large number of parameters of the Hubbard model, so makes multiple simplifying assumptions, chiefly the application of second-order perturbation theory and ignoring the site-to-site variance in certain model parameters. It is therefore valuable to simulate the Hubbard model numerically to test the validity of these assumptions in various parameter regimes.
-
-My supervisor Dr. Arvidsson-Shukur and his collegues have developed a code (yet unpublished), \texttt{DotHamiltoniser}, designed to generate Hubbard hamiltonians in an occupation basis given a set of physical parameters ($E_i^z, U_i$, etc.), as well as to perform low-dimensional time-evolution simulations. This was very helpful at the start of my project to visualise the energy levels of the system and their dependence on coupling. However, it was not designed for higher dimensional time evolution, and could not be used for this purpose due to performance limitations.
-
-I therefore designed a Hamiltonian simulation code, inspired by the work of Dr Arvidsson-Shuker et al., with the ability to handle higher dimensional systems. The system has three main components: 
-\begin{enumerate}
-    \item A python extension, \texttt{FastHamiltoniser}, written in C, C++ and CUDA, which provides highly performant specialised sparse matrix operations for use in Hamiltonian time evolution. This stores and updates the Hamiltonian as a set of sparse \texttt{Permuter} objects to improve performance.
-    \item \texttt{Hamiltonian}, a python class that builds a Hubbard model Hamiltonian from physical parameters. This implements all the relevant second-quantised physical calculations necessary for Hubbard model, building the $n$ site, $m$ electron fock basis as a set of bit strings and defining raising and lowering operators, projector matrices, unitary matrices, etc. in this basis.
-    \item \texttt{Evolution}, a python class which takes as input a Hamiltonian and a set of continuous time instructions, which are defined as recursive composite instructions, to produce a time evolution of a given starting statevector.
-\end{enumerate}
-
-The pertinent and interesting details of each of these components are explained in appendix \ref{appendix:software}.
-
-Some demonstrations of the simulator and the results of a benchmarking exercise are shown in figure \ref{fig:benchmark}. 
+ \section{Numerical simulation of the scheme}
+ In order to validate the predictions of the theoretical analysis above, and as the basis for a more advanced simulation that will predict its fidelity and behaviour under a continuous noise model, I wrote a software package that could simulate such quantum dot systems. There were multiple challenges related to the technical complexity and performance requirements of the code, and its development is detailed in appendix \ref{appendix:software}. To demonstrate the capabilities of the simulator, some simple circuits and the results of a benchmarking exercise are shown in figure \ref{fig:benchmark}.
 \begin{figure}[ht]
     \centering
     \includegraphics[scale = 0.85]{Figures/benchmark/benchmarks.pdf}
@@ -361,28 +254,7 @@ This section explains how the software described above was used to simulate the 
 \subsubsection{Physical parameters}
 It is useful to survey the orders of magnitude of the various physical paramters of the experiment based on theoretical and experimental work to date. These can be found in table \ref{table:parameters}. As this is an exploratory piece of thoeretical work, I will take these as fairly liberal bounds.
 
-\begin{table}
-    \centering
-\begin{tabular}{|c|c|c|c|}
-    \hline
-    Parameter & Symbol & Range & Example Reference\\
-    \hline
-    On-site coulomb repulsion & $U_i$ & $\sim 1\mathrm{Ry} \sim$ 1-10 \unit{\milli\electronvolt} & \cite{Shim2022}\\
-    \hline 
-    Static magnetic ($z$) field & $B_i^z$ & 1 - 10 \unit{\tesla} & \cite{Jock2018} \\
-    \hline
-    Variation in electron g factor & $\delta B_i^z$ &0.01 - 0.1 \unit{\mega\hertz} &\cite{Hwang2017} \\
-    \hline
-    Hopping coupling strength & $t_{ij}$ &$0.001 - 0.01$ \unit{\milli\electronvolt} & \cite{Veldhorst2015} \\
-    \hline
-    Phase flip coherence time &$ T_2^*$ & up to $10^3$\unit{\nano\second} in Si, $10^5$\unit{\nano\second} in $^{28}$Si & \cite{Loss2022}\\
-    \hline
-    Bit flip coherence/relaxation time &$T_1$&up to $10^6$\unit{\nano\second} in normal Si& \cite{Loss2022}\\
-    \hline
 
-\end{tabular}
-\caption{Table of the (negative) energy shifts due to coupling of each ancilla branch, of each computational branch, of each subspace.}\label{table:parameters}
-\end{table}
 
 \subsection{Hubbard Hamiltonian setup} \label{sec:reduced_basis_approx}
 The software enables us to set up a qubit basis that explicitly models the qubit layout shown in \ref{fig:7qubitlayout}, with three code qubits and two pairs of ancilla qubits. This seven-qubit system has a fock basis of dimension 3432, which is just about feasible to simulate using the software I developed (simulations of sufficiently small time step take several minutes each, and there are memory limitations in storing the results). However, this can be sped up by noting that in the circuit to be simulated, the second of each pair of ancillas, A3 and A4, do not experience any coupling, so the hamiltonian is always diagonal in these dimensions. Furthermore, the ancilla part of all states that are non-zero in the simulation are constructed out of the $\ket{\uparrow\downarrow}$ and $\ket{\downarrow\uparrow}$ states with respect to these pairs of qubits, as well as non-computational states. Therefore, we may reduce our basis if we make an appropriate modification to the Hamiltonian:
@@ -445,7 +317,30 @@ Even if we restrict ourselves to trying to reduce errors due to relaxation and l
 
 During the course of the project I also developed a highly theoretical error-correction scheme that in principle could correct against both phase flip and bit flip errors. This I describe in appendix \ref{appendix:lockedstates}.
 
-\begin{appendices}
+\begin{appendices}\label{appendix:parameters}
+\chapter{Table of orders of magnitude of physical parameters}
+\begin{table}[ht]
+    \centering
+\begin{tabular}{|c|c|c|c|}
+    \hline
+    Parameter & Symbol & Range & Example Reference\\
+    \hline
+    On-site coulomb repulsion & $U_i$ & $\sim 1\mathrm{Ry} \sim$ 1-10 \unit{\milli\electronvolt} & \cite{Shim2022}\\
+    \hline 
+    Static magnetic ($z$) field & $B_i^z$ & 1 - 10 \unit{\tesla} & \cite{Jock2018} \\
+    \hline
+    Variation in electron g factor & $\delta B_i^z$ &0.01 - 0.1 \unit{\mega\hertz} &\cite{Hwang2017} \\
+    \hline
+    Hopping coupling strength & $t_{ij}$ &$0.001 - 0.01$ \unit{\milli\electronvolt} & \cite{Veldhorst2015} \\
+    \hline
+    Phase flip coherence time &$ T_2^*$ &$1$\unit{\micro\second} - $500$\unit{\micro\second}& \cite{Loss2022}\\
+    \hline
+    Bit flip coherence/relaxation time &$T_1$&$1\unit{\milli\second}$ - $1\unit{\second}$& \cite{Xue2020}\\
+    \hline
+
+\end{tabular}
+\caption{Table of the orders of magnitude of the key physical parameters of current silicon qubit technology, along with example references.}\label{table:parameters}
+\end{table}
 \chapter{The Fermi-Hubbard model of interacting quantum dots}\label{appendix:hubbard}
 
 We model the multiple quantum dot system in the second-quantised `Fock' or `occupation' basis using the Hubbard model\cite{Hubbard1963}. 
@@ -649,11 +544,40 @@ An incoherent operation is defined in this theory as one that maps incoherent st
 \end{equation*}
 While not mentioned by the authors, it is straightforward to show that the property of incoherence of an operation, in contrast to the property of incoherence of a \textit{state}, is unitarily invariant, that is, an operation that is incoherent in one basis is necessarily incoherent in all others. In addition, it is obvious that an operation whose Krauss operators are chosen from the (possibly scaled) Krauss operators of other incoherent operators is itself incoherent. Within this framework it is easy to see why amplitude damping, bit flip (both manifestly incoherent in the computational basis), phase flip (manifestly incoherent in the $\ket{+}$, $\ket{-}$ basis), and phase-bit flip (manifestly incoherent in the $(\ket{0} \pm i\ket{1})/\sqrt{2}$ basis) channels as well as combinations of the above such as the depolarising channel are all incoherent operations. Of these, the amplitude damping and bit-flip channels are further \textit{strictly incoherent}, meaning the measurement statistics of the state after their application are independent of the off-diagonal elements of the state prior to the application. The theory of quantifying coherence then requires that any useful measure of coherence monotonically decrease under the application of these operations. In our case, we start in a incoherent state, so for all such measures $\mathcal{C}$, we have $\mathcal{C}(\rho_0) = 0$, which remains true for all subsequent time.
 
+\chapter{Change of basis to regard the codespace as one state}\label{appendix:changeofbasis}
+To simplify the analysis of the 3 qubit phase-flip shor code treated in section \ref{sec:repeat_analysis}, we perform a state-dependent, \textit{non-unitary} transformation that allows us to treat any state in the codespace as a single basis state. This results in an \textit{underestimate} of the error-correction performance of the scheme, which is detailed in this appendix.
+
+The state to be protected is
+\begin{equation*}
+    \ket{\psi} = \alpha \ket{0} + \beta \ket{1},
+\end{equation*} which we have encoded as
+\begin{equation*}
+    \rightarrow \alpha \ket{000} + \beta \ket{111}.
+\end{equation*}
+We assume that $\alpha \neq \beta$ (see later). To examine the dynamics of this states, we will transform to the following `analytical' basis:
+\begin{align*}
+    \alpha \ket{000}+ \beta \ket{111} &\longrightarrow \ket{000}\\
+    \alpha \ket{111}+ \beta \ket{000} &\longrightarrow \ket{111}\\
+    \alpha \ket{001}+ \beta \ket{110} &\longrightarrow \ket{001}\\
+    \alpha \ket{110}+ \beta \ket{001} &\longrightarrow \ket{110}\\
+    \alpha \ket{010}+ \beta \ket{101} &\longrightarrow \ket{010}\\
+    \alpha \ket{101}+ \beta \ket{010} &\longrightarrow \ket{101}\\
+    \alpha \ket{100}+ \beta \ket{011} &\longrightarrow \ket{100}\\
+    \alpha \ket{011}+ \beta \ket{100} &\longrightarrow \ket{011}.
+\end{align*}
+This is not a unitary transformation. However, all of the error operations and correction unitaries we make use of take the form of Z gates (phase flips) in the computational basis, which are invariant under the transformation given above. Measurements of parity are also invariant under this transformation. The only relevant calculation not invariant under this transformation is calculation of the fidelity. This reflects reality: the effectiveness of any such error correction scheme varies greatly with the state being protected. The state $(\ket{000} + \ket{111})/\sqrt{2}$ breaks this transformation as it maps to both $\ket{000}$ and $\ket{111}$ - that it, it is identical to itself with all its phases flipped. Hence no matter how many error flips occur, the correction scheme can push the state back to exactly the correct state with at most one correction flip.
+
+This effect can be quantified: if the target state in the `analytical' basis is $\ket{000}$, then if those states are occupied with probabilities $\{P_i\}$, then the fidelity in this basis is simply $P_0$. However, this means the actual state of the qubits is $\alpha \ket{000} + \beta \ket{111}$ with probability $P_0$, and in $\alpha \ket{111} + \beta \ket{000}$ with probability $P_7$, with a (generally small) probability of being in another state. Given the target state to be protected in this basis is $\alpha \ket{+++} + \beta \ket{---}$, the actual fidelity is:
+\begin{align*}
+    F = P_0 + P_7|\alpha^* \beta + \beta^* \alpha|^2 = P_0 + \left[\lvert\braket{0|\psi}\rvert^2 - \lvert\braket{1|\psi}\rvert^2\right]^2P_7
+\end{align*}
+Integrating the value of this expression over the surface of the Bloch sphere, one obtains an `average' fidelity of $P_0 + 2P_7/3$. I am not sure how useful this metric is however, and in any case, in most error correction schemes of interest, we have at all times $P_0 + P_7 \approx 1$, so this is only really a linear correction. The analysis of section \ref{sec:repeat_analysis} proceeds in the `analytical' basis given above, taking $P_0$ at the relevant metric.
+
 \chapter{Markovian analysis of repeated error correction schemes}\label{appendix:markovanalysis}
 \subsubsection{Modelling readout fidelities}
 Readout for quantum dot qubits always involves some form of \textit{spin to charge conversion} as the interaction of the spins themselves with the environment is weak (this is why the $T_1$ times for these systems are so good). Spin to charge conversion involves some form of tunneling process, of which the simplest form is Elzerman readout, where spin-up and spin-down electrons tunnel to a reservoir with different tunneling rates, which we define as $\gamma$ for spin up electrons, resulting from an odd parity state between the relevant qubits, and $\Gamma$ for spin down electrons. Techniques such as RF reflectometry also involve waiting for some form of electron tunnelling event, so this model could potentially be used to describe these techniques as well. For an effective scheme, we expect that $\gamma \gg \Gamma$.
 
-From these we can calculate the chance that we detect a tunneling event given that the ancilla is spin up $F_1$ and the chance that there is no tunneling event detected given the electron is spin down $F_0$. A perfect scheme would have $F_0 = F_1 = 1$. A simple model for these readout times, assuming the amplitude relaxation time $T_1 \gg \Gamma^{-1}, \gamma^{-1}$ is (simplified \cite{Keith2019}):
+From these we can calculate the chance that we detect a tunneling event given that the ancilla is spin up $F_1$ and the chance that there is no tunneling event detected given the electron is spin down $F_0$. A perfect scheme would have $F_0 = F_1 = 1$. A simple model for these readout times, assuming the amplitude relaxation time $T_1 \gg \Gamma^{-1}, \gamma^{-1}$ is (simplified from \cite{Keith2019}):
 \begin{align*}
     F_0 &= e^{-\Delta t \Gamma} & F_1 &= 1-e^{-\Delta t \gamma}
 \end{align*}
@@ -732,34 +656,111 @@ and the correction step as
 The evolution of the state in time in one step is given by $M = CE$ where $E$ and $C$ are the matrices defined in (\ref{eq:Ematrix}) and (\ref{eq:Cmatrix}) respectively. We prepare the system in a pure $\ket{000}$ state, $P_i = \delta_{i,0}$, and repeatedly apply $M$ to evolve the $P_i$.  
 
 
-\chapter{Change of basis to regard the codespace as one state}\label{appendix:changeofbasis}
-To simplify the analysis of the 3 qubit phase-flip shor code treated in section \ref{sec:repeat_analysis}, we perform a state-dependent, \textit{non-unitary} transformation that allows us to treat any state in the codespace as a single basis state. This results in an \textit{underestimate} of the error-correction performance of the scheme, which is detailed in this appendix.
 
-The state to be protected is
+
+\chapter{Treatment of continuous error correction scheme using second-order perturbation theory}
+
+In this section the behaviour of the system described in \ref{chapter:CQEC} is predicted using second-order perturbation theory, along with various approximations to make the problem tractable. 
+
+Suppose the system is initally in an arbitrary codespace state, with each of the ancilla pairs starting in triplet states:
 \begin{equation*}
-    \ket{\psi} = \alpha \ket{0} + \beta \ket{1},
-\end{equation*} which we have encoded as
-\begin{equation*}
-    \rightarrow \alpha \ket{+++} + \beta \ket{---}.
+    \ket{\psi(t = 0)} = (\alpha\ket{\uparrow_{Q1}\downarrow_{Q2}\uparrow_{Q3}} + \beta\ket{\downarrow_{Q1}\uparrow_{Q2}\downarrow_{Q3}})(\ket{\uparrow_{A1}\downarrow_{A3}} + \ket{\downarrow_{A1}\uparrow_{A3}})(\ket{\uparrow_{A2}\downarrow_{A4}} + \ket{\downarrow_{A2}\uparrow_{A4}}) / 2
 \end{equation*}
-We assume that $\alpha \neq \beta$ (see later). To examine the dynamics of this states, we will transform to the following `analytical' basis:
-\begin{align*}
-    \alpha \ket{+++} + \beta \ket{---} &\longrightarrow \ket{000}\\
-    \alpha \ket{---} + \beta \ket{+++} &\longrightarrow \ket{111}\\
-    \alpha \ket{++-} + \beta \ket{--+} &\longrightarrow \ket{001}\\
-    \alpha \ket{--+} + \beta \ket{++-} &\longrightarrow \ket{110}\\
-    \alpha \ket{+-+} + \beta \ket{-+-} &\longrightarrow \ket{010}\\
-    \alpha \ket{-+-} + \beta \ket{+-+} &\longrightarrow \ket{101}\\
-    \alpha \ket{-++} + \beta \ket{+--} &\longrightarrow \ket{100}\\
-    \alpha \ket{+--} + \beta \ket{-++} &\longrightarrow \ket{011}
-\end{align*}
-This is not a unitary transformation. However, all of the error operations and correction unitaries we make use of take the form of Z gates (phase flips) in the computational basis, equivalent to X (bit flips) in the $\ket{+},\ket{-}$ basis, which in turn are invariant under the transformation given above. Measurements of parity are also invariant under this transformation. The only relevant calculation not invariant under this transformation is calculation of the fidelity. This reflects reality: the effectiveness of any such error correction scheme varies greatly with the state being protected. The state $(\ket{+++} + \ket{---})/\sqrt{2}$ breaks this transformation as it maps to both $\ket{000}$ and $\ket{111}$ - that it, it is identical to itself with all its phases flipped. Hence no matter how many error flips occur, the correction scheme can push the state back to exactly the correct state with at most one correction flip.
+First consider the case where no coupling is applied between the qubits. If we can engineer our system so that $\delta_{1,3}^z = E_{A1}^z - E_{A3}^z \ll 1/T_1$, and similarly $\delta_{2,4}^z \ll 1/T_1$ (with $T_1$ the timescale of bit flip errors), then the energy difference between the two branches of each qubit singlet is sufficiently small that rate at which the triplets rotate into triplets, and so register a tunnelling event on the reflectometry apparatus, is long compared to the error time and so not limiting. We can see this by considering a single ancilla branch:
+\begin{equation}
+    \ket{\psi(t)} = \frac{1}{\sqrt{2}}(\ket{\uparrow\downarrow} + \exp(-2i\delta t)\ket{\downarrow\uparrow}) = \frac{1}{2}\ket{T_0}(1 + \exp(-2i\delta t)) + \frac{1}{2}\ket{S_0}(1 - \exp(-2i\delta t)))
+\end{equation} \label{eq:triplet_to_singlet}, so that the amplitude of the singlet state goes as 
+\begin{equation*}
+    \left|\braket{S_0|\psi(t)}\right|^2 = \sin(\delta t)^2
+\end{equation*}.
 
-This effect can be quantified: if the target state in the `analytical' basis is $\ket{000}$, then if those states are occupied with probabilities $\{P_i\}$, then the fidelity in this basis is simply $P_0$. However, this means the actual state of the qubits is $\alpha \ket{+++} + \beta \ket{---}$ with probability $P_0$, and in $\alpha \ket{---} + \beta \ket{+++}$ with probability $P_7$, with a (generally small) probability of being in another state. Given the target state to be protected in this basis is $\alpha \ket{+++} + \beta \ket{---}$, the actual fidelity is:
+Now we apply a coupling between the following four pairs of qubits: Q1 and A1, Q2 and A1, Q2 and A2, Q3 and A2. We consider the four branches of the state in the computational basis of the ancilla qubits seperately, and apply second order perturbation theory to approximate the energy shift of each state due to the adiabatic application of a weak coupling, of strength $t$. The limits of this approximate treatment will be tested using a numerical simulation developed in chapter \ref{chap:methods}.
+
+The standard formula for second order perturbation theory is (there is no first-order shift in energy as the perturbing terms are off-diagonal):
+
+\begin{equation*}
+    E_i^1 \approx E_i^0 + \sum_j{\frac{|\braket{\psi_i|V|\psi_j}|^2}{E_i^0 - E_j^0}}
+\end{equation*} where $E_i^0$ and $E_i^1$ are the unperturbed and perturbed energies of state $i$, and $H_0$ and $V$ are the basic and perturbative hamiltonians. If we set $V$ to the hopping term in the hubbard model, then we obtain, for example,
 \begin{align*}
-    F = P_0 + P_7|\alpha^* \beta + \beta^* \alpha|^2 = P_0 + \left[\lvert\braket{0|\psi}\rvert^2 - \lvert\braket{1|\psi}\rvert^2\right]^2P_7
-\end{align*}
-Integrating the value of this expression over the surface of the Bloch sphere, one obtains an `average' fidelity of $P_0 + 2P_7/3$. I am not sure how useful this metric is however, and in any case, in most error correction schemes of interest, we have at all times $P_0 + P_7 \approx 1$, so this is only really a linear correction. The analysis of section \ref{sec:repeat_analysis} proceeds in the `analytical' basis given above, taking $P_0$ at the relevant metric.
+    E_{\uparrow\downarrow\uparrow,\uparrow\downarrow,\uparrow\downarrow}^1 - E_{\uparrow\downarrow\uparrow,\uparrow\downarrow,\uparrow\downarrow}^0 &= 
+    -\frac{t^2}{E_{\uparrow\updownarrow \uparrow,\varnothing\downarrow,\uparrow\downarrow}^0 - E_{\uparrow\downarrow\uparrow,\uparrow\downarrow,\uparrow\downarrow}^0}
+    -\frac{t^2}{E_{\uparrow\varnothing \uparrow,\updownarrow\downarrow,\uparrow\downarrow}^0 - E_{\uparrow\downarrow\uparrow,\uparrow\downarrow,\uparrow\downarrow}^0}
+    -\frac{t^2}{E_{\uparrow\updownarrow \uparrow,\uparrow\downarrow,\varnothing\downarrow}^0 - E_{\uparrow\downarrow\uparrow,\uparrow\downarrow,\uparrow\downarrow}^0}
+    -\frac{t^2}{E_{\uparrow\varnothing \uparrow,\uparrow\downarrow,\updownarrow\downarrow}^0 - E_{\uparrow\downarrow\uparrow,\uparrow\downarrow,\uparrow\downarrow}^0}\\
+    &= -t^2\left(\frac{1}{\Delta_1} + \frac{1}{\Delta_2} + \frac{1}{\Delta_3}+ \frac{1}{\Delta_4}\right)
+\end{align*} with
+\begin{align*}
+    \Delta_1 &= U_{Q2} + \mu_{Q2} - \mu_{A1} + \E_{Q2}^z - \E_{A1}^z \\
+    \Delta_2 &= U_{A1} + \mu_{A1} - \mu_{Q2} + \E_{Q2}^z - \E_{A1}^z \\
+    \Delta_3 &= U_{Q2} + \mu_{Q2} - \mu_{A2} + \E_{Q2}^z - \E_{A2}^z \\
+    \Delta_4 &= U_{A2} + \mu_{A2} - \mu_{Q2} + \E_{Q2}^z - \E_{A2}^z \\
+\end{align*}, where the terms describe parameters of the Hubbard model described in section \ref{sec:hubbard_model}.
+
+We note that $U_i \gg \Delta \mu_i, E^z_i$, and that the magnitude of $U_i$ (order of a few \unit{\milli\electronvolt}) varies little from site to site , so that we may define $\Lambda_t = 2t^2/\braket{U_i}$. Then we have 
+\begin{equation*}
+    E_{\mathrm{C}\uparrow\downarrow,\uparrow\downarrow}^1 - E_{\mathrm{C}\uparrow\downarrow,\uparrow\downarrow}^0  = \Delta E_{\mathrm{C}\uparrow\downarrow,\uparrow\downarrow} \approx
+    \Delta E_{\mathrm{C}\uparrow\downarrow,\downarrow\uparrow} \approx
+    \Delta E_{\mathrm{C}\downarrow\uparrow,\uparrow\downarrow} \approx
+    \Delta E_{\mathrm{C}\downarrow\uparrow,\downarrow\uparrow} \approx -2\Lambda_t
+\end{equation*}, where we note the shift in energy is the same, within the above approximations, for both of the codespace branches, $\ket{\uparrow\downarrow\uparrow}$ and $\ket{\downarrow\uparrow\downarrow}$, and denote the energies of both branches by the subscript C. All branches of the ancilla state will therefore accure phase at the same rate as long as the state code qubits remains within the codespace.
+
+\newcommand{\dlam}[2]{\diagbox{$#1\Lambda_t$}{$#2\Lambda_t$}}
+\begin{table}
+    \centering
+\begin{tabular}{|c|c||c|c|c|c|}
+\hline
+\multicolumn{2}{|c||}{Computational branch} & \multicolumn{4}{c|}{Ancilla branch} \\
+\hline
+ Subspace & branch & $\uparrow\downarrow\uparrow\downarrow$ & $\uparrow\downarrow\downarrow\uparrow$ & $\downarrow\uparrow\uparrow\downarrow$ & $\downarrow\uparrow\downarrow\uparrow$ \\
+ \hhline{|=|=||=|=|=|=|}
+
+Codespace & \diagbox{$\uparrow\downarrow\uparrow$}{$\downarrow\uparrow\downarrow$} & $2\Lambda_t$ & $2\Lambda_t$ & $2\Lambda_t$ & $2\Lambda_t$\\
+\hline
+E1 & \diagbox{$\downarrow\downarrow\uparrow$}{$\uparrow\uparrow\downarrow$} & \dlam{3}{1} & \dlam{3}{1} & \dlam{1}{3} & \dlam{1}{3}\\
+\hline
+E2 &\diagbox{$\uparrow\uparrow\uparrow$}{$\downarrow\downarrow\downarrow$} & \diagbox{$0$}{$4\Lambda_t$} & $2\Lambda_t$ & $2\Lambda_t$ & \diagbox{$4\Lambda_t$}{$0$}\\
+\hline
+E3 & \diagbox{$\uparrow\downarrow\downarrow$}{$\downarrow\uparrow\uparrow$} & \dlam{3}{1} & \dlam{1}{3} & \dlam{3}{1} & \dlam{1}{3}\\
+\hline
+\end{tabular}
+\caption{Table of the (negative) energy shifts due to coupling of each ancilla branch, of each computational branch, of each subspace.}\label{table:shifts}
+\end{table}
+
+
+When a bit-flip error occurs, the state will aquire a component in one of the error subspaces, denoted E1, E2 and E3 depending on which qubit has flipped. Applying the above analysis, we calculate the energy shifts of each of the ancilla branches of each computational branch in each codespace. These are given in table \ref{table:shifts}. These shifts result in the A1, A3, or A2, A4 ancilla pairs rotating from triplets to singlets, or both, depending on the error subspace. To see this, consider the E1 error subspace, into which the state moves when the Q1 qubit experiences a bit-flip error. If both ancilla pairs are in triplet states at the point when the system transitions into the E1 subspace from the codespace, the state undergoes the following evolution \footnote{We assume that the resultant state is approximately a stationary state of the perturbed hamiltonian.}:
+
+\begin{align*}
+    \ket{\psi(t)} = &\alpha\ket{\downarrow\downarrow\uparrow}(
+        e^{-3 i \Lambda_t t }\ket{\uparrow\downarrow\uparrow\downarrow} 
+    + e^{-3 i \Lambda_t t }\ket{\uparrow\downarrow\downarrow\uparrow}
+    + e^{-i \Lambda_t t }\ket{\downarrow\uparrow\uparrow\downarrow}
+    + e^{-i \Lambda_t t }\ket{\downarrow\uparrow\downarrow\uparrow})/2 \\
+    + e^{-i\delta_{Q1,Q3} t} &\beta\ket{\uparrow\uparrow\downarrow}(
+        e^{- i \Lambda_t t }\ket{\uparrow\downarrow\uparrow\downarrow} 
+    + e^{- i \Lambda_t t }\ket{\uparrow\downarrow\downarrow\uparrow}
+    + e^{-3i \Lambda_t t }\ket{\downarrow\uparrow\uparrow\downarrow}
+    + e^{-3i \Lambda_t t }\ket{\downarrow\uparrow\downarrow\uparrow})/2 \\
+    &\approx e^{-3 i \Lambda_t t}\alpha\ket{\downarrow\downarrow\uparrow}
+    (\ket{\uparrow\downarrow} + e^{2 i \Lambda_t t }\ket{\downarrow\uparrow})
+    (\ket{\uparrow\downarrow} + \ket{\downarrow\uparrow})/2 \\
+    &+ e^{- i \Lambda_t t}\beta\ket{\uparrow\uparrow\downarrow}
+    (\ket{\uparrow\downarrow} + e^{-2 i \Lambda_t t }\ket{\downarrow\uparrow})
+    (\ket{\uparrow\downarrow} + \ket{\downarrow\uparrow})/2
+\end{align*}, where the $\delta_{Q1, Q3}$ phase term accounts for the difference in energy between the two branches, which is small compared to $\Lambda_t$, and irrelevant to our conclusion, so we ignore it. By comparison with equation \ref{eq:triplet_to_singlet}, we see that the A1,A3 ancilla pair in both branches will rotate into a triplet state with a characteristic timescale $1/\Lambda_t$. The same analysis yields for E2 error subspace:
+\begin{align*}
+    \ket{\psi(t)} \approx &\alpha\ket{\downarrow\downarrow\uparrow}
+    (\ket{\uparrow\downarrow} + e^{ -2 i \Lambda_t t }\ket{\downarrow\uparrow})
+    (\ket{\uparrow\downarrow} + e^{ -2 i \Lambda_t t }\ket{\downarrow\uparrow})/2 \\
+    + e^{-4 i \Lambda_t t} &\beta\ket{\downarrow\downarrow\uparrow}
+    (\ket{\uparrow\downarrow} + e^{ 2 i \Lambda_t t }\ket{\downarrow\uparrow})
+    (\ket{\uparrow\downarrow} + e^{ 2 i \Lambda_t t }\ket{\downarrow\uparrow})/2
+\end{align*}, so that both pairs of ancillas rotate into singlets. The E3 case is identical to the E1 case with the appropriate qubits exchanged, and leads to only the A2, A4 qubit pair rotating into a singlet.
+
+\subsection{Further questions related to tunnelling physics} \label{sec:tunneling_question}
+
+Much work has been done optimising the implementation and and examining the classical physics of reflectometry as a tool for quantum measurement. For a review see, e.g. \cite{Vigneau2023}, especially section VIII. During the project the author has not had time to study the physics behind this technique in detail. It appears, however, that present analyses treat the system semi-classically in assuming that an electron tunnels, or does not, within the measurement period (i.e. the period of time that the tunneling barrier between the pair of qubits is lowered). They then seek to maximise the fidelity with which this charge-shifting event, or lack thereof, is detected. This tunneling event is interpreted as a projective measurement of the singlet/triplet system at the point of measurement, with probabilities of either state given by Born's rule. In the present case this is an insufficient analysis: at any given time, there is necessarily some finite component of the electron pair state that is a singlet, and we need to establish a rate at which tunnelling occurs as a function of the amplitude of this component. A full treatment of this problem probably needs to be formulated in terms of quantum master equations and the theory of quantum decoherence \cite{Wiseman1996}.
+
+Time has not permitted me to look into this issue, so at the suggestion of my supervisor I will make the simplifying assumption that any ancilla pair that aquires more than a 10\% square-amplitude of singlet immediately tunnels and is hence registered by the dispersive readout device with empirically determined fidelity.
 
 \chapter{Using alternative codespaces for continuous error correction}\label{appendix:evenparitycodespace}
 
@@ -899,7 +900,20 @@ where the first and second qubit represent the ancilla qubit and the first qubit
 
 \chapter{Hubbard model Hamiltonian simulator}\label{appendix:software}
 
+In this appendix I discuss some of the more interesting details of the software I wrote to simulate the Hubbard model. A substantial portion of the time of the project went into the design and implementation of this simulator.
+
 \subsubsection{Python extension: \texttt{FastHamiltoniser}}
+This section will discuss the methodology used to perform simulations of scheme described in section \ref{sec:truly_continuous_theory} on a hubbard model of a multiple quantum dot system. The treatment of the error correction scheme described in section \ref{sec:truly_continuous_theory} is necessarily highly approximate due to the complexity of the high-dimensional hilbert space involved (for 7 electrons on 7 sites, the occupation basis is of dimension 3432) and the large number of parameters of the Hubbard model, so makes multiple simplifying assumptions, chiefly the application of second-order perturbation theory and ignoring the site-to-site variance in certain model parameters. It is therefore valuable to simulate the Hubbard model numerically to test the validity of these assumptions in various parameter regimes.
+
+My supervisor Dr. Arvidsson-Shukur and his collegues have developed a code (yet unpublished), \texttt{DotHamiltoniser}, designed to generate Hubbard hamiltonians in an occupation basis given a set of physical parameters ($E_i^z, U_i$, etc.), as well as to perform low-dimensional time-evolution simulations. This was very helpful at the start of my project to visualise the energy levels of the system and their dependence on coupling. However, it was not designed for higher dimensional time evolution, and could not be used for this purpose due to performance limitations.
+
+I therefore designed a Hamiltonian simulation code, inspired by the work of Dr Arvidsson-Shuker et al., with the ability to handle higher dimensional systems. The system has three main components: 
+\begin{enumerate}
+    \item A python extension, \texttt{FastHamiltoniser}, written in C, C++ and CUDA, which provides highly performant specialised sparse matrix operations for use in Hamiltonian time evolution. This stores and updates the Hamiltonian as a set of sparse \texttt{Permuter} objects to improve performance.
+    \item \texttt{Hamiltonian}, a python class that builds a Hubbard model Hamiltonian from physical parameters. This implements all the relevant second-quantised physical calculations necessary for Hubbard model, building the $n$ site, $m$ electron fock basis as a set of bit strings and defining raising and lowering operators, projector matrices, unitary matrices, etc. in this basis.
+    \item \texttt{Evolution}, a python class which takes as input a Hamiltonian and a set of continuous time instructions, which are defined as recursive composite instructions, to produce a time evolution of a given starting statevector.
+\end{enumerate}
+
 \begin{figure}[ht]
     \centering
     \includegraphics[scale = 0.8]{Figures/fasthamiltoniser/diagram.pdf}
