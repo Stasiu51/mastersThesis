@@ -94,10 +94,10 @@ we see that the state of the system has moved into one of three error-spaces: $\
 \begin{figure}[ht]
     \centering
     \includegraphics[scale = 0.85]{Figures/cubediagram.pdf}
-    \caption{In this figure, the possible states of an error-prone system that starts in the $\ket{000}$ state are represented on the vertices of a cube. Note that the ideal action of the correction flips is to push the state towards either the $\ket{000}$ or $\ket{111}$ states, indicated by the black arrowheads on some edges. \textbf{a.} shows the ideal case of successful error correction. A single error occurs on the second qubit, and a correct pair of parity measurements identifies the error syndrome and applies an $X_2$ correction flip. \textbf{b.} shows how the scheme fails if two errors (or more) occur in the interval between correction iterations: a correctly performed set of parity measurement will result in a correction flip that pushes the qubits further away from the codespace. \textbf{c.} shows how the scheme fails if one error occurs, and the subsequent parity measurements give the wrong result, so an erroneous correction flip (here $X_1$) is applied. On the next round, if no errors occur and the next set of parity measurements is performed correctly, the correction flip will push the state into the $\ket{111}$ error space.}
+    \caption{In this figure, the possible states of an error-prone system that starts in the $\ket{000}$ state are represented on the vertices of a cube. Note that the ideal action of the correction flips is to push the system towards either the $\ket{000}$ or $\ket{111}$ states, indicated by the black arrowheads on some edges. \textbf{a.} shows the ideal case of successful error correction. A single error occurs on the second qubit, and a correct pair of parity measurements identifies the error syndrome and applies an $X_2$ correction flip. \textbf{b.} shows how the scheme fails if two errors (or more) occur in the interval between correction iterations: a correctly performed set of parity measurements will result in a correction flip that pushes the qubits further away from the codespace. \textbf{c.} shows how the scheme fails if one error occurs, and the subsequent parity measurements give the wrong result, so an erroneous correction flip (here $X_1$) is applied. On the next round, if no errors occur and the next set of parity measurements is performed correctly, the correction flip will push the state into the $\ket{111}$ error space.}
     \label{fig:cubediagram}
 \end{figure}
-We can conceptually divide the processes by which the scheme fails into two classes. Firstly there are those that are caused by two or more errors ocurring in the time it takes to correct a single error; and those that are caused by an erroneous parity measurement, leading to an applied correction flip. These two processes are illustrated in figure \ref{fig:cubediagram}.
+We can conceptually divide the processes by which the scheme fails into two classes. Firstly there are those that are caused by two or more errors ocurring in the time it takes to correct a single error; and those that are caused by an erroneous parity measurement, leading to an applied correction flip. These two processes are illustrated in figure \ref{fig:cubediagram}. This distinction will be referred to again in section \ref{chapter:DQEC}.
 
 \subsubsection{Phase flip errors}
 
@@ -124,7 +124,7 @@ Continuous quantum error correction refers to a class of error correction scheme
 
 
 \section{Discrete error correction schemes using repeated parity measurements} \label{sec:repeat_analysis}
-This section develops a framework for analysing error correction schemes that are discrete, but rapidly repeated, parity measurment and correction. This analysis is motivated by experimental demonstrations of repeated non-demolition measurements in silicon systems \cite{Xue2020} and \cite{Nakajima2019}. The former make use of Elzerman readout\cite{Elzerman2004} while the latter applies the emerging technology of singlet-triplet readout using radio frequency reflectometry \cite{Oakes2022}. The analysis will then be used to conclude that bit-flip error-correction schemes implemented using current techniques are limited in their performance only by the fidelity of the readout, and not by the readout speed or the rate of occurence of errors. This is not true for phase-flip correction. 
+This section develops a framework for analysing error correction schemes based on discrete, but rapidly repeated, parity measurements and correction flips. This analysis is motivated by experimental demonstrations of repeated non-demolition measurements in silicon systems \cite{Xue2020} and \cite{Nakajima2019}. The former make use of Elzerman readout\cite{Elzerman2004} while the latter applies the emerging technology of singlet-triplet readout using radio frequency reflectometry \cite{Oakes2022}. The analysis will then be used to conclude that bit-flip error-correction schemes implemented using current techniques are limited in their performance only by the fidelity of the readout, and not by the readout speed or the rate of occurence of errors. This is not true for phase-flip correction. 
 
 \section{Markovian analysis of discrete error correction}
 The analysis presented here allows for the efficient and exact calculation of the expected fidelity of such a scheme given certain characteristic parameters: the rate of errors, the frequency of error correction cycles, and the fidelity of the error syndrome measurements.
@@ -165,7 +165,43 @@ In appendix \ref{appendix:markovanalysis}, it is derived that the evolution of t
         0 &F_0' F_1 & 2F_1' F_1&0&F_0F_1'&2F_0'F_0 \\
         0&0&0& F_1^2 &F_0 F_1 & F_0^2
     \end{bmatrix}.
-\end{align*} Here $p = \frac{1}{2}(1-e^{-\Delta t /T_{\text{err}}})$ (see appendix \ref{appendix:decoherence}), and $F_1 = F_1(\Delta t)$ and $F_0 = F_0(\Delta t)$ are the probabilities of correctly measuring an even or odd parity state, which will typically depend exponentially on the readout time.
+\end{align*} Here $p = 1-q = \frac{1}{2}(1-e^{-\Delta t /T_{\text{err}}})$ (see appendix \ref{appendix:decoherence}), and $F_1 = F_1(\Delta t)$ and $F_0 = F_0(\Delta t)$ are the probabilities of correctly measuring an even or odd parity state repectively, which will typically depend exponentially on the readout time. It is clear from the symmetry of the matrix that the system will eventually equilibrate into a steady state where each state has equal occupation to its all-bits-flipped counterpart.
+
+\subsection{Using flow analysis to investigate error regimes}
+Intuitively, there are two ways in which the error correction scheme can fail. Firstly, error flips could occur on two or more of the qubits, for example $\ket{000} \longrightarrow \ket{110}$. Then a successful set of parity measurements will push the state into the error space, in our example $\ket{110} \longrightarrow \ket{111}$. The whole mechnism takes only one cycle of errors and corrections, and I call this a \textit{direct} error process. One supposes there may well be a parameter space in which this is the dominant mechanism for loss of qubit fidelity; this I call the \textit{error-limited} regime.
+
+Secondly, a single qubit flip could occur, for example $\ket{000} \longrightarrow \ket{001}$. If the subsequent fidelity measurements give the wrong outcome (e.g. odd-even), the correction step may push the state over into the error space, $\ket{001} \longrightarrow \ket{101}$. The most likely outcome of the next round of errors and correction is then $\ket{101} \longrightarrow \ket{111}$. Similarly, there could be no error flips but two erroneous parity measurements in a row. These are both two-step, or \textit{indirect} error mechanisms. A regime in which this is the dominant source of errors I call the \textit{readout limited} regime.
+
+In figure \ref{fig:cubediagram}, the process indicated by \textbf{b.} would belong in the first category, and the process in \textbf{c.} in the second.
+
+In theory there is a third two-step process that starts with a single error flip, which is not corrected by the correction step, and is followed by a further flip on the next round of errors. This turns out to never dominate the loss of qubit fidelity, and nor does any more complicated process.
+
+We can explore these different regimes by examining the rate of flow of probability through the system throughout the lifetime of a qubit - that is, over the time the system takes to equilibrate between the codespace $\ket{000}$ and the `anti codespace' $\ket{111}$. The net probability flux through the system from state $j$ to state $i$ during step $n$, at which point the probabilities are given by the vector $\mathbf{P^n}$, is given by
+\begin{equation*}
+    J_{ij} = M_{ij}P^n_j - M_{ji} P^n_i
+\end{equation*}
+or in matrix notation
+\begin{equation*}
+    J = M\mathbf{P^n} - (M \mathbf{P^n})^\mathrm{T}
+\end{equation*}.
+
+Then we define \textit{direct flow} as $J_D = J_{5,0}$, that is, the rate at which states jump in one step from $\ket{000}$ to $\ket{111}$. This corresponds with the error-limited case above. \textit{Indirect flow} is given by $J_I = J_{5,3} + J_{5,4}$, and is the rate at which states arrive at $\ket{111}$ via $\ket{110}$, $\ket{101}$ and $\ket{011}$. Then we have other flow $J_O = J_{5,1} + J_{5,2}$. Note that we have $\dot{P_5} = J_D + J_I + J_O = J_\mathrm{total}$, as required by conservation of probability.
+
+We can fix the parity readout fidelities $F0 = F1 = F$ (= 0.99), and vary the error probability $p$. For each $p$, we start the system in $P^0_i = \delta_{i,0}$, and apply $M$ until the fidelity falls below some threshold (here 0.51). At each time step we the total $J_D$, $J_I$ and $J_O$. Then we can plot the ratios $\int J_D/J_\mathrm{total}$, etc. We can repeat the experiment holding $p$ fixed and varying $F$. The results are shown in figures \ref{fig:flowprop1} and \ref{fig:flowprop2}. We see a clear point of crossover between the error- and readout-limited regimes around the point $p = 1-F$, that is, the point at which the probability of an error flip is comparable to the probability of an incorrect parity readout. Where $p \gg 1-F$, the system is firmly in the error-limited regime, whereas for $1-F \gg p$, it is in the readout-limited regime. Around the middle point probability appears to flow without preference through all of the routes available.
+\begin{figure}[ht]
+    \centering
+        \centering
+        \includegraphics[width=0.6\textwidth]{Figures/flow/f_fixed.png} % first figure itself
+        \caption{Proportion of direct, indirect and other flows (as defined in the text) as a function of $p$ with $F = 0.99$. Note the logarithmic scale. The vertical line indicates $p = 1-F$.}
+        \label{fig:flowprop1}
+\end{figure}
+    
+\begin{figure}[ht]
+        \centering
+        \includegraphics[width=0.6\textwidth]{Figures/flow/p_fixed.png} % second figure itself
+        \caption{Proportion of direct, indirect and other flows (as defined in the text) as a function of $1-F$ with $p = 0.01$ fixed. Note the logarithmic scale in $1-F$. The vertical line indicates $p = 1-F$.}
+        \label{fig:flowprop2}
+\end{figure}
 
 \subsection{Further theory, and application}
 The transition matrix allows us to gain some insight into different error regimes, when the rate of equilibration out of the codespace is dominated by the process of two errors ocurring in one timestep - the \textit{error-limited regime}, and when it is dominated by erroneous correction flips caused by incorrect parity measurements - the \textit{readout limited} regime. This analysis is given in appendix \ref{appendix:flowanalysis}. These results allow for a simple understanding of certain experiments. For example, in \cite{Cramer2016}, a nuclear spin qubit experiment, the fidelities are given as $F1\approx0.999$, $F0\approx0.9$, with a quoted $T_2^*$ time of around $12\unit{\milli\second}$ (all three quantities in fact vary from qubit to qubit). Given these parameters, the model gives a reasonable estimate of the fidelity of the error-corrected qubit, remaining within 10\% of the measured fidelity for the duration of the experiment. These parameters are such that the experiment is ocurrs in the `intermediate regime' $p_{\text{err}}\sim F$(see appendix \ref{appendix:flowanalysis}), which means that both reducing the error rate per step and increasing the readout fidelity would have an appreciable impact on the long-term fidelity of the qubit. On the other hand, the repeated spin-basis measurements in \cite{Nakajima2019} on a quantum dot system are performed at a repetition rate of around $7\unit{\micro\second}$, whereas the relaxation time is measured on the order of $1-3\unit{\milli\second}$, and the reported measurment fidelity is on the order of around $0.6$.  This means we are in the readout-limited regime $p_{\text{err}}\ll F$, so if these measurements were used to implement rapdily repeated QEC, the system could only be improved by improving the readout fidelity, perhaps by increasing the readout tunelling time.
@@ -695,42 +731,6 @@ and the correction step as
 \end{equation}
 The evolution of the state in time in one step is given by $M = CE$ where $E$ and $C$ are the matrices defined in (\ref{eq:Ematrix}) and (\ref{eq:Cmatrix}) respectively. We prepare the system in a pure $\ket{000}$ state, $P_i = \delta_{i,0}$, and repeatedly apply $M$ to evolve the $P_i$.  
 
-
-\chapter{Characterising flow regimes of the three-qubit shor code}
-\label{appendix:flowanalysis}
-Intuitively, there are two ways in which the error correction scheme can fail. Firstly, error flips could occur on two or more of the qubits, for example $\ket{000} \longrightarrow \ket{110}$. Then a successful set of parity measurements will push the state into the error space, in our example $\ket{110} \longrightarrow \ket{111}$. One supposes there may well be a parameter space in which this is the dominant mechanism for loss of qubit fidelity; this I call the \textit{error-limited} regime.
-
-Secondly, a single qubit flip could occur, for example $\ket{000} \longrightarrow \ket{001}$. If the subsequent fidelity measurements give the wrong outcome (e.g. odd-even), the correction step may push the state over into the error space, $\ket{001} \longrightarrow \ket{101}$. The most likely outcome of the next round of errors and correction is then $\ket{101} \longrightarrow \ket{111}$. This is a two-step error mechanism. A regime in which this is the dominant source of errors I call the \textit{readout limited} regime.
-
-In theory there is a third two-step process that starts with a single error flip, which is not corrected by the correction step, and is followed by a further flip on the next round of errors. This turns out to never dominate the loss of qubit fidelity, and nor does any more complicated process.
-
-We can explore these different regimes by examining the rate of flow of probability through the system throughout the lifetime of a qubit - that is, over the time the system takes to equilibrate between the codespace $\ket{000}$ and the `anti codespace' $\ket{111}$. The net probability flux through the system from state $j$ to state $i$ during step $n$, at which point the probabilities are given by the vector $\mathbf{P^n}$, is given by
-\begin{equation*}
-    J_{ij} = M_{ij}P^n_j - M_{ji} P^n_i
-\end{equation*}
-or in matrix notation
-\begin{equation*}
-    J = M\mathbf{P^n} - (M \mathbf{P^n})^\mathrm{T}
-\end{equation*}.
-
-Then we define \textit{direct flow} as $J_D = J_{5,0}$, that is, the rate at which states jump in one step from $\ket{000}$ to $\ket{111}$. This corresponds with the error-limited case above. \textit{Indirect flow} is given by $J_I = J_{5,3} + J_{5,4}$, and is the rate at which states arrive at $\ket{111}$ via $\ket{110}$, $\ket{101}$ and $\ket{011}$. Then we have other flow $J_O = J_{5,1} + J_{5,2}$. Note that we have $\dot{P_5} = J_D + J_I + J_O = J_\mathrm{total}$, as required by conservation of probability.
-
-We can fix the parity readout fidelities $F0 = F1 = F$ (= 0.99), and vary the error probability $p$. For each $p$, we start the system in $P^0_i = \delta_{i,0}$, and apply $M$ until the fidelity falls below some threshold (here 0.51). At each time step we the total $J_D$, $J_I$ and $J_O$. Then we can plot the ratios $\int J_D/J_\mathrm{total}$, etc. We can repeat the experiment holding $p$ fixed and varying $F$. The results are shown in figures \ref{fig:flowprop1} and \ref{fig:flowprop2}. We see a clear point of crossover between the error- and readout-limited regimes around the point $p = 1-F$, that is, the point at which the probability of an error flip is comparable to the probability of an incorrect parity readout. Where $p \gg 1-F$, the system is firmly in the error-limited regime, whereas for $1-F \gg p$, it is in the readout-limited regime. Around the middle point probability appears to flow without preference through all of the routes available.
-\begin{figure}[ht]
-    \centering
-    \begin{minipage}{0.45\textwidth}
-        \centering
-        \includegraphics[width=0.9\textwidth]{Figures/flow/f_fixed.png} % first figure itself
-        \caption{Proportion of direct, indirect and other flows (as defined in the text) as a function of $p$ with $F = 0.99$. Note the logarithmic scale. The vertical line indicates $p = 1-F$.}
-        \label{fig:flowprop1}
-    \end{minipage}\hfill
-    \begin{minipage}{0.45\textwidth}
-        \centering
-        \includegraphics[width=0.9\textwidth]{Figures/flow/p_fixed.png} % second figure itself
-        \caption{Proportion of direct, indirect and other flows (as defined in the text) as a function of $1-F$ with $p = 0.01$ fixed. Note the logarithmic scale in $1-F$. The vertical line indicates $p = 1-F$.}
-        \label{fig:flowprop2}
-    \end{minipage}
-\end{figure}
 
 \chapter{Change of basis to regard the codespace as one state}\label{appendix:changeofbasis}
 To simplify the analysis of the 3 qubit phase-flip shor code treated in section \ref{sec:repeat_analysis}, we perform a state-dependent, \textit{non-unitary} transformation that allows us to treat any state in the codespace as a single basis state. This results in an \textit{underestimate} of the error-correction performance of the scheme, which is detailed in this appendix.

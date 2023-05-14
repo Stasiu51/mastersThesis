@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.4)  14 MAY 2023 13:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.4)  14 MAY 2023 14:25
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/alexx/Documents/Stasiu/mastersThesis/main.tex
-(c:/Users/alexx/Documents/Stasiu/mastersThesis/main.tex
+**"c:/Users/Stasiu Wolanski/Projects/Part3Report/main.tex"
+(c:/Users/Stasiu Wolanski/Projects/Part3Report/main.tex
 LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-04-20> (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/base/report.cls
+L3 programming layer <2023-04-20> (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2022/07/02 v1.4n Standard LaTeX document class
-(c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/base/size10.clo
+(c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
@@ -23,27 +23,27 @@ File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/base/inputenc.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/minted/minted.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/minted/minted.sty
 Package: minted 2022/12/12 v2.7 Yet another Pygments shim for LaTeX
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/graphics/keyval.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks18
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/fvextra/fvextra.sty
+)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fvextra/fvextra.sty
 Package: fvextra 2022/11/30 v1.5 fvextra - extensions and patches for fancyvrb
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count194
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2023/01/19 4.5a verbatim text (tvz,hv)
 \FV@CodeLineNo=\count195
 \FV@InFile=\read2
@@ -51,9 +51,9 @@ Package: fancyvrb 2023/01/19 4.5a verbatim text (tvz,hv)
 \c@FancyVerbLine=\count196
 \FV@StepNumber=\count197
 \FV@OutFile=\write3
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/upquote/upquote.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/lineno/lineno.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2023/01/19 line numbers on paragraphs v5.1
 \linenopenalty=\count198
 \output=\toks19
@@ -94,9 +94,9 @@ LaTeX Info: Redefining \\ on input line 3131.
 \FV@LineIndentBox=\box56
 \c@FV@BreakBufferDepth=\count282
 \FV@LineWidth=\dimen151
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/base/ifthen.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/tools/calc.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count283
 \calc@Bcount=\count284
@@ -108,40 +108,40 @@ LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count285
 \calc@Cskip=\skip53
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/tools/shellesc.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
 Package shellesc Info: Unrestricted shell escape enabled on input line 75.
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ifplatform/ifplatform.sty
 Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/iftex/iftex.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/catchfile/catchfile.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/catchfile/catchfile.sty
 Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/iftex/ifluatex.sty
+)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
-)) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/xstring/xstring.sty (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/xstring/xstring.tex
+)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xstring/xstring.sty (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xstring/xstring.tex
 \integerpart=\count286
 \decimalpart=\count287
 )
 Package: xstring 2023/01/14 v1.85 String manipulations (CT)
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/framed/framed.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip54
 \fb@frw=\dimen154
 \fb@frh=\dimen155
 \FrameRule=\dimen156
 \FrameSep=\dimen157
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/float/float.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count288
 \float@exts=\toks20
@@ -159,9 +159,9 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 runsystem(if not exist _minted-main mkdir _minted-main)...executed.
 
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/geometry/geometry.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/iftex/ifvtex.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 \Gm@cnth=\count292
@@ -176,14 +176,14 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen164
 \Gm@layoutvoffset=\dimen165
 \Gm@dimlist=\toks23
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/biblatex/biblatex.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/logreq/logreq.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count295
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/logreq/logreq.def
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-)) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/url/url.sty
+)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -246,7 +246,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \c@mincompwidth=\count341
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/biblatex/blx-dm.def
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/blx-dm.def
 File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
@@ -335,12 +335,12 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorteditorwidth=\skip76
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/biblatex/blx-compat.def
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/biblatex/biblatex.def
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
 \c@textcitecount=\count410
 \c@textcitetotal=\count411
@@ -358,18 +358,18 @@ File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
 File: numeric.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count419
 \c@bbx:relatedtotal=\count420
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
 File: numeric.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -385,14 +385,14 @@ Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/biblatex/biblatex.cfg
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/l3kernel/expl3.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2023-04-20 L3 programming layer (loader) 
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count421
 \l__pdf_internal_box=\box60
@@ -401,16 +401,16 @@ Package biblatex Info: ... and expl3
 (biblatex)             2023-04-20 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2023-02-02 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
-)) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/appendix/appendix.sty
+)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
 \c@@pps=\count422
 \c@@ppsavesec=\count423
 \c@@ppsaveapp=\count424
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/siunitx/siunitx.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2023-04-13 v3.2.5 A comprehensive (SI) units package
 \l__siunitx_angle_tmp_dim=\dimen166
 \l__siunitx_angle_marker_box=\box61
@@ -425,9 +425,9 @@ Package: siunitx 2023-04-13 v3.2.5 A comprehensive (SI) units package
 \l__siunitx_number_group_first_int=\count432
 \l__siunitx_number_group_size_int=\count433
 \l__siunitx_number_group_minimum_int=\count434
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/amsmath/amstext.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks24
 \ex@=\dimen167
@@ -445,7 +445,7 @@ File: amsgen.sty 1999/11/30 v2.0 generic functions
 \l__siunitx_unit_tmp_int=\count435
 \l__siunitx_unit_position_int=\count436
 \l__siunitx_unit_total_int=\count437
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/tools/array.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \col@sep=\dimen172
 \ar@mcellbox=\box69
@@ -454,39 +454,39 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \extratabsurround=\skip77
 \backup@length=\skip78
 \ar@cellbox=\box70
-)) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/quantikz/quantikz.sty
+)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/quantikz/quantikz.sty
 Package: quantikz 2023/04/03 typeset quantum circuit diagrams
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks26
 \pgfutil@tempdima=\dimen174
 \pgfutil@tempdimb=\dimen175
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box71
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
 Package: pgf 2023-01-15 v3.1.10 (3.1.10)
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/graphics/graphicx.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/graphics/graphics.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/graphics/trig.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen176
 \Gin@req@width=\dimen177
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks27
 \pgfkeys@temptoks=\toks28
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks29
 ))
 \pgf@x=\dimen178
@@ -509,27 +509,27 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 \t@pgf@tokb=\toks31
 \t@pgf@tokc=\toks32
 \pgf@sys@id@count=\count442
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
 Driver file for pgf: pgfsys-pdftex.def
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
-))) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+))) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfsyssoftpath@smallbuffer@items=\count443
 \pgfsyssoftpath@bigbuffer@items=\count444
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/xcolor/xcolor.sty
+)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
 Package xcolor Info: Model `RGB' extended on input line 1369.
@@ -539,18 +539,18 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen188
 \pgfmath@count=\count445
 \pgfmath@box=\box72
 \pgfmath@toks=\toks33
 \pgfmath@stack@operand=\toks34
 \pgfmath@stack@operation=\toks35
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count446
-)) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@picminx=\dimen189
 \pgf@picmaxx=\dimen190
@@ -566,76 +566,76 @@ File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@yy=\dimen256
 \pgf@zx=\dimen257
 \pgf@zy=\dimen258
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@path@lastx=\dimen259
 \pgf@path@lasty=\dimen260
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@shorten@end@additional=\dimen261
 \pgf@shorten@start@additional=\dimen262
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box73
 \pgf@hbox=\box74
 \pgf@layerbox@main=\box75
 \pgf@picture@serial@count=\count447
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgflinewidth=\dimen263
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@pt@x=\dimen264
 \pgf@pt@y=\dimen265
 \pgf@pt@temp=\dimen266
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+)
+(c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfarrowsep=\dimen267
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen268
 \pgf@sys@shading@range@num=\count448
 \pgf@shadingcount=\count449
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfexternal@startupbox=\box76
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)))
-(c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+))) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfnodeparttextbox=\box77
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
 \pgf@nodesepstart=\dimen269
 \pgf@nodesepend=\dimen270
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
-)) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@iter=\dimen271
 \pgffor@skip=\dimen272
 \pgffor@stack=\toks36
 \pgffor@toks=\toks37
-)) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@plot@mark@count=\count450
 \pgfplotmarksize=\dimen273
@@ -656,20 +656,20 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikznumberofchildren=\count452
 \tikznumberofcurrentchild=\count453
 \tikz@fig@count=\count454
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfmatrixcurrentrow=\count455
 \pgfmatrixcurrentcolumn=\count456
 \pgf@matrix@numberofcolumns=\count457
 )
 \tikz@expandcount=\count458
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/quantikz/tikzlibraryquantikz2.code.tex (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/xargs/xargs.sty
+))) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/quantikz/tikzlibraryquantikz2.code.tex (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xargs/xargs.sty
 Package: xargs 2008/03/22 v1.1  extended macro definitions  (mpg)
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks38
 \XKV@tempa@toks=\toks39
 )
@@ -679,19 +679,19 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 \xargs@max=\count460
 \xargs@toksa=\toks40
 \xargs@toksb=\toks41
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/mathtools/mathtools.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/mathtools/mhsetup.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
 \@mathmargin=\skip79
 
 For additional information on amsmath, use the `?' option.
-(c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen282
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count461
@@ -754,21 +754,21 @@ LaTeX Info: Redefining \] on input line 2954.
 \l_MT_below_shortintertext_sep=\dimen296
 \xmathstrut@box=\box84
 \xmathstrut@dim=\dimen297
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/environ/environ.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
-)) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
+)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
 File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
 File: tikzlibraryquotes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfarrowinset=\dimen298
 \pgfarrowlength=\dimen299
 \pgfarrowwidth=\dimen300
 \pgfarrowlinewidth=\dimen301
-)) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
 \pgfdecoratedcompleteddistance=\dimen302
 \pgfdecoratedremainingdistance=\dimen303
 \pgfdecoratedinputsegmentcompleteddistance=\dimen304
@@ -779,21 +779,21 @@ File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfdecorationsegmentlength=\dimen308
 )
 \tikz@lib@dec@box=\box85
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfit.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfit.code.tex
 File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.symbols.code.tex
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.symbols.code.tex
 File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbols.code.tex
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbols.code.tex
 File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex
+)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex
 File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.tex
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.tex
 File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex)) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymath.code.tex (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfpu.code.tex (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex))
+)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymath.code.tex (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfpu.code.tex (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex))
 \tikz@math@for@depth=\count476
 \tikz@math@dimen=\dimen309
 \tikz@math@toks=\toks46
@@ -808,37 +808,37 @@ File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \myd=\skip85
 \c@aaa=\count478
 \c@wirenumberpermute=\count479
-)) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup4
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/mismath/mismath.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mismath/mismath.sty
 Package: mismath 2023/03/05 v2.7 .dtx mismath file
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/esvect/esvect.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/esvect/esvect.sty
 Package: esvect 
 \symesvector=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \fldr on input line 38.
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/tools/xspace.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 \mm@charcode=\count480
 \mm@charclass=\count481
 \mm@charfam=\count482
 \mm@charslot=\count483
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup6
 \symAMSb=\mathgroup7
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/mathabx/mathabx.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/mathabx/mathabx.sty
 Package: mathabx 2003/07/29 v0.0 Non-standard LaTeX package mathabx
 \symmatha=\mathgroup8
 \symmathb=\mathgroup9
 \symmathx=\mathgroup10
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/mathabx/mathabx.dcl
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/mathabx/mathabx.dcl
 LaTeX Font Info:    Redeclaring math symbol \cdotp on input line 25.
 LaTeX Font Info:    Redeclaring math symbol \times on input line 33.
 LaTeX Font Info:    Redeclaring math symbol \div on input line 34.
@@ -1109,16 +1109,16 @@ LaTeX Font Info:    Redeclaring math symbol \bracelu on input line 907.
 LaTeX Font Info:    Redeclaring math symbol \braceru on input line 909.
 LaTeX Font Info:    Redeclaring math accent \widehat on input line 944.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 946.
-)) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/braket/braket.sty) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/diagbox/diagbox.sty
+)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/braket/braket.sty) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/diagbox/diagbox.sty
 Package: diagbox 2020/02/09 v2.3 Making table heads with diagonal lines
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/pict2e/pict2e.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pict2e/pict2e.sty
 Package: pict2e 2020/09/30 v0.4b Improved picture commands (HjG,RN,JT)
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/pict2e/pict2e.cfg
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pict2e/pict2e.cfg
 File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
 )
 Package pict2e Info: Driver file: pdftex.def on input line 112.
 Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 114.
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
 File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 )
 \pIIe@GRAPH=\toks47
@@ -1140,21 +1140,21 @@ File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 \diagbox@insepr=\dimen322
 \diagbox@outsepl=\dimen323
 \diagbox@outsepr=\dimen324
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/tools/hhline.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/hhline.sty
 Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
-) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/epstopdf-pkg/epstopdf.sty
+) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf.sty
 Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/grfext/grfext.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/grfext/grfext.sty
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)) (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+)) (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 504.
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )))
 runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > main.aex <nul: /p x=^%~$PATH:i>> main.aex)...executed.
@@ -1217,7 +1217,7 @@ LaTeX Font Info:    ... okay on input line 19.
 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-(c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+(c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -1248,60 +1248,60 @@ Package biblatex Info: Reference segment=0 on input line 19.
 LaTeX Info: Command `\dddot' is already robust on input line 19.
 LaTeX Info: Command `\ddddot' is already robust on input line 19.
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 22.
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/jknapltx/ursfs.fd
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 22.
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/esvect/uesvect.fd
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 )
 LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
- (c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/tex/latex/amsfonts/umsb.fd
+ (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1] (./main.toc [1
-
-])
+{c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1] (./main.toc)
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
- [2]
+ [1
+
+]
 Chapter 1.
 
-LaTeX Warning: Reference `chapter:DQEC' on page 3 undefined on input line 43.
+LaTeX Warning: Reference `chapter:DQEC' on page 2 undefined on input line 43.
 
 
-LaTeX Warning: Reference `chapter:CQEC' on page 3 undefined on input line 43.
+LaTeX Warning: Reference `chapter:CQEC' on page 2 undefined on input line 43.
 
-[3
+[2
 
 ]
 Chapter 2.
-<Figures/3qubithubbard.pdf, id=35, 569.05513pt x 398.3386pt>
+<Figures/3qubithubbard.pdf, id=32, 569.05513pt x 398.3386pt>
 File: Figures/3qubithubbard.pdf Graphic file (type pdf)
 <use Figures/3qubithubbard.pdf>
 Package pdftex.def Info: Figures/3qubithubbard.pdf  used on input line 54.
 (pdftex.def)             Requested size: 398.33588pt x 278.83511pt.
 
-LaTeX Warning: Citation 'Takeda2022' on page 4 undefined on input line 55.
+LaTeX Warning: Citation 'Takeda2022' on page 3 undefined on input line 55.
 
 
-LaTeX Warning: Citation 'Takeda2022' on page 4 undefined on input line 55.
+LaTeX Warning: Citation 'Takeda2022' on page 3 undefined on input line 55.
 
-[4
+[3
 
  <./Figures/3qubithubbard.pdf>]
 Overfull \hbox (4.5778pt too wide) in paragraph at lines 61--62
 []\OT1/cmr/m/n/10 Quantum dot pro-ces-sors are con-structed by first grow-ing a semi-con-duc-tor het-erostruc-ture to cre-ate a two-dimensional
  []
 
-[5]
-<Figures/cubediagram.pdf, id=62, 625.96065pt x 341.43306pt>
+[4]
+<Figures/cubediagram.pdf, id=58, 625.96065pt x 341.43306pt>
 File: Figures/cubediagram.pdf Graphic file (type pdf)
 <use Figures/cubediagram.pdf>
 Package pdftex.def Info: Figures/cubediagram.pdf  used on input line 96.
@@ -1312,131 +1312,138 @@ Overfull \hbox (18.9516pt too wide) in paragraph at lines 96--97
  []
 
 
+LaTeX Warning: Reference `chapter:DQEC' on page 5 undefined on input line 100.
+
+
 Overfull \hbox (16.92159pt too wide) in paragraph at lines 107--109
 \OT1/cmr/m/n/10 which can be achieved by en-cod-ing the triple qubit state here into a trio of qubits in the Hadamard ba-sis $\U/matha/m/n/10 t[] \OML/cmm/m/it/10 ; []\U/matha/m/n/10 u$\OT1/cmr/m/n/10 ,
  []
 
-[6 <./Figures/cubediagram.pdf>]
-<Figures/dresseldiagram.png, id=74, 539.76656pt x 511.9125pt>
+[5 <./Figures/cubediagram.pdf>]
+<Figures/dresseldiagram.png, id=71, 539.76656pt x 511.9125pt>
 File: Figures/dresseldiagram.png Graphic file (type png)
 <use Figures/dresseldiagram.png>
 Package pdftex.def Info: Figures/dresseldiagram.png  used on input line 117.
 (pdftex.def)             Requested size: 161.93121pt x 153.57494pt.
- [7 <./Figures/dresseldiagram.png>]
+ [6 <./Figures/dresseldiagram.png>]
 Chapter 3.
 
-LaTeX Warning: Citation 'Elzerman2004' on page 8 undefined on input line 127.
+LaTeX Warning: Citation 'Elzerman2004' on page 7 undefined on input line 127.
 
-<Figures/Circuit/diagram.pdf, id=82, 483.69682pt x 199.1693pt>
+<Figures/Circuit/diagram.pdf, id=79, 483.69682pt x 199.1693pt>
 File: Figures/Circuit/diagram.pdf Graphic file (type pdf)
 <use Figures/Circuit/diagram.pdf>
 Package pdftex.def Info: Figures/Circuit/diagram.pdf  used on input line 138.
 (pdftex.def)             Requested size: 435.3231pt x 179.25069pt.
-[8
+[7
 
-]
-<Figures/7q.pdf, id=86, 597.50786pt x 170.71654pt>
+] [8 <./Figures/Circuit/diagram.pdf>]
+<Figures/flow/f_fixed.png, id=156, 774.64406pt x 548.0475pt>
+File: Figures/flow/f_fixed.png Graphic file (type png)
+<use Figures/flow/f_fixed.png>
+Package pdftex.def Info: Figures/flow/f_fixed.png  used on input line 194.
+(pdftex.def)             Requested size: 307.8736pt x 217.81857pt.
+<Figures/flow/p_fixed.png, id=157, 730.22812pt x 544.28343pt>
+File: Figures/flow/p_fixed.png Graphic file (type png)
+<use Figures/flow/p_fixed.png>
+Package pdftex.def Info: Figures/flow/p_fixed.png  used on input line 201.
+(pdftex.def)             Requested size: 307.8736pt x 229.47781pt.
+
+
+LaTeX Warning: Reference `appendix:flowanalysis' on page 9 undefined on input line 207.
+
+
+LaTeX Warning: Reference `appendix:flowanalysis' on page 9 undefined on input line 207.
+
+[9{c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./Figures/flow/f_fixed.png>]
+<Figures/7q.pdf, id=165, 597.50786pt x 170.71654pt>
 File: Figures/7q.pdf Graphic file (type pdf)
 <use Figures/7q.pdf>
-Package pdftex.def Info: Figures/7q.pdf  used on input line 179.
+Package pdftex.def Info: Figures/7q.pdf  used on input line 215.
 (pdftex.def)             Requested size: 537.7521pt x 153.64345pt.
 
-Overfull \hbox (24.63466pt too wide) in paragraph at lines 179--180
+Overfull \hbox (24.63466pt too wide) in paragraph at lines 215--216
  [][] 
  []
 
-[9{c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./Figures/Circuit/diagram.pdf>] [10 <./Figures/7q.pdf>]
-Overfull \hbox (29.69002pt too wide) detected at line 220
+[10 <./Figures/flow/p_fixed.png> <./Figures/7q.pdf>]
+Overfull \hbox (29.69002pt too wide) detected at line 256
 []
  []
 
-[11] [12]
+[11] [12] [13]
 Chapter 4.
-<Figures/benchmark/benchmarks.pdf, id=180, 597.50786pt x 184.94292pt>
+<Figures/benchmark/benchmarks.pdf, id=189, 597.50786pt x 184.94292pt>
 File: Figures/benchmark/benchmarks.pdf Graphic file (type pdf)
 <use Figures/benchmark/benchmarks.pdf>
-Package pdftex.def Info: Figures/benchmark/benchmarks.pdf  used on input line 313.
+Package pdftex.def Info: Figures/benchmark/benchmarks.pdf  used on input line 349.
 (pdftex.def)             Requested size: 507.88408pt x 157.2022pt.
-[13
+[14
 
-] [14 <./Figures/benchmark/benchmarks.pdf>]
-<Figures/shifts.pdf, id=277, 794.97pt x 346.89601pt>
+] [15 <./Figures/benchmark/benchmarks.pdf>]
+<Figures/shifts.pdf, id=285, 794.97pt x 346.89601pt>
 File: Figures/shifts.pdf Graphic file (type pdf)
 <use Figures/shifts.pdf>
-Package pdftex.def Info: Figures/shifts.pdf  used on input line 367.
+Package pdftex.def Info: Figures/shifts.pdf  used on input line 403.
 (pdftex.def)             Requested size: 317.98236pt x 138.75594pt.
-<Figures/singlettriplet.pdf, id=278, 512.1496pt x 284.52756pt>
+<Figures/singlettriplet.pdf, id=286, 512.1496pt x 284.52756pt>
 File: Figures/singlettriplet.pdf Graphic file (type pdf)
 <use Figures/singlettriplet.pdf>
-Package pdftex.def Info: Figures/singlettriplet.pdf  used on input line 383.
+Package pdftex.def Info: Figures/singlettriplet.pdf  used on input line 419.
 (pdftex.def)             Requested size: 512.14835pt x 284.52686pt.
-<Figures/flips.pdf, id=279, 597.50786pt x 199.1693pt>
+<Figures/flips.pdf, id=287, 597.50786pt x 199.1693pt>
 File: Figures/flips.pdf Graphic file (type pdf)
 <use Figures/flips.pdf>
-Package pdftex.def Info: Figures/flips.pdf  used on input line 390.
+Package pdftex.def Info: Figures/flips.pdf  used on input line 426.
 (pdftex.def)             Requested size: 519.82764pt x 173.27586pt.
 
-Overfull \hbox (6.71019pt too wide) in paragraph at lines 390--392
+Overfull \hbox (6.71019pt too wide) in paragraph at lines 426--428
  [][] 
  []
 
-[15 <./Figures/shifts.pdf>] [16 <./Figures/singlettriplet.pdf> <./Figures/flips.pdf
+[16 <./Figures/shifts.pdf>] [17 <./Figures/singlettriplet.pdf> <./Figures/flips.pdf
 
 pdfTeX warning: pdflatex.exe (file ./Figures/flips.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 Chapter 5.
-[17
+[18
 
-] [18
+] [19
 
 
 ]
 Appendix A.
-[19
+[20
 
 ]
 Appendix B.
-<Figures/Energy_levels/elevels1.png, id=1014, 699.36281pt x 517.935pt>
+<Figures/Energy_levels/elevels1.png, id=1022, 699.36281pt x 517.935pt>
 File: Figures/Energy_levels/elevels1.png Graphic file (type png)
 <use Figures/Energy_levels/elevels1.png>
-Package pdftex.def Info: Figures/Energy_levels/elevels1.png  used on input line 461.
+Package pdftex.def Info: Figures/Energy_levels/elevels1.png  used on input line 497.
 (pdftex.def)             Requested size: 489.55063pt x 362.55202pt.
-<Figures/Energy_levels/elevels2.png, id=1015, 685.8122pt x 454.69875pt>
+<Figures/Energy_levels/elevels2.png, id=1023, 685.8122pt x 454.69875pt>
 File: Figures/Energy_levels/elevels2.png Graphic file (type png)
 <use Figures/Energy_levels/elevels2.png>
-Package pdftex.def Info: Figures/Energy_levels/elevels2.png  used on input line 467.
+Package pdftex.def Info: Figures/Energy_levels/elevels2.png  used on input line 503.
 (pdftex.def)             Requested size: 480.06528pt x 318.28694pt.
-[20
+[21
 
-] [21 <./Figures/Energy_levels/elevels1.png>] [22 <./Figures/Energy_levels/elevels2.png>]
+] [22 <./Figures/Energy_levels/elevels1.png>] [23 <./Figures/Energy_levels/elevels2.png>]
 Appendix C.
-[23
+[24
 
-] [24]
+] [25]
 Appendix D.
-[25
+[26
 
-] [26]
+] [27]
 Appendix E.
-<Figures/flow/f_fixed.png, id=1041, 774.64406pt x 548.0475pt>
-File: Figures/flow/f_fixed.png Graphic file (type png)
-<use Figures/flow/f_fixed.png>
-Package pdftex.def Info: Figures/flow/f_fixed.png  used on input line 723.
-(pdftex.def)             Requested size: 207.80974pt x 147.02147pt.
-<Figures/flow/p_fixed.png, id=1042, 730.22812pt x 544.28343pt>
-File: Figures/flow/p_fixed.png Graphic file (type png)
-<use Figures/flow/p_fixed.png>
-Package pdftex.def Info: Figures/flow/p_fixed.png  used on input line 729.
-(pdftex.def)             Requested size: 207.80974pt x 154.88985pt.
-[27
-
-] [28 <./Figures/flow/f_fixed.png> <./Figures/flow/p_fixed.png>]
-Appendix F.
-[29
+[28
 
 ]
-Appendix G.
-<Figures/different_codespaces.pdf, id=1057, 597.50786pt x 512.1496pt>
+Appendix F.
+<Figures/different_codespaces.pdf, id=1052, 597.50786pt x 512.1496pt>
 File: Figures/different_codespaces.pdf Graphic file (type pdf)
 <use Figures/different_codespaces.pdf>
 Package pdftex.def Info: Figures/different_codespaces.pdf  used on input line 768.
@@ -1446,11 +1453,11 @@ Overfull \hbox (24.63466pt too wide) in paragraph at lines 768--769
  [][] 
  []
 
-[30
+[29
 
-] [31 <./Figures/different_codespaces.pdf>]
-Appendix H.
-<Figures/9q.pdf, id=1072, 597.50786pt x 284.52756pt>
+] [30 <./Figures/different_codespaces.pdf>]
+Appendix G.
+<Figures/9q.pdf, id=1068, 597.50786pt x 284.52756pt>
 File: Figures/9q.pdf Graphic file (type pdf)
 <use Figures/9q.pdf>
 Package pdftex.def Info: Figures/9q.pdf  used on input line 805.
@@ -1460,33 +1467,33 @@ Overfull \hbox (24.63466pt too wide) in paragraph at lines 805--806
  [][] 
  []
 
-[32
+[31
 
  <./Figures/9q.pdf>]
-Appendix I.
-<Figures/group/group.pdf, id=1084, 540.60239pt x 483.69685pt>
+Appendix H.
+<Figures/group/group.pdf, id=1080, 540.60239pt x 483.69685pt>
 File: Figures/group/group.pdf Graphic file (type pdf)
 <use Figures/group/group.pdf>
 Package pdftex.def Info: Figures/group/group.pdf  used on input line 837.
 (pdftex.def)             Requested size: 324.36392pt x 290.22034pt.
-[33
+[32
 
 ]
-<Figures/locked_states.pdf, id=1088, 597.50786pt x 241.84843pt>
+<Figures/locked_states.pdf, id=1084, 597.50786pt x 241.84843pt>
 File: Figures/locked_states.pdf Graphic file (type pdf)
 <use Figures/locked_states.pdf>
 Package pdftex.def Info: Figures/locked_states.pdf  used on input line 849.
 (pdftex.def)             Requested size: 478.00693pt x 193.479pt.
- [34 <./Figures/group/group.pdf>] [35 <./Figures/locked_states.pdf>] [36]
-Appendix J.
+ [33 <./Figures/group/group.pdf>] [34 <./Figures/locked_states.pdf>] [35]
+Appendix I.
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 902.
-<Figures/fasthamiltoniser/diagram.pdf, id=1114, 597.50786pt x 270.3012pt>
+<Figures/fasthamiltoniser/diagram.pdf, id=1110, 597.50786pt x 270.3012pt>
 File: Figures/fasthamiltoniser/diagram.pdf Graphic file (type pdf)
 <use Figures/fasthamiltoniser/diagram.pdf>
 Package pdftex.def Info: Figures/fasthamiltoniser/diagram.pdf  used on input line 905.
 (pdftex.def)             Requested size: 478.00693pt x 216.24124pt.
-[37
+[36
 
  <./Figures/fasthamiltoniser/diagram.pdf>]
 Underfull \hbox (badness 1005) in paragraph at lines 929--929
@@ -1498,14 +1505,14 @@ Underfull \hbox (badness 1442) in paragraph at lines 929--929
 \OT1/cmr/m/n/8 com-pil-ing them is not doc-u-mented and very tech-ni-cal. I made a tem-plate project with the setup to use in the fu-ture:
  []
 
-[38] [39] [40
+[37] [38] [39
 
 ]
 
 Package biblatex Warning: No driver for 'generic'.
 (biblatex)                Using fallback driver on input line 950.
 
-[41] [42] (./main.aux)
+[40] [41] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1514,18 +1521,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33041 strings out of 477961
- 725110 string characters out of 5836431
- 1880068 words of memory out of 5000000
- 52664 multiletter control sequences out of 15000+600000
+ 33043 strings out of 477961
+ 728760 string characters out of 5836431
+ 1886068 words of memory out of 5000000
+ 52665 multiletter control sequences out of 15000+600000
  532544 words of font info for 109 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 116i,16n,118p,5625b,1329s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-var/fonts/pk/ljfour/public/mathabx/mathx10.420pk> <c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-var/fonts/pk/ljfour/public/mathabx/matha5.600pk> <c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-var/fonts/pk/ljfour/public/mathabx/mathb10.600pk> <c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-var/fonts/pk/ljfour/public/mathabx/matha8.600pk> <c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-var/fonts/pk/ljfour/public/mathabx/matha6.600pk> <c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-var/fonts/pk/ljfour/public/mathabx/matha7.600pk> <c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-var/fonts/pk/ljfour/public/mathabx/mathx10.600pk> <c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-var/fonts/pk/ljfour/public/mathabx/matha10.600pk><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><c:/Users/alexx/AppData/Roaming/MyTinyTex/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (44 pages, 2924611 bytes).
+ 116i,16n,118p,5627b,1329s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathx10.420pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha5.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha8.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha6.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathb10.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha7.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathx10.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha10.600pk><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on main.pdf (43 pages, 2925171 bytes).
 PDF statistics:
- 1345 PDF objects out of 1440 (max. 8388607)
- 836 compressed objects within 9 object streams
+ 1341 PDF objects out of 1440 (max. 8388607)
+ 834 compressed objects within 9 object streams
  0 named destinations out of 1000 (max. 500000)
  103 words of extra memory for PDF output out of 10000 (max. 10000000)
 
