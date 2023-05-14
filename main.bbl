@@ -1036,6 +1036,60 @@
       \endverb
       \keyw{DP DiVincenzo,MEDLINE,NCBI,NIH,NLM,National Center for Biotechnology Information,National Institutes of Health,National Library of Medicine,PW Shor,PubMed Abstract,doi:10.1103/PhysRevLett.77.3260,pmid:10062174}
     \endentry
+    \entry{Elzerman2004}{article}{}
+      \name{author}{6}{}{%
+        {{hash=dbe564c75446f2f62486978d7932bea2}{%
+           family={Eizerman},
+           familyi={E\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=205d73a028e4793fefdd098845c8851f}{%
+           family={Hanson},
+           familyi={H\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=157364370f1b56593ebc6d708d6e10b2}{%
+           family={Beveren},
+           familyi={B\bibinitperiod},
+           given={L.\bibnamedelimi H.Willems\bibnamedelima Van},
+           giveni={L\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=5417b8f5f1efb02dfdda2ed3ccfc3d9b}{%
+           family={Witkamp},
+           familyi={W\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=ce80bedea21b4475d781de8b597664ef}{%
+           family={Vandersypen},
+           familyi={V\bibinitperiod},
+           given={L.\bibnamedelimi M.K.},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=e1c7a509c799280c6a9de329476d0c91}{%
+           family={Kouwenhoven},
+           familyi={K\bibinitperiod},
+           given={L.\bibnamedelimi P.},
+           giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{64070ea059f90ac261a74209c01c0705}
+      \strng{fullhash}{759b24125eadffe2bc843ec4c9c5cb2e}
+      \strng{bibnamehash}{64070ea059f90ac261a74209c01c0705}
+      \strng{authorbibnamehash}{64070ea059f90ac261a74209c01c0705}
+      \strng{authornamehash}{64070ea059f90ac261a74209c01c0705}
+      \strng{authorfullhash}{759b24125eadffe2bc843ec4c9c5cb2e}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Spin is a fundamental property of all elementary particles. Classically it can be viewed as a tiny magnetic moment, but a measurement of an electron spin along the direction of an external magnetic field can have only two outcomes: parallel or anti-parallel to the field. This discreteness reflects the quantum mechanical nature of spin. Ensembles of many spins have found diverse applications ranging from magnetic resonance imaging to magneto-electronic devices, while individual spins are considered as carriers for quantum information. Read-out of single spin states has been achieved using optical techniques, and is within reach of magnetic resonance force microscopy. However, electrical read-out of single spins has so far remained elusive. Here we demonstrate electrical single-shot measurement of the state of an individual electron spin in a semiconductor quantum dot. We use spin-to-charge conversion of a single electron confined in the dot, and detect the single-electron charge using a quantum point contact; the spin measurement visibility is ∼65. Furthermore, we observe very long single-spin energy relaxation times (up to ∼0.85 ms at a magnetic field of 8 T), which are encouraging for the use of electron spins as carriers of quantum information.}
+      \field{issn}{00280836}
+      \field{issue}{6998}
+      \field{journaltitle}{Nature}
+      \field{title}{Single-shot read-out of an individual electron spin in a quantum dot}
+      \field{volume}{430}
+      \field{year}{2004}
+      \verb{doi}
+      \verb 10.1038/nature02693
+      \endverb
+    \endentry
     \entry{Huang2020}{article}{}
       \name{author}{4}{}{%
         {{hash=21e3e0532e48b6144077d9ec58d6cf53}{%
@@ -1985,6 +2039,55 @@
       \endverb
       \keyw{Quantum dots,Quantum information,Qubits}
     \endentry
+    \entry{Takeda2022}{article}{}
+      \name{author}{5}{}{%
+        {{hash=5e6f8eaf923121a756bc2ee303eb2984}{%
+           family={Takeda},
+           familyi={T\bibinitperiod},
+           given={Kenta},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e5affeb60c5b106079be1f8c43e00312}{%
+           family={Noiri},
+           familyi={N\bibinitperiod},
+           given={Akito},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b9b20d8108b2b716c1d1acdeb9363da3}{%
+           family={Nakajima},
+           familyi={N\bibinitperiod},
+           given={Takashi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=14ba7b64a13feb6cafd45bf1f4e9c72f}{%
+           family={Kobayashi},
+           familyi={K\bibinitperiod},
+           given={Takashi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4456d8a640205d83cdbc3d7e14c81516}{%
+           family={Tarucha},
+           familyi={T\bibinitperiod},
+           given={Seigo},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{27c64d8738eda339df69a8125b7bad62}
+      \strng{fullhash}{ca519d1c6480364fe8317c4631d86bdd}
+      \strng{bibnamehash}{27c64d8738eda339df69a8125b7bad62}
+      \strng{authorbibnamehash}{27c64d8738eda339df69a8125b7bad62}
+      \strng{authornamehash}{27c64d8738eda339df69a8125b7bad62}
+      \strng{authorfullhash}{ca519d1c6480364fe8317c4631d86bdd}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Future large-scale quantum computers will rely on quantum error correction (QEC) to protect the fragile quantum information during computation1,2. Among the possible candidate platforms for realizing quantum computing devices, the compatibility with mature nanofabrication technologies of silicon-based spin qubits offers promise to overcome the challenges in scaling up device sizes from the prototypes of today to large-scale computers3–5. Recent advances in silicon-based qubits have enabled the implementations of high-quality one-qubit and two-qubit systems6–8. However, the demonstration of QEC, which requires three or more coupled qubits1, and involves a three-qubit gate9–11 or measurement-based feedback, remains an open challenge. Here we demonstrate a three-qubit phase-correcting code in silicon, in which an encoded three-qubit state is protected against any phase-flip error on one of the three qubits. The correction to this encoded state is performed by a three-qubit conditional rotation, which we implement by an efficient single-step resonantly driven iToffoli gate. As expected, the error correction mitigates the errors owing to one-qubit phase-flip, as well as the intrinsic dephasing mainly owing to quasi-static phase noise. These results show successful implementation of QEC and the potential of a silicon-based platform for large-scale quantum computing.}
+      \field{issn}{14764687}
+      \field{issue}{7924}
+      \field{journaltitle}{Nature}
+      \field{title}{Quantum error correction with silicon spin qubits}
+      \field{volume}{608}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1038/s41586-022-04986-6
+      \endverb
+    \endentry
     \entry{tilly_2022}{article}{}
       \name{author}{11}{}{%
         {{hash=e89afd76e739d24b6a9e723873e46a0d}{%
@@ -2212,6 +2315,9 @@
            given={Natalia},
            giveni={N\bibinitperiod}}}%
       }
+      \list{publisher}{1}{%
+        {AIP Publishing}%
+      }
       \strng{namehash}{c8d6bcba7804f9081a2790bf7215cef1}
       \strng{fullhash}{14ec4361be861ed0b4fc6e8a1bd9f86c}
       \strng{bibnamehash}{c8d6bcba7804f9081a2790bf7215cef1}
@@ -2222,9 +2328,25 @@
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Many important phenomena in quantum devices are dynamic, meaning that they cannot be studied using time-averaged measurements alone. Experiments that measure such transient effects are collectively known as fast readout. One of the most useful techniques in fast electrical readout is radio-frequency reflectometry, which can measure changes in impedance (both resistive and reactive) even when their duration is extremely short, down to a microsecond or less. Examples of reflectometry experiments, some of which have been realised and others so far only proposed, include pro-jective measurements of qubits and Majorana devices for quantum computing, real-time measurements of mechanical motion and detection of non-equilibrium temperature fluctuations. However, all of these experiments must overcome the central challenge of fast readout: the large mismatch between the typical impedance of quantum devices (set by the resistance quantum) and of transmission lines (set by the impedance of free space). Here, we review the physical principles of radio-frequency reflectometry and its close cousins, measurements of radio-frequency transmission and emission. We explain how to optimise the speed and sensitivity of a radio-frequency measurement, and how to incorporate new tools such as superconducting circuit elements and quantum-limited amplifiers into advanced radio-frequency experiments. Our aim is threefold: to introduce the readers to the technique, to review the advances to date and to motivate new experiments in fast quantum device dynamics. Our intended audience includes experimentalists in the field of quantum electronics who want to implement radio-frequency experiments or improve them, together with physicists in related fields who want to understand how the most important radio-frequency measurements work. CONTENTS}
+      \field{abstract}{<p>Many important phenomena in quantum devices are dynamic, meaning that they cannot be studied using time-averaged measurements alone. Experiments that measure such transient effects are collectively known as fast readout. One of the most useful techniques in fast electrical readout is radio-frequency reflectometry, which can measure changes in impedance (both resistive and reactive) even when their duration is extremely short, down to a microsecond or less. Examples of reflectometry experiments, some of which have been realized and others so far only proposed, include projective measurements of qubits and Majorana devices for quantum computing, real-time measurements of mechanical motion, and detection of non-equilibrium temperature fluctuations. However, all of these experiments must overcome the central challenge of fast readout: the large mismatch between the typical impedance of quantum devices (set by the resistance quantum) and of transmission lines (set by the impedance of free space). Here, we review the physical principles of radio-frequency reflectometry and its close cousins, measurements of radio-frequency transmission and emission. We explain how to optimize the speed and sensitivity of a radio-frequency measurement and how to incorporate new tools, such as superconducting circuit elements and quantum-limited amplifiers into advanced radio-frequency experiments. Our aim is threefold: to introduce the readers to the technique, to review the advances to date, and to motivate new experiments in fast quantum device dynamics. Our intended audience includes experimentalists in the field of quantum electronics who want to implement radio-frequency experiments or improve them, together with physicists in related fields who want to understand how the most important radio-frequency measurements work.</p>}
+      \field{issn}{1931-9401}
+      \field{issue}{2}
+      \field{journaltitle}{Applied Physics Reviews}
+      \field{month}{6}
       \field{title}{Probing quantum devices with radio-frequency reflectometry}
+      \field{volume}{10}
       \field{year}{2023}
+      \field{pages}{21305}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/5.0088229
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.aip.org/aip/apr/article/10/2/021305/2885320/Probing-quantum-devices-with-radio-frequency
+      \endverb
+      \verb{url}
+      \verb https://pubs.aip.org/aip/apr/article/10/2/021305/2885320/Probing-quantum-devices-with-radio-frequency
+      \endverb
     \endentry
     \entry{Wiseman1996}{article}{}
       \name{author}{1}{}{%
@@ -2633,8 +2755,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{Elzerman2004}
-  \missing{Takeda2022}
 \endrefsection
 \endinput
 
