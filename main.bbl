@@ -1775,44 +1775,6 @@
       \endverb
       \keyw{doi:10.1103/PhysRevX.13.011023 url:https://doi.org/10.1103/PhysRevX.13.011023}
     \endentry
-    \entry{roffe_2019}{article}{}
-      \name{author}{1}{}{%
-        {{hash=221ffd441612b230ede4aafcb78fe79e}{%
-           family={Roffe},
-           familyi={R\bibinitperiod},
-           given={Joschka},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{221ffd441612b230ede4aafcb78fe79e}
-      \strng{fullhash}{221ffd441612b230ede4aafcb78fe79e}
-      \strng{bibnamehash}{221ffd441612b230ede4aafcb78fe79e}
-      \strng{authorbibnamehash}{221ffd441612b230ede4aafcb78fe79e}
-      \strng{authornamehash}{221ffd441612b230ede4aafcb78fe79e}
-      \strng{authorfullhash}{221ffd441612b230ede4aafcb78fe79e}
-      \field{sortinit}{R}
-      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Quantum error correction protocols will play a central role in the realisation of quantum computing; the choice of error correction code will influence the full quantum computing stack, from the layout of qubits at the physical level to gate compilation strategies at the software level. As such, familiarity with quantum coding is an essential prerequisite for the understanding of current and future quantum computing architectures. In this review, we provide an introductory guide to the theory and implementation of quantum error correction codes. Where possible, fundamental concepts are described using the simplest examples of detection and correction codes, the working of which can be verified by hand. We outline the construction and operation of the surface code, the most widely pursued error correction protocol for experiment. Finally, we discuss issues that arise in the practical implementation of the surface code and other quantum error correction codes.}
-      \field{issn}{0010-7514}
-      \field{issue}{3}
-      \field{journaltitle}{Contemporary physics}
-      \field{month}{7}
-      \field{title}{Quantum error correction: an introductory guide}
-      \field{volume}{60}
-      \field{year}{2019}
-      \field{pages}{226\bibrangedash 245}
-      \range{pages}{20}
-      \verb{doi}
-      \verb 10.1080/00107514.2019.1667078
-      \endverb
-      \verb{urlraw}
-      \verb https://www.tandfonline.com/doi/full/10.1080/00107514.2019.1667078
-      \endverb
-      \verb{url}
-      \verb https://www.tandfonline.com/doi/full/10.1080/00107514.2019.1667078
-      \endverb
-    \endentry
     \entry{Shim2022}{article}{}
       \name{author}{1}{}{%
         {{hash=385004d7957ac6ee2f1b965df3940267}{%
@@ -1868,7 +1830,6 @@
       \strng{authorbibnamehash}{7082a9c99d5d51479d4cfba6bbac2d30}
       \strng{authornamehash}{7082a9c99d5d51479d4cfba6bbac2d30}
       \strng{authorfullhash}{7082a9c99d5d51479d4cfba6bbac2d30}
-      \field{extraname}{1}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -1891,44 +1852,6 @@
       \endverb
       \verb{url}
       \verb http://epubs.siam.org/doi/10.1137/S0097539795293172
-      \endverb
-    \endentry
-    \entry{shor_1995}{article}{}
-      \name{author}{1}{}{%
-        {{hash=7082a9c99d5d51479d4cfba6bbac2d30}{%
-           family={Shor},
-           familyi={S\bibinitperiod},
-           given={Peter\bibnamedelima W},
-           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-      }
-      \strng{namehash}{7082a9c99d5d51479d4cfba6bbac2d30}
-      \strng{fullhash}{7082a9c99d5d51479d4cfba6bbac2d30}
-      \strng{bibnamehash}{7082a9c99d5d51479d4cfba6bbac2d30}
-      \strng{authorbibnamehash}{7082a9c99d5d51479d4cfba6bbac2d30}
-      \strng{authornamehash}{7082a9c99d5d51479d4cfba6bbac2d30}
-      \strng{authorfullhash}{7082a9c99d5d51479d4cfba6bbac2d30}
-      \field{extraname}{2}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1050-2947}
-      \field{issue}{4}
-      \field{journaltitle}{Physical Review A}
-      \field{month}{10}
-      \field{title}{Scheme for reducing decoherence in quantum computer memory}
-      \field{volume}{52}
-      \field{year}{1995}
-      \field{pages}{R2493\bibrangedash R2496}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1103/PhysRevA.52.R2493
-      \endverb
-      \verb{urlraw}
-      \verb https://link.aps.org/doi/10.1103/PhysRevA.52.R2493
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevA.52.R2493
       \endverb
     \endentry
     \entry{Loss2022}{article}{}
@@ -2710,6 +2633,8 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{Elzerman2004}
+  \missing{Takeda2022}
 \endrefsection
 \endinput
 

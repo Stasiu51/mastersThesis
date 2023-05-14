@@ -6,28 +6,41 @@
 \abx@aux@segm{0}{0}{tilly_2022}
 \abx@aux@cite{0}{cao_2019}
 \abx@aux@segm{0}{0}{cao_2019}
-\@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{3}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \abx@aux@cite{0}{Nielsen2010}
 \abx@aux@segm{0}{0}{Nielsen2010}
+\abx@aux@cite{0}{Takeda2022}
+\abx@aux@segm{0}{0}{Takeda2022}
+\abx@aux@cite{0}{Takeda2022}
+\abx@aux@segm{0}{0}{Takeda2022}
 \abx@aux@cite{0}{Loss2022}
 \abx@aux@segm{0}{0}{Loss2022}
 \abx@aux@cite{0}{Burkard2022}
 \abx@aux@segm{0}{0}{Burkard2022}
-\abx@aux@cite{0}{Hubbard1963}
-\abx@aux@segm{0}{0}{Hubbard1963}
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}Background}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Background}{4}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chapter:background}{{2}{3}}
-\@writefile{toc}{\contentsline {subsubsection}{Notation and units}{3}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}Quantum dots and the hubbard model}{3}{}\protected@file@percent }
-\newlabel{sec:hubbard_model}{{2.1}{3}}
+\newlabel{chapter:background}{{2}{4}}
+\@writefile{toc}{\contentsline {subsubsection}{Notation and units}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Quantum dots and the hubbard model}{4}{}\protected@file@percent }
+\newlabel{sec:hubbard_model}{{2.1}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces \textbf  {a.} shows simplified schematic for the important parameters of a Hubbard model: $E_i^z$ the energy splitting due to an applied static field in the $z$ direction; and the inter-dot kinetic coupling $t_{ij}$. The system is shown in the basis state that would be described in second quantisation notation as $c_{1,\uparrow }^\dagger c_{2,\downarrow }^\dagger c_{3,\downarrow }^\dagger \mathinner {|{\text  {Vac}}\rangle }$, or more conventionally as $\mathinner {|{\uparrow \downarrow \downarrow }\rangle }$. \textbf  {b.} and \textbf  {c.} are taken from \blx@tocontentsinit {0}\cite {Takeda2022}. \textbf  {a.} shows a false-colour microgram image of 3 qubit system implemented in a SiGe-Si-SiGe heterostructure. The B lines control the inter-dot couplings whilst the P lines control the chemical potential, and hence occupation, of the dots, as shown in \textbf  {c.}.}}{4}{}\protected@file@percent }
+\newlabel{fig:3qubitdiagram}{{2.1}{4}}
+\abx@aux@cite{0}{Hubbard1963}
+\abx@aux@segm{0}{0}{Hubbard1963}
 \abx@aux@cite{0}{moon_2005}
 \abx@aux@segm{0}{0}{moon_2005}
 \abx@aux@cite{0}{wootters_1982}
 \abx@aux@segm{0}{0}{wootters_1982}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Quantum error correction}{5}{}\protected@file@percent }
+\abx@aux@cite{0}{DiVincenzo1996}
+\abx@aux@segm{0}{0}{DiVincenzo1996}
+\@writefile{toc}{\contentsline {subsubsection}{How the scheme fails}{6}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces In this figure, the possible states of an error-prone system that starts in the $\mathinner {|{000}\rangle }$ state are represented on the vertices of a cube. Note that the ideal action of the correction flips is to push the state towards either the $\mathinner {|{000}\rangle }$ or $\mathinner {|{111}\rangle }$ states, indicated by the black arrowheads on some edges. \textbf  {a.} shows the ideal case of successful error correction. A single error occurs on the second qubit, and a correct pair of parity measurements identifies the error syndrome and applies an $X_2$ correction flip. \textbf  {b.} shows how the scheme fails if two errors (or more) occur in the interval between correction iterations: a correctly performed set of parity measurement will result in a correction flip that pushes the qubits further away from the codespace. \textbf  {c.} shows how the scheme fails if one error occurs, and the subsequent parity measurements give the wrong result, so an erroneous correction flip (here $X_1$) is applied. On the next round, if no errors occur and the next set of parity measurements is performed correctly, the correction flip will push the state into the $\mathinner {|{111}\rangle }$ error space.}}{6}{}\protected@file@percent }
+\newlabel{fig:cubediagram}{{2.2}{6}}
+\@writefile{toc}{\contentsline {subsubsection}{Phase flip errors}{6}{}\protected@file@percent }
 \abx@aux@cite{0}{Ahn2002}
 \abx@aux@segm{0}{0}{Ahn2002}
 \abx@aux@cite{0}{Cardona2018}
@@ -44,25 +57,25 @@
 \abx@aux@segm{0}{0}{Dressel2022}
 \abx@aux@cite{0}{Dressel2022}
 \abx@aux@segm{0}{0}{Dressel2022}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Quantum error correction}{4}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}Continuous quantum error correction}{4}{}\protected@file@percent }
-\newlabel{sec:CQEC}{{2.3}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Taken from \blx@tocontentsinit {0}\cite {Dressel2022}. This diagram shows the principle behind the continuous error correction scheme implemented by Dressel et al., whereby an estimate of the current state of the qubits is continuously updated through two voltage signals that relate noisily to the parity state of the qubits. When threshold is reached (optimised for empirically) where the system decides an error has probably ocurred, it performs a correction flip, at which point the signal should drift back into the codespace.}}{5}{}\protected@file@percent }
-\newlabel{fig:dresseldiagram}{{2.1}{5}}
-\abx@aux@cite{0}{Dressel2022}
-\abx@aux@segm{0}{0}{Dressel2022}
-\abx@aux@cite{0}{Nakajima2019}
-\abx@aux@segm{0}{0}{Nakajima2019}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Continuous quantum error correction}{7}{}\protected@file@percent }
+\newlabel{sec:CQEC}{{2.3}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Taken from \blx@tocontentsinit {0}\cite {Dressel2022}. This diagram shows the principle behind the continuous error correction scheme implemented by Dressel et al., whereby an estimate of the current state of the qubits is continuously updated through two voltage signals that relate noisily to the parity state of the qubits. When threshold is reached (optimised for empirically) where the system decides an error has probably ocurred, it performs a correction flip, at which point the signal should drift back into the codespace.}}{7}{}\protected@file@percent }
+\newlabel{fig:dresseldiagram}{{2.3}{7}}
 \abx@aux@cite{0}{Xue2020}
 \abx@aux@segm{0}{0}{Xue2020}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Theory}{6}{}\protected@file@percent }
+\abx@aux@cite{0}{Nakajima2019}
+\abx@aux@segm{0}{0}{Nakajima2019}
+\abx@aux@cite{0}{Elzerman2004}
+\abx@aux@segm{0}{0}{Elzerman2004}
+\abx@aux@cite{0}{Oakes2022}
+\abx@aux@segm{0}{0}{Oakes2022}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Discrete QEC}{8}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Rapidly repeated error correction schemes}{6}{}\protected@file@percent }
-\newlabel{sec:repeat_analysis}{{3.1}{6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Correction scheme}{6}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Circuit diagram of the repeated noise and error-correction model examined in this section. The majority of time is spent in the measurement phase, with the operations on either side being much faster. The controller takes in the results of the two parity measurements and determines the best correction flip to apply to the code qubits.}}{6}{}\protected@file@percent }
-\newlabel{fig:circuitdiagram}{{3.1}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Discrete error correction schemes using repeated parity measurements}{8}{}\protected@file@percent }
+\newlabel{sec:repeat_analysis}{{3.1}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Markovian analysis of discrete error correction}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Correction scheme}{8}{}\protected@file@percent }
 \abx@aux@cite{0}{Cramer2016}
 \abx@aux@segm{0}{0}{Cramer2016}
 \abx@aux@cite{0}{Nakajima2019}
@@ -71,38 +84,40 @@
 \abx@aux@segm{0}{0}{Oakes2022}
 \abx@aux@cite{0}{Oakes2022}
 \abx@aux@segm{0}{0}{Oakes2022}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Circuit diagram of the repeated noise and error-correction model examined in this section. The majority of time is spent in the measurement phase, with the operations on either side being much faster. The controller takes in the results of the two parity measurements and determines the best correction flip to apply to the code qubits.}}{9}{}\protected@file@percent }
+\newlabel{fig:circuitdiagram}{{3.1}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Further theory, and application}{9}{}\protected@file@percent }
 \abx@aux@cite{0}{Oakes2022}
 \abx@aux@segm{0}{0}{Oakes2022}
 \abx@aux@cite{0}{Oakes2022}
 \abx@aux@segm{0}{0}{Oakes2022}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Further theory, and application}{7}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Truly continuous error correction in quantum dot systems}{7}{}\protected@file@percent }
-\newlabel{sec:truly_continuous_theory}{{3.2}{7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Scheme summary}{7}{}\protected@file@percent }
 \abx@aux@cite{0}{Nakajima2019}
 \abx@aux@segm{0}{0}{Nakajima2019}
 \abx@aux@cite{0}{Tadokoro2021}
 \abx@aux@segm{0}{0}{Tadokoro2021}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Schematic of the layout of qubits for the continuous error correction scheme. Q1, Q2 and Q3 comprise a single logical qubit. A1 to A4 are ancilla qubits used to detect bit flip errors in the logical qubits. Q1 and Q2 are continuously weakly coupled to A1 through a tunnel barrier, and likewise Q2 and Q3 to A2. R1 and R2 are resonators, which are additional quantum dots held at a higher electron occupancy than the qubits. These are probed using RF signals, and their coupling to the charge on the ancillas then allows the singlet/triplet state of the ancillas, as in \blx@tocontentsinit {0}\cite {Oakes2022}.}}{8}{}\protected@file@percent }
-\newlabel{fig:7qubitlayout}{{3.2}{8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Theoretical treatment of scheme with second order perturbation theory}{8}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Table of the (negative) energy shifts due to coupling of each ancilla branch, of each computational branch, of each subspace.}}{9}{}\protected@file@percent }
-\newlabel{table:shifts}{{3.1}{9}}
-\newlabel{eq:triplet_to_singlet}{{3.2.2}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Truly continuous error correction in quantum dot systems}{10}{}\protected@file@percent }
+\newlabel{sec:truly_continuous_theory}{{3.3}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Schematic of the layout of qubits for the continuous error correction scheme. Q1, Q2 and Q3 comprise a single logical qubit. A1 to A4 are ancilla qubits used to detect bit flip errors in the logical qubits. Q1 and Q2 are continuously weakly coupled to A1 through a tunnel barrier, and likewise Q2 and Q3 to A2. R1 and R2 are resonators, which are additional quantum dots held at a higher electron occupancy than the qubits. These are probed using RF signals, and their coupling to the charge on the ancillas then allows the singlet/triplet state of the ancillas, as in \blx@tocontentsinit {0}\cite {Oakes2022}.}}{10}{}\protected@file@percent }
+\newlabel{fig:7qubitlayout}{{3.2}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Scheme summary}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Theoretical treatment of scheme with second order perturbation theory}{11}{}\protected@file@percent }
+\newlabel{eq:triplet_to_singlet}{{3.3.2}{11}}
 \abx@aux@cite{0}{Vigneau2023}
 \abx@aux@segm{0}{0}{Vigneau2023}
 \abx@aux@cite{0}{Wiseman1996}
 \abx@aux@segm{0}{0}{Wiseman1996}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Further questions related to tunnelling physics}{10}{}\protected@file@percent }
-\newlabel{sec:tunneling_question}{{3.2.3}{10}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Table of the (negative) energy shifts due to coupling of each ancilla branch, of each computational branch, of each subspace.}}{12}{}\protected@file@percent }
+\newlabel{table:shifts}{{3.1}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Further questions related to tunnelling physics}{12}{}\protected@file@percent }
+\newlabel{sec:tunneling_question}{{3.3.3}{12}}
 \abx@aux@cite{0}{Nielsen2010}
 \abx@aux@segm{0}{0}{Nielsen2010}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Computational Methods}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Computational Methods}{13}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:methods}{{4}{11}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Simulating the hubbard model}{11}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Truly continuous error correction prototype}{11}{}\protected@file@percent }
+\newlabel{chap:methods}{{4}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Simulating the hubbard model}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Truly continuous error correction prototype}{13}{}\protected@file@percent }
 \abx@aux@cite{0}{Shim2022}
 \abx@aux@segm{0}{0}{Shim2022}
 \abx@aux@cite{0}{Jock2018}
@@ -115,23 +130,23 @@
 \abx@aux@segm{0}{0}{Loss2022}
 \abx@aux@cite{0}{Loss2022}
 \abx@aux@segm{0}{0}{Loss2022}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Testing the capabilities of the simulation software. \textbf  {a.} A plot of 5-qubit system showing the amplitudes (solid lines) and phases (dashed lines) of significant basis states. The plot demonstrates of a CPHASE gate acting on the last two qubits, so that the $\mathinner {|{\downarrow \downarrow \downarrow \uparrow \uparrow }\rangle }$ state acquires a phase shift of $\pi $. First an X gate is applied to each of the two qubits, then a coupling between them is applied, and finally a z-rotation is applied by increasing the static field\footnotemark . \textbf  {b.} A sequence of X flips on a 3-qubit system. This circuit is generalised to N qubits to benchmark the simulator, with results given in \textbf  {c.}. The results indicate a consistent speed of around 7.5 million statevector derivative elements calculated per second.}}{12}{}\protected@file@percent }
-\newlabel{fig:benchmark}{{4.1}{12}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Table of the (negative) energy shifts due to coupling of each ancilla branch, of each computational branch, of each subspace.}}{12}{}\protected@file@percent }
-\newlabel{table:parameters}{{4.1}{12}}
-\@writefile{toc}{\contentsline {subsubsection}{Physical parameters}{12}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Hubbard Hamiltonian setup}{12}{}\protected@file@percent }
-\newlabel{sec:reduced_basis_approx}{{4.2.1}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Testing the capabilities of the simulation software. \textbf  {a.} A plot of 5-qubit system showing the amplitudes (solid lines) and phases (dashed lines) of significant basis states. The plot demonstrates of a CPHASE gate acting on the last two qubits, so that the $\mathinner {|{\downarrow \downarrow \downarrow \uparrow \uparrow }\rangle }$ state acquires a phase shift of $\pi $. First an X gate is applied to each of the two qubits, then a coupling between them is applied, and finally a z-rotation is applied by increasing the static field\footnotemark . \textbf  {b.} A sequence of X flips on a 3-qubit system. This circuit is generalised to N qubits to benchmark the simulator, with results given in \textbf  {c.}. The results indicate a consistent speed of around 7.5 million statevector derivative elements calculated per second.}}{14}{}\protected@file@percent }
+\newlabel{fig:benchmark}{{4.1}{14}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Table of the (negative) energy shifts due to coupling of each ancilla branch, of each computational branch, of each subspace.}}{14}{}\protected@file@percent }
+\newlabel{table:parameters}{{4.1}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{Physical parameters}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Hubbard Hamiltonian setup}{14}{}\protected@file@percent }
+\newlabel{sec:reduced_basis_approx}{{4.2.1}{14}}
 \abx@aux@cite{0}{Hwang2017}
 \abx@aux@segm{0}{0}{Hwang2017}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Energy shifts due to hopping coupling}{13}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces \textbf  {a.} shows the calculation of energy shifts of the various relevant computational basis states calculated with a coupling of $0.015\unit {\milli \electronvolt }$ applied. Only one branch $\mathinner {|{\uparrow \downarrow \uparrow }\rangle }$ of the computational state in each subspace is shown. This can be compared with the second order perturbation theory result calculated in table \ref {table:shifts}. The (absolute value of) the descrepancy between the simulation and the perturbation theory result is given in \textbf  {b.}. Note the scale in the second plot. }}{13}{}\protected@file@percent }
-\newlabel{fig:shifts}{{4.2}{13}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Demonstrating the error propagation}{13}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces The effect of applying the hopping coupling to the system still inhabilting the codespace. \textbf  {a.} shows the (elementwise absolute value of the) hamiltonian matrix in the interaction picture at full strength. \textbf  {b.} shows the rate of aquisition of phase of the relevant basis states. The phase initially drops when the coupling is applied, and then the states slowly drift apart from one another in phase due to the difference in electron g-factor of around 30 \unit {\mega \hertz }. At this rate, the triplet will `flip' into a singlet after around 200 \unit {\nano \second }, so this combination of parameters (coupling strength = 0.015 \unit {\milli \electronvolt }) is not be suitable for error correction. The inhomeneity between the sites needs to be reduced. }}{14}{}\protected@file@percent }
-\newlabel{fig:beforeflip}{{4.3}{14}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Demonstrating the expected behaviour of the ancillas when a bit flip error is artificially introduced on one of the code qubits: Q1 is flipped in \textbf  {a.}, resulting in a rotation of the A2 ancilla; Q2 is flipped in \textbf  {b.}, resulting in \textit  {both} A2 and A3 rotating, and Q3 is flipped in \textbf  {c.}, so that A3 rotates only. In each case, the purple dashed line shows the expected frequency of rotation derived in section \ref {sec:truly_continuous_theory}, $\Lambda _t$. The dotted purple line shows the arbitrily set threshold for detection. Note that the period of rotation is much faster than the other typical timescales of quantum dot qubit systems. }}{14}{}\protected@file@percent }
-\newlabel{fig:afterflip}{{4.4}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Energy shifts due to hopping coupling}{15}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces \textbf  {a.} shows the calculation of energy shifts of the various relevant computational basis states calculated with a coupling of $0.015\unit {\milli \electronvolt }$ applied. Only one branch $\mathinner {|{\uparrow \downarrow \uparrow }\rangle }$ of the computational state in each subspace is shown. This can be compared with the second order perturbation theory result calculated in table \ref {table:shifts}. The (absolute value of) the descrepancy between the simulation and the perturbation theory result is given in \textbf  {b.}. Note the scale in the second plot. }}{15}{}\protected@file@percent }
+\newlabel{fig:shifts}{{4.2}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Demonstrating the error propagation}{15}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces The effect of applying the hopping coupling to the system still inhabilting the codespace. \textbf  {a.} shows the (elementwise absolute value of the) hamiltonian matrix in the interaction picture at full strength. \textbf  {b.} shows the rate of aquisition of phase of the relevant basis states. The phase initially drops when the coupling is applied, and then the states slowly drift apart from one another in phase due to the difference in electron g-factor of around 30 \unit {\mega \hertz }. At this rate, the triplet will `flip' into a singlet after around 200 \unit {\nano \second }, so this combination of parameters (coupling strength = 0.015 \unit {\milli \electronvolt }) is not be suitable for error correction. The inhomeneity between the sites needs to be reduced. }}{16}{}\protected@file@percent }
+\newlabel{fig:beforeflip}{{4.3}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Demonstrating the expected behaviour of the ancillas when a bit flip error is artificially introduced on one of the code qubits: Q1 is flipped in \textbf  {a.}, resulting in a rotation of the A2 ancilla; Q2 is flipped in \textbf  {b.}, resulting in \textit  {both} A2 and A3 rotating, and Q3 is flipped in \textbf  {c.}, so that A3 rotates only. In each case, the purple dashed line shows the expected frequency of rotation derived in section \ref {sec:truly_continuous_theory}, $\Lambda _t$. The dotted purple line shows the arbitrily set threshold for detection. Note that the period of rotation is much faster than the other typical timescales of quantum dot qubit systems. }}{16}{}\protected@file@percent }
+\newlabel{fig:afterflip}{{4.4}{16}}
 \abx@aux@cite{0}{Loss2022}
 \abx@aux@segm{0}{0}{Loss2022}
 \abx@aux@cite{0}{Zwerver2022}
@@ -140,120 +155,116 @@
 \abx@aux@segm{0}{0}{Loss2022}
 \abx@aux@cite{0}{Hwang2017}
 \abx@aux@segm{0}{0}{Hwang2017}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusions}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusions}{17}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Future work}{15}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Feasibility of the scheme}{15}{}\protected@file@percent }
-\newlabel{sec:feasibility}{{5.2}{15}}
-\@writefile{toc}{\contentsline {chapter}{Appendices}{16}{}\protected@file@percent }
-\abx@aux@cite{0}{shor_1995}
-\abx@aux@segm{0}{0}{shor_1995}
-\abx@aux@cite{0}{roffe_2019}
-\abx@aux@segm{0}{0}{roffe_2019}
-\abx@aux@cite{0}{DiVincenzo1996}
-\abx@aux@segm{0}{0}{DiVincenzo1996}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}The three qubit bit flip shor code}{17}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Future work}{17}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Feasibility of the scheme}{17}{}\protected@file@percent }
+\newlabel{sec:feasibility}{{5.2}{17}}
+\@writefile{toc}{\contentsline {chapter}{Appendices}{18}{}\protected@file@percent }
+\abx@aux@cite{0}{Hubbard1963}
+\abx@aux@segm{0}{0}{Hubbard1963}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}The Fermi-Hubbard model of interacting quantum dots}{19}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{appendix:shorcode}{{A}{17}}
+\newlabel{appendix:hubbard}{{A}{19}}
 \abx@aux@cite{0}{Nielsen2010}
 \abx@aux@segm{0}{0}{Nielsen2010}
 \abx@aux@cite{0}{deutsch_1995}
 \abx@aux@segm{0}{0}{deutsch_1995}
 \abx@aux@cite{0}{bravyi_2011}
 \abx@aux@segm{0}{0}{bravyi_2011}
-\@writefile{toc}{\contentsline {chapter}{\numberline {B}Implementing quantum gates on quantum dot devices}{18}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}Implementing quantum gates on quantum dot devices}{20}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{appendix:gates}{{B}{18}}
-\@writefile{toc}{\contentsline {subsubsection}{Single Qubit Gates}{18}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Two Qubit Operations}{18}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {B.1}{\ignorespaces The complete set of three-dot, three-electron energy levels when the $t_{12}$,$t_{23}$ and $t_{31}$ coupling constants are increased in sequence. This diagram is intended to show the structure of the states; the energies are given in arbitrary units.}}{19}{}\protected@file@percent }
-\newlabel{fig:alllevels}{{B.1}{19}}
-\@writefile{lof}{\contentsline {figure}{\numberline {B.2}{\ignorespaces A zoomed view of figure \ref {fig:alllevels}: the computational basis states that undergo energy shifts when the coupling constants are increased in sequence. As in figure \ref {fig:alllevels}, the energies are given in aribitrary units.}}{20}{}\protected@file@percent }
-\newlabel{fig:complevels}{{B.2}{20}}
+\newlabel{appendix:gates}{{B}{20}}
+\@writefile{toc}{\contentsline {subsubsection}{Single Qubit Gates}{20}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Two Qubit Operations}{20}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {B.1}{\ignorespaces The complete set of three-dot, three-electron energy levels when the $t_{12}$,$t_{23}$ and $t_{31}$ coupling constants are increased in sequence. This diagram is intended to show the structure of the states; the energies are given in arbitrary units.}}{21}{}\protected@file@percent }
+\newlabel{fig:alllevels}{{B.1}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {B.2}{\ignorespaces A zoomed view of figure \ref {fig:alllevels}: the computational basis states that undergo energy shifts when the coupling constants are increased in sequence. As in figure \ref {fig:alllevels}, the energies are given in aribitrary units.}}{22}{}\protected@file@percent }
+\newlabel{fig:complevels}{{B.2}{22}}
 \abx@aux@cite{0}{Loss2022}
 \abx@aux@segm{0}{0}{Loss2022}
-\@writefile{toc}{\contentsline {chapter}{\numberline {C}Decoherence theory}{21}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {C}Decoherence theory}{23}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{appendix:decoherence}{{C}{21}}
-\newlabel{eq:phasedamptrans}{{C.1}{21}}
-\newlabel{eq:p_def}{{C.2}{21}}
+\newlabel{appendix:decoherence}{{C}{23}}
+\newlabel{eq:phasedamptrans}{{C.1}{23}}
+\newlabel{eq:p_def}{{C.2}{23}}
 \abx@aux@cite{0}{Baumgratz2014}
 \abx@aux@segm{0}{0}{Baumgratz2014}
 \abx@aux@cite{0}{Yadin2016}
 \abx@aux@segm{0}{0}{Yadin2016}
-\@writefile{toc}{\contentsline {subsubsection}{Explanation in terms of Coherence Theory}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Explanation in terms of Coherence Theory}{24}{}\protected@file@percent }
 \abx@aux@cite{0}{Keith2019}
 \abx@aux@segm{0}{0}{Keith2019}
-\@writefile{toc}{\contentsline {chapter}{\numberline {D}Markovian analysis of repeated error correction schemes}{23}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {D}Markovian analysis of repeated error correction schemes}{25}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{appendix:markovanalysis}{{D}{23}}
-\@writefile{toc}{\contentsline {subsubsection}{Modelling readout fidelities}{23}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Error matrix and correction matrix}{23}{}\protected@file@percent }
-\newlabel{eq:Ematrix}{{D.1}{24}}
-\newlabel{eq:Cmatrix}{{D.2}{24}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {E}Characterising flow regimes of the three-qubit shor code}{25}{}\protected@file@percent }
+\newlabel{appendix:markovanalysis}{{D}{25}}
+\@writefile{toc}{\contentsline {subsubsection}{Modelling readout fidelities}{25}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Error matrix and correction matrix}{25}{}\protected@file@percent }
+\newlabel{eq:Ematrix}{{D.1}{26}}
+\newlabel{eq:Cmatrix}{{D.2}{26}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {E}Characterising flow regimes of the three-qubit shor code}{27}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{appendix:flowanalysis}{{E}{25}}
-\@writefile{lof}{\contentsline {figure}{\numberline {E.1}{\ignorespaces Proportion of direct, indirect and other flows (as defined in the text) as a function of $p$ with $F = 0.99$. Note the logarithmic scale. The vertical line indicates $p = 1-F$.}}{26}{}\protected@file@percent }
-\newlabel{fig:flowprop1}{{E.1}{26}}
-\@writefile{lof}{\contentsline {figure}{\numberline {E.2}{\ignorespaces Proportion of direct, indirect and other flows (as defined in the text) as a function of $1-F$ with $p = 0.01$ fixed. Note the logarithmic scale in $1-F$. The vertical line indicates $p = 1-F$.}}{26}{}\protected@file@percent }
-\newlabel{fig:flowprop2}{{E.2}{26}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {F}Change of basis to regard the codespace as one state}{27}{}\protected@file@percent }
+\newlabel{appendix:flowanalysis}{{E}{27}}
+\@writefile{lof}{\contentsline {figure}{\numberline {E.1}{\ignorespaces Proportion of direct, indirect and other flows (as defined in the text) as a function of $p$ with $F = 0.99$. Note the logarithmic scale. The vertical line indicates $p = 1-F$.}}{28}{}\protected@file@percent }
+\newlabel{fig:flowprop1}{{E.1}{28}}
+\@writefile{lof}{\contentsline {figure}{\numberline {E.2}{\ignorespaces Proportion of direct, indirect and other flows (as defined in the text) as a function of $1-F$ with $p = 0.01$ fixed. Note the logarithmic scale in $1-F$. The vertical line indicates $p = 1-F$.}}{28}{}\protected@file@percent }
+\newlabel{fig:flowprop2}{{E.2}{28}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {F}Change of basis to regard the codespace as one state}{29}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{appendix:changeofbasis}{{F}{27}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {G}Using alternative codespaces for continuous error correction}{28}{}\protected@file@percent }
+\newlabel{appendix:changeofbasis}{{F}{29}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {G}Using alternative codespaces for continuous error correction}{30}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{appendix:evenparitycodespace}{{G}{28}}
-\@writefile{lot}{\contentsline {table}{\numberline {G.1}{\ignorespaces Modified version of table \ref {table:shifts} showing the shifts when the circuit is set up to use the even-even subspace as the codespace.}}{28}{}\protected@file@percent }
-\newlabel{table:evenshifts}{{G.1}{28}}
-\@writefile{lof}{\contentsline {figure}{\numberline {G.1}{\ignorespaces The modified qubit layouts that would allow for the use of the odd-even, even-even and even-odd parity subspaces as the codespaces.}}{29}{}\protected@file@percent }
-\newlabel{fig:differentcodespaces}{{G.1}{29}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {H}Detecting errors in ancilla qubits}{30}{}\protected@file@percent }
+\newlabel{appendix:evenparitycodespace}{{G}{30}}
+\@writefile{lot}{\contentsline {table}{\numberline {G.1}{\ignorespaces Modified version of table \ref {table:shifts} showing the shifts when the circuit is set up to use the even-even subspace as the codespace.}}{30}{}\protected@file@percent }
+\newlabel{table:evenshifts}{{G.1}{30}}
+\@writefile{lof}{\contentsline {figure}{\numberline {G.1}{\ignorespaces The modified qubit layouts that would allow for the use of the odd-even, even-even and even-odd parity subspaces as the codespaces.}}{31}{}\protected@file@percent }
+\newlabel{fig:differentcodespaces}{{G.1}{31}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {H}Detecting errors in ancilla qubits}{32}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{appendix:9qubitsystem}{{H}{30}}
-\@writefile{lof}{\contentsline {figure}{\numberline {H.1}{\ignorespaces The modified qubit layout that would allow for detection of ancilla errors.}}{30}{}\protected@file@percent }
-\newlabel{fig:9qubitlayout}{{H.1}{30}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {I}Locked states}{31}{}\protected@file@percent }
+\newlabel{appendix:9qubitsystem}{{H}{32}}
+\@writefile{lof}{\contentsline {figure}{\numberline {H.1}{\ignorespaces The modified qubit layout that would allow for detection of ancilla errors.}}{32}{}\protected@file@percent }
+\newlabel{fig:9qubitlayout}{{H.1}{32}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {I}Locked states}{33}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{appendix:lockedstates}{{I}{31}}
-\@writefile{toc}{\contentsline {subsubsection}{Bit-flip only scheme}{31}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Locked states}{31}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {I.1}{\ignorespaces Group structure of the $n=3$ locked states and error states. Starting from the locked states, phase and bit flip errors with a combination of reflections in the planes shown. }}{32}{}\protected@file@percent }
-\newlabel{fig:group}{{I.1}{32}}
-\@writefile{toc}{\contentsline {subsubsection}{Creating the locked states}{32}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {I.2}{\ignorespaces The locked property of a locked state. In the codespace, spanned by $\mathinner {|{L0}\rangle }$ and $\mathinner {|{L1}\rangle }$, no electrons can `move' (i.e. the state is uncoupled to the doubly occupied states). If, for example, a phase flip occurs on qubit 3, then the state moves into the $\mathinner {|{A3}\rangle }, \mathinner {|{B3}\rangle }$ error subspace. In this subspace, electrons are free to hop between qubit 3 and the neighbouring qubits where there is a coupling applied. This can perhaps be detected by a charge sensor. }}{33}{}\protected@file@percent }
-\newlabel{fig:lockedstates}{{I.2}{33}}
-\@writefile{toc}{\contentsline {subsubsection}{Error detection and correction}{33}{}\protected@file@percent }
+\newlabel{appendix:lockedstates}{{I}{33}}
+\@writefile{toc}{\contentsline {subsubsection}{Bit-flip only scheme}{33}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Locked states}{33}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {I.1}{\ignorespaces Group structure of the $n=3$ locked states and error states. Starting from the locked states, phase and bit flip errors with a combination of reflections in the planes shown. }}{34}{}\protected@file@percent }
+\newlabel{fig:group}{{I.1}{34}}
+\@writefile{toc}{\contentsline {subsubsection}{Creating the locked states}{34}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {I.2}{\ignorespaces The locked property of a locked state. In the codespace, spanned by $\mathinner {|{L0}\rangle }$ and $\mathinner {|{L1}\rangle }$, no electrons can `move' (i.e. the state is uncoupled to the doubly occupied states). If, for example, a phase flip occurs on qubit 3, then the state moves into the $\mathinner {|{A3}\rangle }, \mathinner {|{B3}\rangle }$ error subspace. In this subspace, electrons are free to hop between qubit 3 and the neighbouring qubits where there is a coupling applied. This can perhaps be detected by a charge sensor. }}{35}{}\protected@file@percent }
+\newlabel{fig:lockedstates}{{I.2}{35}}
+\@writefile{toc}{\contentsline {subsubsection}{Error detection and correction}{35}{}\protected@file@percent }
 \abx@aux@cite{0}{Butcher1996}
 \abx@aux@segm{0}{0}{Butcher1996}
-\@writefile{toc}{\contentsline {chapter}{\numberline {J}Hubbard model Hamiltonian simulator}{35}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {J}Hubbard model Hamiltonian simulator}{37}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{appendix:software}{{J}{35}}
-\@writefile{toc}{\contentsline {subsubsection}{Python extension: \texttt  {FastHamiltoniser}}{35}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {J.1}{\ignorespaces How sparse Hamiltonian matrices are represented in the custom python extension \texttt  {FastHamiltoniser}. The non-zero matrix elements are grouped into objects of type \texttt  {Permuter}, whose structure is calculated in advance but whose activation and multiplicative coefficients are modified efficiently as runtime.}}{35}{}\protected@file@percent }
-\newlabel{fig:fasthamiltoniser}{{J.1}{35}}
-\@writefile{toc}{\contentsline {subsubsection}{Structure of extension}{35}{}\protected@file@percent }
-\newlabel{eq:schrodinger}{{J.1}{35}}
+\newlabel{appendix:software}{{J}{37}}
+\@writefile{toc}{\contentsline {subsubsection}{Python extension: \texttt  {FastHamiltoniser}}{37}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {J.1}{\ignorespaces How sparse Hamiltonian matrices are represented in the custom python extension \texttt  {FastHamiltoniser}. The non-zero matrix elements are grouped into objects of type \texttt  {Permuter}, whose structure is calculated in advance but whose activation and multiplicative coefficients are modified efficiently as runtime.}}{37}{}\protected@file@percent }
+\newlabel{fig:fasthamiltoniser}{{J.1}{37}}
+\@writefile{toc}{\contentsline {subsubsection}{Structure of extension}{37}{}\protected@file@percent }
+\newlabel{eq:schrodinger}{{J.1}{37}}
 \abx@aux@cite{0}{cuda}
 \abx@aux@segm{0}{0}{cuda}
-\@writefile{toc}{\contentsline {subsubsection}{Interaction picture calculation}{36}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{GPU acceleration}{36}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Python class for Hubbard model construction: \texttt  {Hamiltonian}}{36}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Interaction picture calculation}{38}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{GPU acceleration}{38}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Python class for Hubbard model construction: \texttt  {Hamiltonian}}{38}{}\protected@file@percent }
 \abx@aux@cite{0}{Butcher1996}
 \abx@aux@segm{0}{0}{Butcher1996}
-\@writefile{toc}{\contentsline {subsubsection}{Python class for time evolution of statevector: \texttt  {Evolution}}{37}{}\protected@file@percent }
-\abx@aux@read@bbl@mdfivesum{07B37F644092E69CE5AFCF64C4A2A3EE}
+\@writefile{toc}{\contentsline {subsubsection}{Python class for time evolution of statevector: \texttt  {Evolution}}{39}{}\protected@file@percent }
+\abx@aux@read@bbl@mdfivesum{20B8DD3CB3D063793A52A400994060BC}
 \abx@aux@defaultrefcontext{0}{Ahn2002}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{Arute2019}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{Baumgratz2014}{nty/global//global/global}
@@ -277,10 +288,8 @@
 \abx@aux@defaultrefcontext{0}{Nielsen2010}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{cuda}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{Oakes2022}{nty/global//global/global}
-\abx@aux@defaultrefcontext{0}{roffe_2019}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{Shim2022}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{shor_1997}{nty/global//global/global}
-\abx@aux@defaultrefcontext{0}{shor_1995}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{Loss2022}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{Tadokoro2021}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{tilly_2022}{nty/global//global/global}
@@ -291,4 +300,4 @@
 \abx@aux@defaultrefcontext{0}{Xue2020}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{Yadin2016}{nty/global//global/global}
 \abx@aux@defaultrefcontext{0}{Zwerver2022}{nty/global//global/global}
-\gdef \@abspage@last{42}
+\gdef \@abspage@last{44}

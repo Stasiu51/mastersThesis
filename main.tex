@@ -12,11 +12,12 @@
 \usepackage{epstopdf}
 
 \addbibresource{library.bib} %Import the bibliography file
-\title{Continuous Error Correction in Quantum Dot Qubits}
-\author{Stasiu Wolanski, Jesus College}
-\date{2022 - 2023}
+\title{Discrete and Continuous Quantum Error Correction in Silicon}
+\author{Blind Grade Number: 8261R}
+\date{Submitted May 2023}
 
 \begin{document}
+
 
 \maketitle
 
@@ -39,9 +40,7 @@ where the basis states $\ket{i}$ are drawn from the space
     \mathscr{H}_n = \spa[\ket{0_n},\ket{1_n}]
 \end{equation*} with $\ket{0_n}$ and $\ket{1}_n$ the two states of the n-th sub-system.
 
-The potential capabilities of a system that behaves as described above are well-known, and qubits can already be fabricated in quantities that would be sufficient to enable useful calculations to be performed, if they could function perfectly. However, every physical implementation of qubits suffers from the phenomenon of quantum decoherence, whereby the quantum state changes in unknown and unforseeable ways due to inevitable environmental fluctuations. In response to this problem, quantum error correction (QEC) techniques have been developed to lessen the impact of such noise. The goal of this project is to explore a class of these schemes, called continuous error correction schemes, and specifically their application to quantum dot qubits.
-
-After some background introduced in section \ref{chapter:background}, the present paper develops theory in section \ref{sec:repeat_analysis} to model and analyse rapidly repeated error correction schemes, of which there have been several experimental demonstrations. These are an approximation to continuous error correction schemes. In section \ref{sec:truly_continuous_theory}, a proposal for a truly continuous error correction scheme is made and analysed mathematically. In the following sections, simulation of the relevant device physics is developed and this is used to validate certain aspects of this proposal. In chapter \ref{sec:feasibility}, it is concluded that this scheme is unlikely to be a practical means of increasing qubit fidelity with current technology. Several more theoretical proposals are developed in the appendices along with addtional background information.
+The potential capabilities of a system that behaves as described above are well-known, and qubits can already be fabricated in quantities that would be sufficient to enable useful calculations to be performed, if they could function perfectly. However, every physical implementation of qubits suffers from the phenomenon of quantum decoherence, whereby the quantum state changes in unknown and unforseeable ways due to inevitable environmental fluctuations. In response to this problem, quantum error correction (QEC) techniques have been developed to lessen the impact of such noise. The present report begins with an overview of the device background physics and the general thoery of QEC in chapter \ref{chapter:background}. In chapter \ref{chapter:DQEC} I examine the potential of current error correction techniques in silicon qubit devices, and elucidate their limiting factors using a markovian analysis. It is clear from this analysis that the readout fidelity of the discrete measurments is the limiting factor in improving qubit fidelity. In chapter \ref{chapter:CQEC} I propose a novel scheme that applies a recently developed qubit readout technique, radio frequency reflectometry, to implement a \textit{continuous quantum error correction} (CQEC) in silicon. I present a theoretical physical analysis of this scheme and a numerical simulation to demostrate aspects of the scheme. Several more theoretical proposals are developed in the appendices along with addtional background information.
 
 \chapter{Background}\label{chapter:background}
 \subsubsection{Notation and units}
@@ -50,32 +49,18 @@ This report will assume the standard notation of the field of quantum computatio
 
 \section{Quantum dots and the hubbard model}\label{sec:hubbard_model}
 \textit{This section and the next are adapted from my project proposal.}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale = 0.7]{Figures/3qubithubbard.pdf}
+    \caption{\textbf{a.} shows simplified schematic for the important parameters of a Hubbard model: $E_i^z$ the energy splitting due to an applied static field in the $z$ direction; and the inter-dot kinetic coupling $t_{ij}$. The system is shown in the basis state that would be described in second quantisation notation as $c_{1,\uparrow}^\dagger c_{2,\downarrow}^\dagger c_{3,\downarrow}^\dagger\ket{\text{Vac}}$, or more conventionally as $\ket{\uparrow\downarrow\downarrow}$. \textbf{b.} and \textbf{c.} are taken from \cite{Takeda2022}. \textbf{a.} shows a false-colour microgram image of 3 qubit system implemented in a SiGe-Si-SiGe heterostructure. The B lines control the inter-dot couplings whilst the P lines control the chemical potential, and hence occupation, of the dots, as shown in \textbf{c.}.}
+    \label{fig:3qubitdiagram}
+\end{figure}
 
 Semiconductor quantum dot based processors are a promising platform for building quantum computers. They have several features that make them attractive, of which the which the most significant are the relatively long decoherence times \cite{Loss2022} and the abundance of manufacturing expertise and infrastructure, which researchers hope will enable rapid scaling of qubit technology once the technology is more advanced. For a review see \cite{Burkard2022}. 
 
-Quantum dot processors are constructed by first growing a semiconductor heterostructure to create a two-dimensional electron gas (2DEG) at the interface between the materials. By applying voltage gates to the surface of the structure the 2DEG can be confined to a sufficiently small region that the electrons behave as if they are in an `artificial atom'; that is, there are a number of well-defined discrete electron energy states on the dot. The number of electrons (up to two per level by the Pauli principle) on the dot can be finely controlled by adjusting those levels relative to the chemical potential of the environment. There may be a number of dots in close proximity, and the degree of their `kinetic coupling', that is
-\begin{equation*}
-    t_{12} = \bra{\phi_1}\frac{\hat{p}^2}{2m^*}\ket{\phi_2}
-\end{equation*} can be controlled by modulating a voltage of a gate placed between the dots.
-We model this system using the Hubbard model\cite{Hubbard1963}. The uncoupled part of the hamiltonian has the form (assuming one energy level on each of $N$ dots)
-\begin{equation*}
-    \hat{H_0} = -\sum_{i = 1}^{N}{\sum_{\sigma \in \{\uparrow, \downarrow\}}{\mu_i\hat{n}_{i\sigma}}}
-\end{equation*}
-\begin{equation*}
-    +\sum_{i = 1}^{N}{(\frac{E_i^z}{2} (\hat{n}_{i\uparrow} - \hat{n}_{i\downarrow}) 
-    + U_i \hat{n}_{i\uparrow} \hat{n}_{i\downarrow}) }
-\end{equation*}
-where $\mu_i$ are the chemical potentials at each site, $E^z_i$ (different for each $i$) are the energies associated with an applied static magnetic field and the $U_i$ are terms representing same-site coulomb repulsion. The addition of kinetic coupling results in an further set of terms
-\begin{equation*}
-    \hat{H_J} = -\sum_{i < j}t_{ij}{\sum_{\sigma \in \{\uparrow, \downarrow\}}
-    (\hat{c}_{i,\sigma}^\dag \hat{c}_{j\sigma} + \hat{c}_{j,\sigma}^\dag \hat{c}_{i\sigma})}
-\end{equation*} with $t_{ij}$ the coupling between the $i$th and $j$th site, which we can control as a function of time. A change to these parameters is called a `pulse'. The other means of control we have over the system is to apply microwave radiation of given amplitude $\Omega$ and phase $\gamma$. This results in a last hamiltonian component for what we call a `drive':
-\begin{equation*}
-    \hat{H}_\omega = -\Omega(t)\cos(\omega t + \gamma) \sum_{i = 1}^{N}\sum_{\sigma,\xi \in \{\uparrow, \downarrow\}}
-    \frac{\mu_b g_j}{2}\mathbf{B}\cdot\mathbf{P_{\sigma\xi}}\hat{c}^\dag_{i\sigma}\hat{c}_{i\xi}
-\end{equation*}.
-These microwave drives and coupling between neighbouring qubits can be used to implement quantum logic gates. This is discussed in appendix \ref{appendix:gates}.
-The number of basis states in the fock basis which the Hubbard Hamiltonian acts upon is $\binom{2n}{n}$ with $n$ the number of qubits. In chapter \ref{chap:methods} a software package is developed to generate these Hamiltonians and solve the Schrödinger equation they define. The principal challenge is one of performance, as the size of the vectors and matrices grows quickly with $n$.
+Quantum dot processors are constructed by first growing a semiconductor heterostructure to create a two-dimensional electron gas (2DEG) at the interface between the materials. By applying voltage gates to the surface of the structure the 2DEG can be confined to a sufficiently small region that the electrons behave as if they are in an `artificial atom'; that is, there are a number of well-defined discrete electron energy states on the dot. The number of electrons (up to two per level by the Pauli principle) on the dot can be finely controlled by adjusting those levels relative to the chemical potential of the environment. A simple device with three quantum dots is shown in figure \ref{fig:3qubitdiagram}.
+
+We can control the chemical potentials $\mu_i$ and the inter-dot couplings $t_{ij}$ using the voltage gates on the upper surface of the device. In order to model the device physics, we use the Fermi-Hubbard model \cite{Hubbard1963}, working in the occupation basis. The resulting `Hubbard Hamiltonian' is explained in appendix \ref{appendix:hubbard}.
 
 \section{Quantum error correction}
 In classical computers, which are also prone to random errors (a definite $1$ may become a $0$), a variety of error-correction techniques are available \cite{moon_2005}. These are all fundamentally based on the principle of redundancy: that is, if the relevant information is spread over a larger number of bits, than the number of destructive events required to render the state completely unrecoverable is more than one. 
@@ -88,11 +73,43 @@ Alas the no-cloning theorem due to Wootters and Zurek\cite{wootters_1982} proscr
 The solution to this conundrum presents itself in the formalism of stabiliser codes. The key idea to encode our quantum information onto a greater number of qubits than necessary to hold it, and divide the state-space of this new set of qubits into a valid code-space and a larger error-space. The code-space and all error-spaces are each large enough to encode every valid computational state within them, and so that a single error event will push the state out of the code-space and towards the error-space. These are each degenerate subspaces of the measurement outcomes of certain sets of projective measurements called `stabilisers'. Performing these `stabiliser' measurements projects the resulting state precisely into either the code-space - in which case the error is corrected - or the error-space, in which case the error is now precisely known and can be corrected using a known unitary operation. Because the spaces are degenerate, knowledge of which sub-space the state of the system inhabits provides no information as to which valid computational state the system state represents. The original, and simplest, proposal is the three-bit shor code, which encodes each qubit in the hilbert space of three qubits, according to
 \begin{equation*}
     \alpha\ket{0} + \beta\ket{1} \rightarrow \alpha\ket{0_10_20_3} + \beta\ket{1_11_21_3}.
-\end{equation*} We can then determine if an error has ocurred by performing tow parity measurments $Z_1Z_2$ and $Z_2Z_3$, and perform an appropriate correction flip. This is explained in appendix \ref{appendix:shorcode}.
+\end{equation*} We can then determine if an error has ocurred by performing two parity measurments $Z_1Z_2$ and $Z_2Z_3$, and perform an appropriate correction flip. In order to correct a single bit-flip error, that is to defend against the risk of the event
+\begin{equation*}
+    \alpha\ket{0} + \beta\ket{1} \rightarrow \alpha\ket{1} + \beta\ket{0}
+\end{equation*}
+we can encode a single computational qubit into a set of three (with the latter two initialised in the state $\ket{0}$) using two \texttt{CNOT} operations:
+\begin{equation*}
+\begin{aligned}
+    & (\alpha\ket{0_1} + \beta\ket{1_1})\ket{0_2}\ket{0_3}\\
+      \xrightarrow{\texttt{CNOT(1,2)}} &(\alpha\ket{0_1 0_2} + \beta\ket{1_1 1_2})\ket{0_3} \\
+     \xrightarrow{\texttt{CNOT(1,3)}}  &\alpha\ket{0_1 0_2 0_3} + \beta\ket{1_1 1_2 1_3}
+\end{aligned}
+\end{equation*}
+. Here, the code-space is $\spa[\ket{0 0 0}, \ket{1 1 1}]$ (we have dropped the qubit labels). If an error occurs on, say, the second qubit:
+\begin{equation}
+    \alpha\ket{0 0 0} + \beta\ket{1 1 1} \rightarrow \alpha\ket{0 1 0} + \beta\ket{1 0 1}
+\end{equation}
+we see that the state of the system has moved into one of three error-spaces: $\spa[\ket{0 1 0}, \ket{1 0 1}]$. We then perform a stabiliser measurement consisting of two projective measurements, \texttt{Z$_1$Z$_2$} and \texttt{Z$_2$Z$_3$}. Our disrupted state is an eigenstate of both of these measurements with eigenvalue $-1$ for both. More generally the error might move the state into a superposition of vectors in more than one of the error-spaces and/or the code-space, in which case these measurements have the virtue of collapsing the state exactly into one or the other subspace. In this case, the only information we gain by the measurement, which consists of the two $-1$ eigenvalues, tells us the system lies in the error-space corresponding to a bit-flip of the second qubit. We can then apply \texttt{X$_2$} to correct the error, all without ever learning the values of $\alpha$ and $\beta$. 
+\subsubsection{How the scheme fails}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale = 0.85]{Figures/cubediagram.pdf}
+    \caption{In this figure, the possible states of an error-prone system that starts in the $\ket{000}$ state are represented on the vertices of a cube. Note that the ideal action of the correction flips is to push the state towards either the $\ket{000}$ or $\ket{111}$ states, indicated by the black arrowheads on some edges. \textbf{a.} shows the ideal case of successful error correction. A single error occurs on the second qubit, and a correct pair of parity measurements identifies the error syndrome and applies an $X_2$ correction flip. \textbf{b.} shows how the scheme fails if two errors (or more) occur in the interval between correction iterations: a correctly performed set of parity measurement will result in a correction flip that pushes the qubits further away from the codespace. \textbf{c.} shows how the scheme fails if one error occurs, and the subsequent parity measurements give the wrong result, so an erroneous correction flip (here $X_1$) is applied. On the next round, if no errors occur and the next set of parity measurements is performed correctly, the correction flip will push the state into the $\ket{111}$ error space.}
+    \label{fig:cubediagram}
+\end{figure}
+We can conceptually divide the processes by which the scheme fails into two classes. Firstly there are those that are caused by two or more errors ocurring in the time it takes to correct a single error; and those that are caused by an erroneous parity measurement, leading to an applied correction flip. These two processes are illustrated in figure \ref{fig:cubediagram}.
+
+\subsubsection{Phase flip errors}
+
+In order to project a general error $\alpha, \beta \rightarrow \alpha', \beta'$ we must also protect against \textit{phase-flips}, that is 
+\begin{equation}
+    \alpha\ket{0} + \beta\ket{1} \rightarrow \alpha\ket{0} - \beta\ket{1}
+\end{equation}
+which can be achieved by encoding the triple qubit state here into a trio of qubits in the Hadamard basis $\{\ket{+++},\ket{---}\}$, with $\ket{\pm} = (\ket{0} \pm \ket{1})/\sqrt{2}$ and performing an analogous parity measurement. We can protect against either only bit- or only phase-flips in this way, but protecting against both requires nine qubits in this scheme. It is possible to perform full error correction against both bit and phase flips with just 5 qubits  using a much more complicated encoding scheme\cite{DiVincenzo1996}. The complexity of this 5 qubit scheme means it is unviable using current technology in silicon systems, and we focus on the three-bit bit-flip shor code for the remainder of the project.
 
 
 \section{Continuous quantum error correction}\label{sec:CQEC}
-The focus of the present project is to investigate \textit{continous quantum error correction} (CQEC) schemes, and in particular their application to semiconductor quantum dot qubit devices. 
+One goal of this project is to investigate \textit{continous quantum error correction} (CQEC) schemes, and in particular their application to semiconductor quantum dot qubit devices. 
 
 Continuous quantum error correction refers to a class of error correction schemes that rely on some always-on output signal from the qubit system to gain information about which subspace the qubits inhabit. The original theoretical formulation of these ideas proposed a system of \textit{continuous feedback} to the feedback based on the continuous output signal to reduce drift away from the codespace \cite{Ahn2002}. While there has been some continued development of this theory \cite{Cardona2018}\cite{Cardona2019}, the field has largely moved away from the idea of continuous feedback. Instead, the most promising development has been in an experimental demonstration in superconducting transmon qubits\footnote{These are another promising platform for quantum devices favoured by researchers including groups at Google and IBM. They currently (subject to some controversy) hold the records for the highest qubit counts in quantum devices, and recently claimed to perform a calculation surpassing the capabilities of classical computation `quantum supremacy' \cite{Arute2019}. For a review see \cite{Huang2020}.} of a system which uses a continuous noisy output signal from the qubits to constantly update its `best guess' at the current qubit state, but then applies \textit{discrete} correction flips to move the state back into the codespace when the system is sufficiently confident that an error has ocurred\cite{Dressel2022}. The scheme I propose in section \ref{sec:truly_continuous_theory} also relies on applying discrete correction flips on the basis of a form of continuous measurement. However, the physics of the two devices is very different: in superconducting devices, the two level system that implements a qubit consists of a mode of oscillation of a supercurrent through a Josephson junction, wheras in quantum dot qubits the qubit is implemented as the spin state of an electron. The physical implementation of such a continuous parity measurement is therefore necessarily quite different in the two cases.
 \begin{figure}[ht]
@@ -103,13 +120,17 @@ Continuous quantum error correction refers to a class of error correction scheme
 \end{figure}
 
 
-\chapter{Theory}
+\chapter{Discrete QEC}
 
-\section{Rapidly repeated error correction schemes} \label{sec:repeat_analysis}
-For much of the time spent on the project, it was unclear how to implement, even thoeretically, a truly continuous error correction scheme analagous to \cite{Dressel2022}. This section develops a framework for analysing error correction schemes that are not ruly continuous, but based on discrete, but rapidly repeated, parity measurment and correction. Rather, this analysis is \textit{inspired by} that work, as well as by experimental demonstrations of repeated non-demolition measurements in silicon systems\cite{Nakajima2019}\cite{Xue2020}. It allows for the efficient and exact calculation of the expected fidelity of such a scheme given certain characteristic parameters: the rate of errors, the frequency of error correction cycles, and the fidelity of the error syndrome measurements.
-More details regarding the theorical treatment of decoherence processes are given in appendix \ref{appendix:decoherence}. Appendix \ref{appendix:decoherence} also derives The crucial insight is that all standard decoherence processes have the property that, when they are applied to a diagonal density matrix, the result is another diagonal density matrix. This means that by choosing a basis where the initial (codespace) state of the system is one of the basis vectors, we can analyse the system density matrix as a vector, and apply markovian evolution by calculating the relevant transition matrix. 
 
-Here I model the effects of a process of repeated error-correction scheme for mitigating dephasing errors, but the process is very similar for correcting bit-flip errors. The system is initially prepared in the state $\ket{\psi} = \alpha \ket{0} + \beta \ket{1}$, whose fidelity we want to maintain for as long as possible. We can apply CNOT operations between this and two further code qubits to obtain $\alpha \ket{000} + \beta \ket{111}$. Applying Hadamard gates to all three qubits creates the state $\ket{\tilde{\psi}} = \alpha \ket{+++} + \beta \ket{---}$. Using a change of basis technique with some subtelties that are detailed in appendix \ref{appendix:changeofbasis}, we can write any such state to be protected in the `analytical basis' as $\ket{000}$.
+\section{Discrete error correction schemes using repeated parity measurements} \label{sec:repeat_analysis}
+This section develops a framework for analysing error correction schemes that are discrete, but rapidly repeated, parity measurment and correction. This analysis is motivated by experimental demonstrations of repeated non-demolition measurements in silicon systems \cite{Xue2020} and \cite{Nakajima2019}. The former make use of Elzerman readout\cite{Elzerman2004} while the latter applies the emerging technology of singlet-triplet readout using radio frequency reflectometry \cite{Oakes2022}. The analysis will then be used to conclude that bit-flip error-correction schemes implemented using current techniques are limited in their performance only by the fidelity of the readout, and not by the readout speed or the rate of occurence of errors. This is not true for phase-flip correction. 
+
+\section{Markovian analysis of discrete error correction}
+The analysis presented here allows for the efficient and exact calculation of the expected fidelity of such a scheme given certain characteristic parameters: the rate of errors, the frequency of error correction cycles, and the fidelity of the error syndrome measurements.
+More details regarding the theorical treatment of decoherence processes are given in appendix \ref{appendix:decoherence}. Appendix \ref{appendix:decoherence} also derives the result that is crucial to the analysis: that all standard decoherence processes have the property that, when they are applied to a diagonal density matrix representing our knowledge of the system state, the result is another diagonal density matrix. This means that by choosing a basis where the initial (codespace) state of the system is one of the basis vectors, we can analyse the system density matrix as a vector, and apply markovian evolution by calculating the relevant transition matrix. 
+
+Here I model the effects of a process of repeated error-correction scheme for mitigating bit-flip errors, but the process is very similar for correcting phase-flip errors. The system is initially prepared in the state $\ket{\psi} = \alpha \ket{0} + \beta \ket{1}$, whose fidelity we want to maintain for as long as possible. We can apply CNOT operations between this and two further code qubits to obtain $\alpha \ket{000} + \beta \ket{111}$. Using a change of basis technique with some subtelties that are detailed in appendix \ref{appendix:changeofbasis}, we can write any such state to be protected in the `analytical basis' as $\ket{000}$.
 
 \subsection{Correction scheme}
 \begin{figure}[ht]
@@ -389,29 +410,32 @@ Even if we restrict ourselves to trying to reduce errors due to relaxation and l
 During the course of the project I also developed a highly theoretical error-correction scheme that in principle could correct against both phase flip and bit flip errors. This I describe in appendix \ref{appendix:lockedstates}.
 
 \begin{appendices}
-\chapter{The three qubit bit flip shor code}\label{appendix:shorcode}
-The original and simplest example of an error correction scheme is due to Shor \cite{shor_1995}, which I outline here. For more detail, see \cite{roffe_2019}. In order to correct a single bit-flip error, that is to defend against the risk of the event
-\begin{equation*}
-    \alpha\ket{0} + \beta\ket{1} \rightarrow \alpha\ket{1} + \beta\ket{0}
-\end{equation*}
-we can encode a single computational qubit into a set of three (with the latter two initialised in the state $\ket{0}$) using two \texttt{CNOT} operations:
-\begin{equation*}
-\begin{aligned}
-    & (\alpha\ket{0_1} + \beta\ket{1_1})\ket{0_2}\ket{0_3}\\
-      \xrightarrow{\texttt{CNOT(1,2)}} &(\alpha\ket{0_1 0_2} + \beta\ket{1_1 1_2})\ket{0_3} \\
-     \xrightarrow{\texttt{CNOT(1,3)}}  &\alpha\ket{0_1 0_2 0_3} + \beta\ket{1_1 1_2 1_3}
-\end{aligned}
-\end{equation*}
-. Here, the code-space is $\spa[\ket{0 0 0}, \ket{1 1 1}]$ (we have dropped the qubit labels). If an error occurs on, say, the second qubit:
-\begin{equation}
-    \alpha\ket{0 0 0} + \beta\ket{1 1 1} \rightarrow \alpha\ket{0 1 0} + \beta\ket{1 0 1}
-\end{equation}
-we see that the state of the system has moved into one of three error-spaces: $\spa[\ket{0 1 0}, \ket{1 0 1}]$. We then perform a stabiliser measurement consisting of two projective measurements, \texttt{Z$_1$Z$_2$} and \texttt{Z$_2$Z$_3$}. Our disrupted state is an eigenstate of both of these measurements with eigenvalue $-1$ for both. More generally the error might move the state into a superposition of vectors in more than one of the error-spaces and/or the code-space, in which case these measurements have the virtue of collapsing the state exactly into one or other subspace. In this case, the only information we gain by the measurement, which consists of the two $-1$ eigenvalues, tells us the system lies in the error-space corresponding to a bit-flip of the second qubit. We can then apply \texttt{X$_2$} to correct the error, all without ever learning the values of $\alpha$ and $\beta$. In fact, in order to project a general error $\alpha, \beta \rightarrow \alpha', \beta'$ we must also protect against \textit{phase-flips}, that is 
-\begin{equation}
-    \alpha\ket{0} + \beta\ket{1} \rightarrow \alpha\ket{0} - \beta\ket{1}
-\end{equation}
-which can be achieved by further encoding the triple qubit state here into a triple of qubits in the Hadamard basis $\{\ket{+++},\ket{---}\}$. We can protect against either bit- or phase- flips, but doing both requires nine qubits in this scheme. It is possible to perform full error correction against both bit and phase flips with just 5 qubits  using a much more complicated encoding scheme\cite{DiVincenzo1996}. The circuit for detecting and correcting errors for this five qubit code involves transforming some of the qubits into and out of the Hadamard basis between the syndrome measurments, and so the parity measurements could not be performed simultaneously as required for CQEC, and we focus on the three-bit bit-flip shor code for the remainder of the project.
+\chapter{The Fermi-Hubbard model of interacting quantum dots}\label{appendix:hubbard}
 
+We model the multiple quantum dot system in the second-quantised `Fock' or `occupation' basis using the Hubbard model\cite{Hubbard1963}. 
+We parameterise the model with several key parameters. $\mu_i$ are the chemical potentials at each site, which are set primarily by the voltages applied directly to the dots, for example using the $Pi$ lines in figue \ref{fig:3qubitdiagram}. $E^z_i$ are the Zeeman energy splittings associated with the $z$ component of an applied static magnetic field and the $U_i$ are terms representing same-site coulomb repulsion. For example, the state $\ket{\uparrow\downarrow\downarrow}$ is $2E_1^z$ higher in energy than the state $\ket{\downarrow\downarrow\downarrow}$. The state $\ket{\updownarrow\varnothing\downarrow}$, with two electrons on the first site and none on the second is around $U_1$ higher in energy than either, with $U_i \gg E_i^z$. In second quantisation we write the uncoupled part of the hamiltonian as
+\begin{equation*}
+    \hat{H_0} = -\sum_{i = 1}^{N}{\sum_{\sigma \in \{\uparrow, \downarrow\}}{\mu_i\hat{n}_{i\sigma}}}
+\end{equation*}
+\begin{equation*}
+    +\sum_{i = 1}^{N}{(\frac{E_i^z}{2} (\hat{n}_{i\uparrow} - \hat{n}_{i\downarrow}) 
+    + U_i \hat{n}_{i\uparrow} \hat{n}_{i\downarrow}) }.
+\end{equation*}
+
+The addition of kinetic coupling terms, which are controlled by the inter-dot gates (e.g. the $Bi$ lines in figure \ref{fig:3qubitdiagram}) results in an further set of terms
+\begin{equation*}
+    \hat{H_J} = -\sum_{i < j}t_{ij}{\sum_{\sigma \in \{\uparrow, \downarrow\}}
+    (\hat{c}_{i,\sigma}^\dag \hat{c}_{j\sigma} + \hat{c}_{j,\sigma}^\dag \hat{c}_{i\sigma})}
+\end{equation*} with $t_{ij}$ the coupling between the $i$th and $j$th site, given by\begin{equation*}
+    t_{ij} = \bra{\phi_i}\frac{\hat{p}^2}{2m^*}\ket{\phi_j}.
+\end{equation*} A change to these parameters is called a `pulse'. The other means of control we have over the system is to apply microwave radiation of given amplitude $\Omega$ and phase $\gamma$. This results in a last hamiltonian component for what we call a `drive':
+\begin{equation*}
+    \hat{H}_\omega = -\Omega(t)\cos(\omega t + \gamma) \sum_{i = 1}^{N}\sum_{\sigma,\xi \in \{\uparrow, \downarrow\}}
+    \frac{\mu_b g_j}{2}\mathbf{B}\cdot\mathbf{P_{\sigma\xi}}\hat{c}^\dag_{i\sigma}\hat{c}_{i\xi}
+\end{equation*}.
+These microwave drives and coupling between neighbouring qubits can be used to implement quantum logic gates. This is discussed in appendix \ref{appendix:gates}.
+The number of basis states in the fock basis which the Hubbard Hamiltonian acts upon is $\binom{2n}{n}$ with $n$ the number of qubits. In chapter \ref{chap:methods} a software package is developed to generate these Hamiltonians and solve the Schrödinger equation they define. The principal challenge is one of performance, as the size of the vectors and matrices grows quickly with $n$.
+    
 \chapter{Implementing quantum gates on quantum dot devices} \label{appendix:gates}
 \subsubsection{Single Qubit Gates}
 Implementing a single qubit gate on the $i$th qubit is achieved by applying a microwave drive at a frequency equal to $E^z_i$. The time $T$ and phase $\gamma$ of this drive determine the effective unitary transformation that is applied to the qubit, which is given by
@@ -680,7 +704,7 @@ Secondly, a single qubit flip could occur, for example $\ket{000} \longrightarro
 
 In theory there is a third two-step process that starts with a single error flip, which is not corrected by the correction step, and is followed by a further flip on the next round of errors. This turns out to never dominate the loss of qubit fidelity, and nor does any more complicated process.
 
-We can explore these different regimes by examining the rate of flow of probability through the system throughout the lifetime of a qubit - that is, over the time the system takes to equilibrate between the odd and even subspaces. The net probability flux through the system from state $j$ to state $i$ during step $n$, at which point the probabilities are given by the vector $\mathbf{P^n}$, is given by
+We can explore these different regimes by examining the rate of flow of probability through the system throughout the lifetime of a qubit - that is, over the time the system takes to equilibrate between the codespace $\ket{000}$ and the `anti codespace' $\ket{111}$. The net probability flux through the system from state $j$ to state $i$ during step $n$, at which point the probabilities are given by the vector $\mathbf{P^n}$, is given by
 \begin{equation*}
     J_{ij} = M_{ij}P^n_j - M_{ji} P^n_i
 \end{equation*}
@@ -689,7 +713,7 @@ or in matrix notation
     J = M\mathbf{P^n} - (M \mathbf{P^n})^\mathrm{T}
 \end{equation*}.
 
-Then we define \textit{direct flow} as $J_D = J_{5,0}$, that is, the rate at which states jump in one step from $\ket{000}$ to $\ket{111}$. This corresponds with the error-limited case above. \textit{Indirect flow} is given by $J_I = J_{5,3} + J_{5,4}$, and is the rate at which states arrive at $\ket{111}$ via $\ket{110}$, $\ket{101}$ and $\ket{011}$. Then we have other flow $J_O = J_{5,1} + J_{5,2}$. Note that we have $\dot{P_5} = J_D + J_I + J_O - J_\mathrm{total}$, as required by conservation of probability.
+Then we define \textit{direct flow} as $J_D = J_{5,0}$, that is, the rate at which states jump in one step from $\ket{000}$ to $\ket{111}$. This corresponds with the error-limited case above. \textit{Indirect flow} is given by $J_I = J_{5,3} + J_{5,4}$, and is the rate at which states arrive at $\ket{111}$ via $\ket{110}$, $\ket{101}$ and $\ket{011}$. Then we have other flow $J_O = J_{5,1} + J_{5,2}$. Note that we have $\dot{P_5} = J_D + J_I + J_O = J_\mathrm{total}$, as required by conservation of probability.
 
 We can fix the parity readout fidelities $F0 = F1 = F$ (= 0.99), and vary the error probability $p$. For each $p$, we start the system in $P^0_i = \delta_{i,0}$, and apply $M$ until the fidelity falls below some threshold (here 0.51). At each time step we the total $J_D$, $J_I$ and $J_O$. Then we can plot the ratios $\int J_D/J_\mathrm{total}$, etc. We can repeat the experiment holding $p$ fixed and varying $F$. The results are shown in figures \ref{fig:flowprop1} and \ref{fig:flowprop2}. We see a clear point of crossover between the error- and readout-limited regimes around the point $p = 1-F$, that is, the point at which the probability of an error flip is comparable to the probability of an incorrect parity readout. Where $p \gg 1-F$, the system is firmly in the error-limited regime, whereas for $1-F \gg p$, it is in the readout-limited regime. Around the middle point probability appears to flow without preference through all of the routes available.
 \begin{figure}[ht]

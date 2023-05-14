@@ -1,50 +1,53 @@
-\contentsline {chapter}{\numberline {1}Introduction}{2}{}%
-\contentsline {chapter}{\numberline {2}Background}{3}{}%
-\contentsline {subsubsection}{Notation and units}{3}{}%
-\contentsline {section}{\numberline {2.1}Quantum dots and the hubbard model}{3}{}%
-\contentsline {section}{\numberline {2.2}Quantum error correction}{4}{}%
-\contentsline {section}{\numberline {2.3}Continuous quantum error correction}{4}{}%
-\contentsline {chapter}{\numberline {3}Theory}{6}{}%
-\contentsline {section}{\numberline {3.1}Rapidly repeated error correction schemes}{6}{}%
-\contentsline {subsection}{\numberline {3.1.1}Correction scheme}{6}{}%
-\contentsline {subsection}{\numberline {3.1.2}Further theory, and application}{7}{}%
-\contentsline {section}{\numberline {3.2}Truly continuous error correction in quantum dot systems}{7}{}%
-\contentsline {subsection}{\numberline {3.2.1}Scheme summary}{7}{}%
-\contentsline {subsection}{\numberline {3.2.2}Theoretical treatment of scheme with second order perturbation theory}{8}{}%
-\contentsline {subsection}{\numberline {3.2.3}Further questions related to tunnelling physics}{10}{}%
-\contentsline {chapter}{\numberline {4}Computational Methods}{11}{}%
-\contentsline {section}{\numberline {4.1}Simulating the hubbard model}{11}{}%
-\contentsline {section}{\numberline {4.2}Truly continuous error correction prototype}{11}{}%
-\contentsline {subsubsection}{Physical parameters}{12}{}%
-\contentsline {subsection}{\numberline {4.2.1}Hubbard Hamiltonian setup}{12}{}%
-\contentsline {subsection}{\numberline {4.2.2}Energy shifts due to hopping coupling}{13}{}%
-\contentsline {subsection}{\numberline {4.2.3}Demonstrating the error propagation}{13}{}%
-\contentsline {chapter}{\numberline {5}Conclusions}{15}{}%
-\contentsline {section}{\numberline {5.1}Future work}{15}{}%
-\contentsline {section}{\numberline {5.2}Feasibility of the scheme}{15}{}%
-\contentsline {chapter}{Appendices}{16}{}%
-\contentsline {chapter}{\numberline {A}The three qubit bit flip shor code}{17}{}%
-\contentsline {chapter}{\numberline {B}Implementing quantum gates on quantum dot devices}{18}{}%
-\contentsline {subsubsection}{Single Qubit Gates}{18}{}%
-\contentsline {subsubsection}{Two Qubit Operations}{18}{}%
-\contentsline {chapter}{\numberline {C}Decoherence theory}{21}{}%
-\contentsline {subsubsection}{Explanation in terms of Coherence Theory}{22}{}%
-\contentsline {chapter}{\numberline {D}Markovian analysis of repeated error correction schemes}{23}{}%
-\contentsline {subsubsection}{Modelling readout fidelities}{23}{}%
-\contentsline {subsubsection}{Error matrix and correction matrix}{23}{}%
-\contentsline {chapter}{\numberline {E}Characterising flow regimes of the three-qubit shor code}{25}{}%
-\contentsline {chapter}{\numberline {F}Change of basis to regard the codespace as one state}{27}{}%
-\contentsline {chapter}{\numberline {G}Using alternative codespaces for continuous error correction}{28}{}%
-\contentsline {chapter}{\numberline {H}Detecting errors in ancilla qubits}{30}{}%
-\contentsline {chapter}{\numberline {I}Locked states}{31}{}%
-\contentsline {subsubsection}{Bit-flip only scheme}{31}{}%
-\contentsline {subsubsection}{Locked states}{31}{}%
-\contentsline {subsubsection}{Creating the locked states}{32}{}%
-\contentsline {subsubsection}{Error detection and correction}{33}{}%
-\contentsline {chapter}{\numberline {J}Hubbard model Hamiltonian simulator}{35}{}%
-\contentsline {subsubsection}{Python extension: \texttt {FastHamiltoniser}}{35}{}%
-\contentsline {subsubsection}{Structure of extension}{35}{}%
-\contentsline {subsubsection}{Interaction picture calculation}{36}{}%
-\contentsline {subsubsection}{GPU acceleration}{36}{}%
-\contentsline {subsubsection}{Python class for Hubbard model construction: \texttt {Hamiltonian}}{36}{}%
-\contentsline {subsubsection}{Python class for time evolution of statevector: \texttt {Evolution}}{37}{}%
+\contentsline {chapter}{\numberline {1}Introduction}{3}{}%
+\contentsline {chapter}{\numberline {2}Background}{4}{}%
+\contentsline {subsubsection}{Notation and units}{4}{}%
+\contentsline {section}{\numberline {2.1}Quantum dots and the hubbard model}{4}{}%
+\contentsline {section}{\numberline {2.2}Quantum error correction}{5}{}%
+\contentsline {subsubsection}{How the scheme fails}{6}{}%
+\contentsline {subsubsection}{Phase flip errors}{6}{}%
+\contentsline {section}{\numberline {2.3}Continuous quantum error correction}{7}{}%
+\contentsline {chapter}{\numberline {3}Discrete QEC}{8}{}%
+\contentsline {section}{\numberline {3.1}Discrete error correction schemes using repeated parity measurements}{8}{}%
+\contentsline {section}{\numberline {3.2}Markovian analysis of discrete error correction}{8}{}%
+\contentsline {subsection}{\numberline {3.2.1}Correction scheme}{8}{}%
+\contentsline {subsection}{\numberline {3.2.2}Further theory, and application}{9}{}%
+\contentsline {section}{\numberline {3.3}Truly continuous error correction in quantum dot systems}{10}{}%
+\contentsline {subsection}{\numberline {3.3.1}Scheme summary}{10}{}%
+\contentsline {subsection}{\numberline {3.3.2}Theoretical treatment of scheme with second order perturbation theory}{11}{}%
+\contentsline {subsection}{\numberline {3.3.3}Further questions related to tunnelling physics}{12}{}%
+\contentsline {chapter}{\numberline {4}Computational Methods}{13}{}%
+\contentsline {section}{\numberline {4.1}Simulating the hubbard model}{13}{}%
+\contentsline {section}{\numberline {4.2}Truly continuous error correction prototype}{13}{}%
+\contentsline {subsubsection}{Physical parameters}{14}{}%
+\contentsline {subsection}{\numberline {4.2.1}Hubbard Hamiltonian setup}{14}{}%
+\contentsline {subsection}{\numberline {4.2.2}Energy shifts due to hopping coupling}{15}{}%
+\contentsline {subsection}{\numberline {4.2.3}Demonstrating the error propagation}{15}{}%
+\contentsline {chapter}{\numberline {5}Conclusions}{17}{}%
+\contentsline {section}{\numberline {5.1}Future work}{17}{}%
+\contentsline {section}{\numberline {5.2}Feasibility of the scheme}{17}{}%
+\contentsline {chapter}{Appendices}{18}{}%
+\contentsline {chapter}{\numberline {A}The Fermi-Hubbard model of interacting quantum dots}{19}{}%
+\contentsline {chapter}{\numberline {B}Implementing quantum gates on quantum dot devices}{20}{}%
+\contentsline {subsubsection}{Single Qubit Gates}{20}{}%
+\contentsline {subsubsection}{Two Qubit Operations}{20}{}%
+\contentsline {chapter}{\numberline {C}Decoherence theory}{23}{}%
+\contentsline {subsubsection}{Explanation in terms of Coherence Theory}{24}{}%
+\contentsline {chapter}{\numberline {D}Markovian analysis of repeated error correction schemes}{25}{}%
+\contentsline {subsubsection}{Modelling readout fidelities}{25}{}%
+\contentsline {subsubsection}{Error matrix and correction matrix}{25}{}%
+\contentsline {chapter}{\numberline {E}Characterising flow regimes of the three-qubit shor code}{27}{}%
+\contentsline {chapter}{\numberline {F}Change of basis to regard the codespace as one state}{29}{}%
+\contentsline {chapter}{\numberline {G}Using alternative codespaces for continuous error correction}{30}{}%
+\contentsline {chapter}{\numberline {H}Detecting errors in ancilla qubits}{32}{}%
+\contentsline {chapter}{\numberline {I}Locked states}{33}{}%
+\contentsline {subsubsection}{Bit-flip only scheme}{33}{}%
+\contentsline {subsubsection}{Locked states}{33}{}%
+\contentsline {subsubsection}{Creating the locked states}{34}{}%
+\contentsline {subsubsection}{Error detection and correction}{35}{}%
+\contentsline {chapter}{\numberline {J}Hubbard model Hamiltonian simulator}{37}{}%
+\contentsline {subsubsection}{Python extension: \texttt {FastHamiltoniser}}{37}{}%
+\contentsline {subsubsection}{Structure of extension}{37}{}%
+\contentsline {subsubsection}{Interaction picture calculation}{38}{}%
+\contentsline {subsubsection}{GPU acceleration}{38}{}%
+\contentsline {subsubsection}{Python class for Hubbard model construction: \texttt {Hamiltonian}}{38}{}%
+\contentsline {subsubsection}{Python class for time evolution of statevector: \texttt {Evolution}}{39}{}%
