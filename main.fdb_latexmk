@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1684082489 "main.bcf" "main.bbl" "main" 1684085303 0
+["biber main"] 1684085688 "main.bcf" "main.bbl" "main" 1684086387 0
   "./library.bib" 1683825426 61100 89ba93cb7551c6c2780bbb4015ab9df1 ""
-  "main.bcf" 1684085303 111511 13d75d0533f20d50ead0985f7bdeb6cd "pdflatex"
+  "main.bcf" 1684086386 111578 e507a350b148def07b17ca857daa2fac "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1684085299 "c:/Users/Stasiu Wolanski/Projects/Part3Report/main.tex" "main.pdf" "main" 1684085303 0
+["pdflatex"] 1684086381 "c:/Users/Stasiu Wolanski/Projects/Part3Report/main.tex" "main.pdf" "main" 1684086387 0
   "Figures/3qubithubbard.pdf" 1684068477 1082724 3f243bd0499893d88bed31ca84570fa7 ""
   "Figures/7q.pdf" 1683673377 10468 2cfd5df87acee8ec7c16894351504af6 ""
   "Figures/9q.pdf" 1683673816 12895 7a0ebf686fc4ae6808366eda40aafeef ""
@@ -293,12 +293,12 @@
   "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathx10.600pk" 1683280297 30920 1a4574cf90307628aa125fc8673c52bc ""
   "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/web2c/pdftex/pdflatex.fmt" 1683166962 6479798 2020db529ed54565c62373ad8421268d ""
   "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf.cnf" 1683166864 903 164c5b127cd0d6dc91abad2f62421ea2 ""
-  "c:/Users/Stasiu Wolanski/Projects/Part3Report/main.tex" 1684085293 116721 a83ed57e1e4da01d99f6291448914b0b ""
-  "main.aux" 1684085303 26619 eed8b62b46115dee8fffeba8c1866f77 "pdflatex"
-  "main.bbl" 1684082492 141896 32e3143896bb35c1851f661d0d5556d0 "biber main"
-  "main.run.xml" 1684085303 2302 428a500e86a16046e755980d0fb9dfa7 "pdflatex"
-  "main.tex" 1684085293 116721 a83ed57e1e4da01d99f6291448914b0b ""
-  "main.toc" 1684085303 4206 eaf866e1ec4581390047b388504796f6 "pdflatex"
+  "c:/Users/Stasiu Wolanski/Projects/Part3Report/main.tex" 1684086375 116672 6e4b2e751ce2d651d22d1ad10a1962ba ""
+  "main.aux" 1684086386 26681 30e8cbf1a305cf0edcce674dbd42bee6 "pdflatex"
+  "main.bbl" 1684085692 141896 32e3143896bb35c1851f661d0d5556d0 "biber main"
+  "main.run.xml" 1684086386 2302 428a500e86a16046e755980d0fb9dfa7 "pdflatex"
+  "main.tex" 1684086375 116672 6e4b2e751ce2d651d22d1ad10a1962ba ""
+  "main.toc" 1684086386 4206 d528b6f688e060149254b08a50c51a88 "pdflatex"
   "nul" 0 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "main.aux"
