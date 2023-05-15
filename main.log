@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.4)  14 MAY 2023 19:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.4)  15 MAY 2023 10:45
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1232,287 +1232,267 @@ Package biblatex Info: Reference section=0 on input line 19.
 Package biblatex Info: Reference segment=0 on input line 19.
 LaTeX Info: Command `\dddot' is already robust on input line 19.
 LaTeX Info: Command `\ddddot' is already robust on input line 19.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 22.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 20.
  (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+esvect on input line 22.
+LaTeX Font Info:    Trying to load font information for U+esvect on input line 20.
  (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
  (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
  (c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1] (./main.toc [1
-
-])
+{c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1] (./main.toc)
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
- [2]
+ [1
+
+]
 Chapter 1.
-[3
+[2
 
 ]
 Chapter 2.
-<Figures/3qubithubbard.pdf, id=35, 569.05513pt x 398.3386pt>
+<Figures/3qubithubbard.pdf, id=32, 569.05513pt x 398.3386pt>
 File: Figures/3qubithubbard.pdf Graphic file (type pdf)
 <use Figures/3qubithubbard.pdf>
-Package pdftex.def Info: Figures/3qubithubbard.pdf  used on input line 54.
+Package pdftex.def Info: Figures/3qubithubbard.pdf  used on input line 53.
 (pdftex.def)             Requested size: 398.33588pt x 278.83511pt.
-[4
+[3
 
  <./Figures/3qubithubbard.pdf>]
-Overfull \hbox (4.5778pt too wide) in paragraph at lines 61--62
+Overfull \hbox (4.5778pt too wide) in paragraph at lines 60--61
 []\OT1/cmr/m/n/10 Quantum dot pro-ces-sors are con-structed by first grow-ing a semi-con-duc-tor het-erostruc-ture to cre-ate a two-dimensional
  []
 
-[5]
-<Figures/cubediagram.pdf, id=62, 625.96065pt x 341.43306pt>
+[4]
+<Figures/cubediagram.pdf, id=58, 625.96065pt x 341.43306pt>
 File: Figures/cubediagram.pdf Graphic file (type pdf)
 <use Figures/cubediagram.pdf>
-Package pdftex.def Info: Figures/cubediagram.pdf  used on input line 96.
+Package pdftex.def Info: Figures/cubediagram.pdf  used on input line 95.
 (pdftex.def)             Requested size: 532.06905pt x 290.21945pt.
 
-Overfull \hbox (18.9516pt too wide) in paragraph at lines 96--97
+Overfull \hbox (18.9516pt too wide) in paragraph at lines 95--96
  [][] 
  []
 
-
-Overfull \hbox (16.92159pt too wide) in paragraph at lines 107--109
-\OT1/cmr/m/n/10 which can be achieved by en-cod-ing the triple qubit state here into a trio of qubits in the Hadamard ba-sis $\U/matha/m/n/10 t[] \OML/cmm/m/it/10 ; []\U/matha/m/n/10 u$\OT1/cmr/m/n/10 ,
- []
-
-[6 <./Figures/cubediagram.pdf>]
-
-LaTeX Warning: Reference `sec:CQECtheory' on page 7 undefined on input line 114.
-
-<Figures/dresseldiagram.png, id=74, 539.76656pt x 511.9125pt>
+[5 <./Figures/cubediagram.pdf>]
+<Figures/dresseldiagram.png, id=71, 539.76656pt x 511.9125pt>
 File: Figures/dresseldiagram.png Graphic file (type png)
 <use Figures/dresseldiagram.png>
-Package pdftex.def Info: Figures/dresseldiagram.png  used on input line 117.
+Package pdftex.def Info: Figures/dresseldiagram.png  used on input line 116.
 (pdftex.def)             Requested size: 161.93121pt x 153.57494pt.
-[7 <./Figures/dresseldiagram.png>]
+ [6 <./Figures/dresseldiagram.png>]
 Chapter 3.
-<Figures/Circuit/diagram.pdf, id=82, 483.69682pt x 199.1693pt>
+<Figures/Circuit/diagram.pdf, id=79, 483.69682pt x 199.1693pt>
 File: Figures/Circuit/diagram.pdf Graphic file (type pdf)
 <use Figures/Circuit/diagram.pdf>
-Package pdftex.def Info: Figures/Circuit/diagram.pdf  used on input line 138.
+Package pdftex.def Info: Figures/Circuit/diagram.pdf  used on input line 137.
 (pdftex.def)             Requested size: 435.3231pt x 179.25069pt.
-[8
+[7
 
-] [9 <./Figures/Circuit/diagram.pdf>]
-<Figures/flow/f_fixed.png, id=159, 774.64406pt x 548.0475pt>
+] [8 <./Figures/Circuit/diagram.pdf>]
+<Figures/flow/f_fixed.png, id=158, 774.64406pt x 548.0475pt>
 File: Figures/flow/f_fixed.png Graphic file (type png)
 <use Figures/flow/f_fixed.png>
-Package pdftex.def Info: Figures/flow/f_fixed.png  used on input line 194.
+Package pdftex.def Info: Figures/flow/f_fixed.png  used on input line 193.
 (pdftex.def)             Requested size: 307.8736pt x 217.81857pt.
-<Figures/flow/p_fixed.png, id=160, 730.22812pt x 544.28343pt>
+<Figures/flow/p_fixed.png, id=159, 730.22812pt x 544.28343pt>
 File: Figures/flow/p_fixed.png Graphic file (type png)
 <use Figures/flow/p_fixed.png>
-Package pdftex.def Info: Figures/flow/p_fixed.png  used on input line 201.
+Package pdftex.def Info: Figures/flow/p_fixed.png  used on input line 200.
 (pdftex.def)             Requested size: 307.8736pt x 229.47781pt.
- [10 <./Figures/flow/f_fixed.png>] [11{c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./Figures/flow/p_fixed.png>]
+ [9 <./Figures/flow/f_fixed.png>] [10{c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./Figures/flow/p_fixed.png>]
 Chapter 4.
-<Figures/7q.pdf, id=173, 597.50786pt x 170.71654pt>
+<Figures/7q.pdf, id=171, 597.50786pt x 170.71654pt>
 File: Figures/7q.pdf Graphic file (type pdf)
 <use Figures/7q.pdf>
-Package pdftex.def Info: Figures/7q.pdf  used on input line 218.
+Package pdftex.def Info: Figures/7q.pdf  used on input line 217.
 (pdftex.def)             Requested size: 537.7521pt x 153.64345pt.
 
-Overfull \hbox (24.63466pt too wide) in paragraph at lines 218--219
+Overfull \hbox (24.63466pt too wide) in paragraph at lines 217--218
  [][] 
  []
 
-[12
+[11
 
  <./Figures/7q.pdf>]
-<Figures/benchmark/benchmarks.pdf, id=185, 597.50786pt x 184.94292pt>
+<Figures/benchmark/benchmarks.pdf, id=184, 597.50786pt x 184.94292pt>
 File: Figures/benchmark/benchmarks.pdf Graphic file (type pdf)
 <use Figures/benchmark/benchmarks.pdf>
-Package pdftex.def Info: Figures/benchmark/benchmarks.pdf  used on input line 242.
+Package pdftex.def Info: Figures/benchmark/benchmarks.pdf  used on input line 241.
 (pdftex.def)             Requested size: 507.88408pt x 157.2022pt.
-<Figures/shifts.pdf, id=186, 794.97pt x 346.89601pt>
+<Figures/shifts.pdf, id=185, 794.97pt x 346.89601pt>
 File: Figures/shifts.pdf Graphic file (type pdf)
 <use Figures/shifts.pdf>
-Package pdftex.def Info: Figures/shifts.pdf  used on input line 252.
+Package pdftex.def Info: Figures/shifts.pdf  used on input line 251.
 (pdftex.def)             Requested size: 317.98236pt x 138.75594pt.
- [13]
-<Figures/singlettriplet.pdf, id=192, 512.1496pt x 284.52756pt>
+ [12]
+<Figures/singlettriplet.pdf, id=189, 512.1496pt x 284.52756pt>
 File: Figures/singlettriplet.pdf Graphic file (type pdf)
 <use Figures/singlettriplet.pdf>
-Package pdftex.def Info: Figures/singlettriplet.pdf  used on input line 268.
+Package pdftex.def Info: Figures/singlettriplet.pdf  used on input line 267.
 (pdftex.def)             Requested size: 512.14835pt x 284.52686pt.
-<Figures/flips.pdf, id=193, 597.50786pt x 199.1693pt>
+<Figures/flips.pdf, id=190, 597.50786pt x 199.1693pt>
 File: Figures/flips.pdf Graphic file (type pdf)
 <use Figures/flips.pdf>
-Package pdftex.def Info: Figures/flips.pdf  used on input line 275.
+Package pdftex.def Info: Figures/flips.pdf  used on input line 274.
 (pdftex.def)             Requested size: 519.82764pt x 173.27586pt.
 
-Overfull \hbox (6.71019pt too wide) in paragraph at lines 275--277
+Overfull \hbox (6.71019pt too wide) in paragraph at lines 274--276
  [][] 
  []
 
-[14 <./Figures/benchmark/benchmarks.pdf> <./Figures/shifts.pdf
+[13 <./Figures/benchmark/benchmarks.pdf> <./Figures/shifts.pdf
 
 pdfTeX warning: pdflatex.exe (file ./Figures/shifts.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [15 <./Figures/singlettriplet.pdf>] [16 <./Figures/flips.pdf>]
+>] [14 <./Figures/singlettriplet.pdf>] [15 <./Figures/flips.pdf>]
 Chapter 5.
-[17
+[16
 
-] [18
+] [17
 
 
 ]
 Appendix A.
-[19
+[18
 
 ]
 Appendix B.
-
-LaTeX Warning: Reference `appendix:code' on page 20 undefined on input line 346.
-
-[20
+[19
 
 ]
 Appendix C.
-
-LaTeX Warning: Reference `appendix:code' on page 21 undefined on input line 356.
-
-<Figures/Energy_levels/elevels1.png, id=1022, 699.36281pt x 517.935pt>
+<Figures/Energy_levels/elevels1.png, id=1019, 699.36281pt x 517.935pt>
 File: Figures/Energy_levels/elevels1.png Graphic file (type png)
 <use Figures/Energy_levels/elevels1.png>
-Package pdftex.def Info: Figures/Energy_levels/elevels1.png  used on input line 370.
+Package pdftex.def Info: Figures/Energy_levels/elevels1.png  used on input line 368.
 (pdftex.def)             Requested size: 489.55063pt x 362.55202pt.
-<Figures/Energy_levels/elevels2.png, id=1023, 685.8122pt x 454.69875pt>
+<Figures/Energy_levels/elevels2.png, id=1020, 685.8122pt x 454.69875pt>
 File: Figures/Energy_levels/elevels2.png Graphic file (type png)
 <use Figures/Energy_levels/elevels2.png>
-Package pdftex.def Info: Figures/Energy_levels/elevels2.png  used on input line 376.
+Package pdftex.def Info: Figures/Energy_levels/elevels2.png  used on input line 374.
 (pdftex.def)             Requested size: 480.06528pt x 318.28694pt.
-[21
+[20
 
-] [22 <./Figures/Energy_levels/elevels1.png>] [23 <./Figures/Energy_levels/elevels2.png>]
+] [21 <./Figures/Energy_levels/elevels1.png>] [22 <./Figures/Energy_levels/elevels2.png>]
 Appendix D.
-[24
+[23
 
-] [25]
+] [24]
 Appendix E.
-[26
+[25
 
 ]
 Appendix F.
-[27
+[26
 
-] [28]
+] [27]
 Appendix G.
 
-LaTeX Warning: Reference `appendix:code' on page 29 undefined on input line 655.
-
-
-Overfull \hbox (29.69002pt too wide) detected at line 669
+Overfull \hbox (29.69002pt too wide) detected at line 664
 []
  []
 
-[29
+[28
 
-] [30] [31]
+] [29] [30]
 Appendix H.
-<Figures/different_codespaces.pdf, id=1063, 597.50786pt x 512.1496pt>
+<Figures/different_codespaces.pdf, id=1060, 597.50786pt x 512.1496pt>
 File: Figures/different_codespaces.pdf Graphic file (type pdf)
 <use Figures/different_codespaces.pdf>
-Package pdftex.def Info: Figures/different_codespaces.pdf  used on input line 747.
+Package pdftex.def Info: Figures/different_codespaces.pdf  used on input line 742.
 (pdftex.def)             Requested size: 537.7521pt x 460.93037pt.
 
-Overfull \hbox (24.63466pt too wide) in paragraph at lines 747--748
+Overfull \hbox (24.63466pt too wide) in paragraph at lines 742--743
  [][] 
  []
 
-[32
+[31
 
-] [33 <./Figures/different_codespaces.pdf>]
+] [32 <./Figures/different_codespaces.pdf>]
 Appendix I.
-<Figures/9q.pdf, id=1078, 597.50786pt x 284.52756pt>
+<Figures/9q.pdf, id=1075, 597.50786pt x 284.52756pt>
 File: Figures/9q.pdf Graphic file (type pdf)
 <use Figures/9q.pdf>
-Package pdftex.def Info: Figures/9q.pdf  used on input line 784.
+Package pdftex.def Info: Figures/9q.pdf  used on input line 779.
 (pdftex.def)             Requested size: 537.7521pt x 256.07242pt.
 
-Overfull \hbox (24.63466pt too wide) in paragraph at lines 784--785
+Overfull \hbox (24.63466pt too wide) in paragraph at lines 779--780
  [][] 
  []
 
-[34
+[33
 
  <./Figures/9q.pdf>]
 Appendix J.
-<Figures/group/group.pdf, id=1090, 540.60239pt x 483.69685pt>
+<Figures/group/group.pdf, id=1087, 540.60239pt x 483.69685pt>
 File: Figures/group/group.pdf Graphic file (type pdf)
 <use Figures/group/group.pdf>
-Package pdftex.def Info: Figures/group/group.pdf  used on input line 816.
+Package pdftex.def Info: Figures/group/group.pdf  used on input line 811.
 (pdftex.def)             Requested size: 324.36392pt x 290.22034pt.
-[35
+[34
 
 ]
-<Figures/locked_states.pdf, id=1095, 597.50786pt x 241.84843pt>
+<Figures/locked_states.pdf, id=1091, 597.50786pt x 241.84843pt>
 File: Figures/locked_states.pdf Graphic file (type pdf)
 <use Figures/locked_states.pdf>
-Package pdftex.def Info: Figures/locked_states.pdf  used on input line 828.
+Package pdftex.def Info: Figures/locked_states.pdf  used on input line 823.
 (pdftex.def)             Requested size: 478.00693pt x 193.479pt.
- [36 <./Figures/group/group.pdf>] [37 <./Figures/locked_states.pdf>] [38]
+ [35 <./Figures/group/group.pdf>] [36 <./Figures/locked_states.pdf>] [37]
 Appendix K.
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 883.
-<Figures/fasthamiltoniser/diagram.pdf, id=1120, 597.50786pt x 270.3012pt>
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 878.
+<Figures/fasthamiltoniser/diagram.pdf, id=1117, 597.50786pt x 270.3012pt>
 File: Figures/fasthamiltoniser/diagram.pdf Graphic file (type pdf)
 <use Figures/fasthamiltoniser/diagram.pdf>
-Package pdftex.def Info: Figures/fasthamiltoniser/diagram.pdf  used on input line 897.
+Package pdftex.def Info: Figures/fasthamiltoniser/diagram.pdf  used on input line 892.
 (pdftex.def)             Requested size: 478.00693pt x 216.24124pt.
-[39
+[38
 
 ]
-Underfull \hbox (badness 1005) in paragraph at lines 921--921
+Underfull \hbox (badness 1005) in paragraph at lines 916--916
 [][]\OT1/cmr/m/n/8 This pre-sented a lot of tech-ni-cal chal-lenges as the pro-cess for in-cor-po-rat-ing CUDA C++ into python C ex-ten-sions and
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 921--921
+Underfull \hbox (badness 1442) in paragraph at lines 916--916
 \OT1/cmr/m/n/8 com-pil-ing them is not doc-u-mented and very tech-ni-cal. I made a tem-plate project with the setup to use in the fu-ture:
  []
 
-[40 <./Figures/fasthamiltoniser/diagram.pdf>] [41] [42] [43
+[39 <./Figures/fasthamiltoniser/diagram.pdf>] [40] [41] [42
 
 ]
 
 Package biblatex Warning: No driver for 'generic'.
-(biblatex)                Using fallback driver on input line 954.
+(biblatex)                Using fallback driver on input line 949.
 
-[44] [45] (./main.aux)
-
-LaTeX Warning: There were undefined references.
-
+[43] [44] (./main.aux)
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33049 strings out of 477961
- 729025 string characters out of 5836431
+ 33046 strings out of 477961
+ 728975 string characters out of 5836431
  1885068 words of memory out of 5000000
- 52671 multiletter control sequences out of 15000+600000
- 532544 words of font info for 109 fonts, out of 8000000 for 9000
+ 52668 multiletter control sequences out of 15000+600000
+ 532237 words of font info for 108 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  116i,16n,118p,5627b,1361s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathx10.420pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha5.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha8.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha6.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathb10.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha7.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathx10.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha10.600pk><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (47 pages, 2933236 bytes).
+ <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathx10.420pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha5.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha6.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathb10.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha8.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha7.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathx10.600pk> <c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha10.600pk><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on main.pdf (46 pages, 2933056 bytes).
 PDF statistics:
- 1354 PDF objects out of 1440 (max. 8388607)
- 842 compressed objects within 9 object streams
+ 1352 PDF objects out of 1440 (max. 8388607)
+ 840 compressed objects within 9 object streams
  0 named destinations out of 1000 (max. 500000)
  103 words of extra memory for PDF output out of 10000 (max. 10000000)
 

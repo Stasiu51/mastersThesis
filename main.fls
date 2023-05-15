@@ -1251,6 +1251,8 @@ INPUT ./Figures/Circuit/diagram.pdf
 INPUT ./Figures/Circuit/diagram.pdf
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT ./Figures/flow/f_fixed.png
 INPUT ./Figures/flow/f_fixed.png
 INPUT Figures/flow/f_fixed.png
@@ -1270,8 +1272,6 @@ INPUT ./Figures/7q.pdf
 INPUT Figures/7q.pdf
 INPUT ./Figures/7q.pdf
 INPUT ./Figures/7q.pdf
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT ./Figures/benchmark/benchmarks.pdf
 INPUT ./Figures/benchmark/benchmarks.pdf
 INPUT Figures/benchmark/benchmarks.pdf
@@ -1302,7 +1302,6 @@ INPUT ./Figures/Energy_levels/elevels2.png
 INPUT Figures/Energy_levels/elevels2.png
 INPUT ./Figures/Energy_levels/elevels2.png
 INPUT ./Figures/Energy_levels/elevels2.png
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT ./Figures/different_codespaces.pdf
 INPUT ./Figures/different_codespaces.pdf
 INPUT Figures/different_codespaces.pdf
@@ -1334,9 +1333,9 @@ INPUT main.run.xml
 OUTPUT main.run.xml
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathx10.420pk
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha5.600pk
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha8.600pk
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha6.600pk
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathb10.600pk
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha8.600pk
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha7.600pk
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathx10.600pk
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/matha10.600pk
