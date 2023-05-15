@@ -1,0 +1,45 @@
+\documentclass{article}
+\begin{document}
+
+
+
+\begin{table}
+\centering
+\begin{tabular}{|p{2cm}|p{10cm}|}
+    \hline
+    Approx date & Activity and Notes \\
+    \hline\hline  13/10/2022 & Accepted onto project by David\\
+    \hline 17/10/2022 - 7/11/2022 & Given reading list by David, and read over this period. Initally focused on understanding the principles of QEC and CQEC. Difficult as required some understanding of both device physics and QC theory to understand lots of the papers. \\
+    \hline 7/11/2022 & Gave initial presentation on CQEC principles. Focused on introducing Krauss operators, Lindblad eqn etc to introduce continuous quantum feedback as a error control mechanism. In the end the CQEC was implemented as by Dressel et al. did using continuous measurment and discrete correction flips. Another initial focus was `weak measurement'. This was a red herring, as after my understanding of the theory developed, I realised that there is no inherent benefit to weak measurement, but rather it may be a price worth paying for very rapid imperfect measurements that nonetheless are effective at error tracking, as in Dressel's paper.\\
+    \hline 7/11/2022 - 25/11/2022 & Started looking at quantum dot device physics, particularly by reading review sent to me by Giovanni, but also other bits and bobs, e.g. Elzerman readout. Started to use DotHamiltoniser package written by David and colleagues to get my head around how gates are applied in QD systems. This is where I produced some of the plots in the `implementing gates...' appendix of my report.\\
+    
+    \hline 25/11/2022& Developed script for time evolution using DotHamiltoniser with scipy, at the suggestion of David and Normann. Was able to demonstrate an X gate working.\\
+    \hline 25/11/2022 - 01/12/2022 & Attempted to set up simulation for 3 qubits to implement CPHASE, which I knew would be a part of a continuous scheme, using my scipy script. It was far too slow to be practical, as the software was not optimised for high dimensional systems, and regenerated the hamiltonian matrices at each iteration.\\
+    \hline 01/12/2022 & Project proposal and risk assessment submitted. At this point, I knew either developing or finding a more effective simulator would be an important bottleneck in writing a proof-of-concept simulation for CQEC.\\
+    \hline 01/12/2022 - 20/01/2023& \textit{Major Topic revision + exams}. Continued to ponder simulation methods but without substantial time devoted to the project. Could not find a software package that performs this particular niche.\\
+    \hline 20/01/2023 - 23/01/2023& Taught myself about C python extensions and about CUDA, and set myself the task of creating a basic template python extension that could perform CPU and GPU vector addition. Completed within 3 days: TemplateCudaEx on GitHub.\\
+    \hline 23/01/2023 - 26/01/2023& Developed first version of FastHamiltoniser, which applied the tech I learned how to use in the previous three days to a package for hubbard-friendly sparse matrix operations.\\
+    \hline 26/01/2023 - 13/02/2023& Building Hamiltoniser and TimeEvolution. These are quite complex pieces of software and so effort has to go into thinking about how to structure the software. Then started trying to implement logic gates on the simulation. Managed to create demo of 7 X gates applied to a 7 qubit system which I presented to the group... \\
+    \hline
+\end{tabular}
+\end{table}
+\begin{table}
+\centering
+\begin{tabular}{|p{2cm}|p{10cm}|}
+    \hline 6/02/2023&...on this date. Whilst I was making progress on the gate implementations, I realised I was still unsure exactly how we could implement a continuous error correction scheme in silicon, as analagous to Dressel's paper, as there was no obvious way of performing a measurement on a qubit which was non-demolition and continuous. Instead at this meeting I proposed attempting to optimise repeated error correction schemes. My initial suggestion was to apply an information-theoretic approach: that you could maximise the effectiveness of an error correction scheme by maximising the expected information per parity measurement. Also at this meeting, Chris has the idea of placing qubits in potentials that were unstable to bitflip errors, so you could see tunelling if such an error ocurred. It was pointed out this could not help with phase flip errors.\\
+    \hline 6/02/2023 - 8/02/2023& Tried to solve the problem of Chris' scheme by applying it to both phase and bit errors. Came up with locked states idea, spent some time figuring out properties, e.g. how to construct them (group structure only figured out during writeup) Pleased with the concept from a mathematical neatness point of view but don't think its very practical. \\
+    \hline 8/02/2023 - 13/02/2023 & Continued to work on simuation side whilst still unsure about how CQEC will eventually be implemented. At this point David and I think the simulator might just be used to demonstrate DQEC as a demonstration of the software. \\
+    \hline 13/02/2023 - 21/02/2023& Tried to implement CPHASE on my simulator. Became apparent that step size required for accurate simulation was too small due to fast rotating terms in Hamiltonian due to U splitting. Realised I needed to implement interaction picture simulation - this required additions to both the C extension and the python classes to support. Also needed a more convenient way of instructing the simulator to do things (e.g. schdule different drives, couplings...); came up with recursive time steps feature. By the end of this period I had produced working demonstrations of CPHASE gates, as well as Hadamard Gates.\\
+    \hline 21/02/2023 - 25/02/2023&Now seemed that simulator had sufficient capability, but still wanted to develop some theory for the simulator to test! Still unsure about how to do CQEC, did a series of derivations around DQEC. First looked to shore up my understanding of decoherence by deriving the evolution of density matrices under various processes `channels', and how they related to the Krauss operators. Derived the result (standard in textbooks, it turns out) about the equivalence of phase (bit) wander and phase (bit) flips and the implications for evolution of DMs under these processes.\\
+    \hline 25/02/2023 - 28/02/2023&
+    The next step seemed to me to approach the problem of a single measurement and correction flip of a single qubit (not a triple) as I wrongly thought this analysis could be somehow generalised to parity measurements on 3 qubits for the Shor code. Derived full density matrix evolution for this system and calculated the steady state behaviour as a function of readout times, tunelling rates etc. \\
+    \hline 28/02/2023 - 5/03/2023& Tried to generalise my analysis to 3 qubits and parity measurements using various intuitive possible mappings. Realised the two systems were fundamentally different, in that parity measurements are inherently symmetric: an error correction code will always treat 000 and 111 the same, so the system will eventually equilibrate. However, this gave me the idea of the Markovian analysis I present in the report. \\
+    \hline 5/03/2022&I presented this analysis to my supervisors. We now agreed that it worked as a standalone thoeretical result and that we should finally try and crack how to do CQEC in silicon. Giovanni and Normann had been discussing and thought it might be possible to use a double quantum dot ancilla continuously weakly coupled to the pairs of qubits between which a parity measurement was to be performed. \\
+
+
+
+    
+% \end{longtable}
+\end{tabular}
+\end{table}
+\end{document}
