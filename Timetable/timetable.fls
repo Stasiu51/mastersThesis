@@ -34,9 +34,11 @@ INPUT ./timetable.aux
 INPUT timetable.aux
 INPUT timetable.aux
 OUTPUT timetable.aux
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 OUTPUT timetable.pdf
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT timetable.aux
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb

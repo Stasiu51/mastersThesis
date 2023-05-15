@@ -1,8 +1,8 @@
 \documentclass{article}
 \begin{document}
+\textbf{Project Timetable}
 
-
-
+I kept records in a variety of forms throughout the project. I have compiled the essential information from these into this document, which gives an overview of how the time was spent during the project. Ultimately the original project goal of proposing a scheme for continuous error correction in silicon systems was achieved, but it was unclear to me and my supervisors whether this was possible at all for a large portion of the time (until mid march), so in the meantime some additional and alternative project goals were pursued. The main result of these additional explorations was the Markovian analysis presented in the report.
 \begin{table}
 \centering
 \begin{tabular}{|p{2cm}|p{10cm}|}
@@ -32,14 +32,31 @@
     \hline 13/02/2023 - 21/02/2023& Tried to implement CPHASE on my simulator. Became apparent that step size required for accurate simulation was too small due to fast rotating terms in Hamiltonian due to U splitting. Realised I needed to implement interaction picture simulation - this required additions to both the C extension and the python classes to support. Also needed a more convenient way of instructing the simulator to do things (e.g. schdule different drives, couplings...); came up with recursive time steps feature. By the end of this period I had produced working demonstrations of CPHASE gates, as well as Hadamard Gates.\\
     \hline 21/02/2023 - 25/02/2023&Now seemed that simulator had sufficient capability, but still wanted to develop some theory for the simulator to test! Still unsure about how to do CQEC, did a series of derivations around DQEC. First looked to shore up my understanding of decoherence by deriving the evolution of density matrices under various processes `channels', and how they related to the Krauss operators. Derived the result (standard in textbooks, it turns out) about the equivalence of phase (bit) wander and phase (bit) flips and the implications for evolution of DMs under these processes.\\
     \hline 25/02/2023 - 28/02/2023&
-    The next step seemed to me to approach the problem of a single measurement and correction flip of a single qubit (not a triple) as I wrongly thought this analysis could be somehow generalised to parity measurements on 3 qubits for the Shor code. Derived full density matrix evolution for this system and calculated the steady state behaviour as a function of readout times, tunelling rates etc. \\
+    The next step seemed to me to approach the problem of a single measurement and correction flip of a single qubit (not a triple) as I wrongly thought this analysis could be somehow generalised to parity measurements on 3 qubits for the Shor code. Derived full density matrix evolution for this system and calculated the steady state behaviour as a function of readout times, tunelling rates etc. \\ \hline
+
+\end{tabular}
+\end{table}
+\begin{table}
+\centering
+\begin{tabular}{|p{2cm}|p{10cm}|}
     \hline 28/02/2023 - 5/03/2023& Tried to generalise my analysis to 3 qubits and parity measurements using various intuitive possible mappings. Realised the two systems were fundamentally different, in that parity measurements are inherently symmetric: an error correction code will always treat 000 and 111 the same, so the system will eventually equilibrate. However, this gave me the idea of the Markovian analysis I present in the report. \\
-    \hline 5/03/2022&I presented this analysis to my supervisors. We now agreed that it worked as a standalone thoeretical result and that we should finally try and crack how to do CQEC in silicon. Giovanni and Normann had been discussing and thought it might be possible to use a double quantum dot ancilla continuously weakly coupled to the pairs of qubits between which a parity measurement was to be performed. \\
+    \hline 5/03/2023&I presented this analysis to my supervisors. We now agreed that it worked as a standalone thoeretical result and that we should finally try and crack how to do CQEC in silicon. Giovanni and Normann had been discussing and thought it might be possible to use a double quantum dot ancilla continuously weakly coupled to the pairs of qubits between which a parity measurement was to be performed. There were various problems to be resolved, like how to ensure the ancillas rotated in either the 01 or 10 case but in neither the 11 or 00 case, and whether the timescales are feasible.\\
+    \hline 5/03/2023 - 10/03/2023&
+    Conducting theoretical analysis of scheme eventual version is presented in report. Was not initially clear whether the scheme was even theoretically possible. Spend some time looking into SW transformation to make the coupling analysis more tractable. Turns out not to work very well in the case of multiple couplings. Landed on just using straightforward 2OPT. Also realised that the scheme could be made to behave correctly as Giovanni and Normann had suggested if the odd-odd parity subspace was used as the codespace, or alternatively the code qubits are respectively attached to different qubits in the ancilla pairs.\\
+    \hline 10/03/2023 - 27/04/2023& \textit{Minor topic revision + exams}. I worked variously on improving the theoretical development of the scheme, and working out the required homogeneity of the qubits to avoid ancilla tunelling in the codespace. I became concerned that I didn't understand how to model the RF reflectometry process, as I needed to know how it would behave when in a superposition state and under continuous observation, which is not the standard use case for it. I had multiple meetings with my supervisors to discuss this and other issues. We decided that in the limited time left until submission, the analysis would necessarily be quite simplistic and suggested I assume the electrons simply tunnels when the singlet component reaches an arbitrary threshold. We also decided it would be good to use the simulator to demonstrate the process ocurring, even if there was not enough time to develop an in-depth dynamical model.\\
+    \hline
 
+\end{tabular}
+\end{table}
+\begin{table}
+\centering
+\begin{tabular}{|p{2cm}|p{10cm}|}
 
+\hline 27/04/2023- 3/05/2023 & Developed simulation of error propagation from code qubits to ancillas. Realised the full 7 - qubit simulation was quite slow, developed 5 -qubit approximation as described in project. Then produced the expected behaviour. Started to build the framework for a more advanced simulation: using a custom fixed-timestep RK4 simulation rather than the scipy one, and having a much broader definition of an intruction that could perform measurments and branching logic on the basis of these. However, it was clear that I would not finish this work in time for submission. I would like to finish it after the project hand-in. \\
 
-    
-% \end{longtable}
+\hline 3/05/2023- 14/05/2023 & Writing up. Decided on restructuring with Normann on 12/05/2022 in order to highlight key results. \\
+\hline
+
 \end{tabular}
 \end{table}
 \end{document}

@@ -1,0 +1,41 @@
+\newcommand\PlaceText[3]{%
+\begin{tikzpicture}[remember picture,overlay]
+\node[outer sep=0pt,inner sep=0pt,anchor=south west] 
+  at ([xshift=#1,yshift=-#2]current page.north west) {#3};
+\end{tikzpicture}%
+}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{2.5cm}
+           
+        \Huge
+        \textbf{Discrete and Continuous Quantum\\ Error Correction in Silicon}
+
+           
+        \vspace{2.7cm}
+
+           
+        \vspace{0.8cm}
+           
+        \includegraphics[width=0.25\textwidth]{TitlePage/cambridge_logo.png}
+        
+        \vspace{0.3cm}
+        \Large
+        \textbf{Stanislaw Wolanski}\\
+        \vspace{0.3cm}
+        
+        Department of Physics\\
+        \vspace{0.3cm}
+        University of Cambridge\\
+        \vspace{3cm}
+        This dissertation is submitted for the degree of\\
+        \vspace{0.3cm}
+        \textit{Master of Science}\\
+        \vfill
+        \PlaceText{21mm}{260mm}{Jesus College}
+        \PlaceText{174mm}{260mm}{May 2023}
+        
+           
+    \end{center}
+\end{titlepage}

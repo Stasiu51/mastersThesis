@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.4)  15 MAY 2023 12:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.4)  15 MAY 2023 12:59
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -71,27 +71,59 @@ Underfull \hbox (badness 3098) in paragraph at lines 31--31
  []
 
 
-Overfull \hbox (20.43306pt too wide) in paragraph at lines 28--44
+Overfull \hbox (20.43306pt too wide) in paragraph at lines 28--38
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 209.19995pt on input line 44.
+LaTeX Warning: Float too large for page by 40.79996pt on input line 38.
 
-[1{c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./timetable.aux) ) 
+
+Underfull \hbox (badness 3098) in paragraph at lines 44--44
+[]\OT1/cmr/m/n/10 5/03/2023 -
+ []
+
+
+Overfull \hbox (20.43306pt too wide) in paragraph at lines 41--50
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
+[]\OT1/cmr/m/n/10 27/04/2023-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+[]\OT1/cmr/m/n/10 3/05/2023-
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 57--58
+[]\OT1/cmr/m/n/10 Writing up. De-cided on re-struc-tur-ing with Nor-mann on
+ []
+
+
+Overfull \hbox (20.43306pt too wide) in paragraph at lines 53--61
+ [][] 
+ []
+
+[1
+
+{c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] (./timetable.aux) ) 
 Here is how much of TeX's memory you used:
- 428 strings out of 477961
- 8608 string characters out of 5836431
- 1872068 words of memory out of 5000000
- 20731 multiletter control sequences out of 15000+600000
- 512633 words of font info for 33 fonts, out of 8000000 for 9000
+ 430 strings out of 477961
+ 8629 string characters out of 5836431
+ 1877068 words of memory out of 5000000
+ 20732 multiletter control sequences out of 15000+600000
+ 512941 words of font info for 34 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,10n,38p,966b,262s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on timetable.pdf (2 pages, 45015 bytes).
+ 34i,11n,38p,1042b,266s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on timetable.pdf (5 pages, 61126 bytes).
 PDF statistics:
- 21 PDF objects out of 1000 (max. 8388607)
- 12 compressed objects within 1 object stream
+ 35 PDF objects out of 1000 (max. 8388607)
+ 21 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

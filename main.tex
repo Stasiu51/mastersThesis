@@ -7,7 +7,7 @@
 \usepackage[toc,page]{appendix}
 \usepackage{siunitx}
 \usepackage{quantikz}
-\usepackage{mathrsfs,mismath,amsfonts,amssymb,amsmath,mathabx, braket,diagbox,hhline,mathtools}
+\usepackage{mathrsfs,mismath,amsfonts,amssymb,amsmath,mathabx, braket,diagbox,hhline,mathtools,tikz}
 \usepackage{graphicx}
 \usepackage{epstopdf}
 
@@ -17,12 +17,13 @@
 \date{Submitted May 2023}
 
 \begin{document}
-\maketitle
 
+\input{TitlePage/TitlePage.tex}
+\newgeometry{left=5cm,right = 5cm,bottom=0.1cm}
 \begin{abstract}
     Quantum error correction is essential if fault-tolerant quantum computing is to be realised. Silicon quantum dot qubit devices are a promising candidate for qubits due to their long coherence times, and for their potential scalability. In this project, I analyse the current state of error correction in silicon quantum devices looking at both Elzerman readout and newer RF reflectometry techniques. I develop a Markovian model of the three-bit Shor code, and use it to show that for both technologies, readout fidelity is the limiting factor that must be improved to improve qubit lifetimes. In addition, I propose a novel model of continuous error correction in silicon. A theoretical treatment of this model is given, and a numerical simulation package for the Hubbard Hamiltonian is developed and used to verify the predictions of the model. Some more speculative proposals are given in the appendices.
 \end{abstract}
-
+\restoregeometry
 \tableofcontents
 
 \chapter{Introduction}
@@ -92,7 +93,7 @@ we see that the state of the system has moved into one of three error-spaces: $\
 \subsubsection{How the scheme fails}
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale = 0.85]{Figures/cubediagram.pdf}
+    \includegraphics[scale = 0.875]{Figures/cubediagram.pdf}
     \caption{In this figure, the possible states of an error-prone system that starts in the $\ket{000}$ state are represented on the vertices of a cube. Note that the ideal action of the correction flips is to push the system towards either the $\ket{000}$ or $\ket{111}$ states, indicated by the black arrowheads on some edges. \textbf{a.} shows the ideal case of successful error correction. A single error occurs on the second qubit, and a correct pair of parity measurements identifies the error syndrome and applies an $X_2$ correction flip. \textbf{b.} shows how the scheme fails if two errors (or more) occur in the interval between correction iterations: a correctly performed set of parity measurements will result in a correction flip that pushes the qubits further away from the codespace. \textbf{c.} shows how the scheme fails if one error occurs, and the subsequent parity measurements give the wrong result, so an erroneous correction flip (here $X_1$) is applied. On the next round, if no errors occur and the next set of parity measurements is performed correctly, the correction flip will push the state into the $\ket{111}$ error space.}
     \label{fig:cubediagram}
 \end{figure}

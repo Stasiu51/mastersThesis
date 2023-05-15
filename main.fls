@@ -1068,6 +1068,7 @@ INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tool
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/hhline.sty
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/hhline.sty
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mathtools/mathtools.sty
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf.sty
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf.sty
@@ -1141,73 +1142,51 @@ INPUT main.bbl
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/color.sty
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/jknapltx/ursfs.fd
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/jknapltx/ursfs.fd
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/jknapltx/ursfs.fd
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/jknapltx/ursfs.fd
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/esvect/uesvect.fd
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/esvect/uesvect.fd
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/esvect/uesvect.fd
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/esvect/uesvect.fd
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/esvect/vect10.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/esvect/vect8.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/esvect/vect6.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/mathabx/matha12.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/mathabx/matha8.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/mathabx/matha6.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/mathabx/mathb12.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/mathabx/mathb8.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/mathabx/mathb6.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/mathabx/mathx10.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/mathabx/mathx10.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/mathabx/mathx10.tfm
-OUTPUT main.pdf
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT ./TitlePage/TitlePage.tex
+INPUT TitlePage/TitlePage.tex
+INPUT ./TitlePage/TitlePage.tex
+INPUT TitlePage/TitlePage.tex
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT ./TitlePage/cambridge_logo.png
+INPUT ./TitlePage/cambridge_logo.png
+INPUT TitlePage/cambridge_logo.png
+INPUT ./TitlePage/cambridge_logo.png
+OUTPUT main.pdf
+INPUT ./TitlePage/cambridge_logo.png
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT ./main.toc
 INPUT main.toc
 INPUT main.toc
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/jknapltx/ursfs.fd
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/jknapltx/ursfs.fd
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/jknapltx/ursfs.fd
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/jknapltx/ursfs.fd
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/esvect/uesvect.fd
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/esvect/uesvect.fd
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/esvect/uesvect.fd
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/esvect/uesvect.fd
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/esvect/vect10.tfm
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/esvect/vect7.tfm
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/esvect/vect5.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
@@ -1224,8 +1203,6 @@ OUTPUT main.toc
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT ./Figures/3qubithubbard.pdf
 INPUT ./Figures/3qubithubbard.pdf
 INPUT Figures/3qubithubbard.pdf
@@ -1239,6 +1216,28 @@ INPUT ./Figures/cubediagram.pdf
 INPUT Figures/cubediagram.pdf
 INPUT ./Figures/cubediagram.pdf
 INPUT ./Figures/cubediagram.pdf
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/esvect/vect8.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/esvect/vect6.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/mathabx/matha8.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/mathabx/matha6.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/mathabx/mathb8.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/mathabx/mathb6.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/mathabx/mathx10.tfm
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/mathabx/mathx10.tfm
 INPUT ./Figures/dresseldiagram.png
 INPUT ./Figures/dresseldiagram.png
 INPUT Figures/dresseldiagram.png
@@ -1349,13 +1348,13 @@ INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/pu
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
-INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb
 INPUT c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
