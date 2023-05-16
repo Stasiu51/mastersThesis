@@ -93,7 +93,7 @@ we see that the state of the system has moved into one of three error-spaces: $\
 \subsubsection{How the scheme fails}
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale = 0.875]{Figures/cubediagram.pdf}
+    \includegraphics[width = \textwidth]{Figures/cubediagram.pdf}
     \caption{In this figure, the possible states of an error-prone system that starts in the $\ket{000}$ state are represented on the vertices of a cube. Note that the ideal action of the correction flips is to push the system towards either the $\ket{000}$ or $\ket{111}$ states, indicated by the black arrowheads on some edges. \textbf{a.} shows the ideal case of successful error correction. A single error occurs on the second qubit, and a correct pair of parity measurements identifies the error syndrome and applies an $X_2$ correction flip. \textbf{b.} shows how the scheme fails if two errors (or more) occur in the interval between correction iterations: a correctly performed set of parity measurements will result in a correction flip that pushes the qubits further away from the codespace. \textbf{c.} shows how the scheme fails if one error occurs, and the subsequent parity measurements give the wrong result, so an erroneous correction flip (here $X_1$) is applied. On the next round, if no errors occur and the next set of parity measurements is performed correctly, the correction flip will push the state into the $\ket{111}$ error space.}
     \label{fig:cubediagram}
 \end{figure}

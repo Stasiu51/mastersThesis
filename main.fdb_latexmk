@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1684166161 -1
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1684235873 -1
   "./library.bib" 1684087068 64810 2073a72d948b47ce14791b552ea539e0 ""
-  "main.bcf" 1684166160 111578 e507a350b148def07b17ca857daa2fac "pdflatex"
+  "main.bcf" 1684235872 111578 e507a350b148def07b17ca857daa2fac "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1684166157 "c:/Users/Stasiu Wolanski/Projects/Part3Report/main.tex" "main.pdf" "main" 1684166161 0
+["pdflatex"] 1684235869 "c:/Users/Stasiu Wolanski/Projects/Part3Report/main.tex" "main.pdf" "main" 1684235873 0
   "Figures/3qubithubbard.pdf" 1684068477 1082724 3f243bd0499893d88bed31ca84570fa7 ""
   "Figures/7q.pdf" 1683673377 10468 2cfd5df87acee8ec7c16894351504af6 ""
   "Figures/9q.pdf" 1683673816 12895 7a0ebf686fc4ae6808366eda40aafeef ""
@@ -14,7 +14,7 @@
   "Figures/Energy_levels/elevels1.png" 1683728714 135647 96233ba602e047541db86debc383a0b3 ""
   "Figures/Energy_levels/elevels2.png" 1683728716 54760 42ee591f952d6808afc29b34420aaf71 ""
   "Figures/benchmark/benchmarks.pdf" 1683562251 105162 609a26bb5053b7fd9d820ebf5a1b279c ""
-  "Figures/cubediagram.pdf" 1684166153 50945 c1a18e2b4331f637faad7a80754e6721 ""
+  "Figures/cubediagram.pdf" 1684235839 60453 9648848d3e6e7abde2f8df84c0488658 ""
   "Figures/different_codespaces.pdf" 1683799301 46092 7b37e6324c9043bc089ca880988a9dff ""
   "Figures/dresseldiagram.png" 1683820523 82120 e76d462969d55413909ffca956f68d69 ""
   "Figures/fasthamiltoniser/diagram.pdf" 1683436732 111200 b579059f379e8c8b5ba52f666c745836 ""
@@ -291,12 +291,12 @@
   "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/public/mathabx/mathx10.600pk" 1683280297 30920 1a4574cf90307628aa125fc8673c52bc ""
   "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf-var/web2c/pdftex/pdflatex.fmt" 1683166962 6479798 2020db529ed54565c62373ad8421268d ""
   "c:/Users/Stasiu Wolanski/AppData/Roaming/TinyTeX/texmf.cnf" 1683166864 903 164c5b127cd0d6dc91abad2f62421ea2 ""
-  "c:/Users/Stasiu Wolanski/Projects/Part3Report/main.tex" 1684166156 116340 c1702ddcbc764f9f3f1210669ac0f122 ""
-  "main.aux" 1684166160 26857 cc991f4eb2e483233f336548c1c7fb30 "pdflatex"
+  "c:/Users/Stasiu Wolanski/Projects/Part3Report/main.tex" 1684235869 116345 738d34ff052c85c1cedeb89f8d761673 ""
+  "main.aux" 1684235872 26857 cc991f4eb2e483233f336548c1c7fb30 "pdflatex"
   "main.bbl" 1684164404 149348 e175041343e577100080cbd1241f3379 "biber main"
-  "main.run.xml" 1684166160 2302 428a500e86a16046e755980d0fb9dfa7 "pdflatex"
-  "main.tex" 1684166156 116340 c1702ddcbc764f9f3f1210669ac0f122 ""
-  "main.toc" 1684166160 4173 ec60a3f7991f0d38de7a15ee18ee25ef "pdflatex"
+  "main.run.xml" 1684235872 2302 428a500e86a16046e755980d0fb9dfa7 "pdflatex"
+  "main.tex" 1684235869 116345 738d34ff052c85c1cedeb89f8d761673 ""
+  "main.toc" 1684235872 4173 ec60a3f7991f0d38de7a15ee18ee25ef "pdflatex"
   "nul" 0 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "main.aux"
